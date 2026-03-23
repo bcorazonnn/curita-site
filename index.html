@@ -1,0 +1,538 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw8400\paperh11900\margl1440\margr1440\vieww28600\viewh15320\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8" />\
+  <meta name="viewport" content="width=1280, initial-scale=1.0" />\
+  <title>Curita</title>\
+  <link rel="preconnect" href="https://fonts.googleapis.com" />\
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\
+  <link\
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"\
+    rel="stylesheet"\
+  />\
+  <style>\
+    * \{\
+      box-sizing: border-box;\
+    \}\
+\
+    html \{\
+      scroll-behavior: smooth;\
+    \}\
+\
+    body \{\
+      margin: 0;\
+      background: #ffffff;\
+      font-family: "Poppins", Helvetica, Arial, sans-serif;\
+      overflow-x: auto;\
+      overflow-y: auto;\
+    \}\
+\
+    .page \{\
+      background: #ffffff;\
+      width: 1280px;\
+      min-height: 4305px;\
+      position: relative;\
+      margin: 0 auto;\
+      overflow: visible;\
+    \}\
+\
+    .abs \{\
+      position: absolute;\
+    \}\
+\
+    .text-sky \{\
+      color: #38bdf8;\
+    \}\
+\
+    .text-gray \{\
+      color: #5d6f77;\
+    \}\
+\
+    .topbar \{\
+      top: 0;\
+      left: 0;\
+      width: 1280px;\
+      height: 85px;\
+      background: #ffffff;\
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);\
+    \}\
+\
+    .logo \{\
+      top: 0;\
+      left: 37px;\
+      width: 195px;\
+      font-weight: 600;\
+      font-size: 64px;\
+      line-height: normal;\
+      white-space: nowrap;\
+    \}\
+\
+    .nav-link \{\
+      font-weight: 600;\
+      font-size: 22px;\
+      line-height: normal;\
+      text-decoration: none;\
+      color: #38bdf8;\
+      cursor: pointer;\
+    \}\
+\
+    .hero-title \{\
+      top: 291px;\
+      left: 669px;\
+      width: 694px;\
+      font-weight: 600;\
+      font-size: 48px;\
+      line-height: normal;\
+      margin: 0;\
+    \}\
+\
+    .img-main \{\
+      top: 120px;\
+      left: 211px;\
+      width: 519px;\
+      height: 649px;\
+      object-fit: cover;\
+      aspect-ratio: 0.8;\
+    \}\
+\
+    .img-left \{\
+      top: 120px;\
+      left: 0;\
+      width: 421px;\
+      height: 649px;\
+      object-fit: cover;\
+      aspect-ratio: 0.8;\
+    \}\
+\
+    .img-explore \{\
+      top: 679px;\
+      left: 40px;\
+      width: 482px;\
+      height: 602px;\
+      object-fit: cover;\
+      aspect-ratio: 0.8;\
+    \}\
+\
+    .img-match \{\
+      top: 1257px;\
+      left: 640px;\
+      width: 519px;\
+      height: 649px;\
+      object-fit: cover;\
+      aspect-ratio: 0.8;\
+    \}\
+\
+    .img-way \{\
+      top: 1840px;\
+      left: 40px;\
+      width: 482px;\
+      height: 602px;\
+      object-fit: cover;\
+      aspect-ratio: 0.8;\
+    \}\
+\
+    .img-pass \{\
+      top: 2357px;\
+      left: 672px;\
+      width: 519px;\
+      height: 649px;\
+      object-fit: cover;\
+      aspect-ratio: 0.8;\
+    \}\
+\
+    .blue-btn \{\
+      width: 305px;\
+      height: 62px;\
+      background: #38bdf8;\
+      border-radius: 10px;\
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);\
+      color: white;\
+      text-decoration: none;\
+      display: flex;\
+      align-items: center;\
+      justify-content: center;\
+      font-weight: 600;\
+      font-size: 32px;\
+      line-height: normal;\
+    \}\
+\
+    .section-title \{\
+      font-weight: 600;\
+      font-size: 48px;\
+      line-height: normal;\
+      margin: 0;\
+    \}\
+\
+    .section-text \{\
+      font-weight: 600;\
+      font-size: 32px;\
+      line-height: normal;\
+      text-align: center;\
+      margin: 0;\
+    \}\
+\
+    .waitlist-title \{\
+      top: 3082px;\
+      left: 270px;\
+      width: 803px;\
+      font-weight: 600;\
+      font-size: 64px;\
+      line-height: normal;\
+      margin: 0;\
+      text-transform: lowercase;\
+    \}\
+\
+    .waitlist-subtitle \{\
+      top: 3204px;\
+      left: 286px;\
+      width: 707px;\
+      font-weight: 600;\
+      font-size: 32px;\
+      line-height: normal;\
+      text-align: center;\
+      margin: 0;\
+    \}\
+\
+    .card \{\
+      top: 3401px;\
+      left: 280px;\
+      width: 720px;\
+      height: 786px;\
+      background: #38bdf8;\
+      border-radius: 15px;\
+      box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);\
+    \}\
+\
+    .card-logo \{\
+      top: 3424px;\
+      left: 542px;\
+      width: 195px;\
+      font-weight: 600;\
+      font-size: 64px;\
+      line-height: normal;\
+      white-space: nowrap;\
+      color: white;\
+    \}\
+\
+    .field-bg \{\
+      background: white;\
+      border-radius: 12px;\
+    \}\
+\
+    .field \{\
+      border: none;\
+      outline: none;\
+      background: white;\
+      border-radius: 12px;\
+      padding: 0 16px;\
+      font-family: "Poppins", Helvetica, Arial, sans-serif;\
+      font-weight: 600;\
+      color: #38bdf8;\
+      font-size: 32px;\
+      line-height: normal;\
+    \}\
+\
+    .field::placeholder,\
+    .challenge::placeholder \{\
+      color: #38bdf8;\
+      opacity: 1;\
+    \}\
+\
+    .challenge \{\
+      border: none;\
+      outline: none;\
+      background: white;\
+      border-radius: 12px;\
+      padding: 0 16px;\
+      font-family: "Poppins", Helvetica, Arial, sans-serif;\
+      font-weight: 600;\
+      color: #38bdf8;\
+      font-size: 30px;\
+      line-height: normal;\
+    \}\
+\
+    .submit-bg \{\
+      background: white;\
+      border-radius: 12px;\
+    \}\
+\
+    .submit-btn \{\
+      border: none;\
+      outline: none;\
+      background: white;\
+      border-radius: 12px;\
+      cursor: pointer;\
+      padding: 0;\
+    \}\
+\
+    .submit-text \{\
+      font-family: "Poppins", Helvetica, Arial, sans-serif;\
+      font-weight: 600;\
+      font-size: 32px;\
+      line-height: normal;\
+      color: #38bdf8;\
+      margin: 0;\
+      pointer-events: none;\
+    \}\
+  </style>\
+</head>\
+<body>\
+  <div class="page">\
+    <!-- Navbar -->\
+    <header class="abs topbar"></header>\
+\
+    <div class="abs logo text-sky">curita</div>\
+\
+    <nav>\
+      <a\
+        href="#learn-more"\
+        class="abs nav-link"\
+        style="top:26px; left:940px; width:133px;"\
+      >\
+        learn more\
+      </a>\
+\
+      <a\
+        href="#waitlist"\
+        class="abs nav-link"\
+        style="top:26px; left:1113px; width:133px;"\
+      >\
+        join waitlist\
+      </a>\
+    </nav>\
+\
+    <!-- Hero Section -->\
+    <section id="learn-more">\
+      <p class="abs hero-title text-sky">\
+        the first pre-health app where your movement unlocks opportunity\
+      </p>\
+\
+      <img\
+        class="abs img-main"\
+        alt="Element"\
+        src="2-1.png"\
+      />\
+\
+      <a\
+        href="#learn-more"\
+        class="abs blue-btn"\
+        style="top:542px; left:769px;"\
+      >\
+        learn more\
+      </a>\
+\
+      <a\
+        href="#waitlist"\
+        class="abs blue-btn"\
+        style="top:639px; left:769px;"\
+      >\
+        join waitlist\
+      </a>\
+\
+      <img\
+        class="abs img-left"\
+        alt="Untitled design"\
+        src="untitled-design-25-1.png"\
+      />\
+\
+      <img\
+        class="abs img-explore"\
+        alt="Untitled design"\
+        src="untitled-design-26-1.png"\
+      />\
+    </section>\
+\
+    <!-- Explore Your Surroundings -->\
+    <section>\
+      <h2\
+        class="abs section-title text-sky"\
+        style="top:891px; left:610px; width:643px;"\
+      >\
+        explore your surroundings\
+      </h2>\
+\
+      <p\
+        class="abs section-text text-gray"\
+        style="top:1032px; left:635px; width:614px;"\
+      >\
+        see nearby shadowing, research, and clinical opportunities around you\
+      </p>\
+    </section>\
+\
+    <!-- Match & Grow -->\
+    <section>\
+      <h2\
+        class="abs section-title text-sky"\
+        style="top:1405px; left:124px; width:435px;"\
+      >\
+        match &amp; grow\
+      </h2>\
+\
+      <p\
+        class="abs section-text text-gray"\
+        style="top:1546px; left:14px; width:596px;"\
+      >\
+        connect with students, discover their paths, and build your own\
+        experience\
+      </p>\
+\
+      <img\
+        class="abs img-match"\
+        alt="Untitled design"\
+        src="untitled-design-27-1.png"\
+      />\
+    </section>\
+\
+    <!-- Explore Your Way -->\
+    <section>\
+      <h2\
+        class="abs section-title text-sky"\
+        style="top:2000px; left:714px; width:435px;"\
+      >\
+        explore your way\
+      </h2>\
+\
+      <p\
+        class="abs section-text text-gray"\
+        style="top:2141px; left:634px; width:596px;"\
+      >\
+        walk around for a more interactive experience, or browse everything\
+        instantly\
+      </p>\
+\
+      <img\
+        class="abs img-way"\
+        alt="Untitled design"\
+        src="untitled-design-28-1.png"\
+      />\
+    </section>\
+\
+    <!-- Pass It Forward -->\
+    <section>\
+      <h2\
+        class="abs section-title text-sky"\
+        style="top:2458px; left:158px; width:435px;"\
+      >\
+        pass it forward\
+      </h2>\
+\
+      <p\
+        class="abs section-text text-gray"\
+        style="top:2599px; left:47px; width:596px;"\
+      >\
+        leaving a position? share it so another student can take your place\
+      </p>\
+\
+      <img\
+        class="abs img-pass"\
+        alt="Untitled design"\
+        src="untitled-design-29-1.png"\
+      />\
+    </section>\
+\
+    <!-- Waitlist -->\
+    <section id="waitlist">\
+      <p class="abs waitlist-title text-sky">\
+        be first to access curita\
+      </p>\
+\
+      <p class="abs waitlist-subtitle text-gray">\
+        Join the first wave of pre-health students unlocking real\
+        opportunities \'97 no gatekeeping.\
+      </p>\
+\
+      <!-- Waitlist Form Card -->\
+      <div class="abs card"></div>\
+\
+      <div class="abs card-logo">\
+        curita\
+      </div>\
+\
+      <!-- FORM CODE ADDED -->\
+      <form action="https://formspree.io/f/mbdzvpwo" method="POST">\
+        <input type="hidden" name="_subject" value="New Curita Waitlist Signup" />\
+\
+        <!-- First Name -->\
+        <div\
+          class="abs field-bg"\
+          style="top:3554px; left:380px; width:519px; height:60px;"\
+        ></div>\
+        <input\
+          type="text"\
+          name="firstName"\
+          placeholder="first name"\
+          required\
+          class="abs field"\
+          style="top:3554px; left:380px; width:519px; height:60px;"\
+        />\
+\
+        <!-- Last Name -->\
+        <div\
+          class="abs field-bg"\
+          style="top:3668px; left:380px; width:519px; height:60px;"\
+        ></div>\
+        <input\
+          type="text"\
+          name="lastName"\
+          placeholder="last name"\
+          required\
+          class="abs field"\
+          style="top:3668px; left:380px; width:519px; height:60px;"\
+        />\
+\
+        <!-- Email -->\
+        <div\
+          class="abs field-bg"\
+          style="top:3781px; left:380px; width:519px; height:60px;"\
+        ></div>\
+        <input\
+          type="email"\
+          name="email"\
+          placeholder="email"\
+          required\
+          class="abs field"\
+          style="top:3781px; left:380px; width:519px; height:60px;"\
+        />\
+\
+        <!-- Biggest Pre-Health Challenge -->\
+        <div\
+          class="abs field-bg"\
+          style="top:3902px; left:380px; width:519px; height:60px;"\
+        ></div>\
+        <input\
+          type="text"\
+          name="challenge"\
+          placeholder="biggest pre-health challenge?"\
+          class="abs challenge"\
+          style="top:3902px; left:380px; width:519px; height:60px;"\
+        />\
+\
+        <!-- Submit Button -->\
+        <div\
+          class="abs submit-bg"\
+          style="top:4038px; left:496px; width:260px; height:52px;"\
+        ></div>\
+        <button\
+          type="submit"\
+          class="abs submit-btn"\
+          style="top:4038px; left:496px; width:260px; height:52px;"\
+        >\
+          <span\
+            class="abs submit-text"\
+            style="top:0; left:0; width:260px; height:52px; display:flex; align-items:center; justify-content:center;"\
+          >\
+            join waitlist\
+          </span>\
+        </button>\
+      </form>\
+    </section>\
+  </div>\
+</body>\
+</html>}
