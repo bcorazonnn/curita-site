@@ -40,6 +40,13 @@
       position: absolute;
     }
 
+    .anchor {
+      position: absolute;
+      left: 0;
+      width: 1px;
+      height: 1px;
+    }
+
     .text-sky {
       color: #38bdf8;
     }
@@ -279,13 +286,17 @@
 </head>
 <body>
   <div class="page">
+    <!-- invisible scroll anchors -->
+    <div id="explore-anchor" class="anchor" style="top: 860px;"></div>
+    <div id="waitlist-anchor" class="anchor" style="top: 3082px;"></div>
+
     <!-- Navbar -->
     <header class="abs topbar"></header>
     <div class="abs logo text-sky">curita</div>
 
     <nav>
       <a
-        href="#explore-section"
+        href="#explore-anchor"
         class="abs nav-link"
         style="top:26px; left:940px; width:133px;"
       >
@@ -293,7 +304,7 @@
       </a>
 
       <a
-        href="#waitlist"
+        href="#waitlist-anchor"
         class="abs nav-link"
         style="top:26px; left:1113px; width:133px;"
       >
@@ -310,7 +321,7 @@
       <img class="abs img-main" alt="Element" src="2.png" />
 
       <a
-        href="#explore-section"
+        href="#explore-anchor"
         class="abs blue-btn"
         style="top:542px; left:769px;"
       >
@@ -318,7 +329,7 @@
       </a>
 
       <a
-        href="#waitlist"
+        href="#waitlist-anchor"
         class="abs blue-btn"
         style="top:639px; left:769px;"
       >
