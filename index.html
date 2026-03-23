@@ -173,29 +173,15 @@
     }
 
     .feature-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: clamp(1.5rem, 5vw, 5rem);
-    }
-
-    .feature-grid.reverse .feature-visual {
-      order: 2;
-    }
-
-    .feature-grid.reverse .feature-copy {
-      order: 1;
-    }
-
-    .feature-visual {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(1.5rem, 3vw, 2.5rem);
+      text-align: center;
     }
 
-    .feature-visual img {
-      width: min(100%, 520px);
-      height: auto;
-      object-fit: contain;
+    .feature-copy {
+      max-width: 820px;
     }
 
     .feature-copy h2 {
@@ -214,6 +200,18 @@
       margin: 0;
       text-align: center;
       font-weight: 600;
+    }
+
+    .feature-visual {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .feature-visual img {
+      width: min(100%, 520px);
+      height: auto;
+      object-fit: contain;
     }
 
     .waitlist {
@@ -298,9 +296,7 @@
     }
 
     @media (max-width: 960px) {
-      .hero-grid,
-      .feature-grid,
-      .feature-grid.reverse {
+      .hero-grid {
         grid-template-columns: 1fr;
       }
 
@@ -310,11 +306,6 @@
 
       .hero-actions {
         align-items: center;
-      }
-
-      .feature-grid.reverse .feature-visual,
-      .feature-grid.reverse .feature-copy {
-        order: initial;
       }
 
       .hero-phones {
@@ -394,22 +385,22 @@
 
     <section id="explore" class="feature-section">
       <div class="container feature-grid">
+        <div class="feature-copy">
+          <h2>explore your surroundings</h2>
+          <p>see nearby shadowing, research, and clinical opportunities around you</p>
+        </div>
+
         <div class="feature-visual">
           <img
             src="Untitled design (26).png"
             alt="Explore your surroundings illustration"
           />
         </div>
-
-        <div class="feature-copy">
-          <h2>explore your surroundings</h2>
-          <p>see nearby shadowing, research, and clinical opportunities around you</p>
-        </div>
       </div>
     </section>
 
     <section class="feature-section">
-      <div class="container feature-grid reverse">
+      <div class="container feature-grid">
         <div class="feature-copy">
           <h2>match &amp; grow</h2>
           <p>connect with students, discover their paths, and build your own experience</p>
@@ -426,22 +417,22 @@
 
     <section class="feature-section">
       <div class="container feature-grid">
+        <div class="feature-copy">
+          <h2>explore your way</h2>
+          <p>walk around for a more interactive experience, or browse everything instantly</p>
+        </div>
+
         <div class="feature-visual">
           <img
             src="Untitled design (28).png"
             alt="Explore your way illustration"
           />
         </div>
-
-        <div class="feature-copy">
-          <h2>explore your way</h2>
-          <p>walk around for a more interactive experience, or browse everything instantly</p>
-        </div>
       </div>
     </section>
 
     <section class="feature-section">
-      <div class="container feature-grid reverse">
+      <div class="container feature-grid">
         <div class="feature-copy">
           <h2>pass it forward</h2>
           <p>leaving a position? share it so another student can take your place</p>
