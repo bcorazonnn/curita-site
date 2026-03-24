@@ -328,18 +328,28 @@
         display: block !important;
         width: 100%;
         height: 96px;
+        position: sticky !important;
+        top: 0;
+        z-index: 1000;
+        background: #ffffff;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-        margin-bottom: 20px;
+        margin-bottom: 0;
       }
 
-      .logo {
+      .topbar .logo {
+        position: absolute !important;
+        top: 10px;
+        left: 0;
         width: 100%;
         font-size: 38px;
         text-align: center;
-        margin: 10px 0 8px;
+        margin: 0;
       }
 
-      nav {
+      .topbar nav {
+        position: absolute;
+        top: 58px;
+        left: 0;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -360,10 +370,9 @@
       }
 
       #hero {
-        padding-top: 4px;
+        padding-top: 20px;
       }
 
-      /* HERO: phones first, then headline, then buttons */
       #hero .img-left {
         order: 1;
         width: 132px;
@@ -403,7 +412,6 @@
         margin: 0 0 12px;
       }
 
-      /* Explore: text first, then heart image */
       #explore-section {
         margin-top: 18px;
       }
@@ -430,7 +438,6 @@
         margin: 0 0 30px;
       }
 
-      /* Other sections: text first, then image */
       section:not(#hero):not(#explore-section):not(#waitlist) .section-title {
         width: min(320px, 100%) !important;
         font-size: 24px;
@@ -537,26 +544,27 @@
       <div id="explore-anchor" class="anchor" style="top: 860px;"></div>
       <div id="waitlist-anchor" class="anchor" style="top: 3082px;"></div>
 
-      <header class="abs topbar"></header>
-      <div class="abs logo text-sky">curita</div>
+      <header class="abs topbar">
+        <div class="abs logo text-sky">curita</div>
 
-      <nav>
-        <a
-          href="#explore-anchor"
-          class="abs nav-link"
-          style="top:26px; left:940px; width:133px;"
-        >
-          learn more
-        </a>
+        <nav>
+          <a
+            href="#explore-anchor"
+            class="abs nav-link"
+            style="top:26px; left:940px; width:133px;"
+          >
+            learn more
+          </a>
 
-        <a
-          href="#waitlist-anchor"
-          class="abs nav-link"
-          style="top:26px; left:1113px; width:133px;"
-        >
-          join waitlist
-        </a>
-      </nav>
+          <a
+            href="#waitlist-anchor"
+            class="abs nav-link"
+            style="top:26px; left:1113px; width:133px;"
+          >
+            join waitlist
+          </a>
+        </nav>
+      </header>
 
       <section id="hero">
         <p class="abs hero-title text-sky">
