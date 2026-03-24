@@ -4,24 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Curita</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
     rel="stylesheet"
   />
-
   <style>
-    :root {
-      --sky: #38bdf8;
-      --gray: #5d6f77;
-      --white: #ffffff;
-      --shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-      --radius: 18px;
-      --max-width: 1200px;
-    }
-
     * {
       box-sizing: border-box;
     }
@@ -32,482 +21,524 @@
 
     body {
       margin: 0;
+      background: #ffffff;
       font-family: "Poppins", Helvetica, Arial, sans-serif;
-      background: #fff;
-      color: var(--gray);
-      overflow-x: hidden;
+      overflow-x: auto;
+      overflow-y: auto;
     }
 
-    img {
-      display: block;
-      max-width: 100%;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    .container {
-      width: min(var(--max-width), calc(100% - 2rem));
+    .page-wrap {
+      width: 1280px;
       margin: 0 auto;
+      position: relative;
+    }
+
+    .page {
+      background: #ffffff;
+      width: 1280px;
+      min-height: 4305px;
+      position: relative;
+      overflow: visible;
+    }
+
+    .abs {
+      position: absolute;
+    }
+
+    .anchor {
+      position: absolute;
+      left: 0;
+      width: 1px;
+      height: 1px;
+    }
+
+    .text-sky {
+      color: #38bdf8;
+    }
+
+    .text-gray {
+      color: #5d6f77;
     }
 
     .topbar {
-      position: sticky;
       top: 0;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-    }
-
-    .topbar-inner {
-      min-height: 84px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.25rem;
-      padding: 0.75rem 0;
+      left: 0;
+      width: 1280px;
+      height: 85px;
+      background: #ffffff;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .logo {
-      color: var(--sky);
-      font-weight: 700;
-      font-size: clamp(2.1rem, 4vw, 4rem);
-      line-height: 1;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      gap: clamp(1rem, 2vw, 2.5rem);
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .nav a {
-      color: var(--sky);
+      top: 0;
+      left: 37px;
+      width: 195px;
       font-weight: 600;
-      font-size: clamp(1rem, 1.4vw, 1.35rem);
+      font-size: 64px;
+      line-height: normal;
+      white-space: nowrap;
     }
 
-    .hero {
-      padding: clamp(2rem, 5vw, 4rem) 0 clamp(3.5rem, 7vw, 6rem);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.05fr 1fr;
-      align-items: center;
-      gap: clamp(2rem, 4vw, 4rem);
-    }
-
-    .hero-phones {
-      display: flex;
-      align-items: end;
-      justify-content: center;
-      gap: clamp(0.75rem, 2vw, 2rem);
-      min-width: 0;
-    }
-
-    .hero-phones img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-    }
-
-    .phone-left {
-      max-width: 330px;
-    }
-
-    .phone-right {
-      max-width: 370px;
-    }
-
-    .hero-copy h1 {
-      color: var(--sky);
-      font-weight: 700;
-      font-size: clamp(2.2rem, 5vw, 4.5rem);
-      line-height: 1.1;
-      margin: 0 0 1.5rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      align-items: flex-start;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 62px;
-      padding: 0 1.75rem;
-      border-radius: 12px;
+    .nav-link {
       font-weight: 600;
-      font-size: clamp(1.15rem, 2vw, 2rem);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      box-shadow: var(--shadow);
+      font-size: 22px;
+      line-height: normal;
+      text-decoration: none;
+      color: #38bdf8;
       cursor: pointer;
-      border: none;
     }
 
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      background: var(--sky);
-      color: var(--white);
-    }
-
-    .btn-light {
-      background: var(--white);
-      color: var(--sky);
-    }
-
-    .feature-section {
-      padding: clamp(2.5rem, 7vw, 6rem) 0;
-    }
-
-    .feature-grid {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: clamp(1.5rem, 3vw, 2.5rem);
-      text-align: center;
-    }
-
-    .feature-copy {
-      max-width: 820px;
-    }
-
-    .feature-copy h2 {
-      color: var(--sky);
-      font-size: clamp(2rem, 4vw, 4rem);
-      line-height: 1.08;
-      margin: 0 0 1rem;
-      font-weight: 700;
-      text-align: center;
-    }
-
-    .feature-copy p {
-      color: var(--gray);
-      font-size: clamp(1.1rem, 2vw, 2rem);
-      line-height: 1.35;
-      margin: 0;
-      text-align: center;
+    .hero-title {
+      top: 291px;
+      left: 669px;
+      width: 694px;
       font-weight: 600;
+      font-size: 48px;
+      line-height: normal;
+      margin: 0;
     }
 
-    .feature-visual {
+    .img-main {
+      top: 120px;
+      left: 211px;
+      width: 519px;
+      height: 649px;
+      object-fit: cover;
+      aspect-ratio: 0.8;
+    }
+
+    .img-left {
+      top: 120px;
+      left: 0;
+      width: 421px;
+      height: 649px;
+      object-fit: cover;
+      aspect-ratio: 0.8;
+    }
+
+    .img-explore {
+      top: 679px;
+      left: 40px;
+      width: 482px;
+      height: 602px;
+      object-fit: cover;
+      aspect-ratio: 0.8;
+    }
+
+    .img-match {
+      top: 1257px;
+      left: 640px;
+      width: 519px;
+      height: 649px;
+      object-fit: cover;
+      aspect-ratio: 0.8;
+    }
+
+    .img-way {
+      top: 1840px;
+      left: 40px;
+      width: 482px;
+      height: 602px;
+      object-fit: cover;
+      aspect-ratio: 0.8;
+    }
+
+    .img-pass {
+      top: 2357px;
+      left: 672px;
+      width: 519px;
+      height: 649px;
+      object-fit: cover;
+      aspect-ratio: 0.8;
+    }
+
+    .blue-btn {
+      width: 305px;
+      height: 62px;
+      background: #38bdf8;
+      border-radius: 10px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      color: white;
+      text-decoration: none;
       display: flex;
+      align-items: center;
       justify-content: center;
-      width: 100%;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: normal;
+      cursor: pointer;
     }
 
-    .feature-visual img {
-      width: min(100%, 520px);
-      height: auto;
-      object-fit: contain;
+    .section-title {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: normal;
+      margin: 0;
     }
 
-    .waitlist {
-      padding: clamp(3rem, 8vw, 7rem) 0 5rem;
-    }
-
-    .waitlist-heading {
+    .section-text {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: normal;
       text-align: center;
-      max-width: 900px;
-      margin: 0 auto 2rem;
+      margin: 0;
     }
 
-    .waitlist-heading h2 {
-      color: var(--sky);
-      margin: 0 0 1rem;
-      font-size: clamp(2.2rem, 5vw, 4.5rem);
-      line-height: 1.08;
-      font-weight: 700;
+    .waitlist-title {
+      top: 3082px;
+      left: 270px;
+      width: 803px;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: normal;
+      margin: 0;
       text-transform: lowercase;
     }
 
-    .waitlist-heading p {
-      margin: 0;
-      color: var(--gray);
-      font-size: clamp(1.05rem, 2vw, 2rem);
-      line-height: 1.4;
+    .waitlist-subtitle {
+      top: 3204px;
+      left: 286px;
+      width: 707px;
       font-weight: 600;
-    }
-
-    .waitlist-card {
-      width: min(720px, 100%);
-      margin: 2rem auto 0;
-      background: var(--sky);
-      border-radius: 18px;
-      box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.15), var(--shadow);
-      padding: clamp(2rem, 5vw, 3rem);
-    }
-
-    .waitlist-logo {
-      color: var(--white);
+      font-size: 32px;
+      line-height: normal;
       text-align: center;
-      font-size: clamp(2.4rem, 5vw, 4rem);
-      font-weight: 700;
-      line-height: 1;
-      margin: 0 0 2rem;
+      margin: 0;
     }
 
-    .waitlist-form {
-      display: grid;
-      gap: 1rem;
+    .card {
+      top: 3401px;
+      left: 280px;
+      width: 720px;
+      height: 786px;
+      background: #38bdf8;
+      border-radius: 15px;
+      box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
     }
 
-    .input,
-    .textarea {
-      width: 100%;
+    .card-logo {
+      top: 3424px;
+      left: 542px;
+      width: 195px;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: normal;
+      white-space: nowrap;
+      color: white;
+    }
+
+    .field-bg {
+      background: white;
+      border-radius: 12px;
+    }
+
+    .field {
       border: none;
       outline: none;
+      background: white;
       border-radius: 12px;
-      background: #fff;
-      color: var(--sky);
+      padding: 0 16px;
       font-family: "Poppins", Helvetica, Arial, sans-serif;
       font-weight: 600;
-      font-size: clamp(1rem, 2vw, 2rem);
-      padding: 1rem 1.2rem;
+      color: #38bdf8;
+      font-size: 32px;
+      line-height: normal;
     }
 
-    .textarea {
-      min-height: 72px;
-      resize: vertical;
-    }
-
-    .input::placeholder,
-    .textarea::placeholder {
-      color: var(--sky);
+    .field::placeholder,
+    .challenge::placeholder {
+      color: #38bdf8;
       opacity: 1;
     }
 
-    .waitlist-actions {
-      display: flex;
-      justify-content: center;
-      margin-top: 0.5rem;
+    .challenge {
+      border: none;
+      outline: none;
+      background: white;
+      border-radius: 12px;
+      padding: 0 16px;
+      font-family: "Poppins", Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      color: #38bdf8;
+      font-size: 30px;
+      line-height: normal;
     }
 
-    @media (max-width: 960px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-copy {
-        text-align: center;
-      }
-
-      .hero-actions {
-        align-items: center;
-      }
-
-      .hero-phones {
-        order: -1;
-      }
+    .submit-bg {
+      background: white;
+      border-radius: 12px;
     }
 
-    @media (max-width: 640px) {
-      .topbar-inner {
-        flex-direction: column;
-        align-items: center;
+    .submit-btn {
+      border: none;
+      outline: none;
+      background: white;
+      border-radius: 12px;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .submit-text {
+      font-family: "Poppins", Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: normal;
+      color: #38bdf8;
+      margin: 0;
+      pointer-events: none;
+    }
+
+    /* phone only */
+    @media (max-width: 767px) {
+      html,
+      body {
+        overflow-x: hidden;
       }
 
-      .nav {
-        justify-content: center;
+      body {
+        overflow-y: auto;
       }
 
-      .hero-phones {
-        flex-direction: column;
-        align-items: center;
+      .page-wrap {
+        width: 100vw;
+        height: calc(4305px * (100vw / 1280));
+        margin: 0;
+        overflow: hidden;
       }
 
-      .phone-left,
-      .phone-right {
-        max-width: 290px;
-      }
-
-      .btn {
-        width: 100%;
-        max-width: 340px;
-      }
-
-      .waitlist-card {
-        padding: 1.5rem;
+      .page {
+        transform-origin: top left;
+        transform: scale(calc(100vw / 1280));
       }
     }
   </style>
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <div class="logo">curita</div>
+  <div class="page-wrap">
+    <div class="page">
+      <!-- invisible scroll anchors -->
+      <div id="explore-anchor" class="anchor" style="top: 860px;"></div>
+      <div id="waitlist-anchor" class="anchor" style="top: 3082px;"></div>
 
-      <nav class="nav">
-        <a href="#explore">learn more</a>
-        <a href="#waitlist">join waitlist</a>
+      <!-- Navbar -->
+      <header class="abs topbar"></header>
+      <div class="abs logo text-sky">curita</div>
+
+      <nav>
+        <a
+          href="#explore-anchor"
+          class="abs nav-link"
+          style="top:26px; left:940px; width:133px;"
+        >
+          learn more
+        </a>
+
+        <a
+          href="#waitlist-anchor"
+          class="abs nav-link"
+          style="top:26px; left:1113px; width:133px;"
+        >
+          join waitlist
+        </a>
       </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-phones">
-          <img
-            class="phone-left"
-            src="Untitled design (25).png"
-            alt="Curita app preview"
+      <!-- Hero Section -->
+      <section id="hero">
+        <p class="abs hero-title text-sky">
+          the first pre-health app where your movement unlocks opportunity
+        </p>
+
+        <img class="abs img-main" alt="Element" src="2.png" />
+
+        <a
+          href="#explore-anchor"
+          class="abs blue-btn"
+          style="top:542px; left:769px;"
+        >
+          learn more
+        </a>
+
+        <a
+          href="#waitlist-anchor"
+          class="abs blue-btn"
+          style="top:639px; left:769px;"
+        >
+          join waitlist
+        </a>
+
+        <img
+          class="abs img-left"
+          alt="Untitled design"
+          src="Untitled design (25).png"
+        />
+
+        <img
+          class="abs img-explore"
+          alt="Untitled design"
+          src="Untitled design (26).png"
+        />
+      </section>
+
+      <!-- Explore Your Surroundings -->
+      <section id="explore-section">
+        <h2
+          class="abs section-title text-sky"
+          style="top:891px; left:610px; width:643px;"
+        >
+          explore your surroundings
+        </h2>
+
+        <p
+          class="abs section-text text-gray"
+          style="top:1032px; left:635px; width:614px;"
+        >
+          see nearby shadowing, research, and clinical opportunities around you
+        </p>
+      </section>
+
+      <!-- Match & Grow -->
+      <section>
+        <h2
+          class="abs section-title text-sky"
+          style="top:1405px; left:124px; width:435px;"
+        >
+          match &amp; grow
+        </h2>
+
+        <p
+          class="abs section-text text-gray"
+          style="top:1546px; left:14px; width:596px;"
+        >
+          connect with students, discover their paths, and build your own
+          experience
+        </p>
+
+        <img
+          class="abs img-match"
+          alt="Untitled design"
+          src="Untitled design (27).png"
+        />
+      </section>
+
+      <!-- Explore Your Way -->
+      <section>
+        <h2
+          class="abs section-title text-sky"
+          style="top:2000px; left:714px; width:435px;"
+        >
+          explore your way
+        </h2>
+
+        <p
+          class="abs section-text text-gray"
+          style="top:2141px; left:634px; width:596px;"
+        >
+          walk around for a more interactive experience, or browse everything
+          instantly
+        </p>
+
+        <img
+          class="abs img-way"
+          alt="Untitled design"
+          src="Untitled design (28).png"
+        />
+      </section>
+
+      <!-- Pass It Forward -->
+      <section>
+        <h2
+          class="abs section-title text-sky"
+          style="top:2458px; left:158px; width:435px;"
+        >
+          pass it forward
+        </h2>
+
+        <p
+          class="abs section-text text-gray"
+          style="top:2599px; left:47px; width:596px;"
+        >
+          leaving a position? share it so another student can take your place
+        </p>
+
+        <img
+          class="abs img-pass"
+          alt="Untitled design"
+          src="Untitled design (29).png"
+        />
+      </section>
+
+      <!-- Waitlist -->
+      <section id="waitlist">
+        <p class="abs waitlist-title text-sky">
+          be first to access curita
+        </p>
+
+        <p class="abs waitlist-subtitle text-gray">
+          Join the first wave of pre-health students unlocking real
+          opportunities — no gatekeeping.
+        </p>
+
+        <div class="abs card"></div>
+        <div class="abs card-logo">curita</div>
+
+        <form action="https://formspree.io/f/mbdzvpwo" method="POST">
+          <input type="hidden" name="_subject" value="New Curita Waitlist Signup" />
+
+          <div class="abs field-bg" style="top:3554px; left:380px; width:519px; height:60px;"></div>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="first name"
+            required
+            class="abs field"
+            style="top:3554px; left:380px; width:519px; height:60px;"
           />
-          <img
-            class="phone-right"
-            src="2.png"
-            alt="Curita app phone mockup"
+
+          <div class="abs field-bg" style="top:3668px; left:380px; width:519px; height:60px;"></div>
+          <input
+            type="text"
+            name="lastName"
+            placeholder="last name"
+            required
+            class="abs field"
+            style="top:3668px; left:380px; width:519px; height:60px;"
           />
-        </div>
 
-        <div class="hero-copy">
-          <h1>the first pre-health app where your movement unlocks opportunity</h1>
-
-          <div class="hero-actions">
-            <a href="#explore" class="btn btn-primary">learn more</a>
-            <a href="#waitlist" class="btn btn-primary">join waitlist</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="explore" class="feature-section">
-      <div class="container feature-grid">
-        <div class="feature-copy">
-          <h2>explore your surroundings</h2>
-          <p>see nearby shadowing, research, and clinical opportunities around you</p>
-        </div>
-
-        <div class="feature-visual">
-          <img
-            src="Untitled design (26).png"
-            alt="Explore your surroundings illustration"
+          <div class="abs field-bg" style="top:3781px; left:380px; width:519px; height:60px;"></div>
+          <input
+            type="email"
+            name="email"
+            placeholder="email"
+            required
+            class="abs field"
+            style="top:3781px; left:380px; width:519px; height:60px;"
           />
-        </div>
-      </div>
-    </section>
 
-    <section class="feature-section">
-      <div class="container feature-grid">
-        <div class="feature-copy">
-          <h2>match &amp; grow</h2>
-          <p>connect with students, discover their paths, and build your own experience</p>
-        </div>
-
-        <div class="feature-visual">
-          <img
-            src="Untitled design (27).png"
-            alt="Match and grow illustration"
+          <div class="abs field-bg" style="top:3902px; left:380px; width:519px; height:60px;"></div>
+          <input
+            type="text"
+            name="challenge"
+            placeholder="biggest pre-health challenge?"
+            class="abs challenge"
+            style="top:3902px; left:380px; width:519px; height:60px;"
           />
-        </div>
-      </div>
-    </section>
 
-    <section class="feature-section">
-      <div class="container feature-grid">
-        <div class="feature-copy">
-          <h2>explore your way</h2>
-          <p>walk around for a more interactive experience, or browse everything instantly</p>
-        </div>
-
-        <div class="feature-visual">
-          <img
-            src="Untitled design (28).png"
-            alt="Explore your way illustration"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="feature-section">
-      <div class="container feature-grid">
-        <div class="feature-copy">
-          <h2>pass it forward</h2>
-          <p>leaving a position? share it so another student can take your place</p>
-        </div>
-
-        <div class="feature-visual">
-          <img
-            src="Untitled design (29).png"
-            alt="Pass it forward illustration"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section id="waitlist" class="waitlist">
-      <div class="container">
-        <div class="waitlist-heading">
-          <h2>be first to access curita</h2>
-          <p>
-            Join the first wave of pre-health students unlocking real
-            opportunities — no gatekeeping.
-          </p>
-        </div>
-
-        <div class="waitlist-card">
-          <div class="waitlist-logo">curita</div>
-
-          <form
-            class="waitlist-form"
-            action="https://formspree.io/f/mbdzvpwo"
-            method="POST"
+          <div class="abs submit-bg" style="top:4038px; left:496px; width:260px; height:52px;"></div>
+          <button
+            type="submit"
+            class="abs submit-btn"
+            style="top:4038px; left:496px; width:260px; height:52px;"
           >
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Curita Waitlist Signup"
-            />
-
-            <input
-              class="input"
-              type="text"
-              name="firstName"
-              placeholder="first name"
-              required
-            />
-
-            <input
-              class="input"
-              type="text"
-              name="lastName"
-              placeholder="last name"
-              required
-            />
-
-            <input
-              class="input"
-              type="email"
-              name="email"
-              placeholder="email"
-              required
-            />
-
-            <textarea
-              class="textarea"
-              name="challenge"
-              placeholder="biggest pre-health challenge?"
-            ></textarea>
-
-            <div class="waitlist-actions">
-              <button type="submit" class="btn btn-light">join waitlist</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
+            <span
+              class="abs submit-text"
+              style="top:0; left:0; width:260px; height:52px; display:flex; align-items:center; justify-content:center;"
+            >
+              join waitlist
+            </span>
+          </button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
