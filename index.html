@@ -1,144 +1,149 @@
-import { useState } from "react";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Curita</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: linear-gradient(to bottom, #6fb0ff, #74aeff, #f4b774);
+      min-height: 100vh;
+      padding: 20px;
+    }
 
-export default function App() {
-  const [page, setPage] = useState("landing");
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-  return (
-    <div className="min-h-screen text-white bg-gradient-to-b from-blue-400 via-blue-300 to-orange-300 p-6">
-      
-      {/* NAV */}
-      <div className="flex justify-between items-center mb-10">
-        <h1 className="text-3xl font-bold">curita</h1>
+    .btn {
+      padding: 10px 16px;
+      border-radius: 12px;
+      border: none;
+      background: #2C3E73;
+      color: white;
+      cursor: pointer;
+      margin: 4px;
+    }
 
-        <div className="flex gap-3">
-          <button onClick={() => setPage("login")} className="bg-white/20 px-4 py-2 rounded-xl">login</button>
-          <button onClick={() => setPage("signup")} className="bg-white/20 px-4 py-2 rounded-xl">get started</button>
-        </div>
-      </div>
+    .glass {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+    }
 
-      {/* PAGES */}
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 12px;
+      border: none;
+      background: #4A90E2;
+      color: white;
+    }
 
-      {page === "landing" && (
-        <div className="text-center space-y-6">
-          <h1 className="text-5xl font-bold">we find opportunities that fit you</h1>
-          <p className="text-xl">clinical, research, and shadowing opportunities—sent weekly</p>
+    .center {
+      text-align: center;
+      margin-top: 80px;
+    }
+  </style>
+</head>
 
-          <button
-            onClick={() => setPage("pricing")}
-            className="bg-[#2C3E73] px-6 py-3 rounded-xl"
-          >
-            get your first curita
-          </button>
-        </div>
-      )}
+<body>
 
-      {page === "login" && (
-        <div className="max-w-md mx-auto space-y-4">
-          <h1 className="text-3xl font-bold">log in</h1>
+<div class="nav">
+  <h1>curita</h1>
+  <div>
+    <button class="btn" onclick="showPage('login')">login</button>
+    <button class="btn" onclick="showPage('signup')">get started</button>
+  </div>
+</div>
 
-          <input placeholder="email" className="w-full p-3 rounded-xl bg-blue-500" />
-          <input placeholder="password" type="password" className="w-full p-3 rounded-xl bg-blue-500" />
+<!-- LANDING -->
+<div id="landing" class="center">
+  <h1 style="font-size:50px;">we find opportunities that fit you</h1>
+  <p>clinical, research, and shadowing opportunities — sent weekly</p>
+  <button class="btn" onclick="showPage('pricing')">get your first curita</button>
+</div>
 
-          <button onClick={() => setPage("subscription")} className="w-full bg-[#2C3E73] p-3 rounded-xl">
-            log in
-          </button>
+<!-- LOGIN -->
+<div id="login" class="glass" style="display:none;">
+  <h2>log in</h2>
+  <input placeholder="email">
+  <input placeholder="password" type="password">
+  <button class="btn" onclick="showPage('subscription')">log in</button>
+  <br>
+  <button class="btn" onclick="showPage('forgot')">forgot password</button>
+</div>
 
-          <button onClick={() => setPage("forgot")} className="text-sm underline">
-            forgot password?
-          </button>
-        </div>
-      )}
+<!-- FORGOT -->
+<div id="forgot" class="glass" style="display:none;">
+  <h2>reset password</h2>
+  <input placeholder="email">
+  <button class="btn" onclick="showPage('confirmation')">send reset link</button>
+</div>
 
-      {page === "forgot" && (
-        <div className="max-w-md mx-auto space-y-4">
-          <h1 className="text-3xl font-bold">reset password</h1>
+<!-- CONFIRM -->
+<div id="confirmation" class="glass" style="display:none;">
+  <h2>check your email</h2>
+  <p>we sent you a reset link</p>
+  <button class="btn" onclick="showPage('login')">back to login</button>
+</div>
 
-          <input placeholder="email" className="w-full p-3 rounded-xl bg-blue-500" />
+<!-- SIGNUP -->
+<div id="signup" class="glass" style="display:none;">
+  <h2>sign up</h2>
+  <input placeholder="first name">
+  <input placeholder="last name">
+  <button class="btn" onclick="showPage('pricing')">continue</button>
+</div>
 
-          <button onClick={() => setPage("confirmation")} className="w-full bg-[#2C3E73] p-3 rounded-xl">
-            send reset link
-          </button>
-        </div>
-      )}
+<!-- PRICING -->
+<div id="pricing" class="center" style="display:none;">
+  <h1>$4.99 / month</h1>
+  <p>we send you curated opportunities every week</p>
+  <button class="btn" onclick="showPage('subscription')">get my opportunities</button>
+</div>
 
-      {page === "confirmation" && (
-        <div className="text-center space-y-4">
-          <h1 className="text-3xl font-bold">check your email</h1>
-          <p>we sent you a reset link</p>
+<!-- SUBSCRIPTION -->
+<div id="subscription" class="glass" style="display:none;">
+  <h2>subscription</h2>
+  <div style="background:white;color:black;padding:10px;border-radius:10px;">
+    Curita Weekly<br>
+    $4.99 / month<br>
+    Active
+  </div>
+  <br>
+  <button class="btn">manage billing</button>
+  <button class="btn" onclick="showPage('preferences')">update preferences</button>
+</div>
 
-          <button onClick={() => setPage("login")} className="underline">
-            back to login
-          </button>
-        </div>
-      )}
+<!-- PREFERENCES -->
+<div id="preferences" class="glass" style="display:none;">
+  <h2>preferences</h2>
+  <div>
+    <button class="btn">clinical</button>
+    <button class="btn">research</button>
+    <button class="btn">shadowing</button>
+    <button class="btn">internships</button>
+  </div>
+  <br>
+  <button class="btn">save preferences</button>
+</div>
 
-      {page === "signup" && (
-        <div className="max-w-md mx-auto space-y-4">
-          <h1 className="text-3xl font-bold">sign up</h1>
+<script>
+function showPage(page) {
+  const pages = ["landing","login","forgot","confirmation","signup","pricing","subscription","preferences"];
+  pages.forEach(p => document.getElementById(p).style.display = "none");
+  document.getElementById(page).style.display = "block";
+}
+</script>
 
-          <input placeholder="first name" className="w-full p-3 rounded-xl bg-blue-500" />
-          <input placeholder="last name" className="w-full p-3 rounded-xl bg-blue-500" />
-
-          <button onClick={() => setPage("pricing")} className="w-full bg-[#2C3E73] p-3 rounded-xl">
-            continue
-          </button>
-        </div>
-      )}
-
-      {page === "pricing" && (
-        <div className="text-center space-y-6">
-          <h1 className="text-4xl font-bold">$4.99 / month</h1>
-          <p>we send you curated opportunities every week</p>
-
-          <button
-            onClick={() => setPage("subscription")}
-            className="bg-[#2C3E73] px-6 py-3 rounded-xl"
-          >
-            get my opportunities
-          </button>
-        </div>
-      )}
-
-      {page === "subscription" && (
-        <div className="max-w-md mx-auto space-y-4">
-          <h1 className="text-3xl font-bold">subscription</h1>
-
-          <div className="bg-white text-black p-4 rounded-xl">
-            <p>Curita Weekly</p>
-            <p>$4.99 / month</p>
-            <p>Active</p>
-          </div>
-
-          <button className="w-full bg-[#2C3E73] p-3 rounded-xl">
-            manage billing
-          </button>
-
-          <button
-            onClick={() => setPage("preferences")}
-            className="w-full bg-white text-black p-3 rounded-xl"
-          >
-            update preferences
-          </button>
-        </div>
-      )}
-
-      {page === "preferences" && (
-        <div className="max-w-md mx-auto space-y-4">
-          <h1 className="text-3xl font-bold">preferences</h1>
-
-          <div className="grid grid-cols-2 gap-3">
-            {["clinical", "research", "shadowing", "internships"].map((item) => (
-              <button key={item} className="bg-blue-500 p-3 rounded-xl">
-                {item}
-              </button>
-            ))}
-          </div>
-
-          <button className="w-full bg-[#2C3E73] p-3 rounded-xl">
-            save preferences
-          </button>
-        </div>
-      )}
-    </div>
-  );
-}     
+</body>
+</html>
