@@ -25,11 +25,12 @@
   z-index: 1;
 }
 
-/* reveal */
+/* smoother reveal */
 .reveal {
   opacity: 0;
-  transform: translateY(70px);
-  transition: opacity 0.9s ease, transform 0.9s ease;
+  transform: translateY(24px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+  will-change: opacity, transform;
 }
 
 .reveal.active {
@@ -37,17 +38,30 @@
   transform: translateY(0);
 }
 
+.feature-card:nth-child(1) {
+  transition-delay: 0.06s;
+}
+.feature-card:nth-child(2) {
+  transition-delay: 0.12s;
+}
+.feature-card:nth-child(3) {
+  transition-delay: 0.18s;
+}
+.feature-card:nth-child(4) {
+  transition-delay: 0.24s;
+}
+
 .topbar {
-  width: min(100%, 1600px);
+  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 18px 36px 0;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: start;
+  padding: 18px 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .brand {
-  justify-self: start;
   text-align: left;
   font-size: clamp(2.8rem, 2.2vw + 1rem, 4rem);
   line-height: 1;
@@ -95,26 +109,25 @@
 }
 
 .main-content {
-  width: min(100%, 1600px);
+  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 24px 36px 0;
+  padding: 32px 40px 0;
 }
 
-/* each major block gets real height so user scrolls */
 .hero,
 .features,
 .cta-section {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  min-height: auto;
+  display: block;
 }
 
 .hero {
-  width: min(100%, 1180px);
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 48px;
 }
 
 .bubble-row {
@@ -167,38 +180,39 @@
 }
 
 .hero-title {
-  margin: 0 0 28px;
-  font-size: clamp(4.8rem, 8vw, 9rem);
+  margin: 0 0 24px;
+  font-size: clamp(4.2rem, 7vw, 8rem);
   line-height: 0.95;
   font-weight: 400;
 }
 
 .hero-copy {
-  max-width: 920px;
+  max-width: 760px;
   margin: 0 auto;
-  font-size: clamp(1.2rem, 1vw + 0.8rem, 1.65rem);
+  font-size: clamp(1.1rem, 1vw + 0.6rem, 1.35rem);
   line-height: 1.35;
 }
 
 .features {
-  width: min(100%, 1260px);
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 70px;
 }
 
 .section-title {
-  margin: 0 0 54px;
-  font-size: clamp(3rem, 3.8vw, 5rem);
+  margin: 0 0 34px;
+  font-size: clamp(2.4rem, 3vw, 4rem);
   line-height: 1;
   font-weight: 400;
 }
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(360px, 1fr));
-  gap: 80px 100px;
-  max-width: 1180px;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 56px 64px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -207,43 +221,44 @@
 }
 
 .feature-icon-wrap {
-  height: 220px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .feature-icon-wrap img {
-  max-width: 170px;
-  max-height: 170px;
+  max-width: 120px;
+  max-height: 120px;
   object-fit: contain;
 }
 
 .feature-card p {
   margin: 0;
-  font-size: clamp(1.2rem, 0.9vw + 0.85rem, 1.55rem);
-  line-height: 1.25;
+  font-size: clamp(1.1rem, 0.9vw + 0.8rem, 1.4rem);
+  line-height: 1.22;
 }
 
 .cta-section {
-  width: min(100%, 1180px);
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 60px;
+  padding: 80px 0 70px;
 }
 
 .cta-section h2 {
-  margin: 0 0 24px;
-  font-size: clamp(4.5rem, 7vw, 8rem);
+  margin: 0 0 20px;
+  font-size: clamp(3.5rem, 5.6vw, 6.5rem);
   line-height: 0.98;
   font-weight: 400;
 }
 
 .cta-section p {
-  max-width: 920px;
-  margin: 0 auto 40px;
-  font-size: clamp(1.1rem, 0.9vw + 0.75rem, 1.35rem);
+  max-width: 760px;
+  margin: 0 auto 32px;
+  font-size: clamp(1rem, 0.9vw + 0.7rem, 1.25rem);
   line-height: 1.32;
 }
 
@@ -254,9 +269,10 @@
 }
 
 .footer-inner {
-  width: min(100%, 1600px);
+  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 28px 36px;
+  padding: 28px 40px;
   min-height: 140px;
   text-align: left;
 }
@@ -288,8 +304,7 @@
   .hero,
   .features,
   .cta-section {
-    min-height: auto;
-    padding: 80px 0;
+    padding-top: 80px;
   }
 
   .bubble-row {
@@ -325,7 +340,8 @@
 @media (max-width: 640px) {
   .topbar {
     padding: 14px 16px 0;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -355,8 +371,7 @@
   .hero,
   .features,
   .cta-section {
-    min-height: auto;
-    padding: 64px 0;
+    padding-top: 64px;
   }
 
   .hero {
