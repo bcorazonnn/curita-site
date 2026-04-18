@@ -116,13 +116,13 @@
   gap: 54px;
   width: 100%;
   max-width: 1280px;
-  margin: 0 auto 32px;
+  margin: 0 auto 20px;
 }
 
 .text-bubble {
   position: relative;
-  width: 340px;
-  flex: 0 0 340px;
+  width: 420px;
+  flex: 0 0 420px;
 }
 
 .bubble-bg {
@@ -139,8 +139,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 24px 30px;
-  font-size: 1.45rem;
+  padding: 28px 34px;
+  font-size: 1.7rem;
   line-height: 1.08;
   color: var(--text);
 }
