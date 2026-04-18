@@ -1,1 +1,51 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* Common Style Variables */
+
+  /* Color */
+  --color-cornflowerblue: #4a90e2;
+  --color-darkslategray: #243a4a;
+  --color-gainsboro: rgba(217, 217, 217, 0.5);
+  --color-white: #fff;
+  --color-whitesmoke: #f4f4f4;
+
+  /* Gap */
+  --gap-20: 20px;
+
+  /* Padding */
+  --padding-0: 0px;
+  --padding-20: 20px;
+  --padding-26: 26px;
+  --padding-32: 32px;
+
+  /* BorderRadius */
+  --br-20: 20px;
+
+  /* Font */
+  --font-normal-tm: Normal TM;
+
+  /* FontSize */
+  --fs-19: 19px;
+  --fs-26: 26px;
+  --fs-29: 29px;
+  --fs-32: 32px;
+  --fs-36: 36px;
+  --fs-38: 38px;
+  --fs-48: 48px;
+  --fs-64: 64px;
+
+  /* Shadows */
+  --shadow-drop: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --text-shadow-1: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* WidthHeights */
+  --height-72: 72px;
+
+  --left-0: 0px;
+  --left-12: 12px;
+}
 
