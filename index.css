@@ -25,16 +25,16 @@
 }
 
 .topbar {
-  width: min(100%, 430px);
+  width: min(100%, 1200px);
   margin: 0 auto;
-  padding: 14px 14px 0;
+  padding: 18px 24px 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 .brand {
-  font-size: 2rem;
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1;
   color: var(--text);
 }
@@ -42,45 +42,46 @@
 .top-actions {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
+  gap: 10px;
 }
 
 .profile-icon {
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: var(--shadow-soft);
 }
 
 .content {
-  width: min(100%, var(--content-width));
+  width: min(100%, 1100px);
   margin: 0 auto;
-  padding: 20px 14px 0;
+  padding: 36px 24px 0;
 }
 
 .hero {
   text-align: center;
-  padding-top: 28px;
+  padding-top: 24px;
 }
 
 .hero-bubbles {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(3, minmax(140px, 180px));
+  justify-content: center;
+  gap: 18px;
   align-items: start;
-  margin-bottom: 22px;
+  margin-bottom: 28px;
 }
 
 .speech {
-  min-height: 74px;
+  min-height: 84px;
   border-radius: 18px;
-  padding: 14px 10px;
+  padding: 16px 12px;
   color: var(--text);
-  font-size: 1rem;
+  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
   line-height: 1.05;
   text-align: center;
-  background: rgba(103, 155, 232, 0.28);
+  background: rgba(103, 155, 232, 0.22);
   box-shadow: var(--shadow-card);
   border: 1px solid rgba(255, 255, 255, 0.12);
   position: relative;
@@ -102,7 +103,7 @@
 
 .speech-left {
   transform: rotate(-7deg);
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .speech-center {
@@ -111,12 +112,12 @@
 
 .speech-right {
   transform: rotate(6deg);
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .hero-title {
   margin: 0 0 18px;
-  font-size: clamp(2.7rem, 9vw, 4rem);
+  font-size: clamp(3rem, 6vw, 5.5rem);
   line-height: 0.95;
   font-weight: 400;
   color: var(--text);
@@ -124,28 +125,30 @@
 
 .hero-copy {
   margin: 0 auto;
-  max-width: 350px;
-  font-size: 0.95rem;
-  line-height: 1.25;
+  max-width: 640px;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.3;
   color: var(--text);
 }
 
 .features {
-  padding-top: 28px;
+  padding-top: 34px;
 }
 
 .section-title {
-  margin: 0 0 22px;
+  margin: 0 0 28px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1;
   font-weight: 400;
 }
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px 18px;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 34px 30px;
+  max-width: 760px;
+  margin: 0 auto;
 }
 
 .feature-card {
@@ -154,43 +157,43 @@
 
 .feature-illustration {
   width: 100%;
-  height: 118px;
+  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .feature-illustration img {
-  max-height: 96px;
-  max-width: 96px;
+  max-height: 105px;
+  max-width: 105px;
   object-fit: contain;
   filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.08));
 }
 
 .feature-card p {
   margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.15;
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.2;
 }
 
 .cta {
   text-align: center;
-  padding: 30px 0 220px;
+  padding: 42px 0 220px;
 }
 
 .cta h2 {
   margin: 0 0 16px;
-  font-size: clamp(2.5rem, 10vw, 3.6rem);
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
   line-height: 0.98;
   font-weight: 400;
 }
 
 .cta p {
   margin: 0 auto 26px;
-  max-width: 350px;
-  font-size: 0.85rem;
-  line-height: 1.25;
+  max-width: 620px;
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  line-height: 1.3;
 }
 
 .pill {
@@ -203,7 +206,7 @@
 }
 
 .pill-small {
-  min-height: 34px;
+  min-height: 36px;
   padding: 0 12px;
   background: var(--muted-pill);
   color: var(--text-dark);
@@ -211,11 +214,11 @@
 }
 
 .pill-primary {
-  min-height: 54px;
-  padding: 0 28px;
+  min-height: 56px;
+  padding: 0 30px;
   background: var(--primary);
   color: var(--text);
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
 }
 
 .footer {
@@ -228,44 +231,182 @@
 }
 
 .footer-inner {
-  width: min(100%, var(--content-width));
+  width: min(100%, 1100px);
   margin: 0 auto;
-  padding: 20px 14px 18px;
-  min-height: 110px;
+  padding: 22px 24px 18px;
+  min-height: 120px;
 }
 
 .footer-brand {
-  font-size: 2rem;
+  font-size: clamp(2rem, 3vw, 2.8rem);
   line-height: 1;
   margin-bottom: 10px;
 }
 
 .footer-tag {
-  font-size: 0.9rem;
+  font-size: clamp(0.95rem, 1.2vw, 1rem);
   margin-bottom: 24px;
 }
 
 .footer-copy {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
 }
 
-@media (max-width: 360px) {
-  .brand,
-  .footer-brand {
-    font-size: 1.7rem;
+/* Tablet */
+@media (max-width: 900px) {
+  .topbar {
+    padding: 16px 18px 0;
+  }
+
+  .content {
+    padding: 28px 18px 0;
+  }
+
+  .hero-bubbles {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 12px;
+  }
+
+  .feature-grid {
+    max-width: 620px;
+    gap: 28px 22px;
+  }
+
+  .cta {
+    padding-bottom: 180px;
+  }
+
+  .footer-inner {
+    padding: 20px 18px 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .topbar {
+    align-items: center;
+  }
+
+  .brand {
+    font-size: 1.9rem;
+  }
+
+  .top-actions {
+    gap: 6px;
+  }
+
+  .pill-small {
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: 0.74rem;
+  }
+
+  .profile-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 22px 16px 0;
+  }
+
+  .hero {
+    padding-top: 14px;
+  }
+
+  .hero-bubbles {
+    grid-template-columns: 1fr;
+    max-width: 230px;
+    margin: 0 auto 24px;
+    gap: 14px;
+  }
+
+  .speech,
+  .speech-left,
+  .speech-center,
+  .speech-right {
+    transform: none;
+    margin-top: 0;
   }
 
   .hero-title {
-    font-size: 2.35rem;
+    font-size: clamp(2.4rem, 12vw, 3.6rem);
   }
 
-  .speech {
-    font-size: 0.86rem;
-    min-height: 68px;
-    padding: 12px 8px;
+  .hero-copy {
+    max-width: 340px;
+    font-size: 0.92rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    gap: 24px;
+  }
+
+  .feature-illustration {
+    height: 110px;
+  }
+
+  .feature-illustration img {
+    max-height: 86px;
+    max-width: 86px;
   }
 
   .feature-card p {
-    font-size: 0.88rem;
+    font-size: 0.95rem;
+  }
+
+  .cta {
+    padding: 36px 0 170px;
+  }
+
+  .cta h2 {
+    font-size: clamp(2.3rem, 11vw, 3.4rem);
+  }
+
+  .cta p {
+    max-width: 320px;
+    font-size: 0.86rem;
+  }
+
+  .pill-primary {
+    min-height: 52px;
+    padding: 0 22px;
+    font-size: 1rem;
+  }
+
+  .footer-inner {
+    padding: 18px 16px 14px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .topbar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .top-actions {
+    align-self: flex-end;
+  }
+
+  .hero-title {
+    font-size: 2.15rem;
+  }
+
+  .feature-grid {
+    max-width: 280px;
+  }
+
+  .cta {
+    padding-bottom: 160px;
   }
 }
