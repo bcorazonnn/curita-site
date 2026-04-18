@@ -148,7 +148,7 @@
 }
 
 .bubble-left {
-  transform: rotate(-7deg);
+  transform: rotate(10deg);
   margin-top: 14px;
 }
 
@@ -157,7 +157,7 @@
 }
 
 .bubble-right {
-  transform: rotate(7deg);
+  transform: rotate(-10deg);
   margin-top: 14px;
 }
 
