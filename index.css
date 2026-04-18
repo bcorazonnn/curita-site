@@ -25,17 +25,16 @@
   z-index: 1;
 }
 
-.reveal-item {
+.reveal {
   opacity: 0;
-  transform: translateY(26px);
+  transform: translateY(18px);
   transition:
-    opacity 0.65s ease,
-    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
-  transition-delay: var(--delay, 0s);
+    opacity 0.45s ease,
+    transform 0.45s ease;
   will-change: opacity, transform;
 }
 
-.reveal-section.visible .reveal-item {
+.reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
@@ -106,8 +105,8 @@
   max-width: 1400px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 70px;
+  padding-top: 90px;
+  padding-bottom: 50px;
 }
 
 .bubble-row {
@@ -117,13 +116,13 @@
   gap: 34px;
   width: 100%;
   max-width: 1040px;
-  margin: 0 auto 34px;
+  margin: 0 auto 28px;
 }
 
 .text-bubble {
   position: relative;
-  width: 260px;
-  flex: 0 0 260px;
+  width: 270px;
+  flex: 0 0 270px;
 }
 
 .bubble-bg {
@@ -161,9 +160,9 @@
 }
 
 .hero-title {
-  margin: 8px auto 24px;
+  margin: 8px auto 22px;
   max-width: 980px;
-  font-size: clamp(5.4rem, 8vw, 8.8rem);
+  font-size: clamp(5.6rem, 8.2vw, 9rem);
   line-height: 0.92;
   font-weight: 400;
 }
@@ -180,12 +179,12 @@
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .section-title {
-  margin: 0 0 56px;
+  margin: 0 0 52px;
   font-size: clamp(3.2rem, 4.4vw, 5.4rem);
   line-height: 1;
   font-weight: 400;
@@ -194,7 +193,7 @@
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(360px, 1fr));
-  gap: 76px 96px;
+  gap: 64px 88px;
   max-width: 1120px;
   margin: 0 auto;
 }
@@ -208,7 +207,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .feature-icon-wrap img {
@@ -231,7 +230,7 @@
   max-width: 1180px;
   margin: 0 auto;
   text-align: center;
-  padding: 80px 0 90px;
+  padding: 70px 0 90px;
 }
 
 .cta-section h2 {
@@ -290,12 +289,12 @@
   }
 
   .text-bubble {
-    width: 200px;
-    flex: 0 0 200px;
+    width: 210px;
+    flex: 0 0 210px;
   }
 
   .bubble-text {
-    font-size: 0.96rem;
+    font-size: 0.98rem;
     padding: 14px 18px;
   }
 
@@ -357,7 +356,7 @@
 
   .hero {
     padding-top: 24px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
 
   .bubble-row {
