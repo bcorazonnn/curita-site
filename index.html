@@ -22,7 +22,7 @@
       </header>
 
       <main class="main-content">
-        <section class="hero">
+        <section class="hero reveal">
           <div class="bubble-row">
             <div class="bubble bubble-left">nearby<br />shadowing</div>
             <div class="bubble bubble-center">medical scribe<br />93% match</div>
@@ -37,32 +37,32 @@
           </p>
         </section>
 
-        <section class="features">
+        <section class="features reveal">
           <h2 class="section-title">built for pre-health students</h2>
 
           <div class="feature-grid">
-            <article class="feature-card">
+            <article class="feature-card reveal">
               <div class="feature-icon-wrap">
                 <img src="./music (1).png" alt="" />
               </div>
               <p>Tell Curita what you’re looking for (clinical, research, or shadowing)</p>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card reveal">
               <div class="feature-icon-wrap">
                 <img src="./4.png" alt="" />
               </div>
               <p>We search for you—no more endless scrolling or last-minute applying</p>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card reveal">
               <div class="feature-icon-wrap">
                 <img src="./3.png" alt="" />
               </div>
               <p>Opportunities are sent to you each week</p>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card reveal">
               <div class="feature-icon-wrap">
                 <img src="./music.png" alt="" />
               </div>
@@ -71,7 +71,7 @@
           </div>
         </section>
 
-        <section class="cta-section">
+        <section class="cta-section reveal">
           <h2>delivered to you every week</h2>
           <p>
             a curated list of opportunities and targeted tips—based on your interests,
@@ -81,7 +81,7 @@
         </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer reveal">
         <div class="footer-inner">
           <div class="footer-brand">curita</div>
           <div class="footer-tagline">found for you. every week.</div>
@@ -89,5 +89,23 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      const reveals = document.querySelectorAll(".reveal");
+
+      function revealOnScroll() {
+        const triggerBottom = window.innerHeight - 80;
+
+        reveals.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < triggerBottom) {
+            el.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+    </script>
   </body>
 </html>
