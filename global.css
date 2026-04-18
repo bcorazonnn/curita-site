@@ -7,18 +7,19 @@
 
 :root {
   --color-cornflowerblue: #4a90e2;
-  --color-darkslategray: #243a4a;
-  --color-gainsboro: rgba(217, 217, 217, 0.85);
+  --color-darkslategray: #28485a;
+  --color-gainsboro: rgba(255, 255, 255, 0.82);
   --color-white: #ffffff;
   --color-whitesmoke: #f4f4f4;
+  --color-footer: #3b5668;
 
-  --shadow-drop: 0 12px 32px rgba(0, 0, 0, 0.22);
-  --text-shadow-1: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-drop: 0 14px 34px rgba(0, 0, 0, 0.18);
+  --text-shadow-1: 0 4px 10px rgba(0, 0, 0, 0.18);
 
   --font-normal-tm: "Normal TM", sans-serif;
 
   --max-width: 1200px;
-  --radius: 22px;
+  --radius: 24px;
 }
 
 * {
