@@ -25,25 +25,24 @@
   z-index: 1;
 }
 
-/* smooth reveal */
 .reveal-item {
   opacity: 0;
-  transform: translateY(36px) scale(0.985);
+  transform: translateY(40px);
   transition:
     opacity 0.9s ease,
-    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    transform 0.9s ease;
   transition-delay: var(--delay, 0s);
   will-change: opacity, transform;
 }
 
 .reveal-section.visible .reveal-item {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
 }
 
 .topbar {
   width: 100%;
-  padding: 18px 20px 0 8px;
+  padding: 18px 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -54,7 +53,6 @@
   line-height: 1;
   text-align: left;
   margin: 0;
-  padding-left: 0;
 }
 
 .top-actions {
@@ -103,37 +101,32 @@
   padding: 24px 40px 0;
 }
 
-.hero,
-.features,
-.cta-section {
-  width: 100%;
-}
-
 .hero {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 28px;
-  min-height: 88vh;
+  padding-top: 40px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .bubble-row {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(220px, 280px));
-  gap: 28px;
-  width: fit-content;
-  margin: 0 auto 42px;
+  display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
+  gap: 34px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto 34px;
 }
 
 .text-bubble {
   position: relative;
-  width: 100%;
-  min-height: 110px;
+  width: 280px;
+  flex: 0 0 280px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,6 +134,7 @@
 
 .bubble-bg {
   width: 100%;
+  height: auto;
   display: block;
   object-fit: contain;
 }
@@ -152,8 +146,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 16px 24px;
-  font-size: clamp(1.05rem, 0.8vw + 0.8rem, 1.35rem);
+  padding: 18px 26px;
+  font-size: 1.35rem;
   line-height: 1.05;
   color: var(--text);
 }
@@ -173,43 +167,46 @@
 }
 
 .hero-title {
-  margin: 0 0 24px;
-  font-size: clamp(4.2rem, 7vw, 8rem);
-  line-height: 0.95;
+  margin: 8px 0 24px;
+  font-size: clamp(5.8rem, 9vw, 9.5rem);
+  line-height: 0.92;
   font-weight: 400;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-copy {
-  max-width: 760px;
+  max-width: 920px;
   margin: 0 auto;
-  font-size: clamp(1.1rem, 1vw + 0.6rem, 1.35rem);
+  font-size: clamp(1.35rem, 1.4vw, 1.7rem);
   line-height: 1.35;
 }
 
 .features {
-  max-width: 1200px;
+  max-width: 1320px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 40px;
-  min-height: 95vh;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .section-title {
-  margin: 0 0 40px;
-  font-size: clamp(2.6rem, 3vw, 4.2rem);
+  margin: 0 0 70px;
+  font-size: clamp(3.6rem, 4.6vw, 5.8rem);
   line-height: 1;
   font-weight: 400;
 }
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(320px, 1fr));
-  gap: 64px 80px;
-  max-width: 1100px;
+  grid-template-columns: repeat(2, minmax(420px, 1fr));
+  gap: 90px 120px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -218,49 +215,50 @@
 }
 
 .feature-icon-wrap {
-  height: 190px;
+  height: 210px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .feature-icon-wrap img {
   width: auto;
   height: auto;
-  max-width: 180px;
-  max-height: 180px;
+  max-width: 150px;
+  max-height: 150px;
   object-fit: contain;
 }
 
 .feature-card p {
-  margin: 0;
-  font-size: clamp(1.1rem, 0.9vw + 0.8rem, 1.4rem);
-  line-height: 1.22;
+  margin: 0 auto;
+  max-width: 460px;
+  font-size: clamp(1.25rem, 1.1vw, 1.55rem);
+  line-height: 1.28;
 }
 
 .cta-section {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  padding: 100px 0 90px;
-  min-height: 88vh;
+  padding: 110px 0 100px;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .cta-section h2 {
-  margin: 0 0 20px;
-  font-size: clamp(3.8rem, 5.8vw, 6.8rem);
-  line-height: 0.98;
+  margin: 0 0 24px;
+  font-size: clamp(5rem, 7vw, 8.5rem);
+  line-height: 0.95;
   font-weight: 400;
 }
 
 .cta-section p {
-  max-width: 760px;
-  margin: 0 auto 32px;
-  font-size: clamp(1rem, 0.9vw + 0.7rem, 1.25rem);
+  max-width: 900px;
+  margin: 0 auto 36px;
+  font-size: clamp(1.2rem, 1.2vw, 1.5rem);
   line-height: 1.32;
 }
 
@@ -272,7 +270,7 @@
 
 .footer-inner {
   width: 100%;
-  padding: 28px 20px 28px 8px;
+  padding: 28px 40px;
   min-height: 140px;
   text-align: left;
 }
@@ -296,14 +294,23 @@
   .topbar,
   .main-content,
   .footer-inner {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .bubble-row {
-    grid-template-columns: repeat(3, minmax(140px, 1fr));
-    width: min(100%, 620px);
-    gap: 16px;
+    gap: 20px;
+    max-width: 900px;
+  }
+
+  .text-bubble {
+    width: 220px;
+    flex: 0 0 220px;
+  }
+
+  .bubble-text {
+    font-size: 1.05rem;
+    padding: 14px 18px;
   }
 
   .feature-grid {
@@ -321,7 +328,11 @@
   }
 
   .hero-title {
-    font-size: clamp(3.6rem, 7vw, 6rem);
+    font-size: clamp(3.8rem, 7vw, 6.5rem);
+  }
+
+  .hero-copy {
+    font-size: 1.15rem;
   }
 
   .cta-section h2 {
@@ -331,7 +342,7 @@
 
 @media (max-width: 640px) {
   .topbar {
-    padding: 14px 12px 0 8px;
+    padding: 14px 16px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -361,16 +372,21 @@
   }
 
   .hero {
-    width: 100%;
     padding-top: 10px;
     min-height: auto;
   }
 
   .bubble-row {
-    grid-template-columns: 1fr;
-    width: min(100%, 260px);
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     gap: 14px;
     margin-bottom: 26px;
+  }
+
+  .text-bubble {
+    width: min(100%, 260px);
+    flex: unset;
   }
 
   .bubble-left,
@@ -378,10 +394,6 @@
   .bubble-right {
     transform: none;
     margin-top: 0;
-  }
-
-  .text-bubble {
-    min-height: 84px;
   }
 
   .bubble-text {
@@ -445,7 +457,7 @@
   }
 
   .footer-inner {
-    padding: 18px 12px 18px 8px;
+    padding: 18px 16px;
   }
 
   .footer-brand {
