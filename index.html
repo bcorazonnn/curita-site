@@ -22,60 +22,60 @@
       </header>
 
       <main class="main-content">
-        <section class="hero reveal-section">
+        <section class="hero">
           <div class="bubble-row">
-            <div class="text-bubble bubble-left reveal-item">
-              <img src="./Untitled designed (26).png" alt="" class="bubble-bg" />
+            <div class="text-bubble bubble-left reveal">
+              <img src="Untitled design (26).png" alt="" class="bubble-bg" />
               <div class="bubble-text">nearby<br />shadowing</div>
             </div>
 
-            <div class="text-bubble bubble-center reveal-item" style="--delay: 0.06s;">
-              <img src="./Untitled designed (26).png" alt="" class="bubble-bg" />
+            <div class="text-bubble bubble-center reveal">
+              <img src="Untitled design (26).png" alt="" class="bubble-bg" />
               <div class="bubble-text">medical scribe<br />93% match</div>
             </div>
 
-            <div class="text-bubble bubble-right reveal-item" style="--delay: 0.12s;">
-              <img src="./Untitled designed (26).png" alt="" class="bubble-bg" />
+            <div class="text-bubble bubble-right reveal">
+              <img src="Untitled design (26).png" alt="" class="bubble-bg" />
               <div class="bubble-text">tip: apply to<br />Dr. Nguyen’s lab</div>
             </div>
           </div>
 
-          <h1 class="hero-title reveal-item" style="--delay: 0.08s;">
+          <h1 class="hero-title reveal">
             we find opportunities<br />that fit you.
           </h1>
 
-          <p class="hero-copy reveal-item" style="--delay: 0.14s;">
+          <p class="hero-copy reveal">
             Choose your focus each week—clinical, research, or shadowing—and Curita
             matches you with opportunities at your school and nearby.
           </p>
         </section>
 
-        <section class="features reveal-section">
-          <h2 class="section-title reveal-item">built for pre-health students</h2>
+        <section class="features">
+          <h2 class="section-title reveal">built for pre-health students</h2>
 
           <div class="feature-grid">
-            <article class="feature-card reveal-item">
+            <article class="feature-card reveal">
               <div class="feature-icon-wrap">
                 <img src="./music (1).png" alt="" />
               </div>
               <p>Tell Curita what you’re looking for (clinical, research, or shadowing)</p>
             </article>
 
-            <article class="feature-card reveal-item" style="--delay: 0.05s;">
+            <article class="feature-card reveal">
               <div class="feature-icon-wrap">
                 <img src="./4.png" alt="" />
               </div>
               <p>We search for you—no more endless scrolling or last-minute applying</p>
             </article>
 
-            <article class="feature-card reveal-item" style="--delay: 0.1s;">
+            <article class="feature-card reveal">
               <div class="feature-icon-wrap">
                 <img src="./3.png" alt="" />
               </div>
               <p>Opportunities are sent to you each week</p>
             </article>
 
-            <article class="feature-card reveal-item" style="--delay: 0.15s;">
+            <article class="feature-card reveal">
               <div class="feature-icon-wrap">
                 <img src="./music.png" alt="" />
               </div>
@@ -84,52 +84,46 @@
           </div>
         </section>
 
-        <section class="cta-section reveal-section">
-          <h2 class="reveal-item">delivered to you every week</h2>
+        <section class="cta-section">
+          <h2 class="reveal">delivered to you every week</h2>
 
-          <p class="reveal-item" style="--delay: 0.06s;">
+          <p class="reveal">
             a curated list of opportunities and targeted tips—based on your interests,
             experience, and what you want to improve next.
           </p>
 
-          <a href="#" class="primary-pill reveal-item" style="--delay: 0.12s;">
-            get your first curita
-          </a>
+          <a href="#" class="primary-pill reveal">get your first curita</a>
         </section>
       </main>
 
-      <footer class="footer reveal-section">
+      <footer class="footer">
         <div class="footer-inner">
-          <div class="footer-brand reveal-item">curita</div>
-          <div class="footer-tagline reveal-item" style="--delay: 0.05s;">
-            found for you. every week.
-          </div>
-          <div class="footer-copy reveal-item" style="--delay: 0.1s;">
-            @2026 curita
-          </div>
+          <div class="footer-brand reveal">curita</div>
+          <div class="footer-tagline reveal">found for you. every week.</div>
+          <div class="footer-copy reveal">@2026 curita</div>
         </div>
       </footer>
     </div>
 
     <script>
+      const revealItems = document.querySelectorAll(".reveal");
+
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
+              entry.target.classList.add("active");
               observer.unobserve(entry.target);
             }
           });
         },
         {
-          threshold: 0.08,
-          rootMargin: "0px 0px -10% 0px"
+          threshold: 0.06,
+          rootMargin: "0px 0px -6% 0px"
         }
       );
 
-      document.querySelectorAll(".reveal-section").forEach((section) => {
-        observer.observe(section);
-      });
+      revealItems.forEach((item) => observer.observe(item));
     </script>
   </body>
 </html>
