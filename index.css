@@ -27,7 +27,8 @@
 
 .reveal {
   opacity: 0;
-  transform: translateY(18px);
+  --reveal-y: 18px;
+  transform: translateY(var(--reveal-y)) rotate(var(--bubble-rotate, 0deg)) scale(var(--bubble-scale, 1));
   transition:
     opacity 0.45s ease,
     transform 0.45s ease;
@@ -36,7 +37,7 @@
 
 .reveal.active {
   opacity: 1;
-  transform: translateY(0);
+  --reveal-y: 0px;
 }
 
 .topbar {
@@ -146,16 +147,19 @@
 }
 
 .bubble-left {
-  transform: rotate(-16deg) scale(2.1);
+  --bubble-rotate: -16deg;
+  --bubble-scale: 2.1;
   margin-top: 22px;
 }
 
 .bubble-center {
-  transform: rotate(-3deg) scale(2.1);
+  --bubble-rotate: -3deg;
+  --bubble-scale: 2.1;
 }
 
 .bubble-right {
-  transform: rotate(16deg) scale(2.1);
+  --bubble-rotate: 16deg;
+  --bubble-scale: 2.1;
   margin-top: 10px;
 }
 
@@ -445,7 +449,8 @@
   .bubble-left,
   .bubble-center,
   .bubble-right {
-    transform: none;
+    --bubble-rotate: 0deg;
+    --bubble-scale: 1;
     margin-top: 0;
   }
 
