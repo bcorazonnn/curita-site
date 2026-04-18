@@ -9,19 +9,16 @@
   --font-main: "Normal TM", sans-serif;
 
   --text: #f8f4ef;
-  --text-dark: #3d5666;
+  --text-dark: #3f5c73;
   --pill-bg: rgba(255, 255, 255, 0.72);
   --primary: #5ca2ff;
 
-  --top-blue: #71a0ec;
-  --mid-blue: #7f99e4;
-  --footer-dark: rgba(52, 68, 88, 0.88);
-
   --shadow-soft: 0 10px 24px rgba(0, 0, 0, 0.12);
-  --shadow-light: 0 8px 18px rgba(255, 255, 255, 0.08);
+  --shadow-light: 0 8px 18px rgba(255, 255, 255, 0.06);
 
-  --max-content: 1100px;
-  --narrow-content: 760px;
+  --max-content: 1280px;
+  --section-width: 980px;
+  --features-width: 980px;
 }
 
 * {
