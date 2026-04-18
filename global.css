@@ -6,22 +6,22 @@
 }
 
 :root {
-  --bg-top: #6ea4f3;
-  --bg-mid: #6f8fd0;
-  --bg-bottom-left: #f0b06b;
-  --bg-bottom-right: #8d92dd;
-
-  --text: #f6f4f2;
-  --text-dark: #375267;
-  --muted-pill: rgba(255, 255, 255, 0.68);
-  --primary: #5ca0ff;
-  --footer-bg: rgba(45, 62, 81, 0.78);
-
-  --shadow-soft: 0 10px 24px rgba(0, 0, 0, 0.14);
-  --shadow-card: 0 10px 20px rgba(0, 0, 0, 0.08);
-
   --font-main: "Normal TM", sans-serif;
-  --content-width: 430px;
+
+  --text: #f8f4ef;
+  --text-dark: #3d5666;
+  --pill-bg: rgba(255, 255, 255, 0.72);
+  --primary: #5ca2ff;
+
+  --top-blue: #71a0ec;
+  --mid-blue: #7f99e4;
+  --footer-dark: rgba(52, 68, 88, 0.88);
+
+  --shadow-soft: 0 10px 24px rgba(0, 0, 0, 0.12);
+  --shadow-light: 0 8px 18px rgba(255, 255, 255, 0.08);
+
+  --max-content: 1100px;
+  --narrow-content: 760px;
 }
 
 * {
@@ -44,9 +44,10 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
