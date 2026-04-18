@@ -1,44 +1,87 @@
-
-    <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta charset="utf-8" />
+<title>Curita – Found for you. Every week.</title>
 <link rel="stylesheet" href="globals.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="landing-page" ><img class="gradient" src="img/gradient.png" />
-<div class="text-wrapper" >curita</div>
-<div class="nearby-shadowing" >nearby <br/>shadowing</div>
-<p class="tip-apply-to-dr" >tip: apply to<br/> Dr. Nguyen’s lab</p>
-<div class="medical-scribe" >medical scribe <br/>93% match</div>
-<div class="text-wrapper" >curita</div>
-<p class="we-find" >we find opportunities <br/>that fit you.</p>
-<p class="div" >delivered to you every week</p>
-<div class="text-wrapper-2" >built for pre-health students</div>
-<p class="tell-curita-what-you" >Tell Curita what you’re looking for<br/> (clinical, research, or shadowing)</p>
-<p class="p" >We search for you—no more endless scrolling or last-minute applying</p>
-<p class="text-wrapper-3" >Each week, update your preferences and get new matches</p>
-<p class="text-wrapper-4" >Opportunities are sent to you each week</p>
-<p class="text-wrapper-5" >Choose your focus each week—clinical, research, or shadowing—and Curita matches you with opportunities at your school and nearby.</p>
-<p class="text-wrapper-6" >a curated list of opportunities and targeted tips—based on your interests, experience, and what you want to improve next.</p>
-<img class="untitled-design" src="img/untitled-design-26-2.png" />
-<img class="img" src="img/untitled-design-26-4.png" />
-<img class="untitled-design-2" src="img/untitled-design-26-3.png" />
-<img class="music" src="img/music-1-1.png" />
-<img class="element" src="img/3-1.png" />
-<img class="element-2" src="img/3-2.png" />
-<img class="music-2" src="img/music-1.png" />
-<div class="rectangle" ></div>
-<div class="text-wrapper-7" >login</div>
-<div class="text-wrapper-8" >get started</div>
-<div class="rectangle-2" ></div>
-<div class="rectangle-3" ></div>
-<div class="text-wrapper-9" >get your first curita</div>
-<img class="profile-cute" src="img/profile-cute-1.png" />
-<div class="frame" ><div class="text-wrapper-10" >curita</div>
-<p class="text-wrapper-11" >found for you. every week.</p>
-<div class="text-wrapper-12" >@2026 curita</div></div></div>
+<main class="landing-page">
+<!-- Background gradient -->
+<img class="gradient" src="img/gradient.png" alt="" aria-hidden="true" />
+<!-- Navigation -->
+<header class="site-header">
+<div class="text-wrapper" aria-label="Curita logo">curita</div>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="#login" class="rectangle rectangle--login">
+<span class="text-wrapper-7">login</span>
+</a>
+<a href="#get-started" class="rectangle-2 rectangle--get-started">
+<span class="text-wrapper-8">get started</span>
+</a>
+</nav>
+<img class="profile-cute" src="img/profile-cute-1.png" alt="Profile illustration" />
+</header>
+<!-- Hero floating labels -->
+<section class="hero-labels" aria-label="Opportunity highlights">
+<div class="nearby-shadowing" aria-label="Nearby shadowing opportunity">nearby <br/>shadowing</div>
+<div class="medical-scribe" aria-label="Medical scribe 93% match">medical scribe <br/>93% match</div>
+<p class="tip-apply-to-dr">tip: apply to<br/> Dr. Nguyen's lab</p>
+</section>
+<!-- Hero decorative images -->
+<div class="hero-images" aria-hidden="true">
+<img class="untitled-design" src="img/untitled-design-26-2.png" alt="" />
+<img class="img" src="img/untitled-design-26-4.png" alt="" />
+<img class="untitled-design-2" src="img/untitled-design-26-3.png" alt="" />
+</div>
+<!-- Hero headline -->
+<section class="hero-section" aria-labelledby="hero-heading">
+<h1 class="we-find" id="hero-heading">we find opportunities <br/>that fit you.</h1>
+<p class="text-wrapper-5">Choose your focus each week—clinical, research, or shadowing—and Curita matches you with opportunities at your school and nearby.</p>
+</section>
+<!-- How it works section -->
+<section class="how-it-works" aria-labelledby="how-it-works-heading">
+<h2 class="text-wrapper-2" id="how-it-works-heading">built for pre-health students</h2>
+<div class="features-grid">
+<!-- Feature 1 -->
+<article class="feature feature--top-left">
+<img class="music" src="img/music-1-1.png" alt="Clinical opportunity icon" />
+<p class="tell-curita-what-you">Tell Curita what you're looking for<br/> (clinical, research, or shadowing)</p>
+</article>
+<!-- Feature 2 -->
+<article class="feature feature--top-right">
+<img class="element" src="img/3-1.png" alt="Search icon" />
+<p class="p">We search for you—no more endless scrolling or last-minute applying</p>
+</article>
+<!-- Feature 3 -->
+<article class="feature feature--bottom-left">
+<img class="element-2" src="img/3-2.png" alt="Opportunities icon" />
+<p class="text-wrapper-4">Opportunities are sent to you each week</p>
+</article>
+<!-- Feature 4 -->
+<article class="feature feature--bottom-right">
+<img class="music-2" src="img/music-1.png" alt="Preferences icon" />
+<p class="text-wrapper-3">Each week, update your preferences and get new matches</p>
+</article>
+</div>
+</section>
+<!-- Delivery section -->
+<section class="delivery-section" aria-labelledby="delivery-heading">
+<h2 class="div" id="delivery-heading">delivered to you every week</h2>
+<p class="text-wrapper-6">a curated list of opportunities and targeted tips—based on your interests, experience, and what you want to improve next.</p>
+<!-- CTA Button -->
+<a href="#get-started" class="rectangle-3" id="get-started" aria-label="Get your first Curita">
+<span class="text-wrapper-9">get your first curita</span>
+</a>
+</section>
+<!-- Footer -->
+<footer class="frame" aria-label="Site footer">
+<div class="text-wrapper-10" aria-label="Curita logo">curita</div>
+<p class="text-wrapper-11">found for you. every week.</p>
+<p class="text-wrapper-12">@2026 curita</p>
+</footer>
+</main>
 </body>
 </html>
