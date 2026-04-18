@@ -130,8 +130,6 @@
   height: auto;
   display: block;
   object-fit: contain;
-  transform: scale(2.1);
-  transform-origin: center;
 }
 
 .bubble-text {
@@ -148,17 +146,17 @@
 }
 
 .bubble-left {
-  transform: rotate(10deg);
-  margin-top: 14px;
+  transform: rotate(-16deg) scale(2.1);
+  margin-top: 22px;
 }
 
 .bubble-center {
-  transform: rotate(-1deg);
+  transform: rotate(-3deg) scale(2.1);
 }
 
 .bubble-right {
-  transform: rotate(-10deg);
-  margin-top: 14px;
+  transform: rotate(16deg) scale(2.1);
+  margin-top: 10px;
 }
 
 .hero-title {
