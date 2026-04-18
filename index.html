@@ -1,802 +1,636 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSBY1D6P3C"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-PSBY1D6P3C');
-  </script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curita</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
-    rel="stylesheet"
-  />
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      background: #ffffff;
-      font-family: "Poppins", Helvetica, Arial, sans-serif;
-      overflow-x: auto;
-      overflow-y: auto;
-    }
-
-    .page-wrap {
-      width: 1280px;
-      margin: 0 auto;
-      position: relative;
-    }
-
-    .page {
-      background: #ffffff;
-      width: 1280px;
-      min-height: 4305px;
-      position: relative;
-      overflow: visible;
-    }
-
-    .abs {
-      position: absolute;
-    }
-
-    .anchor {
-      position: absolute;
-      left: 0;
-      width: 1px;
-      height: 1px;
-    }
-
-    .text-sky {
-      color: #38bdf8;
-    }
-
-    .text-gray {
-      color: #5d6f77;
-    }
-
-    .topbar {
-      top: 0;
-      left: 0;
-      width: 1280px;
-      height: 85px;
-      background: #ffffff;
-      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    }
-
-    .logo {
-      top: 0;
-      left: 37px;
-      width: 195px;
-      font-weight: 600;
-      font-size: 64px;
-      line-height: normal;
-      white-space: nowrap;
-    }
-
-    .nav-link {
-      font-weight: 600;
-      font-size: 22px;
-      line-height: normal;
-      text-decoration: none;
-      color: #38bdf8;
-      cursor: pointer;
-    }
-
-    .hero-title {
-      top: 291px;
-      left: 669px;
-      width: 694px;
-      font-weight: 600;
-      font-size: 48px;
-      line-height: normal;
-      margin: 0;
-    }
-
-    .img-main {
-      top: 120px;
-      left: 211px;
-      width: 519px;
-      height: 649px;
-      object-fit: cover;
-      aspect-ratio: 0.8;
-    }
-
-    .img-left {
-      top: 120px;
-      left: 0;
-      width: 421px;
-      height: 649px;
-      object-fit: cover;
-      aspect-ratio: 0.8;
-    }
-
-    .img-explore {
-      top: 679px;
-      left: 40px;
-      width: 482px;
-      height: 602px;
-      object-fit: cover;
-      aspect-ratio: 0.8;
-    }
-
-    .img-match {
-      top: 1257px;
-      left: 640px;
-      width: 519px;
-      height: 649px;
-      object-fit: cover;
-      aspect-ratio: 0.8;
-    }
-
-    .img-way {
-      top: 1840px;
-      left: 40px;
-      width: 482px;
-      height: 602px;
-      object-fit: cover;
-      aspect-ratio: 0.8;
-    }
-
-    .img-pass {
-      top: 2357px;
-      left: 672px;
-      width: 519px;
-      height: 649px;
-      object-fit: cover;
-      aspect-ratio: 0.8;
-    }
-
-    .blue-btn {
-      width: 305px;
-      height: 62px;
-      background: #38bdf8;
-      border-radius: 10px;
-      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-      color: white;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 32px;
-      line-height: normal;
-      cursor: pointer;
-    }
-
-    .section-title {
-      font-weight: 600;
-      font-size: 48px;
-      line-height: normal;
-      margin: 0;
-    }
-
-    .section-text {
-      font-weight: 600;
-      font-size: 32px;
-      line-height: normal;
-      text-align: center;
-      margin: 0;
-    }
-
-    .waitlist-title {
-      top: 3082px;
-      left: 270px;
-      width: 803px;
-      font-weight: 600;
-      font-size: 64px;
-      line-height: normal;
-      margin: 0;
-      text-transform: lowercase;
-    }
-
-    .waitlist-subtitle {
-      top: 3204px;
-      left: 286px;
-      width: 707px;
-      font-weight: 600;
-      font-size: 32px;
-      line-height: normal;
-      text-align: center;
-      margin: 0;
-    }
-
-    .card {
-      top: 3401px;
-      left: 280px;
-      width: 720px;
-      height: 786px;
-      background: #38bdf8;
-      border-radius: 15px;
-      box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-    }
-
-    .card-logo {
-      top: 3424px;
-      left: 542px;
-      width: 195px;
-      font-weight: 600;
-      font-size: 64px;
-      line-height: normal;
-      white-space: nowrap;
-      color: white;
-    }
-
-    .field-bg {
-      background: white;
-      border-radius: 12px;
-    }
-
-    .field {
-      border: none;
-      outline: none;
-      background: white;
-      border-radius: 12px;
-      padding: 0 16px;
-      font-family: "Poppins", Helvetica, Arial, sans-serif;
-      font-weight: 600;
-      color: #38bdf8;
-      font-size: 32px;
-      line-height: normal;
-    }
-
-    .field::placeholder,
-    .challenge::placeholder {
-      color: #38bdf8;
-      opacity: 1;
-    }
-
-    .challenge {
-      border: none;
-      outline: none;
-      background: white;
-      border-radius: 12px;
-      padding: 0 16px;
-      font-family: "Poppins", Helvetica, Arial, sans-serif;
-      font-weight: 600;
-      color: #38bdf8;
-      font-size: 30px;
-      line-height: normal;
-    }
-
-    .submit-bg {
-      background: white;
-      border-radius: 12px;
-    }
-
-    .submit-btn {
-      border: none;
-      outline: none;
-      background: white;
-      border-radius: 12px;
-      cursor: pointer;
-      padding: 0;
-    }
-
-    .submit-text {
-      font-family: "Poppins", Helvetica, Arial, sans-serif;
-      font-weight: 600;
-      font-size: 32px;
-      line-height: normal;
-      color: #38bdf8;
-      margin: 0;
-      pointer-events: none;
-    }
-
-    @media (max-width: 767px) {
-      html,
-      body {
-        overflow-x: hidden;
-        overflow-y: auto;
-      }
-
-      body {
-        background: #ffffff;
-      }
-
-      .page-wrap {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-      }
-
-      .page {
-        width: 100%;
-        max-width: 390px;
-        min-height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 0 36px;
-      }
-
-      .anchor {
-        display: none !important;
-      }
-
-      .abs {
-        position: static !important;
-      }
-
-      .topbar {
-        display: block !important;
-        width: 100%;
-        height: 96px;
-        position: sticky !important;
-        top: 0;
-        z-index: 1000;
-        background: #ffffff;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-        margin-bottom: 0;
-      }
-
-      .topbar .logo {
-        position: absolute !important;
-        top: 10px;
-        left: 0;
-        width: 100%;
-        font-size: 38px;
-        text-align: center;
-        margin: 0;
-      }
-
-      .topbar nav {
-        position: absolute;
-        top: 58px;
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 34px;
-      }
-
-      .nav-link {
-        font-size: 12px;
-        width: auto !important;
-      }
-
-      section {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 20px;
-      }
-
-      #hero {
-        padding-top: 20px;
-      }
-
-      #hero .img-left {
-        order: 1;
-        width: 132px;
-        height: auto;
-        margin: 0 0 18px;
-      }
-
-      #hero .img-main {
-        order: 2;
-        width: 150px;
-        height: auto;
-        margin: 0 0 26px;
-      }
-
-      #hero .hero-title {
-        order: 3;
-        width: min(320px, 100%);
-        font-size: 24px;
-        line-height: 1.18;
-        text-align: center;
-        margin: 0 0 16px;
-      }
-
-      #hero a:nth-of-type(1) {
-        order: 4;
-      }
-
-      #hero a:nth-of-type(2) {
-        order: 5;
-      }
-
-      #hero .blue-btn {
-        width: 168px;
-        height: 40px;
-        border-radius: 9px;
-        font-size: 17px;
-        margin: 0 0 12px;
-      }
-
-      #explore-section {
-        margin-top: 18px;
-      }
-
-      #explore-section .section-title {
-        width: min(320px, 100%) !important;
-        font-size: 24px;
-        line-height: 1.14;
-        text-align: center;
-        margin: 0 0 12px;
-      }
-
-      #explore-section .section-text {
-        width: min(315px, 100%) !important;
-        font-size: 13px;
-        line-height: 1.45;
-        text-align: center;
-        margin: 0 0 18px;
-      }
-
-      #explore-section .img-explore {
-        width: 220px;
-        height: auto;
-        margin: 0 0 30px;
-      }
-
-      section:not(#hero):not(#explore-section):not(#waitlist) .section-title {
-        width: min(320px, 100%) !important;
-        font-size: 24px;
-        line-height: 1.14;
-        text-align: center;
-        margin: 0 0 12px;
-      }
-
-      section:not(#hero):not(#explore-section):not(#waitlist) .section-text {
-        width: min(315px, 100%) !important;
-        font-size: 13px;
-        line-height: 1.45;
-        text-align: center;
-        margin: 0 0 18px;
-      }
-
-      .img-match,
-      .img-way,
-      .img-pass {
-        width: 198px;
-        height: auto;
-        margin: 0 0 30px;
-      }
-
-      #waitlist {
-        margin-top: 8px;
-      }
-
-      .waitlist-title {
-        width: min(340px, 100%);
-        font-size: 24px;
-        line-height: 1.18;
-        text-align: center;
-        margin: 0 0 12px;
-      }
-
-      .waitlist-subtitle {
-        width: min(314px, 100%);
-        font-size: 13px;
-        line-height: 1.45;
-        text-align: center;
-        margin: 0 0 18px;
-      }
-
-      .card,
-      .card-logo,
-      .field-bg,
-      .submit-bg {
-        display: none !important;
-      }
-
-      #waitlist form {
-        width: min(320px, 100%);
-        background: #38bdf8;
-        border-radius: 12px;
-        box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.2);
-        padding: 22px 0 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      #waitlist form::before {
-        content: "curita";
-        color: white;
-        font-size: 28px;
-        font-weight: 600;
-        margin-bottom: 16px;
-      }
-
-      input[name="firstName"],
-      input[name="lastName"],
-      input[name="email"],
-      input[name="challenge"] {
-        width: 250px !important;
-        height: 38px !important;
-        font-size: 14px !important;
-        border-radius: 6px;
-        margin: 0 0 12px;
-      }
-
-      .submit-btn {
-        width: 146px !important;
-        height: 36px !important;
-        border-radius: 6px;
-        margin-top: 8px;
-      }
-
-      .submit-text {
-        position: static !important;
-        width: 146px !important;
-        height: 36px !important;
-        font-size: 14px !important;
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="page-wrap">
-    <div class="page">
-      <div id="explore-anchor" class="anchor" style="top: 860px;"></div>
-      <div id="waitlist-anchor" class="anchor" style="top: 3082px;"></div>
-
-      <header class="abs topbar">
-        <div class="abs logo text-sky">curita</div>
-
-        <nav>
-          <a
-            href="#explore-anchor"
-            class="abs nav-link"
-            style="top:26px; left:940px; width:133px;"
-          >
-            learn more
-          </a>
-
-          <a
-            href="#waitlist-anchor"
-            class="abs nav-link"
-            style="top:26px; left:1113px; width:133px;"
-          >
-            join waitlist
-          </a>
-        </nav>
-      </header>
-
-      <section id="hero">
-        <p class="abs hero-title text-sky">
-          the first pre-health app where your movement unlocks opportunity
-        </p>
-
-        <img class="abs img-main" alt="Element" src="2.png" />
-
-        <a
-          href="#explore-anchor"
-          class="abs blue-btn"
-          style="top:542px; left:769px;"
-        >
-          learn more
-        </a>
-
-        <a
-          href="#waitlist-anchor"
-          class="abs blue-btn"
-          style="top:639px; left:769px;"
-        >
-          join waitlist
-        </a>
-
-        <img
-          class="abs img-left"
-          alt="Untitled design"
-          src="Untitled design (25).png"
-        />
-      </section>
-
-      <section id="explore-section">
-        <h2
-          class="abs section-title text-sky"
-          style="top:891px; left:610px; width:643px;"
-        >
-          explore your surroundings
-        </h2>
-
-        <p
-          class="abs section-text text-gray"
-          style="top:1032px; left:635px; width:614px;"
-        >
-          see nearby shadowing, research, and clinical opportunities around you
-        </p>
-
-        <img
-          class="abs img-explore"
-          alt="Untitled design"
-          src="Untitled design (26).png"
-        />
-      </section>
-
-      <section>
-        <h2
-          class="abs section-title text-sky"
-          style="top:1405px; left:124px; width:435px;"
-        >
-          match &amp; grow
-        </h2>
-
-        <p
-          class="abs section-text text-gray"
-          style="top:1546px; left:14px; width:596px;"
-        >
-          connect with students, discover their paths, and build your own
-          experience
-        </p>
-
-        <img
-          class="abs img-match"
-          alt="Untitled design"
-          src="Untitled design (27).png"
-        />
-      </section>
-
-      <section>
-        <h2
-          class="abs section-title text-sky"
-          style="top:2000px; left:714px; width:435px;"
-        >
-          explore your way
-        </h2>
-
-        <p
-          class="abs section-text text-gray"
-          style="top:2141px; left:634px; width:596px;"
-        >
-          walk around for a more interactive experience, or browse everything
-          instantly
-        </p>
-
-        <img
-          class="abs img-way"
-          alt="Untitled design"
-          src="Untitled design (28).png"
-        />
-      </section>
-
-      <section>
-        <h2
-          class="abs section-title text-sky"
-          style="top:2458px; left:158px; width:435px;"
-        >
-          pass it forward
-        </h2>
-
-        <p
-          class="abs section-text text-gray"
-          style="top:2599px; left:47px; width:596px;"
-        >
-          leaving a position? share it so another student can take your place
-        </p>
-
-        <img
-          class="abs img-pass"
-          alt="Untitled design"
-          src="Untitled design (29).png"
-        />
-      </section>
-
-      <section id="waitlist">
-        <p class="abs waitlist-title text-sky">
-          be first to access curita
-        </p>
-
-        <p class="abs waitlist-subtitle text-gray">
-          Join the first wave of pre-health students unlocking real
-          opportunities — no gatekeeping.
-        </p>
-
-        <div class="abs card"></div>
-        <div class="abs card-logo">curita</div>
-
-        <form action="https://formspree.io/f/mbdzvpwo" method="POST">
-          <input type="hidden" name="_subject" value="New Curita Waitlist Signup" />
-
-          <div class="abs field-bg" style="top:3554px; left:380px; width:519px; height:60px;"></div>
-          <input
-            type="text"
-            name="firstName"
-            placeholder="first name"
-            required
-            class="abs field"
-            style="top:3554px; left:380px; width:519px; height:60px;"
-          />
-
-          <div class="abs field-bg" style="top:3668px; left:380px; width:519px; height:60px;"></div>
-          <input
-            type="text"
-            name="lastName"
-            placeholder="last name"
-            required
-            class="abs field"
-            style="top:3668px; left:380px; width:519px; height:60px;"
-          />
-
-          <div class="abs field-bg" style="top:3781px; left:380px; width:519px; height:60px;"></div>
-          <input
-            type="email"
-            name="email"
-            placeholder="email"
-            required
-            class="abs field"
-            style="top:3781px; left:380px; width:519px; height:60px;"
-          />
-
-          <div class="abs field-bg" style="top:3902px; left:380px; width:519px; height:60px;"></div>
-          <input
-            type="text"
-            name="challenge"
-            placeholder="biggest pre-health challenge?"
-            class="abs challenge"
-            style="top:3902px; left:380px; width:519px; height:60px;"
-          />
-
-          <div class="abs submit-bg" style="top:4038px; left:496px; width:260px; height:52px;"></div>
+import React, { useMemo, useState } from "react";
+
+const bgStyle = {
+  background:
+    "linear-gradient(180deg, rgba(111,176,255,0.95) 0%, rgba(116,174,255,0.92) 46%, rgba(244,183,116,0.78) 100%)",
+};
+
+const navPagesLoggedOut = [
+  { label: "log in", key: "login" },
+  { label: "get started", key: "signup" },
+];
+
+function PageShell({ children, loggedIn = false, onNavigate, titleRight = null }) {
+  return (
+    <div className="min-h-screen text-white" style={bgStyle}>
+      <div className="mx-auto max-w-7xl px-6 py-6 md:px-10">
+        <header className="mb-10 flex items-center justify-between">
           <button
-            type="submit"
-            class="abs submit-btn"
-            style="top:4038px; left:496px; width:260px; height:52px;"
+            onClick={() => onNavigate("landing")}
+            className="text-4xl font-black tracking-tight md:text-5xl"
           >
-            <span
-              class="abs submit-text"
-              style="top:0; left:0; width:260px; height:52px; display:flex; align-items:center; justify-content:center;"
-            >
-              join waitlist
-            </span>
+            curita
           </button>
-        </form>
-      </section>
+
+          <div className="flex items-center gap-3">
+            {loggedIn ? (
+              <>
+                {titleRight}
+                <button
+                  onClick={() => onNavigate("preferences")}
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/20 text-sm font-semibold backdrop-blur"
+                >
+                  BR
+                </button>
+              </>
+            ) : (
+              navPagesLoggedOut.map((item) => (
+                <button
+                  key={item.key}
+                  onClick={() => onNavigate(item.key)}
+                  className="rounded-2xl bg-white/20 px-4 py-2 text-base font-medium capitalize backdrop-blur transition hover:bg-white/30"
+                >
+                  {item.label}
+                </button>
+              ))
+            )}
+          </div>
+        </header>
+
+        {children}
+      </div>
     </div>
-  </div>
+  );
+}
 
-  <script>
-    function setupMobileScrollLinks() {
-      if (window.innerWidth > 767) return;
+function GlassCard({ children, className = "" }) {
+  return (
+    <div className={`rounded-[28px] border border-white/20 bg-white/15 p-6 shadow-xl backdrop-blur-md ${className}`}>
+      {children}
+    </div>
+  );
+}
 
-      const learnLinks = document.querySelectorAll('a[href="#explore-anchor"]');
-      const waitlistLinks = document.querySelectorAll('a[href="#waitlist-anchor"]');
-      const exploreTarget = document.querySelector("#explore-section");
-      const waitlistTarget = document.querySelector("#waitlist");
+function PrimaryButton({ children, onClick, className = "", type = "button" }) {
+  return (
+    <button
+      type={type}
+      onClick={onClick}
+      className={`rounded-2xl bg-[#2C3E73] px-5 py-3 text-base font-semibold text-white shadow-md transition hover:opacity-95 ${className}`}
+    >
+      {children}
+    </button>
+  );
+}
 
-      learnLinks.forEach((link) => {
-        link.addEventListener("click", function (e) {
-          e.preventDefault();
-          if (exploreTarget) {
-            exploreTarget.scrollIntoView({ behavior: "smooth", block: "start" });
-          }
-        });
-      });
+function SecondaryButton({ children, onClick, className = "" }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`rounded-2xl border border-white/30 bg-white/15 px-5 py-3 text-base font-medium text-white backdrop-blur transition hover:bg-white/25 ${className}`}
+    >
+      {children}
+    </button>
+  );
+}
 
-      waitlistLinks.forEach((link) => {
-        link.addEventListener("click", function (e) {
-          e.preventDefault();
-          if (waitlistTarget) {
-            waitlistTarget.scrollIntoView({ behavior: "smooth", block: "start" });
-          }
-        });
-      });
+function TextInput({ label, value, onChange, placeholder = "", type = "text" }) {
+  return (
+    <label className="block space-y-2">
+      <span className="text-lg font-medium capitalize text-white">{label}</span>
+      <input
+        type={type}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        placeholder={placeholder}
+        className="w-full rounded-2xl border border-white/20 bg-[#4A90E2] px-5 py-4 text-lg text-white outline-none placeholder:text-white/80"
+      />
+    </label>
+  );
+}
+
+function ToggleChip({ label, selected, onClick }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`rounded-2xl px-4 py-4 text-center text-base font-medium shadow-md transition ${
+        selected
+          ? "border border-white/50 bg-[#2A6ABF] text-white"
+          : "bg-[#4A90E2] text-white"
+      }`}
+    >
+      {label}
+    </button>
+  );
+}
+
+function LandingPage({ onNavigate }) {
+  const highlights = [
+    "nearby shadowing",
+    "medical scribe 93% match",
+    "tip: apply to Dr. Nguyen's lab",
+  ];
+
+  const features = [
+    "Tell Curita what you're looking for (clinical, research, or shadowing)",
+    "We search for you—no more endless scrolling or last-minute applying",
+    "Opportunities are sent to you each week",
+    "Each week, update your preferences and get new matches",
+  ];
+
+  return (
+    <PageShell onNavigate={onNavigate}>
+      <section className="py-10 md:py-16">
+        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div className="space-y-8">
+            <div className="flex flex-wrap gap-3">
+              {highlights.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-full border border-white/25 bg-white/15 px-4 py-2 text-sm font-medium backdrop-blur"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+
+            <div className="space-y-5">
+              <h1 className="max-w-3xl text-5xl font-black leading-tight md:text-7xl">
+                we find opportunities that fit you.
+              </h1>
+              <p className="max-w-2xl text-lg text-white/90 md:text-2xl">
+                Choose your focus each week—clinical, research, or shadowing—and Curita
+                matches you with opportunities at your school and nearby.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-4">
+              <PrimaryButton onClick={() => onNavigate("pricing")} className="text-lg px-6 py-4">
+                get your first curita
+              </PrimaryButton>
+              <SecondaryButton onClick={() => onNavigate("signup")} className="text-lg px-6 py-4">
+                start here
+              </SecondaryButton>
+            </div>
+          </div>
+
+          <GlassCard className="min-h-[360px] p-8">
+            <div className="grid h-full gap-4 md:grid-cols-2">
+              {features.map((feature, i) => (
+                <div key={feature} className="rounded-3xl bg-white/20 p-5 shadow-md">
+                  <div className="mb-3 text-sm uppercase tracking-[0.18em] text-white/75">
+                    0{i + 1}
+                  </div>
+                  <div className="text-xl font-semibold leading-snug">{feature}</div>
+                </div>
+              ))}
+            </div>
+          </GlassCard>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-4xl font-black md:text-6xl">delivered to you every week</h2>
+          <p className="mt-5 text-lg text-white/90 md:text-2xl">
+            A curated list of opportunities and targeted tips—based on your interests,
+            experience, and what you want to improve next.
+          </p>
+        </div>
+      </section>
+
+      <footer className="mt-8 border-t border-white/15 py-8 text-white/90">
+        <div className="text-4xl font-black">curita</div>
+        <div className="mt-1 text-lg">found for you. every week.</div>
+        <div className="mt-8 text-sm text-white/70">©2026 curita</div>
+      </footer>
+    </PageShell>
+  );
+}
+
+function LoginPage({ onNavigate }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  return (
+    <PageShell onNavigate={onNavigate}>
+      <div className="mx-auto max-w-md py-12 md:py-20">
+        <GlassCard>
+          <h1 className="text-4xl font-black capitalize">log in</h1>
+          <p className="mt-2 text-white/85">Welcome back to curita.</p>
+
+          <div className="mt-8 space-y-5">
+            <TextInput label="email" value={email} onChange={setEmail} placeholder="you@example.com" />
+            <TextInput
+              label="password"
+              value={password}
+              onChange={setPassword}
+              type="password"
+              placeholder="••••••••"
+            />
+          </div>
+
+          <div className="mt-6 flex items-center justify-between gap-4">
+            <button
+              onClick={() => onNavigate("forgot")}
+              className="text-sm text-white/90 underline underline-offset-4"
+            >
+              forgot password?
+            </button>
+            <PrimaryButton onClick={() => onNavigate("subscription")}>log in</PrimaryButton>
+          </div>
+        </GlassCard>
+      </div>
+    </PageShell>
+  );
+}
+
+function ForgotPasswordPage({ onNavigate }) {
+  const [email, setEmail] = useState("");
+
+  return (
+    <PageShell onNavigate={onNavigate}>
+      <div className="mx-auto max-w-xl py-12 md:py-20 text-center">
+        <GlassCard>
+          <h1 className="text-4xl font-black">recover your account</h1>
+          <p className="mx-auto mt-3 max-w-md text-white/85">
+            Enter your email and we’ll send you a reset link.
+          </p>
+
+          <div className="mt-8 text-left">
+            <TextInput label="email" value={email} onChange={setEmail} placeholder="you@example.com" />
+          </div>
+
+          <div className="mt-6 space-y-3">
+            <PrimaryButton onClick={() => onNavigate("confirmation")} className="w-full">
+              send reset link
+            </PrimaryButton>
+            <button
+              onClick={() => onNavigate("login")}
+              className="text-sm text-white/90 underline underline-offset-4"
+            >
+              back to log in
+            </button>
+          </div>
+        </GlassCard>
+      </div>
+    </PageShell>
+  );
+}
+
+function ConfirmationPage({ onNavigate }) {
+  return (
+    <PageShell onNavigate={onNavigate}>
+      <div className="mx-auto max-w-xl py-12 md:py-20 text-center">
+        <GlassCard>
+          <h1 className="text-4xl font-black">check your email</h1>
+          <p className="mx-auto mt-4 max-w-md text-white/85">
+            If an account exists, we’ve sent a password reset link to your email.
+          </p>
+          <p className="mt-2 text-sm text-white/75">Didn’t receive it? Check spam or try again.</p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+            <PrimaryButton onClick={() => onNavigate("forgot")}>resend email</PrimaryButton>
+            <SecondaryButton onClick={() => onNavigate("login")}>back to log in</SecondaryButton>
+          </div>
+        </GlassCard>
+      </div>
+    </PageShell>
+  );
+}
+
+function SignUpPage({ onNavigate }) {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [school, setSchool] = useState("");
+  const [year, setYear] = useState("");
+  const [careerDirection, setCareerDirection] = useState("");
+  const [selectedInterests, setSelectedInterests] = useState(["clinical experience", "research"]);
+  const [otherInterest, setOtherInterest] = useState("");
+  const [experienceLevel, setExperienceLevel] = useState("just getting started");
+  const [whatMatters, setWhatMatters] = useState("");
+  const [hardestPart, setHardestPart] = useState("");
+
+  const interests = [
+    "clinical experience",
+    "shadowing",
+    "volunteer",
+    "internships",
+    "research",
+    "fellowships",
+  ];
+
+  const toggleInterest = (label) => {
+    setSelectedInterests((prev) =>
+      prev.includes(label) ? prev.filter((item) => item !== label) : [...prev, label]
+    );
+  };
+
+  return (
+    <PageShell onNavigate={onNavigate}>
+      <div className="mx-auto max-w-5xl py-8 md:py-14">
+        <div className="mb-10 text-center">
+          <h1 className="text-4xl font-black md:text-6xl">let’s find opportunities for you</h1>
+        </div>
+
+        <div className="space-y-8">
+          <GlassCard>
+            <h2 className="text-3xl font-black capitalize">basic info</h2>
+            <div className="mt-6 grid gap-5 md:grid-cols-2">
+              <TextInput label="first name" value={firstName} onChange={setFirstName} />
+              <TextInput label="last name" value={lastName} onChange={setLastName} />
+              <TextInput label="school" value={school} onChange={setSchool} />
+              <TextInput label="year" value={year} onChange={setYear} />
+            </div>
+          </GlassCard>
+
+          <GlassCard>
+            <h2 className="text-3xl font-black capitalize">career direction</h2>
+            <div className="mt-6">
+              <TextInput
+                label="what are you aiming for?"
+                value={careerDirection}
+                onChange={setCareerDirection}
+              />
+            </div>
+          </GlassCard>
+
+          <GlassCard>
+            <h2 className="text-3xl font-black capitalize">interests</h2>
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {interests.map((interest) => (
+                <ToggleChip
+                  key={interest}
+                  label={interest}
+                  selected={selectedInterests.includes(interest)}
+                  onClick={() => toggleInterest(interest)}
+                />
+              ))}
+            </div>
+            <div className="mt-5">
+              <TextInput
+                label="other interests"
+                value={otherInterest}
+                onChange={setOtherInterest}
+                placeholder="type here"
+              />
+            </div>
+          </GlassCard>
+
+          <GlassCard>
+            <h2 className="text-3xl font-black capitalize">experience level</h2>
+            <p className="mt-2 text-white/85">where are you starting from?</p>
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
+              {["just getting started", "some experience", "strong experience"].map((item) => (
+                <ToggleChip
+                  key={item}
+                  label={item}
+                  selected={experienceLevel === item}
+                  onClick={() => setExperienceLevel(item)}
+                />
+              ))}
+            </div>
+          </GlassCard>
+
+          <GlassCard>
+            <h2 className="text-3xl font-black">what matters most to you right now?</h2>
+            <p className="mt-2 text-white/85">we’ll tailor your opportunities based on this</p>
+            <div className="mt-6">
+              <TextInput
+                label="priorities"
+                value={whatMatters}
+                onChange={setWhatMatters}
+                placeholder="select all that apply"
+              />
+            </div>
+          </GlassCard>
+
+          <GlassCard>
+            <h2 className="text-3xl font-black">what’s been the hardest part for you?</h2>
+            <div className="mt-6">
+              <TextInput
+                label="hardest part"
+                value={hardestPart}
+                onChange={setHardestPart}
+                placeholder="select all that apply"
+              />
+            </div>
+          </GlassCard>
+
+          <div className="text-center">
+            <PrimaryButton onClick={() => onNavigate("pricing")} className="px-8 py-4 text-lg">
+              start my curated experience
+            </PrimaryButton>
+          </div>
+        </div>
+      </div>
+    </PageShell>
+  );
+}
+
+function PricingPage({ onNavigate }) {
+  const cards = [
+    {
+      label: "career path",
+      title: "pre-med track",
+      description: "focused on clinical + research experience",
+    },
+    {
+      label: "experience level",
+      title: "just getting started",
+      description: "we’ll prioritize beginner-friendly opportunities",
+    },
+    {
+      label: "priorities",
+      title: "paid + hands-on experience",
+      description: "filtered to match your preferences",
+    },
+  ];
+
+  return (
+    <PageShell onNavigate={onNavigate}>
+      <div className="mx-auto max-w-5xl py-10 text-center">
+        <h1 className="text-4xl font-black md:text-6xl">we’ll find opportunities that fit you</h1>
+        <div className="mt-8 text-5xl font-black md:text-7xl">$4.99 / month</div>
+        <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-2xl">
+          Based on your profile, curita sends personalized clinical, research, and
+          shadowing opportunities so you spend less time searching.
+        </p>
+
+        <div className="mt-10 space-y-4 text-left">
+          {cards.map((card) => (
+            <GlassCard key={card.label} className="bg-[#4A90E2]/80">
+              <div className="text-xl text-white/85 capitalize">{card.label}</div>
+              <div className="mt-2 text-3xl font-black md:text-5xl">{card.title}</div>
+              <div className="mt-3 text-lg text-white/90">{card.description}</div>
+            </GlassCard>
+          ))}
+        </div>
+
+        <div className="mt-14">
+          <PrimaryButton onClick={() => onNavigate("subscription")} className="px-8 py-4 text-lg">
+            get my weekly opportunities
+          </PrimaryButton>
+          <div className="mt-4 text-base text-white/90">built for pre-health students</div>
+          <div className="mt-1 text-base text-white/90">cancel anytime</div>
+        </div>
+      </div>
+    </PageShell>
+  );
+}
+
+function SubscriptionPage({ onNavigate }) {
+  return (
+    <PageShell
+      onNavigate={onNavigate}
+      loggedIn
+      titleRight={
+        <button
+          onClick={() => onNavigate("preferences")}
+          className="rounded-2xl bg-white/15 px-4 py-2 text-sm font-medium backdrop-blur"
+        >
+          update preferences
+        </button>
+      }
+    >
+      <div className="mx-auto max-w-md py-10 md:py-16">
+        <GlassCard>
+          <h1 className="text-4xl font-black capitalize">subscription</h1>
+          <p className="mt-2 text-white/85">manage your plan and billing details</p>
+
+          <div className="mt-6 space-y-4">
+            <div className="rounded-3xl bg-white/75 p-5 text-slate-900 shadow-md">
+              <div className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-600">
+                current plan
+              </div>
+              <div className="mt-2 text-2xl font-bold">Curita Weekly</div>
+              <div className="mt-1 text-slate-700">$4.99 / month</div>
+              <div className="mt-4 space-y-2 text-sm">
+                <div className="flex items-center justify-between rounded-2xl bg-white/70 px-4 py-3">
+                  <span>Status</span>
+                  <span className="font-semibold text-emerald-700">Active</span>
+                </div>
+                <div className="flex items-center justify-between rounded-2xl bg-white/70 px-4 py-3">
+                  <span>Next billing date</span>
+                  <span className="font-semibold">May 3, 2026</span>
+                </div>
+              </div>
+            </div>
+
+            <PrimaryButton className="w-full">manage billing</PrimaryButton>
+            <SecondaryButton onClick={() => onNavigate("preferences")} className="w-full">
+              update preferences
+            </SecondaryButton>
+            <button className="w-full rounded-2xl border border-red-300/70 bg-red-50/80 px-5 py-3 text-base font-semibold text-red-700 transition hover:bg-red-50">
+              cancel subscription
+            </button>
+          </div>
+        </GlassCard>
+      </div>
+    </PageShell>
+  );
+}
+
+function PreferencesPage({ onNavigate }) {
+  const [selectedInterests, setSelectedInterests] = useState(["clinical experience", "research"]);
+  const [experienceLevel, setExperienceLevel] = useState("some experience");
+  const [saved, setSaved] = useState(false);
+
+  const interests = [
+    "clinical experience",
+    "shadowing",
+    "volunteer",
+    "internships",
+    "research",
+    "fellowships",
+  ];
+
+  const toggleInterest = (label) => {
+    setSelectedInterests((prev) =>
+      prev.includes(label) ? prev.filter((item) => item !== label) : [...prev, label]
+    );
+  };
+
+  const save = () => {
+    setSaved(true);
+    setTimeout(() => setSaved(false), 1500);
+  };
+
+  return (
+    <PageShell onNavigate={onNavigate} loggedIn>
+      <div className="mx-auto max-w-5xl py-8 md:py-14">
+        <div className="mb-10 text-center">
+          <h1 className="text-4xl font-black md:text-6xl">update your preferences</h1>
+          <p className="mt-3 text-white/85">Update what you want to receive each week.</p>
+        </div>
+
+        <div className="space-y-8">
+          <GlassCard>
+            <h2 className="text-3xl font-black capitalize">interests</h2>
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {interests.map((interest) => (
+                <ToggleChip
+                  key={interest}
+                  label={interest}
+                  selected={selectedInterests.includes(interest)}
+                  onClick={() => toggleInterest(interest)}
+                />
+              ))}
+            </div>
+          </GlassCard>
+
+          <GlassCard>
+            <h2 className="text-3xl font-black capitalize">experience level</h2>
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
+              {["just getting started", "some experience", "strong experience"].map((item) => (
+                <ToggleChip
+                  key={item}
+                  label={item}
+                  selected={experienceLevel === item}
+                  onClick={() => setExperienceLevel(item)}
+                />
+              ))}
+            </div>
+          </GlassCard>
+
+          <GlassCard>
+            <h2 className="text-3xl font-black">what matters most?</h2>
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {["paid opportunities", "hands-on experience", "nearby options", "flexible schedule"].map(
+                (item) => (
+                  <ToggleChip key={item} label={item} selected onClick={() => {}} />
+                )
+              )}
+            </div>
+          </GlassCard>
+
+          <div className="flex flex-col items-center gap-3 text-center">
+            <PrimaryButton onClick={save} className="px-8 py-4 text-lg">
+              {saved ? "saved ✓" : "save preferences"}
+            </PrimaryButton>
+            {saved && <div className="text-sm text-white/90">Preferences saved</div>}
+          </div>
+        </div>
+      </div>
+    </PageShell>
+  );
+}
+
+export default function CuritaApp() {
+  const [page, setPage] = useState("landing");
+
+  const currentPage = useMemo(() => {
+    switch (page) {
+      case "login":
+        return <LoginPage onNavigate={setPage} />;
+      case "forgot":
+        return <ForgotPasswordPage onNavigate={setPage} />;
+      case "confirmation":
+        return <ConfirmationPage onNavigate={setPage} />;
+      case "signup":
+        return <SignUpPage onNavigate={setPage} />;
+      case "pricing":
+        return <PricingPage onNavigate={setPage} />;
+      case "subscription":
+        return <SubscriptionPage onNavigate={setPage} />;
+      case "preferences":
+        return <PreferencesPage onNavigate={setPage} />;
+      default:
+        return <LandingPage onNavigate={setPage} />;
     }
+  }, [page]);
 
-    setupMobileScrollLinks();
-  </script>
-</body>
-</html>
+  return currentPage;
+}
+          
