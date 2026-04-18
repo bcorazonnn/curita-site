@@ -7,15 +7,12 @@
 
 :root {
   --font-main: "Normal TM", sans-serif;
-
   --text: #f8f4ef;
   --text-dark: #3f5c73;
   --pill-bg: rgba(255, 255, 255, 0.72);
   --primary: #5ca2ff;
-
   --shadow-soft: 0 10px 24px rgba(0, 0, 0, 0.12);
   --shadow-light: 0 8px 18px rgba(255, 255, 255, 0.06);
-
   --max-content: 1280px;
   --section-width: 980px;
   --features-width: 980px;
@@ -36,6 +33,8 @@ body {
   font-family: var(--font-main);
   color: var(--text);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
