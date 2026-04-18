@@ -25,21 +25,25 @@
   z-index: 1;
 }
 
-.reveal {
+/* smooth reveal */
+.reveal-item {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.45s ease, transform 0.45s ease;
+  transform: translateY(36px) scale(0.985);
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--delay, 0s);
   will-change: opacity, transform;
 }
 
-.reveal.active {
+.reveal-section.visible .reveal-item {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
 }
 
 .topbar {
   width: 100%;
-  padding: 18px 40px 0;
+  padding: 18px 20px 0 8px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -50,6 +54,7 @@
   line-height: 1;
   text-align: left;
   margin: 0;
+  padding-left: 0;
 }
 
 .top-actions {
@@ -95,22 +100,24 @@
 
 .main-content {
   width: 100%;
-  padding: 32px 40px 0;
+  padding: 24px 40px 0;
 }
 
 .hero,
 .features,
 .cta-section {
-  min-height: auto;
-  display: block;
+  width: 100%;
 }
 
 .hero {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 28px;
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .bubble-row {
@@ -120,32 +127,35 @@
   width: fit-content;
   margin: 0 auto 42px;
   justify-content: center;
+  align-items: start;
 }
 
-.bubble {
+.text-bubble {
   position: relative;
-  min-height: 108px;
-  padding: 20px 16px;
-  border-radius: 22px;
-  background: rgba(121, 162, 236, 0.16);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow: var(--shadow-light);
-  backdrop-filter: blur(2px);
-  font-size: clamp(1.1rem, 0.8vw + 0.8rem, 1.35rem);
-  line-height: 1.05;
+  width: 100%;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.bubble::after {
-  content: "";
+.bubble-bg {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.bubble-text {
   position: absolute;
-  bottom: -7px;
-  left: 50%;
-  width: 18px;
-  height: 18px;
-  transform: translateX(-50%) rotate(45deg);
-  background: inherit;
-  border-right: 1px solid rgba(255, 255, 255, 0.16);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px 24px;
+  font-size: clamp(1.05rem, 0.8vw + 0.8rem, 1.35rem);
+  line-height: 1.05;
+  color: var(--text);
 }
 
 .bubble-left {
@@ -177,11 +187,15 @@
 }
 
 .features {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .section-title {
@@ -226,11 +240,14 @@
 }
 
 .cta-section {
-  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
-  padding: 80px 0 70px;
+  padding: 100px 0 90px;
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cta-section h2 {
@@ -255,7 +272,7 @@
 
 .footer-inner {
   width: 100%;
-  padding: 28px 40px;
+  padding: 28px 20px 28px 8px;
   min-height: 140px;
   text-align: left;
 }
@@ -279,8 +296,8 @@
   .topbar,
   .main-content,
   .footer-inner {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .bubble-row {
@@ -314,7 +331,7 @@
 
 @media (max-width: 640px) {
   .topbar {
-    padding: 14px 16px 0;
+    padding: 14px 12px 0 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -345,7 +362,8 @@
 
   .hero {
     width: 100%;
-    padding-top: 14px;
+    padding-top: 10px;
+    min-height: auto;
   }
 
   .bubble-row {
@@ -355,14 +373,20 @@
     margin-bottom: 26px;
   }
 
-  .bubble,
   .bubble-left,
   .bubble-center,
   .bubble-right {
     transform: none;
     margin-top: 0;
+  }
+
+  .text-bubble {
     min-height: 84px;
-    padding: 16px 12px;
+  }
+
+  .bubble-text {
+    font-size: 0.95rem;
+    padding: 12px 18px;
   }
 
   .hero-title {
@@ -400,6 +424,11 @@
     font-size: 0.98rem;
   }
 
+  .features,
+  .cta-section {
+    min-height: auto;
+  }
+
   .cta-section h2 {
     font-size: clamp(2.7rem, 11vw, 4rem);
   }
@@ -416,7 +445,7 @@
   }
 
   .footer-inner {
-    padding: 18px 16px;
+    padding: 18px 12px 18px 8px;
   }
 
   .footer-brand {
