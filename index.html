@@ -1,636 +1,144 @@
-import React, { useMemo, useState } from "react";
+import { useState } from "react";
 
-const bgStyle = {
-  background:
-    "linear-gradient(180deg, rgba(111,176,255,0.95) 0%, rgba(116,174,255,0.92) 46%, rgba(244,183,116,0.78) 100%)",
-};
-
-const navPagesLoggedOut = [
-  { label: "log in", key: "login" },
-  { label: "get started", key: "signup" },
-];
-
-function PageShell({ children, loggedIn = false, onNavigate, titleRight = null }) {
-  return (
-    <div className="min-h-screen text-white" style={bgStyle}>
-      <div className="mx-auto max-w-7xl px-6 py-6 md:px-10">
-        <header className="mb-10 flex items-center justify-between">
-          <button
-            onClick={() => onNavigate("landing")}
-            className="text-4xl font-black tracking-tight md:text-5xl"
-          >
-            curita
-          </button>
-
-          <div className="flex items-center gap-3">
-            {loggedIn ? (
-              <>
-                {titleRight}
-                <button
-                  onClick={() => onNavigate("preferences")}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/20 text-sm font-semibold backdrop-blur"
-                >
-                  BR
-                </button>
-              </>
-            ) : (
-              navPagesLoggedOut.map((item) => (
-                <button
-                  key={item.key}
-                  onClick={() => onNavigate(item.key)}
-                  className="rounded-2xl bg-white/20 px-4 py-2 text-base font-medium capitalize backdrop-blur transition hover:bg-white/30"
-                >
-                  {item.label}
-                </button>
-              ))
-            )}
-          </div>
-        </header>
-
-        {children}
-      </div>
-    </div>
-  );
-}
-
-function GlassCard({ children, className = "" }) {
-  return (
-    <div className={`rounded-[28px] border border-white/20 bg-white/15 p-6 shadow-xl backdrop-blur-md ${className}`}>
-      {children}
-    </div>
-  );
-}
-
-function PrimaryButton({ children, onClick, className = "", type = "button" }) {
-  return (
-    <button
-      type={type}
-      onClick={onClick}
-      className={`rounded-2xl bg-[#2C3E73] px-5 py-3 text-base font-semibold text-white shadow-md transition hover:opacity-95 ${className}`}
-    >
-      {children}
-    </button>
-  );
-}
-
-function SecondaryButton({ children, onClick, className = "" }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`rounded-2xl border border-white/30 bg-white/15 px-5 py-3 text-base font-medium text-white backdrop-blur transition hover:bg-white/25 ${className}`}
-    >
-      {children}
-    </button>
-  );
-}
-
-function TextInput({ label, value, onChange, placeholder = "", type = "text" }) {
-  return (
-    <label className="block space-y-2">
-      <span className="text-lg font-medium capitalize text-white">{label}</span>
-      <input
-        type={type}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        placeholder={placeholder}
-        className="w-full rounded-2xl border border-white/20 bg-[#4A90E2] px-5 py-4 text-lg text-white outline-none placeholder:text-white/80"
-      />
-    </label>
-  );
-}
-
-function ToggleChip({ label, selected, onClick }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`rounded-2xl px-4 py-4 text-center text-base font-medium shadow-md transition ${
-        selected
-          ? "border border-white/50 bg-[#2A6ABF] text-white"
-          : "bg-[#4A90E2] text-white"
-      }`}
-    >
-      {label}
-    </button>
-  );
-}
-
-function LandingPage({ onNavigate }) {
-  const highlights = [
-    "nearby shadowing",
-    "medical scribe 93% match",
-    "tip: apply to Dr. Nguyen's lab",
-  ];
-
-  const features = [
-    "Tell Curita what you're looking for (clinical, research, or shadowing)",
-    "We search for you—no more endless scrolling or last-minute applying",
-    "Opportunities are sent to you each week",
-    "Each week, update your preferences and get new matches",
-  ];
-
-  return (
-    <PageShell onNavigate={onNavigate}>
-      <section className="py-10 md:py-16">
-        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="space-y-8">
-            <div className="flex flex-wrap gap-3">
-              {highlights.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-full border border-white/25 bg-white/15 px-4 py-2 text-sm font-medium backdrop-blur"
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
-
-            <div className="space-y-5">
-              <h1 className="max-w-3xl text-5xl font-black leading-tight md:text-7xl">
-                we find opportunities that fit you.
-              </h1>
-              <p className="max-w-2xl text-lg text-white/90 md:text-2xl">
-                Choose your focus each week—clinical, research, or shadowing—and Curita
-                matches you with opportunities at your school and nearby.
-              </p>
-            </div>
-
-            <div className="flex flex-wrap gap-4">
-              <PrimaryButton onClick={() => onNavigate("pricing")} className="text-lg px-6 py-4">
-                get your first curita
-              </PrimaryButton>
-              <SecondaryButton onClick={() => onNavigate("signup")} className="text-lg px-6 py-4">
-                start here
-              </SecondaryButton>
-            </div>
-          </div>
-
-          <GlassCard className="min-h-[360px] p-8">
-            <div className="grid h-full gap-4 md:grid-cols-2">
-              {features.map((feature, i) => (
-                <div key={feature} className="rounded-3xl bg-white/20 p-5 shadow-md">
-                  <div className="mb-3 text-sm uppercase tracking-[0.18em] text-white/75">
-                    0{i + 1}
-                  </div>
-                  <div className="text-xl font-semibold leading-snug">{feature}</div>
-                </div>
-              ))}
-            </div>
-          </GlassCard>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-4xl font-black md:text-6xl">delivered to you every week</h2>
-          <p className="mt-5 text-lg text-white/90 md:text-2xl">
-            A curated list of opportunities and targeted tips—based on your interests,
-            experience, and what you want to improve next.
-          </p>
-        </div>
-      </section>
-
-      <footer className="mt-8 border-t border-white/15 py-8 text-white/90">
-        <div className="text-4xl font-black">curita</div>
-        <div className="mt-1 text-lg">found for you. every week.</div>
-        <div className="mt-8 text-sm text-white/70">©2026 curita</div>
-      </footer>
-    </PageShell>
-  );
-}
-
-function LoginPage({ onNavigate }) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  return (
-    <PageShell onNavigate={onNavigate}>
-      <div className="mx-auto max-w-md py-12 md:py-20">
-        <GlassCard>
-          <h1 className="text-4xl font-black capitalize">log in</h1>
-          <p className="mt-2 text-white/85">Welcome back to curita.</p>
-
-          <div className="mt-8 space-y-5">
-            <TextInput label="email" value={email} onChange={setEmail} placeholder="you@example.com" />
-            <TextInput
-              label="password"
-              value={password}
-              onChange={setPassword}
-              type="password"
-              placeholder="••••••••"
-            />
-          </div>
-
-          <div className="mt-6 flex items-center justify-between gap-4">
-            <button
-              onClick={() => onNavigate("forgot")}
-              className="text-sm text-white/90 underline underline-offset-4"
-            >
-              forgot password?
-            </button>
-            <PrimaryButton onClick={() => onNavigate("subscription")}>log in</PrimaryButton>
-          </div>
-        </GlassCard>
-      </div>
-    </PageShell>
-  );
-}
-
-function ForgotPasswordPage({ onNavigate }) {
-  const [email, setEmail] = useState("");
-
-  return (
-    <PageShell onNavigate={onNavigate}>
-      <div className="mx-auto max-w-xl py-12 md:py-20 text-center">
-        <GlassCard>
-          <h1 className="text-4xl font-black">recover your account</h1>
-          <p className="mx-auto mt-3 max-w-md text-white/85">
-            Enter your email and we’ll send you a reset link.
-          </p>
-
-          <div className="mt-8 text-left">
-            <TextInput label="email" value={email} onChange={setEmail} placeholder="you@example.com" />
-          </div>
-
-          <div className="mt-6 space-y-3">
-            <PrimaryButton onClick={() => onNavigate("confirmation")} className="w-full">
-              send reset link
-            </PrimaryButton>
-            <button
-              onClick={() => onNavigate("login")}
-              className="text-sm text-white/90 underline underline-offset-4"
-            >
-              back to log in
-            </button>
-          </div>
-        </GlassCard>
-      </div>
-    </PageShell>
-  );
-}
-
-function ConfirmationPage({ onNavigate }) {
-  return (
-    <PageShell onNavigate={onNavigate}>
-      <div className="mx-auto max-w-xl py-12 md:py-20 text-center">
-        <GlassCard>
-          <h1 className="text-4xl font-black">check your email</h1>
-          <p className="mx-auto mt-4 max-w-md text-white/85">
-            If an account exists, we’ve sent a password reset link to your email.
-          </p>
-          <p className="mt-2 text-sm text-white/75">Didn’t receive it? Check spam or try again.</p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <PrimaryButton onClick={() => onNavigate("forgot")}>resend email</PrimaryButton>
-            <SecondaryButton onClick={() => onNavigate("login")}>back to log in</SecondaryButton>
-          </div>
-        </GlassCard>
-      </div>
-    </PageShell>
-  );
-}
-
-function SignUpPage({ onNavigate }) {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [school, setSchool] = useState("");
-  const [year, setYear] = useState("");
-  const [careerDirection, setCareerDirection] = useState("");
-  const [selectedInterests, setSelectedInterests] = useState(["clinical experience", "research"]);
-  const [otherInterest, setOtherInterest] = useState("");
-  const [experienceLevel, setExperienceLevel] = useState("just getting started");
-  const [whatMatters, setWhatMatters] = useState("");
-  const [hardestPart, setHardestPart] = useState("");
-
-  const interests = [
-    "clinical experience",
-    "shadowing",
-    "volunteer",
-    "internships",
-    "research",
-    "fellowships",
-  ];
-
-  const toggleInterest = (label) => {
-    setSelectedInterests((prev) =>
-      prev.includes(label) ? prev.filter((item) => item !== label) : [...prev, label]
-    );
-  };
-
-  return (
-    <PageShell onNavigate={onNavigate}>
-      <div className="mx-auto max-w-5xl py-8 md:py-14">
-        <div className="mb-10 text-center">
-          <h1 className="text-4xl font-black md:text-6xl">let’s find opportunities for you</h1>
-        </div>
-
-        <div className="space-y-8">
-          <GlassCard>
-            <h2 className="text-3xl font-black capitalize">basic info</h2>
-            <div className="mt-6 grid gap-5 md:grid-cols-2">
-              <TextInput label="first name" value={firstName} onChange={setFirstName} />
-              <TextInput label="last name" value={lastName} onChange={setLastName} />
-              <TextInput label="school" value={school} onChange={setSchool} />
-              <TextInput label="year" value={year} onChange={setYear} />
-            </div>
-          </GlassCard>
-
-          <GlassCard>
-            <h2 className="text-3xl font-black capitalize">career direction</h2>
-            <div className="mt-6">
-              <TextInput
-                label="what are you aiming for?"
-                value={careerDirection}
-                onChange={setCareerDirection}
-              />
-            </div>
-          </GlassCard>
-
-          <GlassCard>
-            <h2 className="text-3xl font-black capitalize">interests</h2>
-            <div className="mt-6 grid gap-4 md:grid-cols-2">
-              {interests.map((interest) => (
-                <ToggleChip
-                  key={interest}
-                  label={interest}
-                  selected={selectedInterests.includes(interest)}
-                  onClick={() => toggleInterest(interest)}
-                />
-              ))}
-            </div>
-            <div className="mt-5">
-              <TextInput
-                label="other interests"
-                value={otherInterest}
-                onChange={setOtherInterest}
-                placeholder="type here"
-              />
-            </div>
-          </GlassCard>
-
-          <GlassCard>
-            <h2 className="text-3xl font-black capitalize">experience level</h2>
-            <p className="mt-2 text-white/85">where are you starting from?</p>
-            <div className="mt-6 grid gap-4 md:grid-cols-3">
-              {["just getting started", "some experience", "strong experience"].map((item) => (
-                <ToggleChip
-                  key={item}
-                  label={item}
-                  selected={experienceLevel === item}
-                  onClick={() => setExperienceLevel(item)}
-                />
-              ))}
-            </div>
-          </GlassCard>
-
-          <GlassCard>
-            <h2 className="text-3xl font-black">what matters most to you right now?</h2>
-            <p className="mt-2 text-white/85">we’ll tailor your opportunities based on this</p>
-            <div className="mt-6">
-              <TextInput
-                label="priorities"
-                value={whatMatters}
-                onChange={setWhatMatters}
-                placeholder="select all that apply"
-              />
-            </div>
-          </GlassCard>
-
-          <GlassCard>
-            <h2 className="text-3xl font-black">what’s been the hardest part for you?</h2>
-            <div className="mt-6">
-              <TextInput
-                label="hardest part"
-                value={hardestPart}
-                onChange={setHardestPart}
-                placeholder="select all that apply"
-              />
-            </div>
-          </GlassCard>
-
-          <div className="text-center">
-            <PrimaryButton onClick={() => onNavigate("pricing")} className="px-8 py-4 text-lg">
-              start my curated experience
-            </PrimaryButton>
-          </div>
-        </div>
-      </div>
-    </PageShell>
-  );
-}
-
-function PricingPage({ onNavigate }) {
-  const cards = [
-    {
-      label: "career path",
-      title: "pre-med track",
-      description: "focused on clinical + research experience",
-    },
-    {
-      label: "experience level",
-      title: "just getting started",
-      description: "we’ll prioritize beginner-friendly opportunities",
-    },
-    {
-      label: "priorities",
-      title: "paid + hands-on experience",
-      description: "filtered to match your preferences",
-    },
-  ];
-
-  return (
-    <PageShell onNavigate={onNavigate}>
-      <div className="mx-auto max-w-5xl py-10 text-center">
-        <h1 className="text-4xl font-black md:text-6xl">we’ll find opportunities that fit you</h1>
-        <div className="mt-8 text-5xl font-black md:text-7xl">$4.99 / month</div>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-2xl">
-          Based on your profile, curita sends personalized clinical, research, and
-          shadowing opportunities so you spend less time searching.
-        </p>
-
-        <div className="mt-10 space-y-4 text-left">
-          {cards.map((card) => (
-            <GlassCard key={card.label} className="bg-[#4A90E2]/80">
-              <div className="text-xl text-white/85 capitalize">{card.label}</div>
-              <div className="mt-2 text-3xl font-black md:text-5xl">{card.title}</div>
-              <div className="mt-3 text-lg text-white/90">{card.description}</div>
-            </GlassCard>
-          ))}
-        </div>
-
-        <div className="mt-14">
-          <PrimaryButton onClick={() => onNavigate("subscription")} className="px-8 py-4 text-lg">
-            get my weekly opportunities
-          </PrimaryButton>
-          <div className="mt-4 text-base text-white/90">built for pre-health students</div>
-          <div className="mt-1 text-base text-white/90">cancel anytime</div>
-        </div>
-      </div>
-    </PageShell>
-  );
-}
-
-function SubscriptionPage({ onNavigate }) {
-  return (
-    <PageShell
-      onNavigate={onNavigate}
-      loggedIn
-      titleRight={
-        <button
-          onClick={() => onNavigate("preferences")}
-          className="rounded-2xl bg-white/15 px-4 py-2 text-sm font-medium backdrop-blur"
-        >
-          update preferences
-        </button>
-      }
-    >
-      <div className="mx-auto max-w-md py-10 md:py-16">
-        <GlassCard>
-          <h1 className="text-4xl font-black capitalize">subscription</h1>
-          <p className="mt-2 text-white/85">manage your plan and billing details</p>
-
-          <div className="mt-6 space-y-4">
-            <div className="rounded-3xl bg-white/75 p-5 text-slate-900 shadow-md">
-              <div className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-600">
-                current plan
-              </div>
-              <div className="mt-2 text-2xl font-bold">Curita Weekly</div>
-              <div className="mt-1 text-slate-700">$4.99 / month</div>
-              <div className="mt-4 space-y-2 text-sm">
-                <div className="flex items-center justify-between rounded-2xl bg-white/70 px-4 py-3">
-                  <span>Status</span>
-                  <span className="font-semibold text-emerald-700">Active</span>
-                </div>
-                <div className="flex items-center justify-between rounded-2xl bg-white/70 px-4 py-3">
-                  <span>Next billing date</span>
-                  <span className="font-semibold">May 3, 2026</span>
-                </div>
-              </div>
-            </div>
-
-            <PrimaryButton className="w-full">manage billing</PrimaryButton>
-            <SecondaryButton onClick={() => onNavigate("preferences")} className="w-full">
-              update preferences
-            </SecondaryButton>
-            <button className="w-full rounded-2xl border border-red-300/70 bg-red-50/80 px-5 py-3 text-base font-semibold text-red-700 transition hover:bg-red-50">
-              cancel subscription
-            </button>
-          </div>
-        </GlassCard>
-      </div>
-    </PageShell>
-  );
-}
-
-function PreferencesPage({ onNavigate }) {
-  const [selectedInterests, setSelectedInterests] = useState(["clinical experience", "research"]);
-  const [experienceLevel, setExperienceLevel] = useState("some experience");
-  const [saved, setSaved] = useState(false);
-
-  const interests = [
-    "clinical experience",
-    "shadowing",
-    "volunteer",
-    "internships",
-    "research",
-    "fellowships",
-  ];
-
-  const toggleInterest = (label) => {
-    setSelectedInterests((prev) =>
-      prev.includes(label) ? prev.filter((item) => item !== label) : [...prev, label]
-    );
-  };
-
-  const save = () => {
-    setSaved(true);
-    setTimeout(() => setSaved(false), 1500);
-  };
-
-  return (
-    <PageShell onNavigate={onNavigate} loggedIn>
-      <div className="mx-auto max-w-5xl py-8 md:py-14">
-        <div className="mb-10 text-center">
-          <h1 className="text-4xl font-black md:text-6xl">update your preferences</h1>
-          <p className="mt-3 text-white/85">Update what you want to receive each week.</p>
-        </div>
-
-        <div className="space-y-8">
-          <GlassCard>
-            <h2 className="text-3xl font-black capitalize">interests</h2>
-            <div className="mt-6 grid gap-4 md:grid-cols-2">
-              {interests.map((interest) => (
-                <ToggleChip
-                  key={interest}
-                  label={interest}
-                  selected={selectedInterests.includes(interest)}
-                  onClick={() => toggleInterest(interest)}
-                />
-              ))}
-            </div>
-          </GlassCard>
-
-          <GlassCard>
-            <h2 className="text-3xl font-black capitalize">experience level</h2>
-            <div className="mt-6 grid gap-4 md:grid-cols-3">
-              {["just getting started", "some experience", "strong experience"].map((item) => (
-                <ToggleChip
-                  key={item}
-                  label={item}
-                  selected={experienceLevel === item}
-                  onClick={() => setExperienceLevel(item)}
-                />
-              ))}
-            </div>
-          </GlassCard>
-
-          <GlassCard>
-            <h2 className="text-3xl font-black">what matters most?</h2>
-            <div className="mt-6 grid gap-4 md:grid-cols-2">
-              {["paid opportunities", "hands-on experience", "nearby options", "flexible schedule"].map(
-                (item) => (
-                  <ToggleChip key={item} label={item} selected onClick={() => {}} />
-                )
-              )}
-            </div>
-          </GlassCard>
-
-          <div className="flex flex-col items-center gap-3 text-center">
-            <PrimaryButton onClick={save} className="px-8 py-4 text-lg">
-              {saved ? "saved ✓" : "save preferences"}
-            </PrimaryButton>
-            {saved && <div className="text-sm text-white/90">Preferences saved</div>}
-          </div>
-        </div>
-      </div>
-    </PageShell>
-  );
-}
-
-export default function CuritaApp() {
+export default function App() {
   const [page, setPage] = useState("landing");
 
-  const currentPage = useMemo(() => {
-    switch (page) {
-      case "login":
-        return <LoginPage onNavigate={setPage} />;
-      case "forgot":
-        return <ForgotPasswordPage onNavigate={setPage} />;
-      case "confirmation":
-        return <ConfirmationPage onNavigate={setPage} />;
-      case "signup":
-        return <SignUpPage onNavigate={setPage} />;
-      case "pricing":
-        return <PricingPage onNavigate={setPage} />;
-      case "subscription":
-        return <SubscriptionPage onNavigate={setPage} />;
-      case "preferences":
-        return <PreferencesPage onNavigate={setPage} />;
-      default:
-        return <LandingPage onNavigate={setPage} />;
-    }
-  }, [page]);
+  return (
+    <div className="min-h-screen text-white bg-gradient-to-b from-blue-400 via-blue-300 to-orange-300 p-6">
+      
+      {/* NAV */}
+      <div className="flex justify-between items-center mb-10">
+        <h1 className="text-3xl font-bold">curita</h1>
 
-  return currentPage;
-}
-          
+        <div className="flex gap-3">
+          <button onClick={() => setPage("login")} className="bg-white/20 px-4 py-2 rounded-xl">login</button>
+          <button onClick={() => setPage("signup")} className="bg-white/20 px-4 py-2 rounded-xl">get started</button>
+        </div>
+      </div>
+
+      {/* PAGES */}
+
+      {page === "landing" && (
+        <div className="text-center space-y-6">
+          <h1 className="text-5xl font-bold">we find opportunities that fit you</h1>
+          <p className="text-xl">clinical, research, and shadowing opportunities—sent weekly</p>
+
+          <button
+            onClick={() => setPage("pricing")}
+            className="bg-[#2C3E73] px-6 py-3 rounded-xl"
+          >
+            get your first curita
+          </button>
+        </div>
+      )}
+
+      {page === "login" && (
+        <div className="max-w-md mx-auto space-y-4">
+          <h1 className="text-3xl font-bold">log in</h1>
+
+          <input placeholder="email" className="w-full p-3 rounded-xl bg-blue-500" />
+          <input placeholder="password" type="password" className="w-full p-3 rounded-xl bg-blue-500" />
+
+          <button onClick={() => setPage("subscription")} className="w-full bg-[#2C3E73] p-3 rounded-xl">
+            log in
+          </button>
+
+          <button onClick={() => setPage("forgot")} className="text-sm underline">
+            forgot password?
+          </button>
+        </div>
+      )}
+
+      {page === "forgot" && (
+        <div className="max-w-md mx-auto space-y-4">
+          <h1 className="text-3xl font-bold">reset password</h1>
+
+          <input placeholder="email" className="w-full p-3 rounded-xl bg-blue-500" />
+
+          <button onClick={() => setPage("confirmation")} className="w-full bg-[#2C3E73] p-3 rounded-xl">
+            send reset link
+          </button>
+        </div>
+      )}
+
+      {page === "confirmation" && (
+        <div className="text-center space-y-4">
+          <h1 className="text-3xl font-bold">check your email</h1>
+          <p>we sent you a reset link</p>
+
+          <button onClick={() => setPage("login")} className="underline">
+            back to login
+          </button>
+        </div>
+      )}
+
+      {page === "signup" && (
+        <div className="max-w-md mx-auto space-y-4">
+          <h1 className="text-3xl font-bold">sign up</h1>
+
+          <input placeholder="first name" className="w-full p-3 rounded-xl bg-blue-500" />
+          <input placeholder="last name" className="w-full p-3 rounded-xl bg-blue-500" />
+
+          <button onClick={() => setPage("pricing")} className="w-full bg-[#2C3E73] p-3 rounded-xl">
+            continue
+          </button>
+        </div>
+      )}
+
+      {page === "pricing" && (
+        <div className="text-center space-y-6">
+          <h1 className="text-4xl font-bold">$4.99 / month</h1>
+          <p>we send you curated opportunities every week</p>
+
+          <button
+            onClick={() => setPage("subscription")}
+            className="bg-[#2C3E73] px-6 py-3 rounded-xl"
+          >
+            get my opportunities
+          </button>
+        </div>
+      )}
+
+      {page === "subscription" && (
+        <div className="max-w-md mx-auto space-y-4">
+          <h1 className="text-3xl font-bold">subscription</h1>
+
+          <div className="bg-white text-black p-4 rounded-xl">
+            <p>Curita Weekly</p>
+            <p>$4.99 / month</p>
+            <p>Active</p>
+          </div>
+
+          <button className="w-full bg-[#2C3E73] p-3 rounded-xl">
+            manage billing
+          </button>
+
+          <button
+            onClick={() => setPage("preferences")}
+            className="w-full bg-white text-black p-3 rounded-xl"
+          >
+            update preferences
+          </button>
+        </div>
+      )}
+
+      {page === "preferences" && (
+        <div className="max-w-md mx-auto space-y-4">
+          <h1 className="text-3xl font-bold">preferences</h1>
+
+          <div className="grid grid-cols-2 gap-3">
+            {["clinical", "research", "shadowing", "internships"].map((item) => (
+              <button key={item} className="bg-blue-500 p-3 rounded-xl">
+                {item}
+              </button>
+            ))}
+          </div>
+
+          <button className="w-full bg-[#2C3E73] p-3 rounded-xl">
+            save preferences
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}     
