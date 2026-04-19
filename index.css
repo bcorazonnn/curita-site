@@ -144,6 +144,8 @@
   font-size: 1.7rem;
   line-height: 1.08;
   color: var(--text);
+  width: 78%;
+  margin: auto;
 }
 
 .bubble-left {
@@ -162,6 +164,18 @@
   --bubble-rotate: 16deg;
   --bubble-scale: 2.1;
   margin-top: 10px;
+}
+
+.bubble-left .bubble-text {
+  transform: translate(-6px, -8px);
+}
+
+.bubble-center .bubble-text {
+  transform: translate(0px, -6px);
+}
+
+.bubble-right .bubble-text {
+  transform: translate(8px, -8px);
 }
 
 .hero-title {
@@ -299,6 +313,8 @@
   .bubble-text {
     font-size: 1.05rem;
     padding: 16px 20px;
+    width: 78%;
+    margin: auto;
   }
 
   .hero-title {
@@ -372,6 +388,8 @@
   .bubble-text {
     font-size: 0.96rem;
     padding: 14px 18px;
+    width: 78%;
+    margin: auto;
   }
 
   .hero-title {
@@ -458,6 +476,8 @@
   .bubble-text {
     font-size: 0.95rem;
     padding: 12px 18px;
+    width: 78%;
+    margin: auto;
   }
 
   .hero-title {
