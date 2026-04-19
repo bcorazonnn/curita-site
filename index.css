@@ -272,23 +272,18 @@
 .footer {
   width: 100%;
   position: relative;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 28px 24px 24px;
+  padding: 32px 24px 24px;
   box-sizing: border-box;
-  gap: 18px;
+  gap: 12px;
   background-image: url("./Frame 1.png");
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: top left;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  font-size: 1rem;
-  color: var(--color-whitesmoke);
+  background-position: center;
+  color: var(--text);
   font-family: var(--font-main);
 }
 
@@ -299,58 +294,37 @@
 }
 
 .footer-block-parent {
-  width: auto;
-  max-width: none;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
-  box-sizing: border-box;
-  flex-shrink: 0;
   gap: 6px;
+  width: auto;
+  max-width: 100%;
+  padding: 0;
 }
 
 .footer-block {
-  padding: 0 34px;
-}
-
-.footer-curita,
-.footer-curita2,
-.footer-found-for-you {
-  margin: 0;
-  position: relative;
-  font-weight: 400;
-  font-family: inherit;
+  padding: 0;
 }
 
 .footer-curita {
-  width: 168px;
-  font-size: inherit;
-  display: inline-block;
-  flex-shrink: 0;
-}
-
-.footer-curita2,
-.footer-found-for-you {
-  font-size: var(--fs-32);
-  text-align: center;
-  text-shadow: var(--text-shadow-1);
+  margin: 0;
+  font-size: clamp(3rem, 4vw, 4.8rem);
+  line-height: 1;
+  font-weight: 400;
 }
 
 .footer-found-for-you {
-  align-self: auto;
-  white-space: nowrap;
-  font-size: 1rem;
-  text-align: left;
+  margin: 0;
+  font-size: clamp(1.1rem, 1.2vw, 1.5rem);
+  line-height: 1.1;
+  font-weight: 400;
 }
 
 .footer-curita2 {
-  width: auto;
-  display: inline-block;
-  max-width: 100%;
-  flex-shrink: 0;
-  font-size: 1rem;
-  text-align: left;
-  margin-top: 6px;
+  margin: 0;
+  font-size: clamp(1rem, 1vw, 1.3rem);
+  line-height: 1.1;
+  font-weight: 400;
 }
 
 @media (max-width: 1200px) {
@@ -428,8 +402,7 @@
 
 @media (max-width: 900px) {
   .topbar,
-  .main-content,
-  .footer-inner {
+  .main-content {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -592,11 +565,20 @@
     font-size: 1rem;
   }
 
-  .footer-inner {
-    padding: 18px 16px;
+  .footer {
+    padding: 24px 16px 20px;
+    gap: 10px;
   }
 
-  .footer-brand {
-    font-size: 2rem;
+  .footer-curita {
+    font-size: 2.4rem;
+  }
+
+  .footer-found-for-you {
+    font-size: 1rem;
+  }
+
+  .footer-curita2 {
+    font-size: 0.95rem;
   }
 }
