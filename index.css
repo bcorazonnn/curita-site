@@ -178,18 +178,6 @@
   transform: translate(8px, -10px);
 }
 
-.bubble-left .bubble-text {
-  transform: translate(-6px, -8px);
-}
-
-.bubble-center .bubble-text {
-  transform: translate(0px, -6px);
-}
-
-.bubble-right .bubble-text {
-  transform: translate(8px, -8px);
-}
-
 .hero-title {
   margin: 10px auto 28px;
   max-width: 1200px;
