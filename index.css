@@ -277,19 +277,19 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 13px 6px 39px;
+  padding: 28px 24px 24px;
   box-sizing: border-box;
-  gap: 131px;
+  gap: 18px;
   background-image: url("./Frame 1.png");
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top left;
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  font-size: 80px;
+  font-size: 1rem;
   color: var(--color-whitesmoke);
-  font-family: var(--font-normal-tm);
+  font-family: var(--font-main);
 }
 
 .footer-block,
@@ -300,11 +300,13 @@
 
 .footer-block-parent {
   width: auto;
-  max-width: 600px;
+  max-width: none;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
   box-sizing: border-box;
+  flex-shrink: 0;
+  gap: 6px;
 }
 
 .footer-block {
@@ -335,15 +337,20 @@
 }
 
 .footer-found-for-you {
-  align-self: stretch;
+  align-self: auto;
   white-space: nowrap;
+  font-size: 1rem;
+  text-align: left;
 }
 
 .footer-curita2 {
-  width: 321px;
+  width: auto;
   display: inline-block;
   max-width: 100%;
   flex-shrink: 0;
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 6px;
 }
 
 @media (max-width: 1200px) {
