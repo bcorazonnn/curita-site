@@ -16,6 +16,11 @@
   --max-content: 1280px;
   --section-width: 980px;
   --features-width: 980px;
+  --color-whitesmoke: #f4f4f4;
+--fs-32: 32px;
+--fs-26: 26px;
+--fs-19: 19px;
+--text-shadow-1: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 * {
