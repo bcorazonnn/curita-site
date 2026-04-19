@@ -167,6 +167,18 @@
 }
 
 .bubble-left .bubble-text {
+  transform: translate(-6px, -10px);
+}
+
+.bubble-center .bubble-text {
+  transform: translate(0px, -8px);
+}
+
+.bubble-right .bubble-text {
+  transform: translate(8px, -10px);
+}
+
+.bubble-left .bubble-text {
   transform: translate(-6px, -8px);
 }
 
