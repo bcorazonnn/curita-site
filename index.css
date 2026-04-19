@@ -273,6 +273,7 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   position: relative;
+  left: 0;
   overflow: hidden;
 
   display: flex;
