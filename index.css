@@ -2,10 +2,9 @@
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
-  background:
-    radial-gradient(circle at 12% 82%, rgba(240, 181, 111, 0.88) 0%, rgba(240, 181, 111, 0) 22%),
-    radial-gradient(circle at 88% 84%, rgba(147, 146, 226, 0.82) 0%, rgba(147, 146, 226, 0) 22%),
-    linear-gradient(180deg, #71a0ec 0%, #7ea0ea 32%, #8a98e3 100%);
+  background: url("./gradient.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .page-noise {
