@@ -167,15 +167,15 @@
 }
 
 .bubble-left .bubble-text {
-  transform: translate(-6px, -10px);
+  transform: translate(-6px, -15px);
 }
 
 .bubble-center .bubble-text {
-  transform: translate(0px, -8px);
+  transform: translate(0px, -15px);
 }
 
 .bubble-right .bubble-text {
-  transform: translate(8px, -10px);
+  transform: translate(8px, -15px);
 }
 
 .hero-title {
