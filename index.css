@@ -270,7 +270,8 @@
 }
 
 .footer {
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -280,7 +281,7 @@
   box-sizing: border-box;
   gap: 12px;
   background-image: url("./Frame 1.png");
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   color: var(--text);
@@ -321,10 +322,11 @@
 }
 
 .footer-curita2 {
-  margin: 0;
-  font-size: clamp(1rem, 1vw, 1.3rem);
+  margin: 8px 0 0;
+  font-size: clamp(1.1rem, 1.2vw, 1.4rem);
   line-height: 1.1;
   font-weight: 400;
+  opacity: 0.9;
 }
 
 @media (max-width: 1200px) {
