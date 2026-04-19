@@ -270,7 +270,8 @@
 }
 
 .footer {
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
   position: relative;
   overflow: hidden;
 
