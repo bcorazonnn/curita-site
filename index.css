@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .page {
   min-height: 100vh;
   position: relative;
@@ -269,12 +279,6 @@
   line-height: 1.32;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .footer {
   width: 100%;
   position: relative;
@@ -289,8 +293,8 @@ body {
 
   background-image: url("./Frame 1.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+ background-repeat: no-repeat;
+ background-position: center;
 
   color: var(--text);
   font-family: var(--font-main);
