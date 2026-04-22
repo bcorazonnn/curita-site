@@ -1,32 +1,23 @@
 .login-page {
   width: 100%;
+  min-height: 100vh;
   position: relative;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
-  background-color: var(--color-darkslategray);
-  overflow: hidden;
+
+  background: url("../gradient1.png");
+  background-size: 100% 100%;
+  background-position: center;
+
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  padding: var(--padding-20) var(--padding-0) var(--padding-0);
+
+  padding: 20px 0 0;
   box-sizing: border-box;
-  isolation: isolate;
-  gap: 307px;
-  line-height: normal;
-  letter-spacing: normal;
+  gap: 120px;
+
+  color: var(--color-whitesmoke);
+  font-family: var(--font-normal-tm);
 }
-.gradient-icon {
-  width: 100%;
-  height: 4305px;
-  position: absolute;
-  margin: 0 !important;
-  right: 0;
-  bottom: -2548px;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  flex-shrink: 0;
-  object-fit: cover;
-}
+
 .curita-parent,
 .frame-parent {
   display: flex;
