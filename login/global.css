@@ -1,1 +1,39 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* Common Style Variables */
+
+  /* Color */
+  --color-darkslateblue: #2f3e6b;
+  --color-darkslategray: #243a4a;
+  --color-steelblue: #546391;
+  --color-whitesmoke: #f4f4f4;
+
+  /* Padding */
+  --padding-0: 0px;
+  --padding-20: 20px;
+
+  /* BorderRadius */
+  --br-20: 20px;
+
+  /* Font */
+  --font-normal-tm: Normal TM;
+
+  /* FontSize */
+  --fs-19: 19px;
+  --fs-26: 26px;
+  --fs-32: 32px;
+  --fs-48: 48px;
+  --fs-64: 64px;
+
+  /* Shadows */
+  --shadow-drop: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --text-shadow-1: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* LineHeights */
+  --lh-32: 32px;
+}
 
