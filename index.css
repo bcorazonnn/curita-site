@@ -38,6 +38,14 @@ body {
   z-index: 1;
 }
 
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 21;
+}
+
 .reveal {
   opacity: 0;
   --reveal-y: 18px;
