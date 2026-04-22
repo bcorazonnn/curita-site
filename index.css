@@ -27,7 +27,11 @@ body {
   z-index: 0;
 }
 
-.topbar,
+.topbar {
+  position: relative;
+  z-index: 20;
+}
+
 .main-content,
 .footer {
   position: relative;
