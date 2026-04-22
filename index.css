@@ -32,18 +32,18 @@ body {
   z-index: 20;
 }
 
-.main-content,
-.footer {
-  position: relative;
-  z-index: 1;
-}
-
 .top-actions {
   display: flex;
   align-items: center;
   gap: 10px;
   position: relative;
   z-index: 21;
+}
+
+.main-content,
+.footer {
+  position: relative;
+  z-index: 1;
 }
 
 .reveal {
