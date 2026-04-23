@@ -328,53 +328,16 @@
   padding-left: 0;
 }
 
-.curita-wrapper,
-.frame-div,
-.frame-footer {
-  display: flex;
-  align-items: flex-start;
-}
-.frame-div {
-  width: 341px;
-  flex-direction: column;
-  padding: var(--padding-0) var(--padding-20) var(--padding-0) var(--padding-0);
-  box-sizing: border-box;
-  max-width: 100%;
-  flex-shrink: 0;
-}
-.curita-wrapper {
-  padding: var(--padding-0) 34px;
-}
-.curita2,
-.curita3,
-.found-for-you {
-  margin: 0;
-  position: relative;
-  font-weight: 400;
-  font-family: inherit;
-}
-.curita2 {
-  width: 168px;
-  font-size: inherit;
-  display: inline-block;
-  flex-shrink: 0;
-}
-.curita3,
-.found-for-you {
-  font-size: var(--fs-32);
-  text-align: center;
-  text-shadow: var(--text-shadow-1);
-}
-.found-for-you {
-  align-self: stretch;
-  white-space: nowrap;
-}
-.curita3 {
-  width: 321px;
-  display: inline-block;
-  max-width: 100%;
-  flex-shrink: 0;
-}
+<footer class="footer">
+  <div class="footer-block-parent">
+    <div class="footer-block">
+      <h2 class="footer-curita">curita</h2>
+    </div>
+    <p class="footer-found-for-you">found for you. every week.</p>
+    <p class="footer-curita2">@2026 curita</p>
+  </div>
+</footer>
+
 @media screen and (max-width: 1025px) {
   .frame-group {
     flex-wrap: wrap;
