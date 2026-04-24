@@ -328,16 +328,6 @@
   padding-left: 0;
 }
 
-<footer class="footer">
-  <div class="footer-block-parent">
-    <div class="footer-block">
-      <h2 class="footer-curita">curita</h2>
-    </div>
-    <p class="footer-found-for-you">found for you. every week.</p>
-    <p class="footer-curita2">@2026 curita</p>
-  </div>
-</footer>
-
 @media screen and (max-width: 1025px) {
   .frame-group {
     flex-wrap: wrap;
