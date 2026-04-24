@@ -281,8 +281,8 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  color: var(--color-whitesmoke);
-  font-family: var(--font-normal-tm);
+  color: var(--text);
+  font-family: var(--font-main);
   box-sizing: border-box;
 }
 
@@ -299,7 +299,6 @@
   gap: 6px;
   width: auto;
   max-width: 100%;
-  min-height: 210px;
 }
 
 .footer-block {
@@ -321,14 +320,13 @@
 }
 
 .footer-curita2 {
-  margin: auto 0 0;
+  margin: 2px 0 0;
   font-size: clamp(1.1rem, 1.2vw, 1.4rem);
   line-height: 1.1;
   font-weight: 400;
   opacity: 0.9;
   padding-left: 0;
 }
-
 @media screen and (max-width: 1025px) {
   .frame-group {
     flex-wrap: wrap;
