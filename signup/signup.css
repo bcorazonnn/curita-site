@@ -985,31 +985,26 @@
   text-shadow: var(--text-shadow-1);
   max-width: 100%;
 .footer {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+  width: 100%;
   position: relative;
   overflow: hidden;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   padding: 24px;
   gap: 6px;
   min-height: 200px;
+
   background-image: url("../Frame 1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: var(--color-whitesmoke);
-  font-family: var(--font-normal-tm);
-  box-sizing: border-box;
-}
 
-.footer h1,
-.footer h2 {
-  margin: 0 !important;
-  color: var(--color-whitesmoke) !important;
-  font-family: var(--font-normal-tm) !important;
-  font-weight: 400 !important;
+  color: var(--text);
+  font-family: var(--font-main);
+  box-sizing: border-box;
 }
 
 .footer::before {
@@ -1017,7 +1012,6 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.25);
-  z-index: 0;
 }
 
 .footer > * {
@@ -1025,22 +1019,46 @@
   z-index: 1;
 }
 
+.footer-block,
 .footer-block-parent {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  gap: 6px !important;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-block-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  width: auto;
+  max-width: 100%;
+}
+
+.footer-block {
+  padding: 0;
 }
 
 .footer-curita {
-  font-size: clamp(3rem, 4vw, 4.8rem) !important;
-  line-height: 1 !important;
+  margin: 0;
+  font-size: clamp(3rem, 4vw, 4.8rem);
+  line-height: 1;
+  font-weight: 400;
 }
 
-.footer-found-for-you,
+.footer-found-for-you {
+  margin: 0;
+  font-size: clamp(1.1rem, 1.2vw, 1.5rem);
+  line-height: 1.1;
+  font-weight: 400;
+}
+
 .footer-curita2 {
-  font-size: clamp(1.1rem, 1.2vw, 1.5rem) !important;
-  line-height: 1.1 !important;
+  margin: 2px 0 0;
+  font-size: clamp(1.1rem, 1.2vw, 1.4rem);
+  line-height: 1.1;
+  font-weight: 400;
+  opacity: 0.9;
+  padding-left: 0;
 }
 @media screen and (max-width: 1200px) {
   .expectations-column {
