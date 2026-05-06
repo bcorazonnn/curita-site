@@ -5,7 +5,9 @@
   background-color: var(--color-darkslategray);
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: hidden;
   padding: var(--padding-20) 65px var(--padding-0) var(--padding-0);
   box-sizing: border-box;
   isolation: isolate;
