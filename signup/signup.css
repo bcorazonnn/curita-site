@@ -985,30 +985,35 @@
   text-shadow: var(--text-shadow-1);
   max-width: 100%;
 .footer {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+  width: 100% !important;
+  align-self: stretch !important;
+  position: relative !important;
+  z-index: 5 !important;
 
-  z-index: 1;
-  align-self: stretch;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  padding: 24px !important;
+  gap: 6px !important;
+  min-height: 200px !important;
 
-  padding: 24px;
-  gap: 6px;
-  min-height: 200px;
+  background-image: url("../Frame 1.png") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 
-  background-image: url("../Frame 1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  color: var(--color-whitesmoke) !important;
+  font-family: var(--font-normal-tm) !important;
+  box-sizing: border-box !important;
+}
 
-  color: var(--color-whitesmoke);
-  font-family: var(--font-normal-tm);
-
-  box-sizing: border-box;
+.footer h1,
+.footer h2 {
+  margin: 0 !important;
+  color: var(--color-whitesmoke) !important;
+  font-family: var(--font-normal-tm) !important;
+  font-weight: 400 !important;
 }
 
 .footer::before {
@@ -1016,6 +1021,7 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.25);
+  z-index: 0;
 }
 
 .footer > * {
@@ -1023,46 +1029,22 @@
   z-index: 1;
 }
 
-.footer h1,
-.footer h2 {
-  margin: 0;
-  color: var(--color-whitesmoke);
-  font-family: var(--font-normal-tm);
-  font-weight: 400;
-}
-
-.footer-block,
 .footer-block-parent {
-  display: flex;
-  align-items: flex-start;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 6px !important;
 }
 
-.footer-block-parent {
-  flex-direction: column;
-  gap: 6px;
-  width: auto;
-  max-width: 100%;
-}
-
-.footer-block {
-  padding: 0;
-}
- 
 .footer-curita {
-  font-size: clamp(3rem, 4vw, 4.8rem);
-  line-height: 1;
+  font-size: clamp(3rem, 4vw, 4.8rem) !important;
+  line-height: 1 !important;
 }
 
-.footer-found-for-you {
-  font-size: clamp(1.1rem, 1.2vw, 1.5rem);
-  line-height: 1.1;
-}
-
+.footer-found-for-you,
 .footer-curita2 {
-  margin-top: 2px;
-  font-size: clamp(1.1rem, 1.2vw, 1.4rem);
-  line-height: 1.1;
-  opacity: 0.9;
+  font-size: clamp(1.1rem, 1.2vw, 1.5rem) !important;
+  line-height: 1.1 !important;
 }
 @media screen and (max-width: 1200px) {
   .expectations-column {
