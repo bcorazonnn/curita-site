@@ -987,9 +987,12 @@
 }
 
 .footer {
-  width: calc(100% + 65px);
-  width: 100%;
+  width: 100vw;
   min-height: 200px;
+
+  margin-left: 0;
+  margin-right: -65px;
+  align-self: flex-start;
 
   display: flex;
   flex-direction: column;
@@ -1010,11 +1013,8 @@
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-
   margin-top: 40px;
-  align-self: stretch;
 }
-
 .footer::before {
   content: "";
   position: absolute;
