@@ -989,13 +989,13 @@
   position: relative;
   overflow: hidden;
 
+  z-index: 1;
+  align-self: stretch;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
-  z-index: 1;
-  align-self: stretch;
-  
+
   padding: 24px;
   gap: 6px;
   min-height: 200px;
@@ -1005,8 +1005,9 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  color: var(--text);
-  font-family: var(--font-main);
+  color: var(--color-whitesmoke);
+  font-family: var(--font-normal-tm);
+
   box-sizing: border-box;
 }
 
@@ -1022,6 +1023,14 @@
   z-index: 1;
 }
 
+.footer h1,
+.footer h2 {
+  margin: 0;
+  color: var(--color-whitesmoke);
+  font-family: var(--font-normal-tm);
+  font-weight: 400;
+}
+
 .footer-block,
 .footer-block-parent {
   display: flex;
@@ -1029,9 +1038,7 @@
 }
 
 .footer-block-parent {
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 6px;
   width: auto;
   max-width: 100%;
@@ -1042,26 +1049,20 @@
 }
 
 .footer-curita {
-  margin: 0;
   font-size: clamp(3rem, 4vw, 4.8rem);
   line-height: 1;
-  font-weight: 400;
 }
 
 .footer-found-for-you {
-  margin: 0;
   font-size: clamp(1.1rem, 1.2vw, 1.5rem);
   line-height: 1.1;
-  font-weight: 400;
 }
 
 .footer-curita2 {
-  margin: 2px 0 0;
+  margin-top: 2px;
   font-size: clamp(1.1rem, 1.2vw, 1.4rem);
   line-height: 1.1;
-  font-weight: 400;
   opacity: 0.9;
-  padding-left: 0;
 }
 @media screen and (max-width: 1200px) {
   .expectations-column {
