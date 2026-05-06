@@ -13,6 +13,9 @@
   padding: 20px 65px 0 0;
   box-sizing: border-box;
 
+  font-size: var(--fs-64);
+  color: var(--color-whitesmoke);
+  font-family: var(--font-normal-tm);
   gap: 130px;
   line-height: normal;
   letter-spacing: normal;
