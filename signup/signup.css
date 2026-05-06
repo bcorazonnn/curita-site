@@ -898,70 +898,81 @@
   text-shadow: var(--text-shadow-1);
   max-width: 100%;
 }
-.curated-block {
-  margin-right: -83px;
-  width: 1298px;
-  box-shadow: var(--shadow-drop);
+.footer {
+  width: 100%;
+  position: relative;
   overflow: hidden;
+
+  display: flex;
   flex-direction: column;
-  padding: 13px 6px 39px;
-  box-sizing: border-box;
-  gap: 131px;
-  background-image: url(./public/Curated-Block@3x.png);
+  align-items: flex-start;
+
+  padding: 24px;
+  gap: 6px;
+  min-height: 200px;
+
+  background-image: url("../Frame 1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
-  max-width: 107%;
-  text-align: left;
-  font-size: 80px;
+  background-position: center;
+
+  color: var(--text);
+  font-family: var(--font-main);
+  box-sizing: border-box;
 }
-.curated-block,
-.curita-wrapper,
-.frame-parent3 {
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.footer > * {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-block,
+.footer-block-parent {
   display: flex;
   align-items: flex-start;
 }
-.frame-parent3 {
-  width: 321px;
+
+.footer-block-parent {
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  width: auto;
   max-width: 100%;
-  flex-shrink: 0;
 }
-.curita-wrapper {
-  height: 95px;
-  padding: var(--padding-0) var(--padding-34);
-  box-sizing: border-box;
+
+.footer-block {
+  padding: 0;
 }
-.curita2,
-.curita3,
-.found-for-you {
+
+.footer-curita {
   margin: 0;
-  position: relative;
+  font-size: clamp(3rem, 4vw, 4.8rem);
+  line-height: 1;
   font-weight: 400;
-  font-family: inherit;
 }
-.curita2 {
-  align-self: stretch;
-  width: 168px;
-  font-size: inherit;
-  display: inline-block;
-  flex-shrink: 0;
+
+.footer-found-for-you {
+  margin: 0;
+  font-size: clamp(1.1rem, 1.2vw, 1.5rem);
+  line-height: 1.1;
+  font-weight: 400;
 }
-.curita3,
-.found-for-you {
-  font-size: var(--fs-32);
-  text-align: center;
-  text-shadow: var(--text-shadow-1);
-}
-.found-for-you {
-  align-self: stretch;
-  white-space: nowrap;
-}
-.curita3 {
-  width: 321px;
-  display: inline-block;
-  max-width: 100%;
-  flex-shrink: 0;
+
+.footer-curita2 {
+  margin: 2px 0 0;
+  font-size: clamp(1.1rem, 1.2vw, 1.4rem);
+  line-height: 1.1;
+  font-weight: 400;
+  opacity: 0.9;
+  padding-left: 0;
 }
 @media screen and (max-width: 1200px) {
   .expectations-column {
