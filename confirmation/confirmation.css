@@ -16,6 +16,7 @@
 
   gap: 90px;
 
+  font-size: var(--fs-64);
   color: var(--color-whitesmoke);
   font-family: var(--font-normal-tm);
 }
