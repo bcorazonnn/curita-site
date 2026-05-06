@@ -987,6 +987,7 @@
 }
 
 .footer {
+  width: calc(100% + 65px);
   width: 100%;
   min-height: 200px;
 
