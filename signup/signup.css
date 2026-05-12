@@ -318,6 +318,34 @@
   color: rgba(255, 255, 255, 0.6);
   font-family: var(--font-normal-tm);
 }
+
+.career-input {
+  width: 100%;
+  min-height: 220px;
+
+  background-color: var(--color-cornflowerblue-100);
+
+  border: none;
+  outline: none;
+
+  border-radius: var(--br-20);
+  box-shadow: var(--shadow-drop);
+
+  padding: 30px;
+
+  font-family: var(--font-normal-tm);
+  font-size: 40px;
+  color: var(--color-whitesmoke);
+
+  resize: none;
+
+  box-sizing: border-box;
+}
+
+.career-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-normal-tm);
+}
 .apply-button {
   align-self: stretch;
   display: flex;
