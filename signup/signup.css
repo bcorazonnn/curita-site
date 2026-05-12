@@ -356,6 +356,10 @@
   font-family: var(--font-normal-tm);
   color: var(--color-whitesmoke);
 }
+.interests-section .shadowing9 {
+  font-size: var(--fs-64);
+  line-height: 77px;
+}
 
 .interests-grid {
   display: grid;
