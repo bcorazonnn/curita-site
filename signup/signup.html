@@ -11,7 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Normal TM:wght@400&display=swap"
     />
   </head>
+  <script>
+  const experienceButtons = document.querySelectorAll(
+    ".principle-snippet, .value-message"
+  );
 
+  experienceButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("active");
+    });
+  });
+</script>
   <body>
     <div class="sign-up">
 
@@ -204,31 +214,15 @@
 
           <section class="shadowing-information">
 
-            <<button class="principle-snippet experience-button">
+            <button class="principle-snippet">
+              <div class="perk-container-child"></div>
+              <h2 class="shadowing19">just getting started</h2>
+            </button>
 
-  <input
-    class="experience-radio"
-    type="checkbox"
-  />
-
-  <div class="perk-container-child"></div>
-
-  <h2 class="shadowing19">just getting started</h2>
-
-</button>
-
-            <button class="principle-snippet experience-button">
-
-  <input
-    class="experience-radio"
-    type="checkbox"
-  />
-
-  <div class="perk-container-child"></div>
-
-  <h2 class="shadowing19">some experience</h2>
-
-</button>
+            <button class="principle-snippet">
+              <div class="perk-container-child"></div>
+              <h2 class="shadowing19">some experience</h2>
+            </button>
 
           </section>
 
@@ -243,18 +237,10 @@
 
           <div class="content-area">
 
-            <button class="value-message experience-button">
-
-  <input
-    class="experience-radio"
-    type="checkbox"
-  />
-
-  <div class="perk-container-child"></div>
-
-  <h2 class="shadowing21">strong experience</h2>
-
-</button>
+            <button class="value-message">
+              <div class="perk-container-child"></div>
+              <h2 class="shadowing21">strong experience</h2>
+            </button>
 
           </div>
 
@@ -360,3 +346,4 @@
     </div>
   </body>
 </html>
+
