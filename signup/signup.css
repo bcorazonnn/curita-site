@@ -347,26 +347,37 @@
   font-family: var(--font-normal-tm);
   text-transform: lowercase;
 }
+.interests-section {
+  width: 1063px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  font-family: var(--font-normal-tm);
+  color: var(--color-whitesmoke);
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 475px);
+  gap: 70px 110px;
+  justify-content: center;
+}
+
 .interest-option {
   width: 475px;
   height: 122px;
-
   background-color: var(--color-cornflowerblue-100);
   box-shadow: var(--shadow-drop);
   border-radius: var(--br-20);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
-
   font-family: var(--font-normal-tm);
   font-size: var(--fs-48);
   color: var(--color-whitesmoke);
-
   box-sizing: border-box;
-
   transition: all 0.2s ease;
 }
 
@@ -374,16 +385,36 @@
   display: none;
 }
 
-.interest-option span {
-  pointer-events: none;
-}
-
 .interest-option:has(input:checked) {
   background-color: #2f7fd8;
-
-  transform: scale(0.97);
-
   outline: 4px solid rgba(255, 255, 255, 0.8);
+}
+
+.other-interest-input {
+  width: 475px;
+  height: 122px;
+  align-self: center;
+
+  background-color: var(--color-cornflowerblue-100);
+  box-shadow: var(--shadow-drop);
+  border-radius: var(--br-20);
+
+  border: none;
+  outline: none;
+
+  font-family: var(--font-normal-tm);
+  font-size: var(--fs-48);
+  color: var(--color-whitesmoke);
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.other-interest-input::placeholder {
+  color: var(--color-whitesmoke);
+  opacity: 1;
+  text-align: center;
 }
 .apply-button {
   align-self: stretch;
