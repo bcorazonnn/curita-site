@@ -345,6 +345,7 @@
 .career-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-family: var(--font-normal-tm);
+  text-transform: lowercase;
 }
 .apply-button {
   align-self: stretch;
