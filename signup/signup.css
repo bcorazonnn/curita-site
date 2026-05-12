@@ -347,6 +347,44 @@
   font-family: var(--font-normal-tm);
   text-transform: lowercase;
 }
+.interest-option {
+  width: 475px;
+  height: 122px;
+
+  background-color: var(--color-cornflowerblue-100);
+  box-shadow: var(--shadow-drop);
+  border-radius: var(--br-20);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  font-family: var(--font-normal-tm);
+  font-size: var(--fs-48);
+  color: var(--color-whitesmoke);
+
+  box-sizing: border-box;
+
+  transition: all 0.2s ease;
+}
+
+.interest-option input {
+  display: none;
+}
+
+.interest-option span {
+  pointer-events: none;
+}
+
+.interest-option:has(input:checked) {
+  background-color: #2f7fd8;
+
+  transform: scale(0.97);
+
+  outline: 4px solid rgba(255, 255, 255, 0.8);
+}
 .apply-button {
   align-self: stretch;
   display: flex;
