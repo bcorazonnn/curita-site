@@ -1228,9 +1228,10 @@
   overflow: hidden;
 }
 
-.principle-snippet.active .perk-container-child,
-.value-message.active .perk-container-child {
-  outline: 4px solid rgba(255, 255, 255, 0.9);
+.principle-snippet,
+.value-message {
+  position: relative;
+  overflow: hidden;
 }
 @media screen and (max-width: 1200px) {
   .expectations-column {
