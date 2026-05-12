@@ -292,15 +292,31 @@
 }
 .expectations-column-child {
   border: 0;
-  outline: 0;
+  outline: none;
+
   background-color: var(--color-cornflowerblue-100);
+
   height: var(--height-122);
   width: var(--width-475);
+
   position: relative;
+
   box-shadow: var(--shadow-drop);
   border-radius: var(--br-20);
+
   max-width: 100%;
   z-index: 1;
+
+  font-family: var(--font-normal-tm);
+  font-size: 40px;
+  color: var(--color-whitesmoke);
+
+  padding-left: 28px;
+}
+
+.expectations-column-child::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-normal-tm);
 }
 .apply-button {
   align-self: stretch;
