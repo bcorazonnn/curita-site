@@ -440,9 +440,32 @@
   box-sizing: border-box;
   transition: all 0.2s ease;
 }
+.experience-option {
+  width: 475px;
+  height: 122px;
+  background-color: var(--color-cornflowerblue-100);
+  box-shadow: var(--shadow-drop);
+  border-radius: var(--br-20);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  font-family: var(--font-normal-tm);
+  font-size: var(--fs-48);
+  color: var(--color-whitesmoke);
+
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
 
 .experience-option input {
   display: none;
+}
+
+.experience-option span {
+  pointer-events: none;
 }
 
 .experience-option:has(input:checked) {
@@ -452,7 +475,6 @@
 
 .strong-experience-option {
   width: 475px;
-}
 }
 .apply-button {
   align-self: stretch;
