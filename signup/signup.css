@@ -1205,33 +1205,35 @@
   opacity: 0.9;
   padding-left: 0;
 }
-.experience-button {
-  position: relative;
-}
+.experience-option {
+  width: 475px;
+  height: 122px;
 
-.experience-radio {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
+  background-color: var(--color-cornflowerblue-100);
+  box-shadow: var(--shadow-drop);
+  border-radius: var(--br-20);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   cursor: pointer;
-  z-index: 5;
+
+  font-family: var(--font-normal-tm);
+  font-size: var(--fs-48);
+  color: var(--color-whitesmoke);
+
+  transition: all 0.2s ease;
 }
 
-.experience-button:has(.experience-radio:checked) {
-  outline: 4px solid rgba(255, 255, 255, 0.85);
+.experience-option input {
+  display: none;
+}
+
+.experience-option:has(input:checked) {
   background-color: #2f7fd8;
-}
-/* EXPERIENCE BUTTON FIX */
-.principle-snippet,
-.value-message {
-  position: relative;
-  overflow: hidden;
-}
-
-.principle-snippet,
-.value-message {
-  position: relative;
-  overflow: hidden;
+  outline: 4px solid rgba(255, 255, 255, 0.8);
+  transform: scale(0.98);
 }
 @media screen and (max-width: 1200px) {
   .expectations-column {
