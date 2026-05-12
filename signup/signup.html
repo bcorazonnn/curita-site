@@ -11,17 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Normal TM:wght@400&display=swap"
     />
   </head>
-  <script>
-  const experienceButtons = document.querySelectorAll(
-    ".principle-snippet, .value-message"
-  );
-
-  experienceButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      button.classList.toggle("active");
-    });
-  });
-</script>
   <body>
     <div class="sign-up">
 
@@ -343,6 +332,25 @@
       </footer>
 
     </div>
+    <script>
+  const experienceButtons = document.querySelectorAll(
+    ".principle-snippet, .value-message"
+  );
+
+  experienceButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const isAlreadyActive = button.classList.contains("active");
+
+      experienceButtons.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      if (!isAlreadyActive) {
+        button.classList.add("active");
+      }
+    });
+  });
+</script>
   </body>
 </html>
 
