@@ -1205,6 +1205,22 @@
   opacity: 0.9;
   padding-left: 0;
 }
+.experience-button {
+  position: relative;
+}
+
+.experience-radio {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.experience-button:has(.experience-radio:checked) {
+  outline: 4px solid rgba(255, 255, 255, 0.85);
+  background-color: #2f7fd8;
+}
 @media screen and (max-width: 1200px) {
   .expectations-column {
     flex-wrap: wrap;
