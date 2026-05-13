@@ -53,7 +53,7 @@
   font-family: inherit;
   display: inline-block;
   text-shadow: var(--text-shadow-1);
-  z-index: 2;
+  z-index: 5;
 }
 .filtered-to-match,
 .well-prioritize-beginner-frie {
@@ -65,7 +65,9 @@
   left: 46px;
 }
 .curita-shadowing-parent {
-  width: 1181px;
+  width: 100%;
+  max-width: 1181px;
+  align-self: center;
   justify-content: space-between;
   padding: var(--padding-0) var(--padding-20) 52px var(--padding-0);
   box-sizing: border-box;
