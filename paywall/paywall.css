@@ -43,7 +43,9 @@
 .focused-on-clinical,
 .well-prioritize-beginner-frie,
 .filtered-to-match {
-  margin: 20px 0 0;
+  margin-top: 28px;
+
+  padding-left: 38px;
 
   position: relative;
 
@@ -55,9 +57,11 @@
 
   color: var(--color-whitesmoke);
 
-  text-align: center;
+  text-align: left;
 
   text-shadow: var(--text-shadow-1);
+
+  box-sizing: border-box;
 
   z-index: 2;
 }
