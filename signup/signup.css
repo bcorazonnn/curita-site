@@ -1265,13 +1265,16 @@
 }
 
 .dropdown-arrow-icon {
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 35px;
+  object-fit: contain;
 
   transition: transform 0.3s ease;
 }
 
 .dropdown-content {
+  max-height: 360px;
+  overflow-y: auto;
   display: none;
 
   margin-top: 12px;
