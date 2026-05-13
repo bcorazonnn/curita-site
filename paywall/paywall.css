@@ -43,7 +43,7 @@
 .focused-on-clinical,
 .well-prioritize-beginner-frie,
 .filtered-to-match {
-  margin-top: 28px;
+  margin-top: 22px;
 
   padding-left: 38px;
 
@@ -660,6 +660,7 @@
 }
 .rectangle-group,
 .frame-div {
+  min-height: 230px;
   align-items: flex-start !important;
   text-align: left !important;
   padding-left: 55px !important;
