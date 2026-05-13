@@ -436,11 +436,14 @@
     });
   });
 
-  const dropdown = document.querySelector(".custom-dropdown");
-  const toggle = document.querySelector(".dropdown-toggle");
+  const dropdowns = document.querySelectorAll(".custom-dropdown");
 
-  toggle.addEventListener("click", () => {
-    dropdown.classList.toggle("active");
+  dropdowns.forEach((dropdown) => {
+    const toggle = dropdown.querySelector(".dropdown-toggle");
+
+    toggle.addEventListener("click", () => {
+      dropdown.classList.toggle("active");
+    });
   });
 </script>
   </body>
