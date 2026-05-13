@@ -513,69 +513,88 @@
   flex-shrink: 0;
   z-index: 1;
 }
-.weekly-display-parent {
-  margin-left: -46px;
-  width: 1298px;
-  box-shadow: var(--shadow-drop);
-  overflow: hidden;
+.footer {
+  width: 100vw;
+  min-height: 200px;
+
+  margin-left: 0;
+  margin-right: -65px;
+  align-self: flex-start;
+
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  padding: 13px 971px 39px 18px;
-  box-sizing: border-box;
-  gap: 131px;
-  background-image: url(./public/Frame-1@3x.png);
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 24px 36px;
+  gap: 6px;
+
+  background-image: url("../Frame 1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
-  max-width: 104%;
-  z-index: 1;
-  flex-shrink: 0;
-  text-align: left;
-  font-size: 80px;
+  background-position: center;
+
   color: var(--color-whitesmoke);
   font-family: var(--font-normal-tm);
+
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
 }
-.weekly-display {
-  align-self: stretch;
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.footer > * {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-block,
+.footer-block-parent {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-block-parent {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: var(--padding-0) var(--padding-0) var(--padding-0) 22px;
+  gap: 6px;
+  width: auto;
+  max-width: 100%;
 }
-.curita2 {
+
+.footer-block {
+  padding: 0;
+}
+
+.footer-curita {
   margin: 0;
-  width: 168px;
-  position: relative;
-  font-size: inherit;
+  font-size: clamp(3rem, 4vw, 4.8rem);
+  line-height: 1;
   font-weight: 400;
-  font-family: inherit;
-  display: inline-block;
-  flex-shrink: 0;
 }
-.curita-emphasis,
-.found-for-you {
-  text-align: center;
-  font-size: var(--fs-32);
-}
-.found-for-you {
+
+.footer-found-for-you {
   margin: 0;
-  width: 321px;
-  position: relative;
+  font-size: clamp(1.1rem, 1.2vw, 1.5rem);
+  line-height: 1.1;
   font-weight: 400;
-  font-family: inherit;
-  display: inline-block;
-  text-shadow: var(--text-shadow-1);
-  white-space: nowrap;
-  max-width: 112%;
-  flex-shrink: 0;
 }
-.curita-emphasis {
-  align-self: stretch;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: var(--padding-0) var(--padding-64) var(--padding-0) var(--padding-0);
+
+.footer-curita2 {
+  margin: 2px 0 0;
+  font-size: clamp(1.1rem, 1.2vw, 1.4rem);
+  line-height: 1.1;
+  font-weight: 400;
+  opacity: 0.9;
+  padding-left: 0;
 }
 .curita3 {
   margin: 0;
