@@ -375,6 +375,13 @@
       }
     });
   });
+
+  const dropdown = document.querySelector(".custom-dropdown");
+  const toggle = document.querySelector(".dropdown-toggle");
+
+  toggle.addEventListener("click", () => {
+    dropdown.classList.toggle("active");
+  });
 </script>
   </body>
 </html>
