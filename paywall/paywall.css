@@ -658,6 +658,33 @@
 
   box-sizing: border-box;
 }
+.rectangle-group,
+.frame-div {
+  align-items: flex-start !important;
+  text-align: left !important;
+  padding-left: 55px !important;
+}
+
+.shadowing2,
+.shadowing3,
+.shadowing4,
+.shadowing5,
+.shadowing7,
+.focused-on-clinical,
+.well-prioritize-beginner-frie,
+.filtered-to-match {
+  width: auto !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  text-align: left !important;
+  align-self: flex-start !important;
+}
+
+.focused-on-clinical,
+.well-prioritize-beginner-frie,
+.filtered-to-match {
+  margin-top: 28px !important;
+}
 @media screen and (max-width: 1200px) {
   .branding,
   .branding2 {
