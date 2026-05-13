@@ -40,39 +40,26 @@
   max-height: 100%;
   object-fit: cover;
 }
-.filtered-to-match,
 .focused-on-clinical,
-.well-prioritize-beginner-frie {
-  margin: 0 !important;
-  width: 300px;
+.well-prioritize-beginner-frie,
+.filtered-to-match {
+  margin: 20px 0 0;
 
-  position: absolute;
+  position: relative;
 
-  top: 1116px;
-  left: 120px;
+  width: 100%;
 
-  font-size: inherit;
+  font-size: var(--fs-32);
   font-weight: 400;
-  font-family: inherit;
+  font-family: var(--font-normal-tm);
 
-  display: inline-block;
+  color: var(--color-whitesmoke);
 
-  text-align: left;
+  text-align: center;
 
   text-shadow: var(--text-shadow-1);
 
-  z-index: 5;
-}
-
-.filtered-to-match,
-.well-prioritize-beginner-frie {
-  top: 1536px;
-  left: 120px;
-}
-
-.filtered-to-match {
-  top: 1948px;
-  left: 120px;
+  z-index: 2;
 }
 .curita-shadowing-parent {
   width: 100%;
