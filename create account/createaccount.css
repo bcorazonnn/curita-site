@@ -402,6 +402,15 @@
   flex-direction: column !important;
   gap: 10px !important;
 }
+.shadowing4,
+.shadowing5,
+.shadowing3 {
+  margin-bottom: 10px !important;
+}
+
+.shadowing-parent {
+  gap: 0 !important;
+}
 @media screen and (max-width: 750px) {
   .curita,
   .shadowing {
