@@ -343,6 +343,33 @@
   padding: 0 30px;
   box-sizing: border-box;
 }
+.frame-wrapper,
+.frame-container,
+.frame-div {
+  width: 505px !important;
+  height: 202px !important;
+  padding: 0 15px 22px !important;
+  box-sizing: border-box !important;
+}
+
+.frame-child,
+.frame-item {
+  align-self: stretch !important;
+  flex: 1 !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.shadowing-parent {
+  align-self: stretch !important;
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.frame-parent {
+  gap: 54px !important;
+}
 @media screen and (max-width: 750px) {
   .curita,
   .shadowing {
