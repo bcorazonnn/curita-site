@@ -333,43 +333,15 @@
   opacity: 0.9;
   padding-left: 0;
 }
-.frame-wrapper,
-.frame-container,
-.frame-div {
-  width: 501px !important;
-  padding: 0 13px 0 !important;
-  box-sizing: border-box !important;
-}
-
 .frame-child,
-.frame-item,
-.input-field {
-  width: 100% !important;
-  height: 110px !important;
-
-  border: none;
-  outline: none;
-
-  border-radius: var(--br-20);
-
+.frame-item {
+  border: 0;
+  outline: 0;
   font-family: var(--font-normal-tm);
-  font-size: 42px;
-
+  font-size: var(--fs-48);
   color: var(--color-whitesmoke);
-
-  padding: 20px 30px;
-
+  padding: 0 30px;
   box-sizing: border-box;
-}
-
-.shadowing-parent {
-  display: flex;
-  flex-direction: column;
-  gap: 12px !important;
-}
-
-.frame-parent {
-  gap: 42px !important;
 }
 @media screen and (max-width: 750px) {
   .curita,
