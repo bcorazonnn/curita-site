@@ -78,7 +78,7 @@
 }
 .frame-parent {
   flex-direction: column;
-  gap: 54px;
+  gap: 28px;
 }
 .shadowing-wrapper {
   padding: var(--padding-0) var(--padding-0) var(--padding-0) 30px;
@@ -332,6 +332,26 @@
   font-weight: 400;
   opacity: 0.9;
   padding-left: 0;
+}
+.frame-wrapper,
+.frame-container,
+.frame-div {
+  width: 501px !important;
+  height: 202px !important;
+  padding: 0 13px 22px !important;
+  box-sizing: border-box !important;
+}
+
+.frame-child,
+.frame-item {
+  width: 100% !important;
+  height: 110px !important;
+  min-height: 110px !important;
+  flex: none !important;
+}
+
+.shadowing-parent {
+  gap: 8px !important;
 }
 @media screen and (max-width: 750px) {
   .curita,
