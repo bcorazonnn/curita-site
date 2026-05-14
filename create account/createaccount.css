@@ -337,21 +337,39 @@
 .frame-container,
 .frame-div {
   width: 501px !important;
-  height: 202px !important;
-  padding: 0 13px 22px !important;
+  padding: 0 13px 0 !important;
   box-sizing: border-box !important;
 }
 
 .frame-child,
-.frame-item {
+.frame-item,
+.input-field {
   width: 100% !important;
   height: 110px !important;
-  min-height: 110px !important;
-  flex: none !important;
+
+  border: none;
+  outline: none;
+
+  border-radius: var(--br-20);
+
+  font-family: var(--font-normal-tm);
+  font-size: 42px;
+
+  color: var(--color-whitesmoke);
+
+  padding: 20px 30px;
+
+  box-sizing: border-box;
 }
 
 .shadowing-parent {
-  gap: 8px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 12px !important;
+}
+
+.frame-parent {
+  gap: 42px !important;
 }
 @media screen and (max-width: 750px) {
   .curita,
