@@ -370,6 +370,38 @@
 .frame-parent {
   gap: 54px !important;
 }
+.input-field {
+  display: block !important;
+  width: 100% !important;
+  height: 110px !important;
+  min-height: 110px !important;
+  flex: none !important;
+
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: var(--br-20) !important;
+  background-color: var(--color-cornflowerblue) !important;
+  box-shadow: var(--shadow-drop) !important;
+
+  font-family: var(--font-normal-tm) !important;
+  font-size: var(--fs-48) !important;
+  color: var(--color-whitesmoke) !important;
+
+  padding: 0 30px !important;
+  box-sizing: border-box !important;
+}
+
+.frame-wrapper {
+  width: 505px !important;
+  height: auto !important;
+  padding: 0 15px 22px !important;
+}
+
+.shadowing-parent {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
 @media screen and (max-width: 750px) {
   .curita,
   .shadowing {
