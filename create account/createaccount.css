@@ -263,7 +263,7 @@
   flex-direction: column;
   padding: 13px 6px 39px;
   gap: 131px;
-  background-image: url(./public/Frame-1-png@3x.png);
+  background-image: url("./Frame 1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
