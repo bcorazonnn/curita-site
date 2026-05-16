@@ -18,12 +18,21 @@
   gap: 146.5px;
   line-height: normal;
   letter-spacing: normal;
+}
 
-  .dashboard-inner,
+.dashboard-inner,
 .dashboard-child {
+  width: 100% !important;
+  max-width: 1100px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  .curita-parent,
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+}
+
+.curita-parent,
 .dashboard-inner .curita-parent {
   position: absolute !important;
   top: 20px !important;
@@ -31,23 +40,12 @@
   margin: 0 !important;
   transform: none !important;
 }
-
-/* keep left shift */
-.dashboard-child,
-.dashboard-inner {
-  transform: translate(-60px, 150px) !important;
-}
-}
-}
-}
-
 .frame-section {
   justify-content: center !important;
 }
 
 .dashboard-child {
   justify-content: center !important;
-}
 }
 .gradient1png-parent {
   position: absolute;
