@@ -28,7 +28,10 @@
   margin-right: auto !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
-  transform: none !important;
+
+  /* keep your original down position */
+  transform: translate(-60px, 150px) !important;
+
   box-sizing: border-box !important;
 }
 
