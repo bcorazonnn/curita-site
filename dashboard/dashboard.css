@@ -5,6 +5,42 @@
   isolation: isolate;
 }
 .dashboard {
+  align-items: center !important;
+}
+
+.dashboard-inner,
+.dashboard-child {
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  justify-content: center !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.frame-parent,
+.frame-wrapper,
+.frame-group,
+.frame-container,
+.frame-section,
+.frame-parent3,
+.frame-parent4 {
+  width: 100% !important;
+  margin: 0 auto !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.frame-parent3,
+.frame-parent4 {
+  display: flex !important;
+  gap: 70px !important;
+}
+
+.rectangle-parent {
+  width: 994px !important;
+  max-width: 100% !important;
+}
   width: 100%;
   position: relative;
   min-height: 100vh;
