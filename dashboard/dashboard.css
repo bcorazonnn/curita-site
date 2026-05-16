@@ -18,6 +18,20 @@
   gap: 146.5px;
   line-height: normal;
   letter-spacing: normal;
+
+  .dashboard-inner,
+.dashboard-child {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.frame-section {
+  justify-content: center !important;
+}
+
+.dashboard-child {
+  justify-content: center !important;
+}
 }
 .gradient1png-parent {
   position: absolute;
