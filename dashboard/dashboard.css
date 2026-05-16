@@ -7,9 +7,11 @@
 .dashboard {
   width: 100%;
   position: relative;
+  min-height: 100vh;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
   background-color: var(--color-darkslategray);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   flex-direction: column;
   padding: var(--padding-20) var(--padding-0) var(--padding-0);
   box-sizing: border-box;
