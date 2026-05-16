@@ -20,7 +20,7 @@
   letter-spacing: normal;
 }
 
-.dashboard-inner,
+dashboard-inner,
 .dashboard-child {
   width: 100% !important;
   max-width: 1100px !important;
@@ -29,12 +29,18 @@
   padding-left: 20px !important;
   padding-right: 20px !important;
 
-  /* keep your original down position */
-  transform: translate(-60px, 150px) !important;
+  /* left/right only */
+  transform: translateX(-60px) !important;
 
   box-sizing: border-box !important;
 }
+.dashboard-inner {
+  margin-top: 150px !important;
+}
 
+.dashboard-child {
+  margin-bottom: 180px !important;
+}
 .curita-parent,
 .dashboard-inner .curita-parent {
   position: absolute !important;
@@ -42,6 +48,7 @@
   left: 30px !important;
   margin: 0 !important;
   transform: none !important;
+  z-index: 5 !important;
 }
 .frame-section {
   justify-content: center !important;
