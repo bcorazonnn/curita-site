@@ -35,7 +35,7 @@
 /* shift dashboard content slightly left */
 .dashboard-child,
 .dashboard-inner {
-  transform: translateX(-90px) !important;
+  transform: translateX(-120px) !important;
 }
 }
 
