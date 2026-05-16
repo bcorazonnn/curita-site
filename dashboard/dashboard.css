@@ -35,7 +35,7 @@
 /* keep left shift */
 .dashboard-child,
 .dashboard-inner {
-  transform: translate(-15px, 150px) !important;
+  transform: translate(-60px, 150px) !important;
 }
 }
 }
