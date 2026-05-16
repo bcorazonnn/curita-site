@@ -20,7 +20,7 @@
   letter-spacing: normal;
 }
 
-dashboard-inner,
+.dashboard-inner,
 .dashboard-child {
   width: 100% !important;
   max-width: 1100px !important;
@@ -28,6 +28,9 @@ dashboard-inner,
   margin-right: auto !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+}
 
   /* left/right only */
   transform: translateX(-60px) !important;
@@ -973,6 +976,12 @@ dashboard-inner,
 
 .rectangle-parent2 .frame-child3 {
   margin: 0 !important;
+}
+.frame-group,
+.frame-parent3,
+.frame-parent4 {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 @media screen and (max-width: 1100px) {
   .frame-parent {
