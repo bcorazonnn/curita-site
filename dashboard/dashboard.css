@@ -897,6 +897,9 @@
 
    line-height:1;
 }
+.rectangle-group{
+   gap:24px !important;
+}
 @media screen and (max-width: 1100px) {
   .frame-parent {
     gap: 39px;
