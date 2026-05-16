@@ -31,12 +31,6 @@
   transform: none !important;
   box-sizing: border-box !important;
 }
-
-  /* left/right only */
-  transform: translateX(-60px) !important;
-
-  box-sizing: border-box !important;
-}
 .dashboard-inner {
   margin-top: 120px !important;
 }
@@ -982,6 +976,14 @@
 .frame-parent4 {
   margin-left: auto !important;
   margin-right: auto !important;
+}
+.dashboard-inner {
+  margin-top: 200px !important;
+}
+
+.dashboard-child {
+  margin-top: 120px !important;
+  margin-bottom: 250px !important;
 }
 @media screen and (max-width: 1100px) {
   .frame-parent {
