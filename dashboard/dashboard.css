@@ -23,6 +23,20 @@
 .dashboard-child {
   margin-left: auto !important;
   margin-right: auto !important;
+  .curita-parent,
+.dashboard-inner .curita-parent {
+  position: absolute !important;
+  top: 20px !important;
+  left: 30px !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+/* shift dashboard content slightly left */
+.dashboard-child,
+.dashboard-inner {
+  transform: translateX(-70px) !important;
+}
 }
 
 .frame-section {
