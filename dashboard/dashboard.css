@@ -983,7 +983,7 @@
 
 .dashboard-child {
   margin-top: 120px !important;
-  margin-bottom: 250px !important;
+  margin-bottom: 120px !important;
 }
 @media screen and (max-width: 1100px) {
   .frame-parent {
