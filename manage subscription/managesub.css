@@ -547,40 +547,58 @@
   margin-left: auto;
   margin-right: auto;
 }
-/* TEXT POSITION FIX */
+/* FINAL MATCH TO SCREENSHOT */
+.curita-parent {
+  margin-left: 0 !important;
+}
+
 .shadowing3 {
-  margin-top: 80px !important;
+  margin-top: 85px !important;
   text-align: left !important;
 }
 
 .shadowing {
   top: 250px !important;
-  left: 25px !important;
-  width: 600px !important;
+  left: 22px !important;
+  width: 520px !important;
   font-size: 32px !important;
   text-align: left !important;
-  z-index: 5 !important;
-}
-
-.frame-container {
-  gap: 150px !important;
 }
 
 .frame-group {
-  gap: 160px !important;
+  gap: 120px !important;
+}
+
+.frame-container {
+  gap: 130px !important;
 }
 
 .shadowing-parent {
-  gap: 55px !important;
-}
-
-.shadowing-wrapper {
-  height: auto !important;
-  padding-left: 0 !important;
+  gap: 45px !important;
 }
 
 .shadowing-container {
-  padding: 20px 0 70px 65px !important;
+  padding: 0 0 45px 55px !important;
+}
+
+.frame-section {
+  padding: 0 90px 25px 20px !important;
+}
+
+.shadowing-parent2 {
+  padding: 0 90px 0 20px !important;
+}
+
+.frame-parent2 {
+  gap: 45px !important;
+}
+
+.frame-parent3 {
+  gap: 20px !important;
+}
+
+.frame-wrapper3 {
+  margin-top: -20px !important;
 }
 /* put Curita logo back */
 .frame-div {
