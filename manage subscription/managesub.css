@@ -626,6 +626,39 @@
   margin-left: auto;
   margin-right: auto;
 }
+/* ALIGN LEFT SIDE TEXT */
+.frame-wrapper,
+.frame-container,
+.frame-group,
+.shadowing-parent,
+.shadowing-wrapper,
+.shadowing-container,
+.frame-section {
+  margin-left: 0 !important;
+  padding-left: 20px !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+
+.shadowing,
+.shadowing3,
+.shadowing4,
+.shadowing5,
+.shadowing6,
+.shadowing7,
+.shadowing10 {
+  left: 0 !important;
+  margin-left: 0 !important;
+  text-align: left !important;
+}
+
+.shadowing-container {
+  padding-left: 20px !important;
+}
+
+.frame-section {
+  padding-left: 20px !important;
+}
 @media screen and (max-width: 1250px) {
   .frame-wrapper {
     max-width: 100%;
