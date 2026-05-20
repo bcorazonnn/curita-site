@@ -392,7 +392,7 @@
   z-index: 1;
 }
 .footer {
-  width: 100%;
+  width: 100vw;
   position: relative;
   overflow: hidden;
 
