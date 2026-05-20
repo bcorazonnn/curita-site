@@ -496,7 +496,7 @@
 
 .frame-container {
   align-items: flex-start;
-  gap: 95px;
+  gap: 55px;
 }
 
 .frame-div {
@@ -516,30 +516,37 @@
   text-align: left !important;
 }
 
-/* left-side stack */
-.shadowing-parent{
-   display:flex !important;
-   flex-direction:column !important;
-   align-items:flex-start !important;
-   gap:28px !important;
+/* FIX ONLY CURRENT PLAN AREA */
+.shadowing-parent {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 22px !important;
 }
 
-/* current plan */
-.shadowing4{
-   order:1;
+.shadowing4,
+.shadowing5,
+.shadowing6 {
+  order: unset !important;
+  margin: 0 !important;
+  position: relative !important;
+  left: 0 !important;
+  text-align: left !important;
+}
+
+/* curita weekly */
+.shadowing4 {
+  font-size: 48px !important;
 }
 
 /* price */
-.shadowing5{
-   order:2;
-   font-size:32px !important;
-   margin-top:-10px !important;
+.shadowing5 {
+  font-size: 32px !important;
 }
 
-/* Curita weekly */
-.shadowing6{
-   order:3;
-   margin-top:-18px !important;
+/* current plan */
+.shadowing6 {
+  font-size: 64px !important;
 }
 
 /* status spacing */
