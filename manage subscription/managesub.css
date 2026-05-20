@@ -517,11 +517,34 @@
 }
 
 /* left-side stack */
-.shadowing-parent {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  gap: 18px !important;
+.shadowing-parent{
+   display:flex !important;
+   flex-direction:column !important;
+   align-items:flex-start !important;
+   gap:28px !important;
+}
+
+/* current plan */
+.shadowing4{
+   order:1;
+}
+
+/* price */
+.shadowing5{
+   order:2;
+   font-size:32px !important;
+   margin-top:-10px !important;
+}
+
+/* Curita weekly */
+.shadowing6{
+   order:3;
+   margin-top:-18px !important;
+}
+
+/* status spacing */
+.frame-parent2{
+   gap:60px !important;
 }
 
 .shadowing-wrapper {
