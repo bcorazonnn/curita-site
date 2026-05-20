@@ -646,35 +646,26 @@
   margin-right: 120px;
   box-shadow: none;
 }
-/* FIX LEFT SIDE STACKING */
-.shadowing-parent{
-    display:flex !important;
-    flex-direction:column !important;
-    gap:70px !important;
+/* LEFT SIDE PERFECT STACK FIX ONLY */
+.shadowing-parent {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 45px !important;
 }
 
-.shadowing-wrapper{
-    display:block !important;
-    height:auto !important;
-    padding:0 !important;
-    margin-top:0 !important;
+.shadowing-wrapper {
+  height: auto !important;
+  padding: 0 !important;
 }
 
-.shadowing5{
-    margin-bottom:35px !important;
+.shadowing-container {
+  padding: 0 0 60px 20px !important;
 }
 
-.shadowing-container{
-    padding-left:60px !important;
-    padding-top:20px !important;
-    padding-bottom:50px !important;
-}
-/* FIX SUBSCRIPTION TEXT OVERLAP */
 .shadowing4,
 .shadowing5,
 .shadowing6,
-.shadowing7,
-.shadowing8,
 .shadowing9,
 .shadowing10 {
   position: relative !important;
@@ -687,32 +678,19 @@
   text-align: left !important;
 }
 
-/* hide the duplicate overlapping text */
+/* hide duplicate overlap text */
+.shadowing7,
 .shadowing8 {
   display: none !important;
 }
 
-/* current plan + price spacing */
-.shadowing-parent {
-  gap: 70px !important;
-}
-
-.shadowing-wrapper {
-  height: auto !important;
-  padding-left: 0 !important;
-}
-
-.shadowing-container {
-  padding: 0 0 70px 20px !important;
-}
-
-/* status row */
+/* make left side stack like example */
 .shadowing-parent2 {
-  padding: 0 90px 0 20px !important;
+  padding: 0 0 0 20px !important;
   display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  gap: 0 !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 45px !important;
 }
 @media screen and (max-width: 1250px) {
   .frame-wrapper {
