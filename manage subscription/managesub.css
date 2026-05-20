@@ -468,96 +468,8 @@
   opacity: 0.9;
   padding-left: 0;
 }
+/* FINAL SUBSCRIPTION LAYOUT FIX */
 
-/* CLEAN MANAGE SUB FIX */
-.subscription {
-  background: transparent;
-  overflow-x: hidden;
-}
-
-.frame-parent {
-  height: 776px;
-  padding: 24px 40px 0 20px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.frame-wrapper {
-  margin-left: 0;
-  width: 430px;
-  padding: 0;
-}
-
-.frame-group {
-  align-items: flex-start;
-  gap: 155px;
-}
-
-.frame-container {
-  gap: 125px;
-}
-
-.shadowing {
-  top: 255px !important;
-  left: 22px !important;
-  width: 520px !important;
-  font-size: 32px !important;
-  text-align: left !important;
-}
-
-.shadowing3 {
-  margin-top: 65px !important;
-  text-align: left !important;
-}
-
-.icon {
-  width: 360px;
-  height: auto;
-  margin-top: 155px;
-  margin-right: 120px;
-  box-shadow: none;
-}
-
-.shadowing-parent {
-  gap: 70px;
-}
-
-.shadowing-wrapper {
-  height: auto;
-  padding-left: 0;
-}
-
-.shadowing-container {
-  padding: 0 0 60px 60px;
-}
-
-.frame-section {
-  width: 100%;
-  padding: 0 90px 40px 20px;
-  justify-content: space-between;
-}
-
-.shadowing-parent2 {
-  padding: 0 90px 0 20px;
-  justify-content: space-between;
-  gap: 0;
-}
-
-.frame-parent2 {
-  gap: 77px;
-}
-
-.frame-wrapper3 {
-  width: 100%;
-  margin-top: 0;
-}
-
-.frame-parent4 {
-  margin-left: auto;
-  margin-right: auto;
-}
-/* CLEAN FINAL LAYOUT */
 .subscription {
   background: transparent;
   overflow-x: hidden;
@@ -579,20 +491,16 @@
 
 .frame-group {
   align-items: flex-start;
-  gap: 135px;
+  gap: 120px;
 }
 
 .frame-container {
   align-items: flex-start;
-  gap: 125px;
+  gap: 95px;
 }
 
 .frame-div {
   padding-left: 0;
-}
-
-.shadowing3 {
-  text-align: left;
 }
 
 .shadowing {
@@ -603,20 +511,41 @@
   text-align: left !important;
 }
 
+.shadowing3 {
+  margin-top: 65px !important;
+  text-align: left !important;
+}
+
+/* left-side stack */
 .shadowing-parent {
-  align-items: flex-start;
-  gap: 45px;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 18px !important;
 }
 
 .shadowing-wrapper {
-  padding-left: 0;
-  height: auto;
+  height: auto !important;
+  padding: 0 !important;
 }
 
 .shadowing-container {
-  padding: 0 0 60px 20px;
+  padding: 0 0 45px 20px !important;
 }
 
+/* fix current plan and price */
+.shadowing4,
+.shadowing5 {
+  position: relative !important;
+  margin: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  display: block !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+}
+
+/* bottom rows stay aligned */
 .frame-section {
   width: 100%;
   padding: 0 90px 45px 20px;
@@ -624,9 +553,18 @@
 }
 
 .shadowing-parent2 {
-  padding: 0 90px 0 20px;
-  justify-content: space-between;
-  gap: 0;
+  padding: 0 90px 0 20px !important;
+  justify-content: space-between !important;
+  gap: 0 !important;
+}
+
+/* image stays right */
+.icon {
+  width: 360px;
+  height: auto;
+  margin-top: 155px;
+  margin-right: 120px;
+  box-shadow: none;
 }
 
 .frame-wrapper3 {
@@ -637,60 +575,6 @@
 .frame-parent4 {
   margin-left: auto;
   margin-right: auto;
-}
-
-.icon {
-  width: 360px;
-  height: auto;
-  margin-top: 155px;
-  margin-right: 120px;
-  box-shadow: none;
-}
-/* LEFT SIDE PERFECT STACK FIX ONLY */
-.shadowing-parent {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  gap: 45px !important;
-}
-
-.shadowing-wrapper {
-  height: auto !important;
-  padding: 0 !important;
-}
-
-.shadowing-container {
-  padding: 0 0 60px 20px !important;
-}
-
-.shadowing4,
-.shadowing5,
-.shadowing6,
-.shadowing9,
-.shadowing10 {
-  position: relative !important;
-  margin: 0 !important;
-  width: auto !important;
-  max-width: none !important;
-  height: auto !important;
-  display: block !important;
-  white-space: nowrap !important;
-  text-align: left !important;
-}
-
-/* hide duplicate overlap text */
-.shadowing7,
-.shadowing8 {
-  display: none !important;
-}
-
-/* make left side stack like example */
-.shadowing-parent2 {
-  padding: 0 0 0 20px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  gap: 45px !important;
 }
 @media screen and (max-width: 1250px) {
   .frame-wrapper {
