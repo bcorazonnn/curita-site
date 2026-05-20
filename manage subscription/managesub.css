@@ -393,3 +393,100 @@
   font-size:clamp(1.1rem,1.2vw,1.4rem);
   opacity:.9;
 }
+/* EMERGENCY FIX - PASTE AT VERY BOTTOM */
+
+.subscription {
+  background: transparent !important;
+  overflow-x: hidden !important;
+}
+
+.frame-parent {
+  height: 720px !important;
+  padding: 24px 40px 0 20px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+}
+
+.frame-wrapper {
+  margin-left: 0 !important;
+  width: 430px !important;
+  padding: 0 !important;
+}
+
+.frame-group,
+.frame-container {
+  align-items: flex-start !important;
+}
+
+.frame-group {
+  gap: 120px !important;
+}
+
+.frame-container {
+  gap: 90px !important;
+}
+
+/* top text */
+.shadowing11 {
+  position: absolute !important;
+  top: 150px !important;
+  left: 20px !important;
+  width: auto !important;
+  font-size: 32px !important;
+  text-align: left !important;
+}
+
+/* main subscription title */
+.frame-wrapper2 {
+  justify-content: flex-start !important;
+  padding-left: 0 !important;
+}
+
+.frame-wrapper2 .shadowing4 {
+  font-size: 75px !important;
+  text-align: left !important;
+}
+
+/* current plan stack */
+.shadowing-parent {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+}
+
+.shadowing5,
+.shadowing-parent > .shadowing4,
+.shadowing10 {
+  position: relative !important;
+  margin: 0 !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  display: block !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+}
+
+.shadowing5 {
+  font-size: 64px !important;
+}
+
+.shadowing-parent > .shadowing4 {
+  font-size: 36px !important;
+}
+
+.shadowing10 {
+  font-size: 64px !important;
+}
+
+/* image */
+.icon {
+  width: 360px !important;
+  height: auto !important;
+  margin-top: 155px !important;
+  margin-right: 120px !important;
+  box-shadow: none !important;
+}
