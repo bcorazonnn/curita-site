@@ -468,68 +468,66 @@
   padding-left: 0;
 }
 .subscription {
-  width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
   background: transparent;
+  overflow-x: hidden;
 }
 
 .frame-parent {
-  height: auto;
-  padding: 30px 40px 0 20px;
+  height: 520px;
+  padding: 24px 40px 0 20px;
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .frame-wrapper {
   margin-left: 0;
-  width: auto;
-  max-width: 520px;
+  width: 420px;
   padding: 0;
 }
 
 .frame-group {
-  gap: 90px;
   align-items: flex-start;
+  gap: 120px;
 }
 
 .frame-container {
-  gap: 120px;
+  gap: 110px;
 }
 
 .shadowing {
   position: absolute;
-  top: 250px;
+  top: 185px;
   left: 20px;
-  width: auto;
+  width: 600px;
+  text-align: left;
   font-size: 32px;
-  z-index: 3;
 }
 
 .shadowing-container {
-  padding: 0 0 50px 60px;
+  padding: 0 0 60px 60px;
 }
 
 .frame-section {
   width: 100%;
-  padding: 0 80px 40px 20px;
+  padding: 0 420px 40px 20px;
+  justify-content: space-between;
 }
 
 .shadowing-parent2 {
-  padding: 0 80px 0 20px;
-  gap: 280px;
+  padding: 0 360px 0 20px;
+  justify-content: space-between;
+  gap: 0;
 }
 
+/* keep your manage billing button area */
 .frame-wrapper3 {
   width: 100%;
 }
 
-.icon {
-  width: 360px;
-  height: auto;
-  margin-top: 160px;
-  margin-right: 80px;
+.frame-parent4 {
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 1250px) {
   .frame-wrapper {
