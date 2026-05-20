@@ -468,85 +468,6 @@
   opacity: 0.9;
   padding-left: 0;
 }
-/* MAKE MANAGE SUB LOOK LIKE SCREENSHOT */
-.subscription {
-  background: transparent;
-  overflow-x: hidden;
-}
-
-.frame-parent {
-  height: 620px;
-  padding: 24px 40px 0 20px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.frame-wrapper {
-  margin-left: 0;
-  width: 430px;
-  padding: 0;
-}
-
-.frame-group {
-  align-items: flex-start;
-  gap: 145px;
-}
-
-.frame-container {
-  gap: 140px;
-}
-
-.shadowing {
-  position: absolute;
-  top: 210px;
-  left: 20px;
-  width: 520px;
-  text-align: left;
-  font-size: 32px;
-}
-
-.icon {
-  width: 360px;
-  height: auto;
-  margin-top: 155px;
-  margin-right: 120px;
-  box-shadow: none;
-}
-
-.shadowing-container {
-  padding: 0 0 55px 60px;
-}
-
-.frame-section {
-  width: 100%;
-  padding: 0 90px 35px 20px;
-  justify-content: space-between;
-}
-
-.shadowing-parent2 {
-  padding: 0 90px 0 20px;
-  justify-content: space-between;
-  gap: 0;
-}
-
-.frame-wrapper3 {
-  width: 100%;
-}
-
-.frame-parent4 {
-  margin-left: auto;
-  margin-right: auto;
-}
-/* keep your manage billing button area */
-.frame-wrapper3 {
-  width: 100%;
-}
-
-.frame-parent4 {
-  margin-left: auto;
-  margin-right: auto;
-}
 /* FINAL MATCH TO SCREENSHOT */
 .curita-parent {
   margin-left: 0 !important;
@@ -616,6 +537,94 @@
   position: relative !important;
   left: 0 !important;
   top: 0 !important;
+}
+/* CLEAN MANAGE SUB FIX */
+.subscription {
+  background: transparent;
+  overflow-x: hidden;
+}
+
+.frame-parent {
+  height: 776px;
+  padding: 24px 40px 0 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.frame-wrapper {
+  margin-left: 0;
+  width: 430px;
+  padding: 0;
+}
+
+.frame-group {
+  align-items: flex-start;
+  gap: 155px;
+}
+
+.frame-container {
+  gap: 125px;
+}
+
+.shadowing {
+  top: 255px !important;
+  left: 22px !important;
+  width: 520px !important;
+  font-size: 32px !important;
+  text-align: left !important;
+}
+
+.shadowing3 {
+  margin-top: 65px !important;
+  text-align: left !important;
+}
+
+.icon {
+  width: 360px;
+  height: auto;
+  margin-top: 155px;
+  margin-right: 120px;
+  box-shadow: none;
+}
+
+.shadowing-parent {
+  gap: 70px;
+}
+
+.shadowing-wrapper {
+  height: auto;
+  padding-left: 0;
+}
+
+.shadowing-container {
+  padding: 0 0 60px 60px;
+}
+
+.frame-section {
+  width: 100%;
+  padding: 0 90px 40px 20px;
+  justify-content: space-between;
+}
+
+.shadowing-parent2 {
+  padding: 0 90px 0 20px;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.frame-parent2 {
+  gap: 77px;
+}
+
+.frame-wrapper3 {
+  width: 100%;
+  margin-top: 0;
+}
+
+.frame-parent4 {
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 1250px) {
   .frame-wrapper {
