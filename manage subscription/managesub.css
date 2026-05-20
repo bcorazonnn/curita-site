@@ -547,25 +547,31 @@
   margin-left: auto;
   margin-right: auto;
 }
-/* FIX TEXT OVERLAP */
-.shadowing {
-  top: 245px !important;
-  left: 25px !important;
-  width: auto !important;
-  font-size: 32px !important;
+/* TEXT POSITION FIX */
+.shadowing3 {
+  margin-top: 80px !important;
   text-align: left !important;
 }
 
-.frame-group {
-  gap: 150px !important;
+.shadowing {
+  top: 250px !important;
+  left: 25px !important;
+  width: 600px !important;
+  font-size: 32px !important;
+  text-align: left !important;
+  z-index: 5 !important;
 }
 
 .frame-container {
-  gap: 130px !important;
+  gap: 150px !important;
+}
+
+.frame-group {
+  gap: 160px !important;
 }
 
 .shadowing-parent {
-  gap: 35px !important;
+  gap: 55px !important;
 }
 
 .shadowing-wrapper {
@@ -574,7 +580,7 @@
 }
 
 .shadowing-container {
-  padding: 0 0 55px 60px !important;
+  padding: 20px 0 70px 65px !important;
 }
 /* put Curita logo back */
 .frame-div {
