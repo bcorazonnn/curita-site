@@ -467,6 +467,70 @@
   opacity: 0.9;
   padding-left: 0;
 }
+.subscription {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: transparent;
+}
+
+.frame-parent {
+  height: auto;
+  padding: 30px 40px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.frame-wrapper {
+  margin-left: 0;
+  width: auto;
+  max-width: 520px;
+  padding: 0;
+}
+
+.frame-group {
+  gap: 90px;
+  align-items: flex-start;
+}
+
+.frame-container {
+  gap: 120px;
+}
+
+.shadowing {
+  position: absolute;
+  top: 250px;
+  left: 20px;
+  width: auto;
+  font-size: 32px;
+  z-index: 3;
+}
+
+.shadowing-container {
+  padding: 0 0 50px 60px;
+}
+
+.frame-section {
+  width: 100%;
+  padding: 0 80px 40px 20px;
+}
+
+.shadowing-parent2 {
+  padding: 0 80px 0 20px;
+  gap: 280px;
+}
+
+.frame-wrapper3 {
+  width: 100%;
+}
+
+.icon {
+  width: 360px;
+  height: auto;
+  margin-top: 160px;
+  margin-right: 80px;
+}
 @media screen and (max-width: 1250px) {
   .frame-wrapper {
     max-width: 100%;
