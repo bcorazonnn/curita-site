@@ -468,69 +468,85 @@
   opacity: 0.9;
   padding-left: 0;
 }
-/* HARD POSITION FIX — LEFT SIDE ONLY */
+/* REAL FIX — stop absolute positioning */
 
 .subscription {
   background: transparent;
   overflow-x: hidden;
-  position: relative;
 }
 
-/* top subtitle */
+/* put layout back */
+.frame-parent {
+  height: 640px !important;
+  padding: 24px 40px 0 20px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+}
+
+.frame-wrapper {
+  margin-left: 0 !important;
+  width: 430px !important;
+  padding: 0 !important;
+}
+
+/* fix title */
 .shadowing {
-  position: absolute !important;
-  top: 145px !important;
+  top: 155px !important;
   left: 20px !important;
-  width: auto !important;
+  width: 520px !important;
   font-size: 32px !important;
-  margin: 0 !important;
   text-align: left !important;
 }
 
-/* subscription title */
 .shadowing3 {
-  position: absolute !important;
-  top: 185px !important;
-  left: 20px !important;
-  width: auto !important;
-  margin: 0 !important;
+  position: relative !important;
+  margin-top: 65px !important;
   text-align: left !important;
 }
 
-/* current plan */
-.shadowing4 {
-  position: absolute !important;
-  top: 330px !important;
-  left: 90px !important;
-  width: auto !important;
-  margin: 0 !important;
-  font-size: 64px !important;
+/* left stack */
+.shadowing-parent {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 18px !important;
 }
 
-/* price */
-.shadowing5 {
-  position: absolute !important;
-  top: 420px !important;
-  left: 90px !important;
-  width: auto !important;
-  margin: 0 !important;
-  font-size: 40px !important;
+.shadowing-wrapper {
+  height: auto !important;
+  padding: 0 !important;
 }
 
-/* curita weekly */
+.shadowing-container {
+  padding: 0 0 60px 20px !important;
+}
+
+/* text order stays natural */
+.shadowing4,
+.shadowing5,
 .shadowing6 {
-  position: absolute !important;
-  top: 480px !important;
-  left: 90px !important;
-  width: auto !important;
+  position: relative !important;
   margin: 0 !important;
-  font-size: 40px !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: auto !important;
+  text-align: left !important;
 }
 
-/* hide duplicate junk text */
+/* hide duplicates */
 .shadowing7,
 .shadowing8 {
   display: none !important;
+}
+
+/* keep image right */
+.icon {
+  width: 360px !important;
+  height: auto !important;
+  margin-top: 155px !important;
+  margin-right: 120px !important;
+  box-shadow: none !important;
 }
 @media screen and (max-width: 1250px) {
   .frame-wrapper {
