@@ -468,34 +468,62 @@
   opacity: 0.9;
   padding-left: 0;
 }
-/* FIX ONLY THE MESSED LEFT PLAN TEXT */
+/* FINAL OVERRIDE */
 
-.shadowing-parent {
-  display: grid !important;
-  grid-template-columns: 1fr !important;
-  row-gap: 18px !important;
-  align-items: start !important;
-  justify-items: start !important;
-  padding-left: 70px !important;
+.frame-parent {
+  height: 640px !important;
+  padding: 24px 40px 0 20px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
 }
 
-/* force the 3 plan lines to stack */
+.frame-wrapper {
+  margin-left: 0 !important;
+  width: 430px !important;
+  padding: 0 !important;
+}
+
+.shadowing {
+  top: 150px !important;
+  left: 20px !important;
+  font-size: 32px !important;
+  width: 520px !important;
+  text-align: left !important;
+}
+
+.shadowing3 {
+  margin-top: 65px !important;
+  text-align: left !important;
+}
+
+.shadowing-parent {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 22px !important;
+  align-items: flex-start !important;
+}
+
+.shadowing-wrapper,
+.shadowing-container {
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .shadowing4,
 .shadowing5,
 .shadowing6 {
-  position: static !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  left: auto !important;
+  position: relative !important;
   top: auto !important;
+  left: auto !important;
+  margin: 0 !important;
   width: auto !important;
-  height: auto !important;
   display: block !important;
   text-align: left !important;
   white-space: nowrap !important;
 }
 
-/* correct sizes */
 .shadowing4 {
   font-size: 64px !important;
 }
@@ -508,17 +536,14 @@
   font-size: 64px !important;
 }
 
-/* fix wrapper spacing */
-.shadowing-wrapper {
+.icon {
+  width: 360px !important;
   height: auto !important;
-  padding: 0 !important;
+  margin-top: 155px !important;
+  margin-right: 120px !important;
+  box-shadow: none !important;
 }
 
-.shadowing-container {
-  padding: 0 !important;
-}
-
-/* hide the duplicate overlapping status text */
 .shadowing7,
 .shadowing8 {
   display: none !important;
