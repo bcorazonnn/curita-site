@@ -646,6 +646,24 @@
   margin-right: 120px;
   box-shadow: none;
 }
+/* FIX PLAN + PRICE OVERLAP */
+.shadowing-parent {
+  gap: 85px !important;
+}
+
+.shadowing-wrapper {
+  height: auto !important;
+  padding-left: 0 !important;
+}
+
+.shadowing5 {
+  display: block !important;
+  margin: 0 !important;
+}
+
+.shadowing-container {
+  padding: 35px 0 70px 20px !important;
+}
 @media screen and (max-width: 1250px) {
   .frame-wrapper {
     max-width: 100%;
