@@ -467,13 +467,14 @@
   opacity: 0.9;
   padding-left: 0;
 }
+/* MAKE MANAGE SUB LOOK LIKE SCREENSHOT */
 .subscription {
   background: transparent;
   overflow-x: hidden;
 }
 
 .frame-parent {
-  height: 520px;
+  height: 620px;
   padding: 24px 40px 0 20px;
   display: flex;
   align-items: flex-start;
@@ -482,44 +483,60 @@
 
 .frame-wrapper {
   margin-left: 0;
-  width: 420px;
+  width: 430px;
   padding: 0;
 }
 
 .frame-group {
   align-items: flex-start;
-  gap: 120px;
+  gap: 145px;
 }
 
 .frame-container {
-  gap: 110px;
+  gap: 140px;
 }
 
 .shadowing {
   position: absolute;
-  top: 185px;
+  top: 210px;
   left: 20px;
-  width: 600px;
+  width: 520px;
   text-align: left;
   font-size: 32px;
 }
 
+.icon {
+  width: 360px;
+  height: auto;
+  margin-top: 155px;
+  margin-right: 120px;
+  box-shadow: none;
+}
+
 .shadowing-container {
-  padding: 0 0 60px 60px;
+  padding: 0 0 55px 60px;
 }
 
 .frame-section {
   width: 100%;
-  padding: 0 420px 40px 20px;
+  padding: 0 90px 35px 20px;
   justify-content: space-between;
 }
 
 .shadowing-parent2 {
-  padding: 0 360px 0 20px;
+  padding: 0 90px 0 20px;
   justify-content: space-between;
   gap: 0;
 }
 
+.frame-wrapper3 {
+  width: 100%;
+}
+
+.frame-parent4 {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* keep your manage billing button area */
 .frame-wrapper3 {
   width: 100%;
