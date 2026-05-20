@@ -468,85 +468,60 @@
   opacity: 0.9;
   padding-left: 0;
 }
-/* REAL FIX — stop absolute positioning */
+/* FIX ONLY THE MESSED LEFT PLAN TEXT */
 
-.subscription {
-  background: transparent;
-  overflow-x: hidden;
-}
-
-/* put layout back */
-.frame-parent {
-  height: 640px !important;
-  padding: 24px 40px 0 20px !important;
-  display: flex !important;
-  align-items: flex-start !important;
-  justify-content: space-between !important;
-}
-
-.frame-wrapper {
-  margin-left: 0 !important;
-  width: 430px !important;
-  padding: 0 !important;
-}
-
-/* fix title */
-.shadowing {
-  top: 155px !important;
-  left: 20px !important;
-  width: 520px !important;
-  font-size: 32px !important;
-  text-align: left !important;
-}
-
-.shadowing3 {
-  position: relative !important;
-  margin-top: 65px !important;
-  text-align: left !important;
-}
-
-/* left stack */
 .shadowing-parent {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  gap: 18px !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  row-gap: 18px !important;
+  align-items: start !important;
+  justify-items: start !important;
+  padding-left: 70px !important;
 }
 
+/* force the 3 plan lines to stack */
+.shadowing4,
+.shadowing5,
+.shadowing6 {
+  position: static !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  left: auto !important;
+  top: auto !important;
+  width: auto !important;
+  height: auto !important;
+  display: block !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+}
+
+/* correct sizes */
+.shadowing4 {
+  font-size: 64px !important;
+}
+
+.shadowing5 {
+  font-size: 36px !important;
+}
+
+.shadowing6 {
+  font-size: 64px !important;
+}
+
+/* fix wrapper spacing */
 .shadowing-wrapper {
   height: auto !important;
   padding: 0 !important;
 }
 
 .shadowing-container {
-  padding: 0 0 60px 20px !important;
+  padding: 0 !important;
 }
 
-/* text order stays natural */
-.shadowing4,
-.shadowing5,
-.shadowing6 {
-  position: relative !important;
-  margin: 0 !important;
-  left: 0 !important;
-  top: 0 !important;
-  width: auto !important;
-  text-align: left !important;
-}
-
-/* hide duplicates */
+/* hide the duplicate overlapping status text */
 .shadowing7,
 .shadowing8 {
   display: none !important;
-}
-
-/* keep image right */
-.icon {
-  width: 360px !important;
-  height: auto !important;
-  margin-top: 155px !important;
-  margin-right: 120px !important;
-  box-shadow: none !important;
 }
 @media screen and (max-width: 1250px) {
   .frame-wrapper {
