@@ -10,6 +10,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Normal TM:wght@400&display=swap"
     />
+    
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
   </head>
   <body>
     <div class="create-account">
@@ -122,12 +125,30 @@ observer.observe(item)
 
 <!-- create account script -->
 <script>
-function createAccount() {
-  const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value.trim();
-  const confirmPassword = document.getElementById("confirmPassword").value.trim();
+const supabaseUrl =
+"https://ffhtnfbeetngiaghmhrd.supabase.co";
 
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const supabaseKey =
+"sb_publishable_E0zupkyE3o7PovNtLXIj1A_30ZipeED";
+
+const supabase =
+window.supabase.createClient(
+  supabaseUrl,
+  supabaseKey
+);
+
+async function createAccount() {
+  const email =
+  document.getElementById("email").value.trim();
+
+  const password =
+  document.getElementById("password").value.trim();
+
+  const confirmPassword =
+  document.getElementById("confirmPassword").value.trim();
+
+  const emailPattern =
+  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!email || !password || !confirmPassword) {
     alert("Complete all fields to create your Curita account.");
@@ -149,12 +170,22 @@ function createAccount() {
     return;
   }
 
-  localStorage.setItem("loggedIn", "true");
-  localStorage.setItem("userEmail", email);
+  const { data, error } =
+  await supabase.auth.signUp({
+      email: email,
+      password: password
+  });
+
+  if (error) {
+      alert(error.message);
+      return;
+  }
+
+  localStorage.setItem("loggedIn","true");
 
   alert("Account created successfully!");
 
-  window.location.href = "../signup/signup.html";
+  window.location.href="../signup/signup.html";
 }
 </script>
 
