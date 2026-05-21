@@ -67,7 +67,7 @@
             </div>
           </div>
           <div class="frame-group">
-           <button class="rectangle-parent" type="submit">
+           <button class="rectangle-parent" type="button" onclick="createAccount()">
   <div class="rectangle-div"></div>
   <h2 class="shadowing6">create account</h2>
 </button>
@@ -77,16 +77,73 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
+     <footer class="footer">
   <div class="footer-block-parent">
     <div class="footer-block">
       <h1 class="footer-curita">curita</h1>
     </div>
-    <h2 class="footer-found-for-you">found for you. every week.</h2>
+    <h2 class="footer-found-for-you">
+      found for you. every week.
+    </h2>
   </div>
+
   <h2 class="footer-curita2">@2026 curita</h2>
 </footer>
-    </div>
-  </body>
-</html>
 
+</div>
+
+<!-- reveal animation script -->
+<script>
+const revealItems = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+(entries)=>{
+entries.forEach((entry)=>{
+if(entry.isIntersecting){
+entry.target.classList.add("active");
+observer.unobserve(entry.target);
+}
+});
+},
+{
+threshold:.06,
+rootMargin:"0px 0px -6% 0px"
+}
+);
+
+revealItems.forEach((item)=>
+observer.observe(item)
+);
+</script>
+
+<!-- create account script -->
+<script>
+function createAccount() {
+  const email =
+  document.getElementById("email").value.trim();
+
+  const password =
+  document.getElementById("password").value.trim();
+
+  const confirmPassword =
+  document.getElementById("confirmPassword").value.trim();
+
+  if (!email || !password || !confirmPassword) {
+    alert("Complete all fields to create your Curita account.");
+    return;
+  }
+
+  if (password !== confirmPassword) {
+    alert("Passwords do not match.");
+    return;
+  }
+
+  localStorage.setItem("loggedIn","true");
+  localStorage.setItem("userEmail",email);
+
+  window.location.href="../signup/signup.html";
+}
+</script>
+
+</body>
+</html>
