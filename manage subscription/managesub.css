@@ -277,14 +277,14 @@
 /* NEXT BILLING DATE LABEL */
 .next-billing-date {
   position: relative !important;
-  left: 53px !important;   /* move left/right */
+  left: 43px !important;   /* move left/right */
   top: 0px !important;      /* move up/down */
 }
 
 /* MAY 17, 2026 */
 .next-billing-date-text-parent h1:last-child {
   position: relative !important;
-  left: 1000px !important;  /* move left/right */
+  left: 9700px !important;  /* move left/right */
   top: 0px !important;      /* move up/down */
 }
 .next-billing-date {
