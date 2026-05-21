@@ -411,6 +411,18 @@
 .shadowing-parent {
   gap: 0 !important;
 }
+.shadowing7 {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.shadowing7:visited {
+  color: white !important;
+}
+
+.shadowing7:hover {
+  color: white !important;
+}
 @media screen and (max-width: 750px) {
   .curita,
   .shadowing {
