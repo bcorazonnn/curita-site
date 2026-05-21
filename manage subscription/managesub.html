@@ -59,10 +59,14 @@
         <div class="frame-wrapper2">
           <div class="frame-parent3">
             <div class="frame-wrapper3">
-              <button class="rectangle-parent">
-                <div class="frame-child"></div>
-                <h2 class="manage-billing-text">manage billing</h2>
-              </button>
+              <button
+  class="rectangle-parent"
+  id="manageBillingBtn"
+  type="button"
+>
+  <div class="frame-child"></div>
+  <h2 class="manage-billing-text">manage billing</h2>
+</button>
             </div>
             <h2 class="secure-billing-powered">
               secure billing powered by stripe
@@ -80,5 +84,15 @@
 </footer>
       </div>
     </div>
+    <script>
+document
+  .getElementById("manageBillingBtn")
+  .addEventListener("click", () => {
+
+    window.location.href =
+      "https://billing.stripe.com/p/login/00w8wI0bsdQ8afw9Edao800";
+
+});
+</script>
   </body>
 </html>
