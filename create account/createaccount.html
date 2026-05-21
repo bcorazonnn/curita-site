@@ -11,6 +11,37 @@
       href="https://fonts.googleapis.com/css2?family=Normal TM:wght@400&display=swap"
     />
   </head>
+  <script>
+document.querySelector(".rectangle-parent")
+.addEventListener("click", function(e){
+
+e.preventDefault();
+
+const email =
+document.getElementById("email").value.trim();
+
+const password =
+document.getElementById("password").value.trim();
+
+const confirmPassword =
+document.getElementById("confirmPassword").value.trim();
+
+if(!email || !password || !confirmPassword){
+   alert("Fill out all fields");
+   return;
+}
+
+if(password !== confirmPassword){
+   alert("Passwords do not match");
+   return;
+}
+
+localStorage.setItem("loggedIn","true");
+
+window.location.href="../signup/signup.html";
+
+});
+</script>
   <body>
     <div class="create-account">
       <img
