@@ -270,13 +270,22 @@
   z-index: 1;
 }
 .next-billing-date-text-parent {
-  align-self: stretch;
-  display: flex;
-  align-items: flex-start;
-  padding: var(--padding-0) var(--padding-0) var(--padding-0) 778px;
-  box-sizing: border-box;
-  gap: 337px;
-  max-width: 100%;
+  padding-left: 0 !important;
+  gap: 0 !important;
+  position: relative !important;
+}
+/* NEXT BILLING DATE LABEL */
+.next-billing-date {
+  position: relative !important;
+  left: -63px !important;   /* move left/right */
+  top: 0px !important;      /* move up/down */
+}
+
+/* MAY 17, 2026 */
+.next-billing-date-text-parent h1:last-child {
+  position: relative !important;
+  left: 1000px !important;  /* move left/right */
+  top: 0px !important;      /* move up/down */
 }
 .next-billing-date {
   margin: 0;
