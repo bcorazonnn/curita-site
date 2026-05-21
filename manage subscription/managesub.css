@@ -192,6 +192,9 @@
   width: 634px;
   position: relative;
 
+  left: 200px;   /* move right */
+  top: 0px;      /* move up/down */
+  
   box-shadow: none;   /* remove outline/shadow */
 
   object-fit: contain;
