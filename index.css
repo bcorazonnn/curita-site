@@ -384,6 +384,22 @@ body.user-logged-in .logged-in{
   opacity: 0.9;
   padding-left: 0;
 }
+.logged-out {
+  display: flex;
+}
+
+.logged-in {
+  display: none;
+}
+
+body.user-logged-in .logged-out {
+  display: none;
+}
+
+body.user-logged-in .logged-in {
+  display: flex;
+  align-items: center;
+}
 
 @media (max-width: 1200px) {
   .hero {
