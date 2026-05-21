@@ -33,10 +33,11 @@
           <div class="frame-wrapper">
             <div class="shadowing-parent">
               <h2 class="shadowing3">email</h2>
-             <input
+            <input
+  id="email"
   class="frame-child input-field"
   type="email"
-  placeholder=""
+  required
 />
             </div>
           </div>
@@ -46,9 +47,10 @@
     <h2 class="shadowing4">password</h2>
 
    <input
+  id="password"
   class="frame-child input-field"
   type="password"
-  placeholder=""
+  required
 />
 
   </div>
@@ -57,17 +59,15 @@
             <div class="shadowing-parent">
               <h2 class="shadowing5">confirm password</h2>
             <input
+  id="confirmPassword"
   class="frame-item input-field"
   type="password"
-  placeholder=""
+  required
 />
             </div>
           </div>
           <div class="frame-group">
-            <button
-  class="rectangle-parent"
-  onclick="window.location.href='../signup/signup.html'"
->
+           <button class="rectangle-parent" type="submit">
   <div class="rectangle-div"></div>
   <h2 class="shadowing6">create account</h2>
 </button>
