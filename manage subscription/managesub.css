@@ -236,11 +236,14 @@
   padding: var(--padding-0) var(--padding-0) var(--padding-0) 778px;
   gap: 516px;
 }
-.active-text,
 .status-text {
   margin: 0;
   width: 323px;
   position: relative;
+
+  left: -150px; /* move left/right */
+  top: 0px;     /* move up/down */
+
   font-size: inherit;
   font-weight: 400;
   font-family: inherit;
@@ -249,8 +252,22 @@
   max-width: 100%;
   z-index: 1;
 }
+
 .active-text {
+  margin: 0;
   width: 472px;
+  position: relative;
+
+  left: 150px; /* move left/right */
+  top: 0px;    /* move up/down */
+
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 1;
 }
 .next-billing-date-text-parent {
   align-self: stretch;
