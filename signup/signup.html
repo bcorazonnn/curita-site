@@ -78,17 +78,18 @@
             <div class="rectangle-group">
 
               <input
-                class="expectations-column-child"
-                type="text"
-                placeholder="type here..."
-              />
+        id="first_name"
+        class="expectations-column-child"
+        type="text"
+        placeholder="type here..."
+      />
 
-              <input
-                class="expectations-column-child"
-                type="text"
-                placeholder="type here..."
-              />
-
+      <input
+        id="last_name"
+        class="expectations-column-child"
+        type="text"
+        placeholder="type here..."
+      />
             </div>
 
           </div>
@@ -108,16 +109,18 @@
             <div class="expectations-column">
 
               <input
-                class="expectations-column-child"
-                type="text"
-                placeholder="type here..."
-              />
+        id="school"
+        class="expectations-column-child"
+        type="text"
+        placeholder="type here..."
+      />
 
-              <input
-                class="expectations-column-child"
-                type="text"
-                placeholder="type here..."
-              />
+      <input
+        id="year"
+        class="expectations-column-child"
+        type="text"
+        placeholder="type here..."
+      />
 
             </div>
 
@@ -136,10 +139,11 @@
               <h2 class="shadowing8">what are you aiming for?</h2>
             </div>
 
-            <textarea
-              class="career-input"
-              placeholder="type here..."
-            ></textarea>
+           <textarea
+  id="career_direction"
+  class="career-input"
+  placeholder="type here..."
+></textarea>
 
           </div>
 
@@ -185,10 +189,11 @@
           </div>
 
           <input
-            class="other-interest-input"
-            type="text"
-            placeholder="other interests type here"
-          />
+  id="other_interest"
+  class="other-interest-input"
+  type="text"
+  placeholder="other interests type here"
+/>
 
         </section>
 
@@ -347,40 +352,44 @@
   <div class="dropdown-content">
 
     <label class="dropdown-option">
-    <input type="checkbox" />
-    <span>not knowing where to start</span>
-  </label>
+  <input type="checkbox" name="hardest_part" value="not knowing where to start" />
+  <span>not knowing where to start</span>
+</label>
 
-  <label class="dropdown-option">
-    <input type="checkbox" />
-    <span>finding opportunities near me</span>
-  </label>
+<label class="dropdown-option">
+  <input type="checkbox" name="hardest_part" value="finding opportunities near me" />
+  <span>finding opportunities near me</span>
+</label>
 
-  <label class="dropdown-option">
-    <input type="checkbox" />
-    <span>getting accepted into programs</span>
-  </label>
+<label class="dropdown-option">
+  <input type="checkbox" name="hardest_part" value="getting accepted into programs" />
+  <span>getting accepted into programs</span>
+</label>
 
-  <label class="dropdown-option">
-    <input type="checkbox" />
-    <span>balancing school and applications</span>
-  </label>
+<label class="dropdown-option">
+  <input type="checkbox" name="hardest_part" value="balancing school and applications" />
+  <span>balancing school and applications</span>
+</label>
 
-  <label class="dropdown-option">
-    <input type="checkbox" />
-    <span>not having enough experience</span>
-  </label>
+<label class="dropdown-option">
+  <input type="checkbox" name="hardest_part" value="not having enough experience" />
+  <span>not having enough experience</span>
+</label>
 
-  <label class="dropdown-option">
-    <input type="checkbox" />
-    <span>lack of mentorship or guidance</span>
-  </label>
+<label class="dropdown-option">
+  <input type="checkbox" name="hardest_part" value="lack of mentorship or guidance" />
+  <span>lack of mentorship or guidance</span>
+</label>
 
   <label class="dropdown-option">
     <input type="checkbox" />
     <span>other:</span>
-    <input type="text" class="dropdown-other-input" />
-  </label>
+    <input
+    id="hardest_part_other"
+    type="text"
+    class="dropdown-other-input"
+  />
+</label>
 
   </div>
 
@@ -396,7 +405,8 @@
 
      <button
   class="start-my-curated"
-  onclick="window.location.href='../paywall/paywall.html'"
+  id="submitPreferences"
+  type="button"
 >
   start my curated experience
 </button>
@@ -423,7 +433,7 @@
       </footer>
 
     </div>
-    <script>
+   <script>
   const experienceButtons = document.querySelectorAll(
     ".principle-snippet, .value-message"
   );
@@ -451,6 +461,128 @@
       dropdown.classList.toggle("active");
     });
   });
+
+
+  // SUPABASE
+
+  const supabaseUrl =
+    "https://ffhtnfbeetngiaghmhrd.supabase.co";
+
+  const supabaseKey =
+    "sb_publishable_E0zupkyE3o7PovNtLXIj1A_30ZipeED";
+
+  const supabaseClient =
+    supabase.createClient(
+      supabaseUrl,
+      supabaseKey
+    );
+
+  document
+    .getElementById("submitPreferences")
+    .addEventListener("click", async () => {
+
+      const interests = Array.from(
+        document.querySelectorAll(
+          'input[name="interests"]:checked'
+        )
+      ).map(box => box.value);
+
+
+      const mattersMost = Array.from(
+        document.querySelectorAll(
+          'input[name="matters_most"]:checked'
+        )
+      ).map(box => box.value);
+
+
+      const hardestPart = Array.from(
+        document.querySelectorAll(
+          'input[name="hardest_part"]:checked'
+        )
+      ).map(box => box.value);
+
+
+      const experience =
+        document.querySelector(
+          'input[name="experience"]:checked'
+        );
+
+
+      const data = {
+
+        first_name:
+          document.getElementById(
+            "first_name"
+          ).value,
+
+        last_name:
+          document.getElementById(
+            "last_name"
+          ).value,
+
+        school:
+          document.getElementById(
+            "school"
+          ).value,
+
+        year:
+          document.getElementById(
+            "year"
+          ).value,
+
+        career_direction:
+          document.getElementById(
+            "career_direction"
+          ).value,
+
+        interests:
+          interests.join(", ") +
+          " " +
+          document.getElementById(
+            "other_interest"
+          ).value,
+
+        experience_level:
+          experience
+            ? experience.value
+            : null,
+
+        matters_most:
+          mattersMost.join(", ") +
+          " " +
+          document.getElementById(
+            "matters_most_other"
+          ).value,
+
+        hardest_part:
+          hardestPart.join(", ") +
+          " " +
+          document.getElementById(
+            "hardest_part_other"
+          ).value
+      };
+
+
+      const { error } =
+        await supabaseClient
+          .from("user_preferences")
+          .insert([data]);
+
+
+      if (error) {
+        console.log(error);
+        alert(
+          "Error saving preferences"
+        );
+        return;
+      }
+
+
+      window.location.href =
+        "../paywall/paywall.html";
+
+    });
+
 </script>
   </body>
 </html>
