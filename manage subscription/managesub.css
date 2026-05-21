@@ -286,7 +286,7 @@
 /* MAY 17, 2026 */
 .next-billing-date-text-parent h1:last-child {
   position: relative !important;
-  left: 9700px !important;  /* move left/right */
+  left: 970px !important;  /* move left/right */
   top: 0px !important;      /* move up/down */
 }
 .next-billing-date {
