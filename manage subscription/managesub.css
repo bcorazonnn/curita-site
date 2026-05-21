@@ -450,6 +450,23 @@
   opacity: 0.9;
   padding-left: 0;
 }
+.status-text-parent {
+  padding-left: 0 !important;
+  gap: 0 !important;
+  position: relative !important;
+}
+
+.status-text {
+  position: relative !important;
+  left: 64px !important;  /* move status left/right */
+  top: 0px !important;    /* move status up/down */
+}
+
+.active-text {
+  position: relative !important;
+  left: 900px !important; /* move active left/right */
+  top: 0px !important;    /* move active up/down */
+}
 @media screen and (max-width: 1250px) {
   .frame-wrapper {
     max-width: 100%;
