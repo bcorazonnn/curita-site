@@ -134,5 +134,12 @@
 
       revealItems.forEach((item) => observer.observe(item));
     </script>
+
+    <script>
+if (localStorage.getItem("loggedIn") === "true") {
+  document.body.classList.add("user-logged-in");
+}
+</script>
+    
   </body>
 </html>
