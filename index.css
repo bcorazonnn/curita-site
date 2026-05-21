@@ -116,7 +116,25 @@ body {
   object-fit: cover;
   box-shadow: var(--shadow-soft);
 }
+/* show login/get started by default */
+.logged-out{
+  display:flex;
+}
 
+/* hide profile by default */
+.logged-in{
+  display:none;
+}
+
+/* after user logs in */
+body.user-logged-in .logged-out{
+  display:none;
+}
+
+body.user-logged-in .logged-in{
+  display:flex;
+  align-items:center;
+}
 .main-content {
   width: 100%;
   padding: 24px 40px 0;
