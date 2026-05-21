@@ -51,6 +51,7 @@
   class="frame-child input-field"
   type="password"
   required
+  minlength="8"
 />
 
   </div>
@@ -58,11 +59,12 @@
           <div class="frame-wrapper">
             <div class="shadowing-parent">
               <h2 class="shadowing5">confirm password</h2>
-            <input
+           <input
   id="confirmPassword"
   class="frame-item input-field"
   type="password"
   required
+  minlength="8"
 />
             </div>
           </div>
@@ -72,7 +74,9 @@
   <h2 class="shadowing6">create account</h2>
 </button>
             <div class="shadowing-frame">
-              <h3 class="shadowing7">Already have an account? Log in</h3>
+              <a href="../login/login.html" class="shadowing7">
+  Already have an account? Log in
+</a>
             </div>
           </div>
         </div>
@@ -119,17 +123,24 @@ observer.observe(item)
 <!-- create account script -->
 <script>
 function createAccount() {
-  const email =
-  document.getElementById("email").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
+  const confirmPassword = document.getElementById("confirmPassword").value.trim();
 
-  const password =
-  document.getElementById("password").value.trim();
-
-  const confirmPassword =
-  document.getElementById("confirmPassword").value.trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!email || !password || !confirmPassword) {
     alert("Complete all fields to create your Curita account.");
+    return;
+  }
+
+  if (!emailPattern.test(email)) {
+    alert("Invalid email address.");
+    return;
+  }
+
+  if (password.length < 8) {
+    alert("Password must be at least 8 characters.");
     return;
   }
 
@@ -138,10 +149,12 @@ function createAccount() {
     return;
   }
 
-  localStorage.setItem("loggedIn","true");
-  localStorage.setItem("userEmail",email);
+  localStorage.setItem("loggedIn", "true");
+  localStorage.setItem("userEmail", email);
 
-  window.location.href="../signup/signup.html";
+  alert("Account created successfully!");
+
+  window.location.href = "../signup/signup.html";
 }
 </script>
 
