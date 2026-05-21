@@ -563,11 +563,14 @@
       };
 
 
-      const { error } =
-        await supabaseClient
-          .from("user_preferences")
-          .insert([data]);
+    const preferenceId =
+  localStorage.getItem("preference_id");
 
+const { error } =
+  await supabaseClient
+    .from("user_preferences")
+    .update(data)
+    .eq("id", preferenceId);
 
       if (error) {
         console.log(error);
