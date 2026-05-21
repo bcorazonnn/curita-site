@@ -191,8 +191,10 @@
   height: 792px;
   width: 634px;
   position: relative;
-  box-shadow: var(--shadow-drop);
-  object-fit: cover;
+
+  box-shadow: none;   /* remove outline/shadow */
+
+  object-fit: contain;
   z-index: 2;
 }
 .shadowing-wrapper {
