@@ -279,7 +279,7 @@
 /* NEXT BILLING DATE LABEL */
 .next-billing-date {
   position: relative !important;
-  left: 33px !important;   /* move left/right */
+  left: 30px !important;   /* move left/right */
   top: 0px !important;      /* move up/down */
 }
 
