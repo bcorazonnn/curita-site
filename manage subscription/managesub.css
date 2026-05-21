@@ -458,7 +458,7 @@
 
 .status-text {
   position: relative !important;
-  left: -64px !important;  /* move status left/right */
+  left: -63px !important;  /* move status left/right */
   top: 0px !important;    /* move status up/down */
 }
 
