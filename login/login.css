@@ -7,7 +7,7 @@
   
   background: url("../gradient1.png");
   background-size: cover;
-  background-position: center 410%;
+  background-position: center 390%;
 
   display: flex;
   flex-direction: column;
@@ -231,7 +231,7 @@
   min-width: 491px;
   max-width: 100%;
 
-  transform: translate(450px, -120px) scale(1.15);
+  transform: translate(350px, -120px) scale(1.15);
 }
 .ambulance-cute-3,
 .face-mask-3,
