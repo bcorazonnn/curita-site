@@ -6,8 +6,8 @@
   overflow-x: hidden;
   
   background: url("../gradient1.png");
-  background-size: 110% 110%;
-  background-position: center 400%;
+  background-size: cover;
+  background-position: center 450%;
 
   display: flex;
   flex-direction: column;
