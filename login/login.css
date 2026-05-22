@@ -247,7 +247,6 @@
 .ambulance-cute-3 {
   top: 0;
   left: 170px;
-  box-shadow: var(--shadow-drop);
   z-index: 1;
   flex-shrink: 0;
 }
@@ -259,7 +258,6 @@
 .face-mask-3,
 .frame-footer,
 .icon {
-  box-shadow: var(--shadow-drop);
   flex-shrink: 0;
 }
 .icon {
