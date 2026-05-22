@@ -88,53 +88,5 @@
   <h2 class="footer-curita2">@2026 curita</h2>
 </footer>
     </div>
-   <script>
-  const form = document.querySelector("form");
-  const errorMessage = document.getElementById("errorMessage");
-
-  const emailInput = document.querySelector('input[type="text"]');
-  const passwordInput = document.querySelector('input[type="password"]');
-
-  form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const email = emailInput.value.trim();
-    const password = passwordInput.value.trim();
-
-    // Reset styles
-    errorMessage.style.display = "none";
-    emailInput.style.border = "";
-    passwordInput.style.border = "";
-
-    // Empty fields check
-    if (email === "" || password === "") {
-      errorMessage.textContent = "Please fill in all fields.";
-      errorMessage.style.display = "block";
-
-      emailInput.style.border = "2px solid red";
-      passwordInput.style.border = "2px solid red";
-
-      return;
-    }
-
-    // Fake login validation
-    if (email === "test@gmail.com" && password === "1234") {
-
-      localStorage.setItem("loggedIn", "true");
-
-      window.location.href = "../index.html";
-
-    } else {
-
-      errorMessage.textContent =
-        "Incorrect email or password. Please try again.";
-
-      errorMessage.style.display = "block";
-
-      emailInput.style.border = "2px solid red";
-      passwordInput.style.border = "2px solid red";
-    }
-  });
-</script>
   </body>
 </html>
