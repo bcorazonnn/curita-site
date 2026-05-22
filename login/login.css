@@ -232,6 +232,7 @@
   max-width: 100%;
 
   transform: translate(250px, -120px);
+  transform: scale(1.15);
 }
 .ambulance-cute-3,
 .face-mask-3,
