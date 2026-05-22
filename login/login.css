@@ -230,11 +230,19 @@
   max-width: 100%;
 }
 .ambulance-cute-3,
-.face-mask-3 {
+.face-mask-3,
+.icon {
   position: absolute;
   width: 530px;
   height: 662px;
-  object-fit: cover;
+
+  object-fit: contain;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  display: block;
 }
 .ambulance-cute-3 {
   top: 0;
