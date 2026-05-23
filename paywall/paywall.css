@@ -511,9 +511,9 @@
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  margin-top: 40px;
-}
 
+  margin-top: 0;
+}
 .footer::before {
   content: "";
   position: absolute;
