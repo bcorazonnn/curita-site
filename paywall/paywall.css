@@ -686,6 +686,20 @@
 .filtered-to-match {
   margin-top: 28px !important;
 }
+.not-right-now {
+  margin-top: 8px;
+  font-family: var(--font-normal-tm);
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  align-self: center;
+  z-index: 2;
+}
+
+.not-right-now:hover {
+  color: white;
+  text-decoration: underline;
+}
 @media screen and (max-width: 1200px) {
   .branding,
   .branding2 {
