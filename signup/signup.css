@@ -1330,6 +1330,16 @@
 
   font-family: var(--font-normal-tm);
 }
+.start-my-curated {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transition: 0.3s ease;
+}
+
+.start-my-curated.active {
+  opacity: 1;
+  cursor: pointer;
+}
 @media screen and (max-width: 1200px) {
   .expectations-column {
     flex-wrap: wrap;
