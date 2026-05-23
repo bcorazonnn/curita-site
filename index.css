@@ -568,9 +568,7 @@ body.user-logged-in .logged-in {
   height: 110px !important;
   flex: 0 0 130px !important;
   margin: 0 !important;
-  transform: translateY(0) rotate(0deg) scale(1) !important;
 }
-
 .bubble-left {
   transform: translateX(28px) rotate(-20deg) !important;
 }
