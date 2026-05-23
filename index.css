@@ -550,56 +550,38 @@ body.user-logged-in .logged-in {
   }
 
   .hero {
-    padding-top: 16px;
+    padding-top: 18px;
     padding-bottom: 48px;
   }
 
   .bubble-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 26px 8px;
-    max-width: 340px;
-    margin: 0 auto 58px;
-    align-items: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 22px !important;
+    margin: 0 auto 36px !important;
   }
 
   .text-bubble {
-    width: 145px;
-    flex: unset;
-  }
-
-  .bubble-left {
-    justify-self: start;
-  }
-
-  .bubble-center {
-    justify-self: end;
-    margin-top: 72px;
-  }
-
-  .bubble-right {
-    grid-column: 1 / -1;
-    justify-self: center;
-    margin-top: -8px;
+    width: 150px !important;
+    flex: 0 0 auto !important;
   }
 
   .bubble-left,
   .bubble-center,
   .bubble-right {
-    --bubble-rotate: 0deg;
-    --bubble-scale: 1;
+    margin-top: 0 !important;
+    --bubble-rotate: 0deg !important;
+    --bubble-scale: 1 !important;
+  }
+
+  .bubble-bg {
+    width: 150px !important;
   }
 
   .bubble-text {
-    font-size: 0.72rem;
-    line-height: 1.05;
-    width: 78%;
-  }
-
-  .bubble-left .bubble-text,
-  .bubble-center .bubble-text,
-  .bubble-right .bubble-text {
-    transform: translate(0, -8px);
+    font-size: 0.72rem !important;
+    transform: translate(0, -7px) !important;
   }
 
   .hero-title {
@@ -668,63 +650,6 @@ body.user-logged-in .logged-in {
   .footer {
     padding: 24px 16px 20px;
   }
-   .topbar {
-    padding: 14px 16px 0;
-    align-items: center;
-  }
-
-  /* all your other mobile styles */
-
-  .footer {
-    padding: 24px 16px 20px;
-  }
-
-  .footer-curita {
-    font-size: 2.4rem;
-  }
-
-  .footer-found-for-you {
-    font-size: 1rem;
-  }
-
-  .footer-curita2 {
-    font-size: 0.95rem;
-  }
-
-  /* ADD THIS HERE */
-  .bubble-row {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 22px !important;
-    margin: 0 auto 36px !important;
-  }
-
-  .text-bubble {
-    width: 150px !important;
-    flex: 0 0 auto !important;
-  }
-
-  .bubble-left,
-  .bubble-center,
-  .bubble-right {
-    margin-top: 0 !important;
-    --bubble-rotate: 0deg !important;
-    --bubble-scale: 1 !important;
-  }
-
-  .bubble-bg {
-    width: 150px !important;
-  }
-
-  .bubble-text {
-    font-size: 0.72rem !important;
-    transform: translate(0, -7px) !important;
-  }
-
-  .hero {
-    padding-top: 18px !important;
-  }
-}
 
   .footer-curita {
     font-size: 2.4rem;
