@@ -545,30 +545,42 @@ body.user-logged-in .logged-in {
     font-size: 0.74rem;
   }
 
-  .profile-icon {
-    width: 32px;
-    height: 32px;
-  }
-
   .main-content {
-    padding: 20px 16px 0;
+    padding: 18px 14px 0;
   }
 
   .hero {
-    padding-top: 24px;
-    padding-bottom: 40px;
+    padding-top: 16px;
+    padding-bottom: 48px;
   }
 
   .bubble-row {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px 8px;
+    max-width: 340px;
+    margin: 0 auto 58px;
     align-items: center;
-    gap: 14px;
-    margin-bottom: 24px;
   }
 
   .text-bubble {
-    width: min(100%, 260px);
+    width: 145px;
     flex: unset;
+  }
+
+  .bubble-left {
+    justify-self: start;
+  }
+
+  .bubble-center {
+    justify-self: end;
+    margin-top: 72px;
+  }
+
+  .bubble-right {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: -8px;
   }
 
   .bubble-left,
@@ -576,18 +588,24 @@ body.user-logged-in .logged-in {
   .bubble-right {
     --bubble-rotate: 0deg;
     --bubble-scale: 1;
-    margin-top: 0;
   }
 
   .bubble-text {
-    font-size: 0.95rem;
-    padding: 12px 18px;
+    font-size: 0.72rem;
+    line-height: 1.05;
     width: 78%;
-    margin: auto;
+  }
+
+  .bubble-left .bubble-text,
+  .bubble-center .bubble-text,
+  .bubble-right .bubble-text {
+    transform: translate(0, -8px);
   }
 
   .hero-title {
-    font-size: clamp(2.8rem, 12vw, 4.2rem);
+    font-size: clamp(3.2rem, 13vw, 4.4rem);
+    line-height: 0.92;
+    margin-bottom: 24px;
   }
 
   .hero-copy {
@@ -595,42 +613,50 @@ body.user-logged-in .logged-in {
     font-size: 0.95rem;
   }
 
+  .features {
+    padding-top: 36px;
+    padding-bottom: 64px;
+  }
+
   .section-title {
-    font-size: 2rem;
-    margin-bottom: 28px;
+    font-size: 2.35rem;
+    line-height: 1;
+    margin-bottom: 34px;
   }
 
   .feature-grid {
     grid-template-columns: 1fr;
-    max-width: 320px;
-    gap: 28px;
+    max-width: 340px;
+    gap: 42px;
   }
 
   .feature-icon-wrap {
-    height: 110px;
-    margin-bottom: 10px;
+    height: 76px;
+    margin-bottom: 14px;
   }
 
   .feature-icon-wrap img {
-    max-width: 86px;
-    max-height: 86px;
+    max-width: 70px;
+    max-height: 70px;
   }
 
   .feature-card p {
-    font-size: 0.98rem;
+    max-width: 310px;
+    font-size: 0.95rem;
+    line-height: 1.25;
   }
 
   .cta-section {
-    padding: 60px 0 70px;
+    padding: 54px 0 74px;
   }
 
   .cta-section h2 {
-    font-size: clamp(2.7rem, 11vw, 4rem);
+    font-size: clamp(2.9rem, 12vw, 4rem);
   }
 
   .cta-section p {
     max-width: 320px;
-    font-size: 0.88rem;
+    font-size: 0.9rem;
   }
 
   .primary-pill {
@@ -641,8 +667,8 @@ body.user-logged-in .logged-in {
 
   .footer {
     padding: 24px 16px 20px;
-    gap: 10px;
   }
+}
 
   .footer-curita {
     font-size: 2.4rem;
