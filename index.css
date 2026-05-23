@@ -550,53 +550,53 @@ body.user-logged-in .logged-in {
     padding-bottom: 44px;
   }
 
-  .bubble-row {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: -40px !important;
-    max-width: 380px !important;
-    margin: 0 auto 42px !important;
-  }
+ .bubble-row {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 0px !important;
+  max-width: 390px !important;
+  margin: 0 auto 42px !important;
+  overflow: visible !important;
+}
 
-  .text-bubble,
-  .text-bubble.reveal,
-  .text-bubble.reveal.active {
-    width: 170px !important;
-    height: 130px !important;
-    flex: 0 0 170px !important;
-    margin: 0 !important;
-    transform: translateY(0) rotate(0deg) scale(1) !important;
-  }
+.text-bubble,
+.text-bubble.reveal,
+.text-bubble.reveal.active {
+  width: 130px !important;
+  height: 110px !important;
+  flex: 0 0 130px !important;
+  margin: 0 !important;
+  transform: translateY(0) rotate(0deg) scale(1) !important;
+}
 
-  .bubble-left {
-    transform: rotate(-8deg) !important;
-  }
+.bubble-left {
+  transform: translateX(28px) rotate(-5deg) !important;
+}
 
-  .bubble-center {
-    transform: rotate(0deg) !important;
-    margin-top: -18px !important;
-  }
+.bubble-center {
+  transform: translateY(-8px) !important;
+  z-index: 2;
+}
 
-  .bubble-right {
-    transform: rotate(8deg) !important;
-  }
+.bubble-right {
+  transform: translateX(-28px) rotate(5deg) !important;
+}
 
-  .bubble-bg {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
-    transform: scale(3.3);
-  }
+.bubble-bg {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  transform: scale(2.55) !important;
+}
 
-  .bubble-text {
-    font-size: 0.88rem !important;
-    line-height: 1.05 !important;
-    width: 82% !important;
-    padding: 0 8px !important;
-    transform: translateY(-4px) !important;
-  }
+.bubble-text {
+  font-size: 0.78rem !important;
+  line-height: 1.05 !important;
+  width: 85% !important;
+  transform: translateY(-3px) !important;
+}
 
   .hero-title {
     font-size: 3.2rem;
