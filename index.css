@@ -559,28 +559,26 @@ body.user-logged-in .logged-in {
     flex-wrap: wrap !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 10px !important;
+    gap: 18px !important;
     max-width: 320px !important;
     margin: 0 auto 25px !important;
   }
 
   .text-bubble,
-  .text-bubble.reveal,
-  .text-bubble.reveal.active {
-    width: 130px !important;
-    height: 90px !important;
-    flex: 0 0 130px !important;
-    transform: translateY(0) rotate(0deg) scale(1) !important;
-    margin: 0 !important;
-  }
-
+.text-bubble.reveal,
+.text-bubble.reveal.active {
+  width: 190px !important;
+  height: 130px !important;
+  flex: 0 0 190px !important;
+  transform: translateY(0) rotate(0deg) scale(1) !important;
+  margin: 0 !important;
+}
   .bubble-left,
   .bubble-center,
   .bubble-right {
-    --bubble-scale: 1 !important;
-    --bubble-rotate: 0deg !important;
-    margin-top: 0 !important;
-  }
+  flex-basis: 210px !important;
+  width: 210px !important;
+}
 
   .bubble-right {
     flex-basis: 150px !important;
@@ -594,10 +592,12 @@ body.user-logged-in .logged-in {
   }
 
   .bubble-text {
-    font-size: 0.68rem !important;
-    line-height: 1.05 !important;
-    transform: translateY(-3px) !important;
-  }
+  font-size: 0.9rem !important;
+  line-height: 1.05 !important;
+  width: 80% !important;
+  padding: 0 12px !important;
+  transform: translateY(-5px) !important;
+}
 
   .hero-title {
     font-size: clamp(3.2rem, 13vw, 4.4rem);
