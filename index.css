@@ -554,16 +554,14 @@ body.user-logged-in .logged-in {
     padding-bottom: 48px;
   }
 
-  .bubble-row {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 18px !important;
-    max-width: 320px !important;
-    margin: 0 auto 25px !important;
-  }
-
+ .bubble-row {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 18px !important;
+  max-width: 320px !important;
+  margin: 0 auto 25px !important;
+}
   .text-bubble,
 .text-bubble.reveal,
 .text-bubble.reveal.active {
