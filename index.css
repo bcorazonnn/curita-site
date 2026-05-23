@@ -668,6 +668,62 @@ body.user-logged-in .logged-in {
   .footer {
     padding: 24px 16px 20px;
   }
+   .topbar {
+    padding: 14px 16px 0;
+    align-items: center;
+  }
+
+  /* all your other mobile styles */
+
+  .footer {
+    padding: 24px 16px 20px;
+  }
+
+  .footer-curita {
+    font-size: 2.4rem;
+  }
+
+  .footer-found-for-you {
+    font-size: 1rem;
+  }
+
+  .footer-curita2 {
+    font-size: 0.95rem;
+  }
+
+  /* ADD THIS HERE */
+  .bubble-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 22px !important;
+    margin: 0 auto 36px !important;
+  }
+
+  .text-bubble {
+    width: 150px !important;
+    flex: 0 0 auto !important;
+  }
+
+  .bubble-left,
+  .bubble-center,
+  .bubble-right {
+    margin-top: 0 !important;
+    --bubble-rotate: 0deg !important;
+    --bubble-scale: 1 !important;
+  }
+
+  .bubble-bg {
+    width: 150px !important;
+  }
+
+  .bubble-text {
+    font-size: 0.72rem !important;
+    transform: translate(0, -7px) !important;
+  }
+
+  .hero {
+    padding-top: 18px !important;
+  }
 }
 
   .footer-curita {
