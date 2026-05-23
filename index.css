@@ -555,7 +555,7 @@ body.user-logged-in .logged-in {
     flex-direction: row !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: -20px !important;
+    gap: -40px !important;
     max-width: 380px !important;
     margin: 0 auto 42px !important;
   }
@@ -587,7 +587,7 @@ body.user-logged-in .logged-in {
     width: 100% !important;
     height: 100% !important;
     object-fit: contain !important;
-    transform: scale(2.3);
+    transform: scale(3.3);
   }
 
   .bubble-text {
