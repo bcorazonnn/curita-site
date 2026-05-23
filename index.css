@@ -763,3 +763,17 @@ body.user-logged-in .logged-in {
     --bubble-rotate: 0deg !important;
   }
 }
+@media (max-width: 640px) {
+  .text-bubble.reveal,
+  .text-bubble.reveal.active {
+    transform: translateY(0) rotate(0deg) scale(1) !important;
+  }
+
+  .bubble-left,
+  .bubble-center,
+  .bubble-right {
+    --bubble-scale: 1 !important;
+    --bubble-rotate: 0deg !important;
+    margin-top: 0 !important;
+  }
+}
