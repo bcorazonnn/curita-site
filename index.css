@@ -662,4 +662,7 @@ body.user-logged-in .logged-in {
   .footer-curita2 {
     font-size: 0.95rem;
   }
+.brand {
+    color: red !important;
+  }
 }
