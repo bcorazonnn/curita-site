@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+:root {
+  --font-normal-tm: 'Caprasimo', serif;
+}
+
 .create-account {
   width: 100%;
   position: relative;
@@ -531,15 +537,15 @@
     width: 100%;
   }
 
-  .frame-parent {
-    width: 100%;
-    align-items: center !important;
-    gap: 34px !important;
-  }
+ .frame-parent {
+  width: 100%;
+  align-items: center !important;
+  gap: 24px !important;
+}
 
   .shadowing2 {
-    font-size: 3.2rem !important;
-    line-height: 0.95;
+  font-size: 2.3rem !important;
+  line-height: 1.05;
     text-align: center;
     white-space: normal !important;
     margin-bottom: 8px;
@@ -560,6 +566,7 @@
   .frame-div,
   .shadowing-parent {
     width: 211px !important;
+    gap: 6px !important;
     max-width: 211px !important;
     padding: 0 !important;
     margin: 0 auto;
