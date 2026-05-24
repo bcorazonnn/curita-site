@@ -570,7 +570,7 @@ body.user-logged-in .logged-in {
   margin: 0 !important;
 }
 .bubble-left {
-  transform: translateX(3px) rotate(-20deg) !important;
+  transform: translateX(6px) translateY(12px) rotate(-20deg) !important;
 }
 
 .bubble-center {
@@ -579,7 +579,7 @@ body.user-logged-in .logged-in {
 }
 
 .bubble-right {
-  transform: translateX(-3px) rotate(20deg) !important;
+  transform: translateX(-6px) translateY(12px) rotate(20deg) !important;
 }
 
 .bubble-bg {
@@ -633,18 +633,18 @@ body.user-logged-in .logged-in {
   }
 
   .feature-icon-wrap {
-    height: 92px;
+    height: 120px;
     margin-bottom: 12px;
   }
 
   .feature-icon-wrap img {
-    max-width: 82px;
-    max-height: 82px;
+    max-width: 115px;
+    max-height: 115px;
   }
 
   .feature-card p {
     max-width: 160px;
-    font-size: 0.76rem;
+    font-size: 0.95rem;
     line-height: 1.18;
   }
 
