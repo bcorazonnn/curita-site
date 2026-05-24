@@ -570,7 +570,7 @@ body.user-logged-in .logged-in {
   margin: 0 !important;
 }
 .bubble-left {
-  transform: translateX(6px) rotate(-20deg) !important;
+  transform: translateX(3px) rotate(-20deg) !important;
 }
 
 .bubble-center {
@@ -579,7 +579,7 @@ body.user-logged-in .logged-in {
 }
 
 .bubble-right {
-  transform: translateX(-6px) rotate(20deg) !important;
+  transform: translateX(-3px) rotate(20deg) !important;
 }
 
 .bubble-bg {
