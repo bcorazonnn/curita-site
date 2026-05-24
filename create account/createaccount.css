@@ -506,105 +506,101 @@
 }
 @media screen and (max-width: 450px) {
   .create-account {
-    width: 100%;
-    min-height: 100vh;
-    padding: 24px 28px;
-    gap: 36px;
+    padding: 8px 0 0;
+    gap: 49px;
     align-items: stretch;
     overflow-x: hidden;
-    background-size: cover;
   }
 
-  .create-account-inner,
-  .create-account-child,
-  .frame-parent,
-  .frame-group,
-  .shadowing-parent {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 !important;
-    box-sizing: border-box;
+  .create-account-inner {
+    padding: 0 15px !important;
   }
 
   .curita {
-    font-size: 44px;
+    font-size: 25px !important;
     line-height: 1;
-    margin: 0;
   }
 
   .shadowing {
-    display: none;
+    display: none !important;
+  }
+
+  .create-account-child {
+    padding: 0 68px 0 67px !important;
+  }
+
+  .frame-parent {
+    width: 100%;
+    gap: 28px !important;
   }
 
   .shadowing2 {
     width: 100%;
-    font-size: 42px;
+    font-size: 32px !important;
     line-height: 1.1;
     text-align: center;
     white-space: normal !important;
+    text-shadow: var(--text-shadow-1);
   }
 
   .shadowing3,
   .shadowing4,
   .shadowing5 {
-    font-size: 28px;
+    font-size: 20px !important;
     line-height: 1.1;
-    margin-bottom: 12px !important;
-  }
-
-  .frame-parent {
-    gap: 34px !important;
+    text-shadow: var(--text-shadow-1);
+    margin-bottom: 8px !important;
   }
 
   .frame-wrapper,
   .frame-container,
   .frame-div {
-    width: 100% !important;
-    max-width: 100% !important;
+    width: 211px !important;
+    max-width: 211px !important;
     height: auto !important;
     padding: 0 !important;
+    margin: 0 auto;
   }
 
   .input-field,
   .frame-child,
   .frame-item {
-    width: 100% !important;
-    height: 86px !important;
-    min-height: 86px !important;
-    font-size: 22px !important;
-    padding: 0 20px !important;
-    box-sizing: border-box;
+    width: 211px !important;
+    height: 46px !important;
+    min-height: 46px !important;
+    border-radius: var(--br-20) !important;
+    font-size: 18px !important;
+    padding: 0 14px !important;
   }
 
   .rectangle-parent {
-    width: 100%;
-    min-height: 82px;
-    padding: 14px 20px !important;
-    justify-content: center;
+    width: 211px !important;
+    min-height: 46px !important;
+    padding: 9px 46px !important;
+    margin: 0 auto;
   }
 
   .shadowing6 {
-    width: auto;
-    font-size: 30px;
+    font-size: 20px !important;
     text-align: center;
+    width: auto;
   }
 
   .shadowing-frame {
-    width: 100%;
     padding: 0 !important;
     justify-content: center;
+    width: 100%;
   }
 
   .shadowing7 {
-    width: 100%;
-    font-size: 24px;
+    font-size: 15px !important;
     text-align: center;
     white-space: normal !important;
   }
 
   .footer {
-    width: 100%;
-    padding: 28px 24px;
-    min-height: 190px;
+    margin: 0 auto;
+    width: calc(100% - 56px);
+    min-height: 180px;
   }
 }
