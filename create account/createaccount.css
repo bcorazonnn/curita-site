@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
-
-:root {
-  --font-normal-tm: 'Caprasimo', serif;
-}
-
 .create-account {
   width: 100%;
   position: relative;
@@ -428,6 +422,12 @@
 
 .shadowing7:hover {
   color: white !important;
+}
+.create-account,
+.create-account *,
+.footer,
+.footer * {
+  font-family: var(--font-normal-tm) !important;
 }
 @media screen and (max-width: 750px) {
   .curita,
