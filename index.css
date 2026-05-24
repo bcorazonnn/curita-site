@@ -570,7 +570,7 @@ body.user-logged-in .logged-in {
   margin: 0 !important;
 }
 .bubble-left {
-  transform: translateX(18px) rotate(-20deg) !important;
+  transform: translateX(6px) rotate(-20deg) !important;
 }
 
 .bubble-center {
@@ -579,14 +579,14 @@ body.user-logged-in .logged-in {
 }
 
 .bubble-right {
-  transform: translateX(-18px) rotate(20deg) !important;
+  transform: translateX(-6px) rotate(20deg) !important;
 }
 
 .bubble-bg {
   width: 100% !important;
   height: 100% !important;
   object-fit: contain !important;
-  transform: scale(3.55) !important;
+  transform: scale(3) !important;
 }
 
 .bubble-text {
@@ -601,7 +601,7 @@ body.user-logged-in .logged-in {
 
   padding: 0 12px !important;
 
-  transform: translateY(-8px) !important;
+  transform: translateY(-15px) !important;
 }
 
   .hero-title {
