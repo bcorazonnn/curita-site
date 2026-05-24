@@ -512,20 +512,30 @@
 }
 @media screen and (max-width: 450px) {
   .create-account {
-    padding: 8px 0 0;
-    gap: 38px;
-    align-items: stretch;
-    overflow-x: hidden;
-    background-size: cover;
+    padding: 8px 0 0 !important;
+    gap: 49px !important;
+    align-items: flex-start !important;
+    overflow-x: hidden !important;
+    background-size: cover !important;
+    font-family: var(--font-normal-tm) !important;
+  }
+
+  .gradient1png-icon {
+    height: 1956px !important;
+    bottom: -1213px !important;
   }
 
   .create-account-inner {
-    padding: 0 16px !important;
+    width: 74px !important;
+    height: 30px !important;
+    padding: 0 15px !important;
   }
 
   .curita {
-    font-size: 2rem !important;
-    line-height: 1;
+    font-size: 25px !important;
+    line-height: 1 !important;
+    width: auto !important;
+    color: var(--color-whitesmoke) !important;
   }
 
   .shadowing {
@@ -533,100 +543,154 @@
   }
 
   .create-account-child {
-    padding: 0 14px !important;
-    width: 100%;
+    width: 100% !important;
+    padding: 0 68px 0 67px !important;
+    text-align: center !important;
+    font-size: 20px !important;
   }
 
- .frame-parent {
-  width: 100%;
-  align-items: center !important;
-  gap: 24px !important;
-}
+  .frame-parent {
+    width: 100% !important;
+    align-items: center !important;
+    gap: 23px !important;
+  }
+
+  .shadowing-wrapper {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 0 8px !important;
+    font-size: 32px !important;
+    text-align: center !important;
+  }
 
   .shadowing2 {
-  font-size: 2.3rem !important;
-  line-height: 1.05;
-    text-align: center;
+    width: 100% !important;
+    font-size: 32px !important;
+    line-height: 1.05 !important;
+    text-align: center !important;
     white-space: normal !important;
-    margin-bottom: 8px;
+    text-shadow: var(--text-shadow-1) !important;
+  }
+
+  .frame-wrapper,
+  .frame-container,
+  .frame-div {
+    width: 211px !important;
+    max-width: 211px !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  .shadowing-parent {
+    width: 211px !important;
+    max-width: 211px !important;
+    gap: 7px !important;
+    align-items: flex-start !important;
   }
 
   .shadowing3,
   .shadowing4,
   .shadowing5 {
-    width: 211px !important;
-    font-size: 1.25rem !important;
-    line-height: 1.1;
-    margin: 0 auto 10px !important;
-    text-align: left;
+    width: auto !important;
+    height: auto !important;
+    font-size: 20px !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
+    color: var(--color-whitesmoke) !important;
+    text-align: left !important;
+    text-shadow: var(--text-shadow-1) !important;
   }
 
-  .frame-wrapper,
-  .frame-container,
-  .frame-div,
-  .shadowing-parent {
-    width: 211px !important;
-    gap: 6px !important;
-    max-width: 211px !important;
-    padding: 0 !important;
-    margin: 0 auto;
-  }
-.shadowing6 {
-  font-size: 1.25rem !important;
-  text-align: center;
-}
   .input-field,
   .frame-child,
   .frame-item {
     display: block !important;
+    width: 211px !important;
+    height: 46px !important;
+    min-height: 46px !important;
+    flex: none !important;
     background-color: var(--color-cornflowerblue) !important;
     box-shadow: var(--shadow-drop) !important;
     border-radius: var(--br-20) !important;
+    border: 0 !important;
+    outline: 0 !important;
+    padding: 0 14px !important;
+    color: var(--color-whitesmoke) !important;
+    font-family: var(--font-normal-tm) !important;
+    font-size: 16px !important;
     opacity: 1 !important;
     appearance: none !important;
     -webkit-appearance: none !important;
   }
-   .rectangle-parent {
-    display: flex !important;
+
+  .frame-group {
+    width: 211px !important;
+    height: auto !important;
+    gap: 17px !important;
+    align-items: center !important;
+    font-size: 15px !important;
+  }
+
+  .rectangle-parent {
+    width: 211px !important;
+    height: 46px !important;
+    min-height: 46px !important;
+    padding: 13px 46px 9px 47px !important;
+    margin: 0 !important;
     background-color: var(--color-darkslateblue) !important;
     box-shadow: var(--shadow-drop) !important;
     border-radius: var(--br-20) !important;
-    opacity: 1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
   }
 
   .shadowing6 {
-    font-size: 1.25rem !important;
-    text-align: center;
+    width: auto !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    color: var(--color-whitesmoke) !important;
+    text-align: center !important;
+    margin: 0 !important;
+    text-shadow: var(--text-shadow-1) !important;
   }
 
   .shadowing-frame {
-    width: 100%;
-    padding: 0 !important;
-    justify-content: center;
+    width: 211px !important;
+    height: 17px !important;
+    padding: 0 24px !important;
+    justify-content: center !important;
   }
 
   .shadowing7 {
-    font-size: 0.95rem !important;
-    text-align: center;
-    white-space: normal !important;
+    width: auto !important;
+    font-size: 15px !important;
+    color: var(--color-whitesmoke) !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    text-shadow: var(--text-shadow-1) !important;
   }
 
   .footer {
     width: 100% !important;
     min-height: 132px !important;
-    margin-top: 34px;
-    padding: 24px 16px 20px !important;
-    border-radius: 0;
+    margin-top: 0 !important;
+    padding: 7px 8px 37px !important;
+    gap: 23px !important;
+    border-radius: 0 !important;
+    font-family: var(--font-normal-tm) !important;
   }
 
   .footer-curita {
-    font-size: 2.4rem !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
   }
 
   .footer-found-for-you,
   .footer-curita2 {
-    font-size: 0.95rem !important;
-    margin-left: 0 !important;
-    text-align: left;
+    font-size: 12px !important;
+    line-height: 1.1 !important;
+    text-align: left !important;
   }
 }
