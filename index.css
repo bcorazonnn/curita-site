@@ -586,7 +586,7 @@ body.user-logged-in .logged-in {
   width: 100% !important;
   height: 100% !important;
   object-fit: contain !important;
-  transform: scale(2.55) !important;
+  transform: scale(3.55) !important;
 }
 
 .bubble-text {
