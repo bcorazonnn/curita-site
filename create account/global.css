@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Normal TM";
+  src: url("./NormalTM-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   margin: 0;
   line-height: normal;
