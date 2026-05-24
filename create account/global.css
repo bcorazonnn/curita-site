@@ -1,14 +1,18 @@
 @font-face {
   font-family: "Normal TM";
-  src: url("./Normal%20TM.ttf") format("truetype");
+  src: url("../Normal%20TM.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
+
 body {
   margin: 0;
   line-height: normal;
 }
 
 :root {
-  /* Common Style Variables */
+  --font-normal-tm: "Normal TM", serif;
+}
 
   /* Color */
   --color-cornflowerblue: #4a90e2;
