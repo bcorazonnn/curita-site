@@ -805,4 +805,22 @@
 .frame-container .input-field {
   margin-top: 0 !important;
 }
+  /* FIX PASSWORD LABEL + BOX */
+.frame-container {
+  transform: translateY(-22px) !important;
+  margin-bottom: -22px !important;
+}
+
+/* FIX BUTTON TEXT */
+.rectangle-parent {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.rectangle-parent .shadowing6 {
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
 }
