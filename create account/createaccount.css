@@ -764,89 +764,32 @@
 .frame-div p {
   margin-bottom: 8px !important;
 }
-  /* FORCE ALL 3 INPUT SECTIONS TO MATCH */
+  /* FINAL FIELD ALIGNMENT FIX */
 .frame-wrapper,
 .frame-container,
 .frame-div {
   width: 230px !important;
-  height: auto !important;
-  min-height: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  margin: 0 auto !important;
+  transform: none !important;
 }
 
 .frame-wrapper .shadowing-parent,
 .frame-container .shadowing-parent,
 .frame-div .shadowing-parent {
+  display: flex !important;
+  flex-direction: column !important;
   width: 230px !important;
   gap: 8px !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 .frame-wrapper .input-field,
 .frame-container .input-field,
-.frame-div .input-field {
-  margin: 0 !important;
-}
-  /* PASSWORD SECTION FIX */
-.frame-container {
-  width: 230px !important;
-  height: auto !important;
-  padding: 0 !important;
-  margin: 0 auto !important;
-}
-
-.frame-container .shadowing-parent {
-  gap: 6px !important;
-}
-
+.frame-div .input-field,
+.frame-wrapper .frame-child,
 .frame-container .frame-item,
-.frame-container .input-field {
-  margin-top: 0 !important;
-}
- /* PASSWORD SECTION FIX */
-.frame-container {
-  width: 230px !important;
-  height: auto !important;
-  min-height: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  transform: none !important;
-}
-
-.frame-container .shadowing-parent {
-  width: 230px !important;
-  gap: 8px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.frame-container .frame-item,
-.frame-container .input-field {
+.frame-div .frame-child {
   width: 230px !important;
   height: 52px !important;
   margin: 0 !important;
-}
-  .frame-parent > div:nth-child(3) {
-    width: 230px !important;
-    height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    transform: none !important;
-  }
-
-  .frame-parent > div:nth-child(3) .shadowing-parent {
-    width: 230px !important;
-    gap: 8px !important;
-  }
-
-  .frame-parent > div:nth-child(3) input,
-  .frame-parent > div:nth-child(3) .frame-item {
-    width: 230px !important;
-    height: 52px !important;
-    margin: 0 !important;
-    transform: none !important;
-  }
 }
 }
