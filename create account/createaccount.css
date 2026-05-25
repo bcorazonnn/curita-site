@@ -516,7 +516,7 @@
 ========================= */
 @media screen and (max-width: 640px) {
   .create-account {
-    min-height: 100vh;
+    min-height: 100svh !important;
     width: 100%;
     padding: 20px 0 0 !important;
     gap: 40px !important;
@@ -677,9 +677,9 @@
   /* FOOTER */
   .footer {
   width: 100%;
-  min-height: 125px !important;
+  min-height: 180px !important;
   height: 125px !important;
-  padding: 10px 14px 12px !important;
+  padding: 10px 14px 40px !important;
   margin-top: 24px !important;
   gap: 0 !important;
 
@@ -761,5 +761,30 @@
 .frame-div h3,
 .frame-div p {
   margin-bottom: 8px !important;
+}
+  /* FORCE ALL 3 INPUT SECTIONS TO MATCH */
+.frame-wrapper,
+.frame-container,
+.frame-div {
+  width: 230px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.frame-wrapper .shadowing-parent,
+.frame-container .shadowing-parent,
+.frame-div .shadowing-parent {
+  width: 230px !important;
+  gap: 8px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.frame-wrapper .input-field,
+.frame-container .input-field,
+.frame-div .input-field {
+  margin: 0 !important;
 }
 }
