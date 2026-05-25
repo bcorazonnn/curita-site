@@ -676,53 +676,90 @@
 
   /* FOOTER */
   .footer {
-    width: 100%;
-    padding: 10px 12px 22px !important;
-    gap: 23px !important;
-    margin-top: 0 !important;
-    background-image: url("../Frame 1.png") !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: top !important;
-    box-shadow: var(--shadow-drop);
-  }
+  width: 100%;
+  min-height: 125px !important;
+  height: 125px !important;
+  padding: 10px 14px 12px !important;
+  margin-top: 24px !important;
+  gap: 0 !important;
 
-  .footer::before {
-    background: rgba(0, 0, 0, 0.25);
-  }
+  background-image: url("../Frame 1.png") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: top !important;
 
-  .footer-block-parent {
-    padding: 0 !important;
-    gap: 0 !important;
-  }
+  box-shadow: var(--shadow-drop);
+  overflow: hidden !important;
+}
 
-  .footer-curita,
-  .footer-found-for-you,
-  .footer-curita2 {
-    color: #fff !important;
-    -webkit-text-fill-color: #fff !important;
-    text-shadow: none !important;
-  }
+.footer-block-parent {
+  padding: 0 !important;
+  gap: 2px !important;
+}
 
-  .footer-curita {
-    font-size: 24px !important;
-    line-height: 1 !important;
-  }
+.footer-curita {
+  font-size: 24px !important;
+  line-height: 1 !important;
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+}
 
-  .footer-found-for-you {
-    margin-left: 0 !important;
-    width: auto !important;
-    font-size: 12px !important;
-    line-height: 1.1 !important;
-    text-align: left !important;
-  }
+.footer-found-for-you {
+  font-size: 12px !important;
+  line-height: 1.1 !important;
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
 
-  .footer-curita2 {
-    margin-left: 0 !important;
-    width: auto !important;
-    font-size: 12px !important;
-    line-height: 1.1 !important;
-    text-align: left !important;
-    margin-top: 16px !important;
-  }
+.footer-curita2 {
+  font-size: 12px !important;
+  line-height: 1.1 !important;
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  margin: 34px 0 0 !important;
+  text-align: left !important;
+}
+  /* FIX EACH FIELD SPACING DIRECTLY */
+
+/* email section */
+.frame-wrapper .shadowing-parent {
+  gap: 8px !important;
+}
+
+/* password section */
+.frame-container .shadowing-parent {
+  gap: 8px !important;
+}
+
+/* confirm password section */
+.frame-div .shadowing-parent {
+  gap: 8px !important;
+}
+
+/* remove extra spacing caused by old desktop heights */
+.frame-wrapper,
+.frame-container,
+.frame-div {
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* make labels sit same distance from boxes */
+.frame-wrapper h1,
+.frame-wrapper h2,
+.frame-wrapper h3,
+.frame-wrapper p,
+.frame-container h1,
+.frame-container h2,
+.frame-container h3,
+.frame-container p,
+.frame-div h1,
+.frame-div h2,
+.frame-div h3,
+.frame-div p {
+  margin-bottom: 8px !important;
+}
 }
