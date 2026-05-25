@@ -708,6 +708,52 @@
     -webkit-text-fill-color: #fff !important;
     text-shadow: 0 2px 6px rgba(0,0,0,0.35) !important;
   }
+/* Make create account match home page logo/text */
+.create-account .create-account-inner {
+  padding: 20px 0 0 22px !important;
+}
 
+.create-account .curita,
+.create-account .shadowing {
+  font-size: 34px !important;
+  line-height: 1 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  text-shadow: none !important;
+}
+
+/* Make all form text consistent */
+.create-account .shadowing2,
+.create-account .shadowing3,
+.create-account .shadowing4,
+.create-account .shadowing5,
+.create-account .shadowing6,
+.create-account .shadowing7 {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.35) !important;
+}
+
+/* Bring labels closer to boxes */
+.create-account .shadowing-parent {
+  gap: 6px !important;
+}
+
+.create-account .shadowing3,
+.create-account .shadowing4,
+.create-account .shadowing5 {
+  margin-bottom: 6px !important;
+}
+
+/* Reduce huge spacing between each field section */
+.create-account .frame-parent {
+  gap: 26px !important;
+}
+
+/* Keep boxes consistent */
+.create-account .input-field,
+.create-account .frame-child,
+.create-account .frame-item {
+  margin-top: 0 !important;
 }
 }
