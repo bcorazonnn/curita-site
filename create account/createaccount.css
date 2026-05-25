@@ -553,7 +553,7 @@
   .frame-parent {
     width: 100%;
     align-items: center !important;
-    gap: 28px !important;
+    gap: 24px !important;
   }
 
   /* TITLE */
@@ -582,11 +582,18 @@
     justify-content: center !important;
   }
 
-  .shadowing-parent {
-    width: 230px !important;
-    flex: none !important;
-    gap: 6px !important;
-  }
+ .shadowing-parent {
+  width: 230px !important;
+  flex: none !important;
+  gap: 8px !important;
+}
+  .frame-container .shadowing-parent {
+  gap: 8px !important;
+}
+
+.frame-container {
+  margin-bottom: 0 !important;
+}
 
   /* LABELS */
   .shadowing2,
