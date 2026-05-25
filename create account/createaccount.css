@@ -693,4 +693,21 @@
     text-align: center !important;
     margin-top: 20px !important;
   }
+
+  .curita,
+  .shadowing,
+  .curita-parent .curita,
+  .create-account .curita {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.35) !important;
+  }
+
+  .shadowing2 {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.35) !important;
+  }
+
+}
 }
