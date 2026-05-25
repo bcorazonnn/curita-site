@@ -518,6 +518,8 @@
   .create-account {
     min-height: 100svh !important;
     width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
     padding: 20px 0 0 !important;
     gap: 40px !important;
     align-items: flex-start !important;
@@ -677,10 +679,10 @@
   /* FOOTER */
   .footer {
   width: 100%;
-  min-height: 180px !important;
-  height: 125px !important;
-  padding: 10px 14px 40px !important;
-  margin-top: 24px !important;
+  min-height: 115px !important;
+  height: 115px !important;
+  padding: 10px 14px 12px !important;
+  margin-top: auto !important;
   gap: 0 !important;
 
   background-image: url("../Frame 1.png") !important;
@@ -786,5 +788,21 @@
 .frame-container .input-field,
 .frame-div .input-field {
   margin: 0 !important;
+}
+  /* PASSWORD SECTION FIX */
+.frame-container {
+  width: 230px !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
+.frame-container .shadowing-parent {
+  gap: 6px !important;
+}
+
+.frame-container .frame-item,
+.frame-container .input-field {
+  margin-top: 0 !important;
 }
 }
