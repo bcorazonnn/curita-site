@@ -518,53 +518,60 @@
   .create-account {
     min-height: 100vh;
     width: 100%;
-    padding: 8px 0 0 !important;
-    gap: 49px !important;
+    padding: 20px 0 0 !important;
+    gap: 40px !important;
     align-items: flex-start !important;
     overflow: hidden;
     background: url("../gradient1.png") no-repeat center !important;
     background-size: cover !important;
   }
 
+  /* TOP CURITA LOGO */
   .create-account-inner {
-   padding: 0 24px !important;
+    padding: 0 0 0 22px !important;
   }
 
-  .curita,
-  .shadowing {
-    font-size: 25px !important;
-    line-height: 30px !important;
-    width: auto !important;
+  .create-account .shadowing {
+    display: none !important;
   }
 
+  .create-account .curita {
+    font-size: 34px !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    text-shadow: none !important;
+  }
+
+  /* FORM CONTAINER */
   .create-account-child {
     width: 100%;
-    padding: 0 67px !important;
-    justify-content: center;
+    padding: 0 24px !important;
+    justify-content: center !important;
   }
 
   .frame-parent {
     width: 100%;
     align-items: center !important;
-    gap: 34px !important;
+    gap: 28px !important;
   }
 
+  /* TITLE */
   .shadowing-wrapper {
     width: 100%;
-    padding: 0 0 8px !important;
-    justify-content: center;
+    padding: 0 0 18px !important;
+    justify-content: center !important;
   }
 
   .shadowing2 {
     width: 100% !important;
     font-size: 32px !important;
     line-height: 1 !important;
-    text-align: center;
+    text-align: center !important;
     white-space: normal !important;
-    color: white !important;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.35) !important;
   }
 
+  /* EACH INPUT SECTION */
   .frame-wrapper,
   .frame-container,
   .frame-div {
@@ -572,13 +579,25 @@
     height: auto !important;
     padding: 0 !important;
     display: flex !important;
+    justify-content: center !important;
   }
-
 
   .shadowing-parent {
     width: 230px !important;
     flex: none !important;
-    gap: 7px !important;
+    gap: 6px !important;
+  }
+
+  /* LABELS */
+  .shadowing2,
+  .shadowing3,
+  .shadowing4,
+  .shadowing5,
+  .shadowing6,
+  .shadowing7 {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.35) !important;
   }
 
   .shadowing3,
@@ -588,10 +607,9 @@
     font-size: 20px !important;
     line-height: 1.1 !important;
     margin: 0 0 6px !important;
-    color: #fff !important;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.35) !important;
   }
 
+  /* INPUT BOXES */
   .input-field,
   .frame-child,
   .frame-item {
@@ -599,7 +617,10 @@
     width: 230px !important;
     height: 52px !important;
     min-height: 52px !important;
+    flex: none !important;
     opacity: 1 !important;
+    margin-top: 0 !important;
+    padding: 0 18px !important;
     background-color: #4d91df !important;
     border-radius: 22px !important;
     box-shadow: 0 6px 12px rgba(0,0,0,0.22) !important;
@@ -607,21 +628,21 @@
     outline: none !important;
   }
 
-
+  /* BUTTON AREA */
   .frame-group {
-    width: 211px !important;
+    width: 230px !important;
     height: auto !important;
-    gap: 17px !important;
-    align-items: center;
+    gap: 16px !important;
+    align-items: center !important;
   }
 
   .rectangle-parent {
     width: 230px !important;
     height: 52px !important;
-    padding: 13px 46px 9px 47px !important;
+    padding: 0 !important;
     justify-content: center !important;
     align-items: center !important;
-    border-radius: 20px !important;
+    border-radius: 22px !important;
     background-color: #2f3f78 !important;
   }
 
@@ -630,12 +651,11 @@
     font-size: 20px !important;
     line-height: 1 !important;
     text-align: center !important;
-    color: white !important;
   }
 
   .shadowing-frame {
     width: 100% !important;
-    padding: 0 24px !important;
+    padding: 0 !important;
     justify-content: center !important;
   }
 
@@ -650,16 +670,13 @@
   /* FOOTER */
   .footer {
     width: 100%;
-    min-height: auto !important;
-    padding: 7px 0 37px !important;
+    padding: 14px 12px 37px !important;
     gap: 23px !important;
     margin-top: 0 !important;
-
     background-image: url("../Frame 1.png") !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: top !important;
-
     box-shadow: var(--shadow-drop);
   }
 
@@ -668,8 +685,16 @@
   }
 
   .footer-block-parent {
-    padding: 0 8px !important;
+    padding: 0 !important;
     gap: 0 !important;
+  }
+
+  .footer-curita,
+  .footer-found-for-you,
+  .footer-curita2 {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    text-shadow: none !important;
   }
 
   .footer-curita {
@@ -678,82 +703,19 @@
   }
 
   .footer-found-for-you {
-    margin-left: -22px !important;
-    width: 140px !important;
+    margin-left: 0 !important;
+    width: auto !important;
     font-size: 12px !important;
     line-height: 1.1 !important;
-    text-align: center !important;
+    text-align: left !important;
   }
 
   .footer-curita2 {
-    margin-left: -21px !important;
-    width: 107px !important;
+    margin-left: 0 !important;
+    width: auto !important;
     font-size: 12px !important;
     line-height: 1.1 !important;
-    text-align: center !important;
-    margin-top: 20px !important;
+    text-align: left !important;
+    margin-top: 28px !important;
   }
-
-  .curita,
-  .shadowing,
-  .curita-parent .curita,
-  .create-account .curita {
-    color: #fff !important;
-    -webkit-text-fill-color: #fff !important;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.35) !important;
-  }
-
-  .shadowing2 {
-    color: #fff !important;
-    -webkit-text-fill-color: #fff !important;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.35) !important;
-  }
-/* Make create account match home page logo/text */
-.create-account .create-account-inner {
-  padding: 20px 0 0 22px !important;
-}
-
-.create-account .curita,
-.create-account .shadowing {
-  font-size: 34px !important;
-  line-height: 1 !important;
-  color: #fff !important;
-  -webkit-text-fill-color: #fff !important;
-  text-shadow: none !important;
-}
-
-/* Make all form text consistent */
-.create-account .shadowing2,
-.create-account .shadowing3,
-.create-account .shadowing4,
-.create-account .shadowing5,
-.create-account .shadowing6,
-.create-account .shadowing7 {
-  color: #fff !important;
-  -webkit-text-fill-color: #fff !important;
-  text-shadow: 0 3px 6px rgba(0,0,0,0.35) !important;
-}
-
-/* Bring labels closer to boxes */
-.create-account .shadowing-parent {
-  gap: 6px !important;
-}
-
-.create-account .shadowing3,
-.create-account .shadowing4,
-.create-account .shadowing5 {
-  margin-bottom: 6px !important;
-}
-
-/* Reduce huge spacing between each field section */
-.create-account .frame-parent {
-  gap: 26px !important;
-}
-
-/* Keep boxes consistent */
-.create-account .input-field,
-.create-account .frame-child,
-.create-account .frame-item {
-  margin-top: 0 !important;
-}
 }
