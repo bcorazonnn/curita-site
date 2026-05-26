@@ -826,6 +826,7 @@
 }
 
 .frame-container input[type="password"] {
-  margin-top: -10px !important;
+  position: relative !important;
+  top: -10px !important;
 }
 }
