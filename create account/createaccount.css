@@ -814,6 +814,11 @@
   height: 52px !important;
   margin: 0 !important;
 }
+  /* MOVE PASSWORD BOX ONLY */
+.frame-container .frame-item {
+  position: relative !important;
+  top: -8px !important;
+}
 /* FIX ONLY THE FIRST PASSWORD FIELD */
 .frame-container .shadowing-parent {
   gap: 0px !important;
