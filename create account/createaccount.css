@@ -840,9 +840,14 @@
   margin: 0 !important;
   padding: 0 !important;
   line-height: 1.1 !important;
-  /* REMOVE PASSWORD LABEL GLOW */
-.frame-parent > div:nth-of-type(3) .shadowing4 {
+
+}
+
+  .frame-parent > div:nth-of-type(3) :first-child {
   text-shadow: none !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
 
 }
 }
