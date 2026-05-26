@@ -780,6 +780,9 @@
   margin: 0 !important;
   transform: none !important;
 }
+  .frame-container .shadowing4 {
+  margin-bottom: 8px !important;
+}
   /* FINAL FIELD ALIGNMENT FIX */
 .frame-wrapper,
 .frame-container,
