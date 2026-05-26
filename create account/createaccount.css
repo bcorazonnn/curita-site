@@ -843,6 +843,6 @@
 
 .frame-container input[type="password"] {
   position: relative !important;
-  top: -10px !important;
+  top: -16px !important;
 }
 }
