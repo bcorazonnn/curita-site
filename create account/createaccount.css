@@ -525,7 +525,7 @@
     align-items: flex-start !important;
     overflow: hidden;
     background: url("../gradient1.png") no-repeat center !important;
-    background-size: cover !important;
+    background-size: 170% auto !important;
   }
 
   /* TOP CURITA LOGO */
