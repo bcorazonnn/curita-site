@@ -822,6 +822,7 @@
   /* ONLY PASSWORD, NOT CONFIRM PASSWORD */
 .frame-parent > div:nth-of-type(3) .shadowing-parent {
   gap: 0px !important;
+  padding-bottom: 0 !important;
 }
 
 .frame-parent > div:nth-of-type(3) .shadowing-parent > input,
