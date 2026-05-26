@@ -780,8 +780,11 @@
   margin: 0 !important;
   transform: none !important;
 }
-  .frame-container .shadowing4 {
-  transform: translateY(2px) !important;
+ /* MOVE PASSWORD TEXT DOWN ONLY */
+.frame-container .shadowing4 {
+  position: relative !important;
+  top: 6px !important;
+  margin-bottom: 6px !important;
 }
   /* FINAL FIELD ALIGNMENT FIX */
 .frame-wrapper,
