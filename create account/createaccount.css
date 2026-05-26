@@ -819,6 +819,16 @@
   position: relative !important;
   top: -8px !important;
 }
+  /* ONLY PASSWORD, NOT CONFIRM PASSWORD */
+.frame-parent > div:nth-of-type(3) .shadowing-parent {
+  gap: 0px !important;
+}
+
+.frame-parent > div:nth-of-type(3) .shadowing-parent > input,
+.frame-parent > div:nth-of-type(3) .shadowing-parent > .input-field,
+.frame-parent > div:nth-of-type(3) .shadowing-parent > .frame-item {
+  margin-top: -6px !important;
+}
 /* FIX ONLY THE FIRST PASSWORD FIELD */
 .frame-container .shadowing-parent {
   gap: 0px !important;
