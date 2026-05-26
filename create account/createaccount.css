@@ -845,5 +845,9 @@
 .frame-container input[type="password"] {
   position: relative !important;
   top: -30px !important;
+  /* MOVE ONLY PASSWORD BOX UP MORE */
+.frame-parent > div:nth-of-type(3) .shadowing-parent > :last-child {
+  transform: translateY(-10px) !important;
+}
 }
 }
