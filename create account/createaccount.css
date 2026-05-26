@@ -817,6 +817,7 @@
 /* FIX ONLY THE FIRST PASSWORD FIELD */
 .frame-container .shadowing-parent {
   gap: 0px !important;
+  transform: translateY(-6px) !important;
 }
 
 .frame-container .shadowing-parent > :first-child {
