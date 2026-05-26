@@ -780,11 +780,11 @@
   margin: 0 !important;
   transform: none !important;
 }
- /* MOVE PASSWORD TEXT DOWN ONLY */
-.frame-container .shadowing4 {
+/* MOVE PASSWORD LABEL DOWN */
+.frame-container .shadowing-parent > :first-child {
   position: relative !important;
-  top: 6px !important;
-  margin-bottom: 6px !important;
+  top: 8px !important;
+  margin-bottom: 8px !important;
 }
   /* FINAL FIELD ALIGNMENT FIX */
 .frame-wrapper,
