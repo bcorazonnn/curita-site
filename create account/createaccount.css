@@ -816,7 +816,7 @@
 }
   /* FIX PASSWORD TEXT GAP */
 .shadowing-parent:has(input[type="password"]) {
-  gap: 2px !important;
+  gap: 5px !important;
 }
 
 .shadowing-parent:has(input[type="password"]) > :first-child {
