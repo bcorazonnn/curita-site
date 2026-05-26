@@ -828,7 +828,7 @@
 .frame-parent > div:nth-of-type(3) .shadowing-parent > input,
 .frame-parent > div:nth-of-type(3) .shadowing-parent > .input-field,
 .frame-parent > div:nth-of-type(3) .shadowing-parent > .frame-item {
-  margin-top: -10px !important;
+  margin-top: -20px !important;
 }
 /* FIX ONLY THE FIRST PASSWORD FIELD */
 .frame-container .shadowing-parent {
@@ -840,14 +840,7 @@
   margin: 0 !important;
   padding: 0 !important;
   line-height: 1.1 !important;
-}
 
-.frame-container input[type="password"] {
-  position: relative !important;
-  top: -30px !important;
-  /* MOVE ONLY PASSWORD BOX UP MORE */
-.frame-parent > div:nth-of-type(3) .shadowing-parent > :last-child {
-  transform: translateY(-10px) !important;
 }
 }
 }
