@@ -814,12 +814,18 @@
   height: 52px !important;
   margin: 0 !important;
 }
-/* FIX PASSWORD TEXT GAP */
-.shadowing-parent:has(input[type="password"]) {
+/* FIX ONLY THE FIRST PASSWORD FIELD */
+.frame-container .shadowing-parent {
   gap: 0px !important;
 }
 
-.shadowing-parent:has(input[type="password"]) input[type="password"] {
-  margin-top: -10px !important;
+.frame-container .shadowing-parent > :first-child {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.1 !important;
+}
+
+.frame-container input[type="password"] {
+  margin-top: -4px !important;
 }
 }
