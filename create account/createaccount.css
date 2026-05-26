@@ -781,7 +781,7 @@
   transform: none !important;
 }
   .frame-container .shadowing4 {
-  margin-bottom: 2px !important;
+  transform: translateY(2px) !important;
 }
   /* FINAL FIELD ALIGNMENT FIX */
 .frame-wrapper,
