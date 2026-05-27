@@ -412,8 +412,127 @@
   }
 }
 @media screen and (max-width: 450px) {
-  
-    .footer {
+  .login-page,
+  .login-phone {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: var(--padding-8) 0 0;
+    box-sizing: border-box;
+    gap: 72px;
+    text-align: center;
+  }
+
+  .gradient-parent {
+    width: 402px;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .gradient-icon {
+    height: 1956px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .decorative-box-parent,
+  .ambulance-cute-3-parent {
+    height: 284px;
+    width: 394px;
+    position: absolute;
+    top: 115px;
+    right: 0;
+    min-width: unset;
+  }
+
+  .curita,
+  .shadowing {
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .shadowing-wrapper {
+    width: 74px;
+    height: 50px;
+    padding: 0 15px 20px;
+    box-sizing: border-box;
+  }
+
+  .login-parent,
+  .frame-parent {
+    width: 178px;
+    gap: 13px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    align-items: flex-start;
+  }
+
+  .login {
+    width: 267px;
+    font-size: 32px;
+  }
+
+  .email,
+  .password,
+  .log-in {
+    font-size: 20px;
+  }
+
+  .password-wrapper {
+    width: 101px;
+    padding: 0 20px 13px 0;
+    box-sizing: border-box;
+  }
+
+  .action-buttons {
+    width: 194px;
+    padding: 0 12px 29px;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+
+  .button-container {
+    gap: 9px;
+  }
+
+  .login-button-content {
+    padding: 3px 24px;
+    border-radius: 20px;
+  }
+
+  .forgot-password {
+    width: 163px;
+    font-size: 15px;
+  }
+
+  .info-container-parent,
+  .frame-footer {
+    padding: 7px 0 37px;
+    gap: 23px;
+    background-size: cover;
+    background-position: top;
+    box-sizing: border-box;
+  }
+
+  .info-container {
+    padding: 0 8px;
+  }
+
+  .curita2 {
+    font-size: 12px;
+    width: 107px;
+    margin-left: -21px;
+  }
+
+  .found-for-you {
+    font-size: 12px;
+    width: 140px;
+    margin-left: -22px;
+  }
+
+  .footer {
     padding: 24px 16px 20px;
     gap: 10px;
   }
@@ -429,62 +548,4 @@
   .footer-curita2 {
     font-size: 0.95rem;
   }
-  
-  .curita,
-  .shadowing {
-    font-size: 38px;
-    line-height: var(--lh-32);
-  }
-  .shadowing2 {
-    font-size: 45px;
-  }
-  .shadowing3 {
-    line-height: var(--lh-32);
-  }
-  .shadowing3,
-  .shadowing4 {
-    font-size: 29px;
-  }
-  .rectangle-parent {
-    padding-left: var(--padding-20);
-    padding-right: var(--padding-20);
-    box-sizing: border-box;
-  }
-  .forgot-password {
-    font-size: var(--fs-19);
-  }
-  .frame-footer {
-    gap: 65px;
-    padding-top: var(--padding-20);
-    padding-bottom: 25px;
-    box-sizing: border-box;
-  }
-  .curita2 {
-    font-size: 24px;
-  }
-  .curita3,
-  .found-for-you {
-    font-size: var(--fs-19);
-  }
-  .login-page {
-    gap: 153px;
-  }
-  .frame-parent {
-    gap: 73px;
-  }
-  .frame-wrapper {
-    min-width: 100%;
-  }
-  .shadowing-parent {
-    gap: 21px;
-  }
-  .forgot-password-wrapper {
-    padding-left: 37px;
-    padding-right: 37px;
-    box-sizing: border-box;
-  }
-  .ambulance-cute-3-parent {
-    min-width: 100%;
-  }
 }
-
