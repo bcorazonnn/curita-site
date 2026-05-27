@@ -415,17 +415,18 @@
   .login-page,
   .login-phone {
     width: 100%;
+    height: 665px;
     min-height: 100vh;
+    position: relative;
     overflow: hidden;
-    padding: var(--padding-8) 0 0;
+    padding: 8px 0 364px;
     box-sizing: border-box;
     gap: 72px;
     text-align: center;
   }
 
   .gradient-parent {
-    width: 402px;
-    max-width: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -435,6 +436,29 @@
     height: 1956px;
     width: 100%;
     object-fit: cover;
+  }
+
+  .shadowing-wrapper {
+    width: 74px;
+    height: 101px;
+    padding: 0 15px 71px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .shadowing,
+  .curita {
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .login {
+    width: 267px;
+    position: absolute;
+    top: 130px;
+    left: -97px;
+    font-size: 32px;
+    text-align: center;
   }
 
   .decorative-box-parent,
@@ -447,31 +471,45 @@
     min-width: unset;
   }
 
-  .curita,
-  .shadowing {
-    font-size: 25px;
-    line-height: normal;
+  .decorative-box {
+    width: 174px;
+    height: 41px;
+    top: 91px;
+    left: 0;
+    border-radius: 20px;
   }
 
-  .shadowing-wrapper {
-    width: 74px;
-    height: 50px;
-    padding: 0 15px 20px;
-    box-sizing: border-box;
+  .decorative-box2 {
+    width: 174px;
+    height: 41px;
+    top: 187px;
+    left: 0;
+    border-radius: 20px;
   }
 
-  .login-parent,
-  .frame-parent {
-    width: 178px;
-    gap: 13px;
+  .ambulance-cute-4 {
+    top: 0;
+    left: 204px;
+    width: 175px;
+    height: 218px;
+  }
+
+  .whitespace-icon {
+    top: 96px;
+    left: 283px;
+    width: 122px;
+    height: 152px;
+  }
+
+  .face-mask-4 {
+    top: 76px;
+    left: 162px;
+    width: 166px;
+    height: 208px;
+  }
+
+  .email-wrapper {
     padding: 0 8px;
-    box-sizing: border-box;
-    align-items: flex-start;
-  }
-
-  .login {
-    width: 267px;
-    font-size: 32px;
   }
 
   .email,
@@ -480,21 +518,17 @@
     font-size: 20px;
   }
 
-  .password-wrapper {
-    width: 101px;
-    padding: 0 20px 13px 0;
-    box-sizing: border-box;
+  .password {
+    width: 81px;
   }
 
-  .action-buttons {
-    width: 194px;
-    padding: 0 12px 29px;
-    box-sizing: border-box;
-    font-size: 15px;
-  }
-
-  .button-container {
+  .frame-parent {
+    width: 170px;
+    position: absolute;
+    top: 386px;
+    left: 12px;
     gap: 9px;
+    padding: 0;
   }
 
   .login-button-content {
@@ -505,10 +539,16 @@
   .forgot-password {
     width: 163px;
     font-size: 15px;
+    text-align: center;
   }
 
   .info-container-parent,
   .frame-footer {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
     padding: 7px 0 37px;
     gap: 23px;
     background-size: cover;
@@ -530,22 +570,5 @@
     font-size: 12px;
     width: 140px;
     margin-left: -22px;
-  }
-
-  .footer {
-    padding: 24px 16px 20px;
-    gap: 10px;
-  }
-
-  .footer-curita {
-    font-size: 2.4rem;
-  }
-
-  .footer-found-for-you {
-    font-size: 1rem;
-  }
-
-  .footer-curita2 {
-    font-size: 0.95rem;
   }
 }
