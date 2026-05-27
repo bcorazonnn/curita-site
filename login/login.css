@@ -465,14 +465,14 @@
   }
 
   .login {
-    width: auto !important;
-    font-size: 32px !important;
-    line-height: 1 !important;
-    margin-bottom: 26px !important;
-    color: #fff !important;
-    -webkit-text-fill-color: #fff !important;
-    text-shadow: 0 3px 6px rgba(0,0,0,0.18) !important;
-  }
+  width: auto !important;
+  font-size: 24px !important;
+  line-height: 1 !important;
+  margin-bottom: 18px !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.18) !important;
+}
 
   /* INPUT SECTION */
   .decorative-box-parent,
@@ -482,15 +482,15 @@
     position: relative !important;
   }
 
-  .email,
-  .password {
-    width: auto !important;
-    font-size: 20px !important;
-    line-height: 1.1 !important;
-    margin: 0 0 8px !important;
-    color: #fff !important;
-    -webkit-text-fill-color: #fff !important;
-  }
+ .email,
+.password {
+  width: auto !important;
+  font-size: 15px !important;
+  line-height: 1.1 !important;
+  margin: 0 0 6px !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
 
   .password-wrapper {
     padding-top: 35px !important;
@@ -498,19 +498,18 @@
   }
 
   .decorative-box,
-  .decorative-box2 {
-    display: block !important;
-    width: 230px !important;
-    height: 52px !important;
-    min-height: 52px !important;
-    padding: 0 18px !important;
-    background-color: #4d91df !important;
-    border-radius: 22px !important;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.22) !important;
-    border: none !important;
-    outline: none !important;
-  }
-
+.decorative-box2 {
+  display: block !important;
+  width: 190px !important;
+  height: 42px !important;
+  min-height: 42px !important;
+  padding: 0 18px !important;
+  background-color: #4d91df !important;
+  border-radius: 18px !important;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.22) !important;
+  border: none !important;
+  outline: none !important;
+}
   /* IMAGES */
   .ambulance-cute-4,
   .ambulance-cute-3 {
@@ -550,23 +549,23 @@
   }
 
   .login-button-content {
-    width: 230px !important;
-    height: 52px !important;
-    padding: 0 !important;
-    justify-content: center !important;
-    align-items: center !important;
-    border-radius: 22px !important;
-    background-color: #2f3f78 !important;
-  }
+  width: 190px !important;
+  height: 42px !important;
+  padding: 0 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 18px !important;
+  background-color: #2f3f78 !important;
+}
 
-  .log-in {
-    width: auto !important;
-    font-size: 20px !important;
-    line-height: 1 !important;
-    text-align: center !important;
-    color: #fff !important;
-    -webkit-text-fill-color: #fff !important;
-  }
+ .log-in {
+  width: auto !important;
+  font-size: 16px !important;
+  line-height: 1 !important;
+  text-align: center !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
 
   .forgot-password {
     width: 100% !important;
