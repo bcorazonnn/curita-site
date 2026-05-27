@@ -411,7 +411,7 @@
     min-width: 100%;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 640px) {
   .login-page,
   .login-phone {
     width: 100%;
