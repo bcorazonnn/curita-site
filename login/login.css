@@ -415,13 +415,13 @@
   .login-page,
   .login-phone {
     width: 100%;
-    height: 665px;
     min-height: 100vh;
     position: relative;
-    overflow: hidden;
-    padding: 8px 0 364px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 8px 0 0;
     box-sizing: border-box;
-    gap: 72px;
+    gap: 0;
     text-align: center;
   }
 
@@ -430,19 +430,20 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 0;
   }
 
   .gradient-icon {
-    height: 1956px;
     width: 100%;
+    min-height: 100vh;
     object-fit: cover;
   }
 
   .shadowing-wrapper {
-    width: 74px;
-    height: 101px;
-    padding: 0 15px 71px;
-    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    padding: 10px 0 0 24px;
     text-align: left;
   }
 
@@ -453,122 +454,161 @@
   }
 
   .login {
-    width: 267px;
-    position: absolute;
-    top: 130px;
-    left: -97px;
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    margin: 145px 0 0 24px;
     font-size: 32px;
-    text-align: center;
+    line-height: 1;
+    text-align: left;
   }
 
   .decorative-box-parent,
   .ambulance-cute-3-parent {
+    position: relative;
+    z-index: 2;
+    width: 100%;
     height: 284px;
-    width: 394px;
-    position: absolute;
-    top: 115px;
-    right: 0;
-    min-width: unset;
+    margin-top: 35px;
   }
 
   .decorative-box {
-    width: 174px;
-    height: 41px;
-    top: 91px;
-    left: 0;
-    border-radius: 20px;
+    position: absolute;
+    top: 48px;
+    left: 14px;
+    width: 292px;
+    height: 67px;
+    border-radius: 28px;
   }
 
   .decorative-box2 {
-    width: 174px;
-    height: 41px;
-    top: 187px;
-    left: 0;
-    border-radius: 20px;
-  }
-
-  .ambulance-cute-4 {
-    top: 0;
-    left: 204px;
-    width: 175px;
-    height: 218px;
-  }
-
-  .whitespace-icon {
-    top: 96px;
-    left: 283px;
-    width: 122px;
-    height: 152px;
-  }
-
-  .face-mask-4 {
-    top: 76px;
-    left: 162px;
-    width: 166px;
-    height: 208px;
+    position: absolute;
+    top: 208px;
+    left: 14px;
+    width: 292px;
+    height: 67px;
+    border-radius: 28px;
   }
 
   .email-wrapper {
-    padding: 0 8px;
-  }
-
-  .email,
-  .password,
-  .log-in {
-    font-size: 20px;
-  }
-
-  .password {
-    width: 81px;
-  }
-
-  .frame-parent {
-    width: 170px;
     position: absolute;
-    top: 386px;
-    left: 12px;
-    gap: 9px;
+    top: 6px;
+    left: 18px;
+    z-index: 3;
     padding: 0;
   }
 
+  .email {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .password {
+    position: absolute;
+    top: 165px;
+    left: 18px;
+    z-index: 3;
+    width: auto;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .ambulance-cute-4,
+  .ambulance-cute-3 {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    width: 145px;
+    height: auto;
+    z-index: 3;
+  }
+
+  .face-mask-4,
+  .face-mask-3 {
+    position: absolute;
+    top: 125px;
+    right: 160px;
+    width: 120px;
+    height: auto;
+    z-index: 4;
+  }
+
+  .whitespace-icon {
+    position: absolute;
+    top: 120px;
+    right: 35px;
+    width: 95px;
+    height: auto;
+    z-index: 3;
+  }
+
+  .frame-parent {
+    position: relative;
+    z-index: 3;
+    width: 282px;
+    margin: 25px 0 0 24px;
+    padding: 0;
+    gap: 10px;
+    align-items: center;
+  }
+
   .login-button-content {
-    padding: 3px 24px;
-    border-radius: 20px;
+    width: 282px;
+    height: 50px;
+    padding: 0;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .log-in {
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
   }
 
   .forgot-password {
-    width: 163px;
+    width: 100%;
     font-size: 15px;
+    line-height: 1.1;
     text-align: center;
   }
 
   .info-container-parent,
-  .frame-footer {
+  .frame-footer,
+  .footer {
+    position: relative;
+    z-index: 2;
     width: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 7px 0 37px;
-    gap: 23px;
+    margin-top: 175px;
+    padding: 24px 16px 70px;
+    gap: 10px;
+    box-sizing: border-box;
     background-size: cover;
     background-position: top;
-    box-sizing: border-box;
   }
 
   .info-container {
-    padding: 0 8px;
+    padding: 0;
   }
 
-  .curita2 {
-    font-size: 12px;
-    width: 107px;
-    margin-left: -21px;
+  .curita2,
+  .footer-curita {
+    font-size: 32px;
+    line-height: 1;
+    text-align: left;
   }
 
-  .found-for-you {
-    font-size: 12px;
-    width: 140px;
-    margin-left: -22px;
+  .found-for-you,
+  .footer-found-for-you {
+    font-size: 15px;
+    text-align: left;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .footer-curita2 {
+    font-size: 15px;
+    text-align: left;
   }
 }
