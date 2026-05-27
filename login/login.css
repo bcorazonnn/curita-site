@@ -464,7 +464,7 @@
     margin-top: 75px !important;
   }
 
-  .login {
+ .login {
   width: auto !important;
   font-size: 24px !important;
   line-height: 1 !important;
@@ -627,4 +627,31 @@
     margin: 34px 0 0 !important;
     text-align: left !important;
   }
+  .shadowing2 {
+  font-size: 24px !important;
+  margin-bottom: 18px !important;
+}
+
+.shadowing3,
+.shadowing4 {
+  font-size: 15px !important;
+  margin-bottom: 6px !important;
+}
+
+.frame-child {
+  width: 190px !important;
+  height: 42px !important;
+  min-height: 42px !important;
+  border-radius: 18px !important;
+}
+
+.rectangle-parent {
+  width: 190px !important;
+  height: 42px !important;
+  border-radius: 18px !important;
+}
+
+.shadowing5 {
+  font-size: 16px !important;
+}
 }
