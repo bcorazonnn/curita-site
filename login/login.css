@@ -669,4 +669,16 @@
 .frame-container {
   align-items: flex-start !important;
 }
+  .curita-parent,
+.shadowing-wrapper {
+  padding-left: 0 !important;
+  margin-left: 24px !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+.curita {
+  margin-left: 0 !important;
+  left: 0 !important;
+}
 }
