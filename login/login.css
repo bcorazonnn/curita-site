@@ -654,4 +654,19 @@
 .shadowing5 {
   font-size: 16px !important;
 }
+  .frame-child {
+  width: 165px !important;
+}
+
+.rectangle-parent {
+  width: 165px !important;
+}
+
+.frame-group {
+  align-items: flex-start !important;
+}
+
+.frame-container {
+  align-items: flex-start !important;
+}
 }
