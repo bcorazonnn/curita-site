@@ -230,6 +230,30 @@
   font-weight: 400;
   opacity: 0.9;
 }
+/* show desktop input boxes */
+.input-field {
+  display: block !important;
+  width: 475px !important;
+  height: 122px !important;
+  min-height: 122px !important;
+  background-color: #4d91df !important;
+  border-radius: var(--br-20) !important;
+  box-shadow: var(--shadow-drop) !important;
+  opacity: 1 !important;
+}
+
+/* fix create account button font */
+.shadowing6 {
+  font-family: var(--font-normal-tm) !important;
+  font-size: 48px !important;
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+}
+
+/* make button text not default browser font */
+.rectangle-parent {
+  font-family: var(--font-normal-tm) !important;
+}
 @media screen and (max-width: 750px) {
   .curita,
   .shadowing {
