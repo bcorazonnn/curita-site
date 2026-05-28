@@ -1010,4 +1010,19 @@
   font-size: 18px;
   color: #333;
 }
+  .ambulance-cute-3-parent {
+    top: 215px !important;
+  }
+
+  .ambulance-cute-3 {
+    top: -25px !important;
+  }
+
+  .face-mask-3 {
+    top: 95px !important;
+  }
+
+  .icon {
+    top: 90px !important;
+  }
 }
