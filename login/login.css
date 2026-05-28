@@ -629,5 +629,44 @@
   .login-parent {
     margin-top: 95px !important;
   }
+  /* move login title down so it doesn't touch curita */
+  .login-parent {
+    margin-top: 135px !important;
+  }
+
+  /* make login button same width as email/password boxes */
+  .frame-parent {
+    width: 295px !important;
+    margin: 55px 0 0 82px !important;
+  }
+
+  .login-button-content,
+  .rectangle-parent {
+    width: 295px !important;
+    max-width: 295px !important;
+    min-width: 295px !important;
+    height: 45px !important;
+  }
+
+  .forgot-password {
+    width: 295px !important;
+    text-align: center !important;
+  }
+
+  /* remove white space under footer */
+  .footer,
+  .frame-footer,
+  .info-container-parent {
+    margin-bottom: 0 !important;
+  }
+
+  body,
+  html {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: url("../gradient1.png") no-repeat 85% 0% !important;
+    background-size: cover !important;
+  }
+}
 }
 }
