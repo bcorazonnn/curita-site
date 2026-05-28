@@ -3,7 +3,7 @@
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  background: url("../gradient1.png") no-repeat 75% center;
+  background: url("../gradient1.png") no-repeat right center;
   background-size: cover;
   display: flex;
   flex-direction: column;
