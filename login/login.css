@@ -412,7 +412,6 @@
   }
 }
 @media screen and (max-width: 640px) {
-
   @font-face {
     font-family: "Normal TM";
     src: url("../normal-tm.otf") format("opentype");
@@ -427,411 +426,163 @@
 
   .login-page,
   .login-phone {
-    min-height: 100svh !important;
-    width: 100%;
+    min-height: auto !important;
+    height: auto !important;
+    width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
-    padding: 20px 0 0 !important;
-    gap: 40px !important;
     align-items: flex-start !important;
-    overflow: hidden;
+    padding: 20px 0 0 !important;
+    gap: 22px !important;
+    overflow: hidden !important;
     background: url("../gradient1.png") no-repeat 85% 0% !important;
     background-size: cover !important;
   }
 
-  /* TOP CURITA LOGO */
+  .curita-parent,
   .shadowing-wrapper {
-    padding: 0 0 0 22px !important;
+    margin: 0 !important;
+    padding: 0 0 0 30px !important;
+    width: auto !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+  }
+
+  .curita,
+  .curita-parent .curita,
+  .shadowing-wrapper .curita {
+    position: static !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    font-size: 34px !important;
+    line-height: 1 !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    text-shadow: none !important;
   }
 
   .shadowing {
     display: none !important;
   }
 
-  .curita {
-    font-size: 34px !important;
-    line-height: 1 !important;
-    color: #fff !important;
-    -webkit-text-fill-color: #fff !important;
-    text-shadow: none !important;
-  }
-
-  /* LOGIN CONTAINER */
   .login-parent {
-    width: 100%;
-    padding: 0 24px !important;
-    justify-content: center !important;
-    margin-top: 75px !important;
-  }
-
- .login {
-  width: auto !important;
-  font-size: 24px !important;
-  line-height: 1 !important;
-  margin-bottom: 18px !important;
-  color: #fff !important;
-  -webkit-text-fill-color: #fff !important;
-  text-shadow: 0 3px 6px rgba(0,0,0,0.18) !important;
-}
-
-  /* INPUT SECTION */
-  .decorative-box-parent,
-  .ambulance-cute-3-parent {
     width: 100% !important;
-    height: 260px !important;
-    position: relative !important;
+    padding: 0 0 0 30px !important;
+    margin-top: 35px !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
   }
 
- .email,
-.password {
-  width: auto !important;
-  font-size: 15px !important;
-  line-height: 1.1 !important;
-  margin: 0 0 6px !important;
-  color: #fff !important;
-  -webkit-text-fill-color: #fff !important;
-}
+  .login,
+  .shadowing2 {
+    font-size: 24px !important;
+    line-height: 1 !important;
+    margin-bottom: 18px !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+  }
+
+  .email,
+  .password,
+  .shadowing3,
+  .shadowing4 {
+    font-size: 15px !important;
+    line-height: 1.1 !important;
+    margin-bottom: 6px !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+  }
 
   .password-wrapper {
     padding-top: 35px !important;
-    width: auto !important;
   }
 
-  .decorative-box,
-.decorative-box2 {
-  display: block !important;
-  width: 190px !important;
-  height: 42px !important;
-  min-height: 42px !important;
-  padding: 0 18px !important;
-  background-color: #4d91df !important;
-  border-radius: 18px !important;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.22) !important;
-  border: none !important;
-  outline: none !important;
-}
-  /* IMAGES */
-  .ambulance-cute-4,
-  .ambulance-cute-3 {
-    display: block !important;
-    position: absolute !important;
-    top: 215px !important;
-    right: 28px !important;
-    width: 150px !important;
-    height: auto !important;
-  }
-
-  .face-mask-4,
-  .face-mask-3 {
-    display: block !important;
-    position: absolute !important;
-    top: 500px !important;
-    right: 5px !important;
-    width: 115px !important;
-    height: auto !important;
-  }
-
-  .whitespace-icon {
-    display: block !important;
-    position: absolute !important;
-    top: 415px !important;
-    right: 20px !important;
-    width: 100px !important;
-    height: auto !important;
-  }
-
-  /* BUTTON AREA */
-  .frame-parent {
-    width: 292px !important;
-    margin: 25px 0 0 24px !important;
-    align-items: center !important;
-    gap: 16px !important;
-  }
-
-  .login-button-content {
-  width: 190px !important;
-  height: 42px !important;
-  padding: 0 !important;
-  justify-content: center !important;
-  align-items: center !important;
-  border-radius: 18px !important;
-  background-color: #2f3f78 !important;
-}
-
- .log-in {
-  width: auto !important;
-  font-size: 16px !important;
-  line-height: 1 !important;
-  text-align: center !important;
-  color: #fff !important;
-  -webkit-text-fill-color: #fff !important;
-}
-
-  .forgot-password {
+  .decorative-box-parent,
+  .ambulance-cute-3-parent {
     width: 100% !important;
-    font-size: 15px !important;
-    line-height: 17px !important;
-    text-align: center !important;
-    white-space: normal !important;
-    color: #fff !important;
-    -webkit-text-fill-color: #fff !important;
-    margin: 0 !important;
+    height: auto !important;
   }
 
-  /* FOOTER */
-  .footer,
-  .frame-footer,
-  .info-container-parent {
-    width: 100%;
-    min-height: 115px !important;
-    height: 115px !important;
-    padding: 10px 14px 12px !important;
-    margin-top: auto !important;
-    gap: 0 !important;
-
-    background-image: url("../Frame 1.png") !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: top !important;
-
-    box-shadow: var(--shadow-drop);
-    overflow: hidden !important;
-  }
-
-  .footer-block-parent {
-    padding: 0 !important;
-    gap: 2px !important;
-  }
-
-  .footer-curita {
-    font-size: 24px !important;
-    line-height: 1 !important;
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-  }
-
-  .footer-found-for-you {
-    font-size: 12px !important;
-    line-height: 1.1 !important;
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-    margin: 0 !important;
-    text-align: left !important;
-  }
-
-  .footer-curita2 {
-    font-size: 12px !important;
-    line-height: 1.1 !important;
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-    margin: 34px 0 0 !important;
-    text-align: left !important;
-  }
-  .shadowing2 {
-  font-size: 24px !important;
-  margin-bottom: 18px !important;
-}
-
-.shadowing3,
-.shadowing4 {
-  font-size: 15px !important;
-  margin-bottom: 6px !important;
-}
-
-.frame-child {
-  width: 190px !important;
-  height: 42px !important;
-  min-height: 42px !important;
-  border-radius: 18px !important;
-}
-
-.rectangle-parent {
-  width: 190px !important;
-  height: 42px !important;
-  border-radius: 18px !important;
-}
-
-.shadowing5 {
-  font-size: 16px !important;
-}
-  .frame-child {
-  width: 165px !important;
-}
-
-.rectangle-parent {
-  width: 165px !important;
-}
-
-.frame-group {
-  align-items: flex-start !important;
-}
-
-.frame-container {
-  align-items: flex-start !important;
-}
-  .curita-parent,
-.shadowing-wrapper {
-  padding-left: 0 !important;
-  margin-left: 24px !important;
-  justify-content: flex-start !important;
-  align-items: flex-start !important;
-}
-
-.curita {
-  margin-left: 0 !important;
-  left: 0 !important;
-}
-  /* FIX CURITA LOGO POSITION */
-.curita-parent {
-  width: auto !important;
-  padding: 0 !important;
-  margin: 0 0 0 22px !important;
-  align-items: flex-start !important;
-  justify-content: flex-start !important;
-}
-
-.curita-parent .curita {
-  margin: 0 !important;
-  padding: 0 !important;
-  position: relative !important;
-  left: 0 !important;
-  transform: none !important;
-}
-
-/* FIX BOXES + BUTTON LEFT AND SMALL */
-.frame-wrapper,
-.shadowing-parent,
-.shadowing-group,
-.shadowing-container,
-.frame-container {
-  width: 165px !important;
-  align-items: flex-start !important;
-  justify-content: flex-start !important;
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-}
-
-.frame-child,
-.rectangle-parent {
-  width: 165px !important;
-  height: 42px !important;
-  min-height: 42px !important;
-}
-
-.frame-parent {
-  align-items: flex-start !important;
-}
-
-.frame-group {
-  align-items: flex-start !important;
-}
-   /* curita logo: back to top-left like design */
-  .curita-parent,
-  .shadowing-wrapper {
-    margin-left: 30px !important;
-    padding-left: 0 !important;
-    width: auto !important;
-  }
-
-  .curita {
-    font-size: 34px !important;
-    margin: 0 !important;
-    transform: none !important;
-    left: 0 !important;
-  }
-
-  /* whole form pushed left */
-  .login-parent {
-    padding-left: 30px !important;
-    padding-right: 0 !important;
-    margin-top: 120px !important;
-    align-items: flex-start !important;
-  }
-
-  /* input boxes smaller like 2nd pic */
   .decorative-box,
   .decorative-box2,
   .frame-child {
-    width: 260px !important;
-    max-width: 260px !important;
-    height: 68px !important;
-    border-radius: 28px !important;
-  }
-
-  /* button same width as boxes */
-  .frame-parent {
-    width: 260px !important;
-    margin-left: 30px !important;
-    align-items: flex-start !important;
-  }
-
-  .login-button-content,
-  .rectangle-parent {
-    width: 260px !important;
-    max-width: 260px !important;
-    height: 50px !important;
-    border-radius: 22px !important;
-  }
-
-  .forgot-password {
-    text-align: center !important;
-    width: 260px !important;
-  }
-  /* FIX TOP CURITA LOGO */
-  .curita-parent,
-  .shadowing-wrapper {
-    position: relative !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    padding-left: 30px !important;
-    width: fit-content !important;
-    left: 0 !important;
-    transform: none !important;
-  }
-
-  .curita-parent .curita,
-  .shadowing-wrapper .curita,
-  .curita {
-    position: relative !important;
-    left: 0 !important;
-    top: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    transform: none !important;
-    font-size: 34px !important;
-    line-height: 1 !important;
-    text-align: left !important;
-  }
-
-  /* SMALLER INPUTS */
-  .decorative-box,
-  .decorative-box2,
-  .frame-child {
-    width: 220px !important;
-    max-width: 220px !important;
+    width: 210px !important;
+    max-width: 210px !important;
     height: 45px !important;
     min-height: 45px !important;
     border-radius: 22px !important;
   }
 
-  /* SMALLER LOGIN BUTTON */
   .frame-parent {
-    width: 220px !important;
-    margin-left: 30px !important;
+    width: 210px !important;
+    margin: 24px 0 0 30px !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
   }
 
   .login-button-content,
   .rectangle-parent {
-    width: 220px !important;
-    max-width: 220px !important;
+    width: 210px !important;
+    max-width: 210px !important;
     height: 42px !important;
     min-height: 42px !important;
     border-radius: 20px !important;
   }
 
+  .log-in,
+  .shadowing5 {
+    font-size: 16px !important;
+    line-height: 1 !important;
+  }
+
   .forgot-password {
-    width: 220px !important;
+    width: 210px !important;
     text-align: center !important;
+    font-size: 15px !important;
+    margin: 0 !important;
+  }
+
+  .ambulance-cute-4,
+  .ambulance-cute-3,
+  .face-mask-4,
+  .face-mask-3,
+  .whitespace-icon {
+    display: none !important;
+  }
+
+  .footer,
+  .frame-footer,
+  .info-container-parent {
+    width: 100% !important;
+    height: 100px !important;
+    min-height: 100px !important;
+    margin-top: 45px !important;
+    padding: 10px 14px 12px !important;
+    background-image: url("../Frame 1.png") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: top !important;
+    overflow: hidden !important;
+  }
+
+  .footer-curita {
+    font-size: 24px !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+  }
+
+  .footer-found-for-you,
+  .footer-curita2 {
+    font-size: 12px !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+  }
+
+  .footer-curita2 {
+    margin-top: 28px !important;
   }
 }
 }
