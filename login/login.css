@@ -667,6 +667,83 @@
     background: url("../gradient1.png") no-repeat 85% 0% !important;
     background-size: cover !important;
   }
+  /* LOGIN TITLE */
+  .login-parent {
+    margin-top: 70px !important;
+    padding-left: 28px !important;
+  }
+
+  .login,
+  .shadowing2 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    font-size: 26px !important;
+  }
+
+  /* INPUTS */
+  .decorative-box,
+  .decorative-box2,
+  .frame-child {
+    width: 180px !important;
+    max-width: 180px !important;
+    min-width: 180px !important;
+    height: 45px !important;
+    border-radius: 22px !important;
+  }
+
+  /* LOGIN BUTTON */
+  .frame-parent {
+    width: 180px !important;
+    margin-left: 28px !important;
+    margin-top: 28px !important;
+  }
+
+  .login-button-content,
+  .rectangle-parent {
+    width: 180px !important;
+    max-width: 180px !important;
+    min-width: 180px !important;
+    height: 42px !important;
+    border-radius: 20px !important;
+  }
+
+  /* FORGOT PASSWORD */
+  .forgot-password {
+    width: 180px !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    font-size: 14px !important;
+  }
+
+  /* BRING BACK ICONS */
+  .ambulance-cute-4,
+  .ambulance-cute-3 {
+    display: block !important;
+    position: absolute !important;
+    top: 190px !important;
+    right: 20px !important;
+    width: 120px !important;
+    height: auto !important;
+  }
+
+  .face-mask-4,
+  .face-mask-3 {
+    display: block !important;
+    position: absolute !important;
+    top: 340px !important;
+    right: 28px !important;
+    width: 85px !important;
+    height: auto !important;
+  }
+
+  .whitespace-icon {
+    display: block !important;
+    position: absolute !important;
+    top: 330px !important;
+    right: -2px !important;
+    width: 90px !important;
+    height: auto !important;
+  }
 }
 }
 }
