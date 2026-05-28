@@ -928,4 +928,51 @@
     height: 110px !important;
     min-height: 110px !important;
   }
+  /* fix logo position */
+  .curita-parent {
+    padding-left: 24px !important;
+  }
+
+  /* center login button text vertically */
+  .rectangle-parent {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+
+  .shadowing5 {
+    line-height: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: translateY(2px) !important;
+  }
+
+  /* make footer tall enough so ©2026 is not cut */
+  .footer {
+    height: 150px !important;
+    min-height: 150px !important;
+    padding: 16px 18px 18px !important;
+    margin-top: 70px !important;
+  }
+
+  .footer-curita2 {
+    margin-top: 36px !important;
+    display: block !important;
+  }
+
+  /* slight form alignment adjustment */
+  .frame-parent {
+    padding-left: 24px !important;
+  }
+
+  .frame-child,
+  .rectangle-parent {
+    width: 280px !important;
+    max-width: 280px !important;
+  }
+
+  .forgot-password-wrapper {
+    width: 280px !important;
+  }
 }
