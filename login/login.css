@@ -989,13 +989,13 @@
     min-width: 200px !important;
   }
   .frame-child {
-  width: 200px;
-  max-width: 200px;
-  min-width: 200px;
+  width: 205px;
+  max-width: 205px;
+  min-width: 205px;
 
-  height: 42px;
+  height: 46px;
 
-  border-radius: 23px;
+  border-radius: 24px;
 
   border: 0;
   outline: 0;
