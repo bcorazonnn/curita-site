@@ -988,4 +988,26 @@
     max-width: 200px !important;
     min-width: 200px !important;
   }
+  .frame-child {
+  width: 200px;
+  max-width: 200px;
+  min-width: 200px;
+
+  height: 42px;
+
+  border-radius: 23px;
+
+  border: 0;
+  outline: 0;
+
+  background-color: var(--color-whitesmoke);
+
+  box-shadow: var(--shadow-drop);
+
+  padding: 0 0 0 24px;
+
+  font-family: var(--font-normal-tm);
+  font-size: 18px;
+  color: #333;
+}
 }
