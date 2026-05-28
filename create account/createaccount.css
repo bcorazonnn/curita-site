@@ -45,18 +45,24 @@
 .create-account-child {
   width: 100%;
   flex: 1;
+
   display: flex;
   justify-content: center;
-  padding-top: 95px;
+
+  padding-top: 40px;
+  padding-bottom: 90px;
+
   box-sizing: border-box;
 }
 
 .frame-parent {
   width: 420px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+
+  gap: 42px;
 }
 
 .shadowing-wrapper {
@@ -85,9 +91,11 @@
 
 .shadowing-parent {
   width: 100%;
+
   display: flex;
   flex-direction: column;
-  gap: 10px;
+
+  gap: 16px;
 }
 
 .shadowing3,
@@ -117,11 +125,15 @@
 }
 
 .frame-group {
-  width: 497px;
+  width: 420px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+
+  gap: 22px;
+
+  margin-top: 8px;
 }
 
 .rectangle-parent {
