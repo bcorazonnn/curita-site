@@ -663,4 +663,16 @@
     padding: 0 !important;
     line-height: 1.1 !important;
   }
+  @media screen and (min-width: 641px) {
+  .create-account {
+    min-height: 100vh !important;
+    background: url("../gradient1.png") no-repeat center !important;
+    background-size: cover !important;
+  }
+
+  .footer {
+    width: 100% !important;
+    min-height: 200px !important;
+    margin-top: auto !important;
+  }
 }
