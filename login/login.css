@@ -584,5 +584,50 @@
   .footer-curita2 {
     margin-top: 28px !important;
   }
+  /* FORCE smaller rectangles/buttons */
+  .decorative-box,
+  .decorative-box2,
+  .frame-child,
+  .rectangle-parent,
+  .login-button-content {
+    width: 175px !important;
+    max-width: 175px !important;
+    min-width: 175px !important;
+  }
+
+  .frame-parent {
+    width: 175px !important;
+    max-width: 175px !important;
+  }
+
+  .forgot-password {
+    width: 175px !important;
+  }
+
+  /* FORCE curita logo fix */
+  .curita-parent,
+  .shadowing-wrapper {
+    position: absolute !important;
+    top: 24px !important;
+    left: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+  }
+
+  .curita {
+    position: static !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    font-size: 34px !important;
+    line-height: 1 !important;
+    text-align: left !important;
+  }
+
+  .login-parent {
+    margin-top: 95px !important;
+  }
 }
 }
