@@ -137,25 +137,22 @@
   margin-bottom: 40px;
 }
 .rectangle-parent {
-  width: 500px;
-  height: 58px;
-
-  border: 0;
-  border-radius: 16px;
-
-  background: #2f417e;
-
-  box-shadow: 0 6px 14px rgba(0,0,0,0.22);
+  width: 470px;
+  height: 72px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  cursor: pointer;
+  margin: 38px auto 0 auto;
 
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 20px;
+  background: #35458b;
+
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+
+  border: none;
+  cursor: pointer;
 }
 .rectangle-parent:hover {
   background-color: var(--color-steelblue);
@@ -265,6 +262,7 @@
   line-height: 1.1;
   font-weight: 400;
   opacity: 0.9;
+  color: white !important;
 }
 /* show desktop input boxes */
 .input-field {
