@@ -777,5 +777,61 @@
     text-align: center !important;
     width: 260px !important;
   }
+  /* FIX TOP CURITA LOGO */
+  .curita-parent,
+  .shadowing-wrapper {
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-left: 30px !important;
+    width: fit-content !important;
+    left: 0 !important;
+    transform: none !important;
+  }
+
+  .curita-parent .curita,
+  .shadowing-wrapper .curita,
+  .curita {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    font-size: 34px !important;
+    line-height: 1 !important;
+    text-align: left !important;
+  }
+
+  /* SMALLER INPUTS */
+  .decorative-box,
+  .decorative-box2,
+  .frame-child {
+    width: 220px !important;
+    max-width: 220px !important;
+    height: 45px !important;
+    min-height: 45px !important;
+    border-radius: 22px !important;
+  }
+
+  /* SMALLER LOGIN BUTTON */
+  .frame-parent {
+    width: 220px !important;
+    margin-left: 30px !important;
+  }
+
+  .login-button-content,
+  .rectangle-parent {
+    width: 220px !important;
+    max-width: 220px !important;
+    height: 42px !important;
+    min-height: 42px !important;
+    border-radius: 20px !important;
+  }
+
+  .forgot-password {
+    width: 220px !important;
+    text-align: center !important;
+  }
 }
 }
