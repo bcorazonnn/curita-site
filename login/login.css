@@ -982,5 +982,10 @@
   .footer {
     margin-top: 80px !important;
   }
-}
+  /* make email/password match login button width */
+  .frame-child {
+    width: 200px !important;
+    max-width: 200px !important;
+    min-width: 200px !important;
+  }
 }
