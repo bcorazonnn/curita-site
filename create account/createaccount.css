@@ -343,54 +343,6 @@
   padding: 0 30px;
   box-sizing: border-box;
 }
-.frame-wrapper,
-.frame-container,
-.frame-div {
-  width: 505px !important;
-  height: 202px !important;
-  padding: 0 15px 22px !important;
-  box-sizing: border-box !important;
-}
-
-.frame-child,
-.frame-item {
-  align-self: stretch !important;
-  flex: 1 !important;
-  height: auto !important;
-  min-height: 0 !important;
-}
-
-.shadowing-parent {
-  align-self: stretch !important;
-  flex: 1 !important;
-  display: flex !important;
-  flex-direction: column !important;
-}
-
-.frame-parent {
-  gap: 54px !important;
-}
-.input-field {
-  display: block !important;
-  width: 100% !important;
-  height: 110px !important;
-  min-height: 110px !important;
-  flex: none !important;
-
-  border: 0 !important;
-  outline: 0 !important;
-  border-radius: var(--br-20) !important;
-  background-color: var(--color-cornflowerblue) !important;
-  box-shadow: var(--shadow-drop) !important;
-
-  font-family: var(--font-normal-tm) !important;
-  font-size: var(--fs-48) !important;
-  color: var(--color-whitesmoke) !important;
-
-  padding: 0 30px !important;
-  box-sizing: border-box !important;
-}
-
 .frame-wrapper {
   width: 505px !important;
   height: auto !important;
