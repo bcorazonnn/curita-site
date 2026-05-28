@@ -725,4 +725,57 @@
 .frame-group {
   align-items: flex-start !important;
 }
+   /* curita logo: back to top-left like design */
+  .curita-parent,
+  .shadowing-wrapper {
+    margin-left: 30px !important;
+    padding-left: 0 !important;
+    width: auto !important;
+  }
+
+  .curita {
+    font-size: 34px !important;
+    margin: 0 !important;
+    transform: none !important;
+    left: 0 !important;
+  }
+
+  /* whole form pushed left */
+  .login-parent {
+    padding-left: 30px !important;
+    padding-right: 0 !important;
+    margin-top: 120px !important;
+    align-items: flex-start !important;
+  }
+
+  /* input boxes smaller like 2nd pic */
+  .decorative-box,
+  .decorative-box2,
+  .frame-child {
+    width: 260px !important;
+    max-width: 260px !important;
+    height: 68px !important;
+    border-radius: 28px !important;
+  }
+
+  /* button same width as boxes */
+  .frame-parent {
+    width: 260px !important;
+    margin-left: 30px !important;
+    align-items: flex-start !important;
+  }
+
+  .login-button-content,
+  .rectangle-parent {
+    width: 260px !important;
+    max-width: 260px !important;
+    height: 50px !important;
+    border-radius: 22px !important;
+  }
+
+  .forgot-password {
+    text-align: center !important;
+    width: 260px !important;
+  }
+}
 }
