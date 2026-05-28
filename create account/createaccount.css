@@ -3,17 +3,13 @@
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-
   background: url("../gradient1.png") no-repeat center;
   background-size: cover;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   padding: 20px 0 0;
   box-sizing: border-box;
-
   color: var(--color-whitesmoke);
   font-family: var(--font-normal-tm);
 }
@@ -23,27 +19,19 @@
 }
 
 .create-account-inner {
-  padding: 0 28px;
-  box-sizing: border-box;
+  padding-left: 28px;
   z-index: 5;
 }
 
 .curita-parent {
   display: flex;
-  align-items: flex-start;
 }
 
-.curita,
-.shadowing {
+.curita {
   margin: 0;
-  width: 129px;
-  position: relative;
-  font-size: var(--fs-64);
+  font-size: 64px;
   line-height: 54px;
   font-weight: 400;
-  font-family: inherit;
-  display: inline-block;
-  flex-shrink: 0;
 }
 
 .shadowing {
@@ -55,10 +43,8 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   padding-top: 95px;
   box-sizing: border-box;
-  z-index: 2;
 }
 
 .frame-parent {
@@ -73,17 +59,13 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 6px;
 }
 
 .shadowing2 {
   margin: 0;
-  width: 100%;
   font-size: 75px;
   line-height: 1;
   font-weight: 400;
-  font-family: inherit;
-  text-align: center;
   white-space: nowrap;
 }
 
@@ -91,7 +73,6 @@
   width: 505px;
   height: 130px;
   display: flex;
-  align-items: flex-start;
   padding: 0 15px;
   box-sizing: border-box;
 }
@@ -107,16 +88,12 @@
 .shadowing4,
 .shadowing5 {
   margin: 0;
-  font-size: var(--fs-48);
+  font-size: 48px;
   line-height: 1;
   font-weight: 400;
-  font-family: inherit;
-  color: var(--color-whitesmoke);
 }
 
-.input-field,
-.frame-child,
-.frame-item {
+.input-field {
   width: 475px;
   height: 72px;
   border: 0;
@@ -124,11 +101,9 @@
   border-radius: var(--br-20);
   background-color: var(--color-cornflowerblue);
   box-shadow: var(--shadow-drop);
-
   font-family: var(--font-normal-tm);
-  font-size: var(--fs-48);
+  font-size: 48px;
   color: var(--color-whitesmoke);
-
   padding: 0 30px;
   box-sizing: border-box;
 }
@@ -150,11 +125,9 @@
   background-color: var(--color-darkslateblue);
   box-shadow: var(--shadow-drop);
   border-radius: var(--br-20);
-
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
 }
 
 .rectangle-parent:hover {
@@ -167,53 +140,39 @@
 
 .shadowing6 {
   margin: 0;
-  font-size: var(--fs-48);
+  font-size: 48px;
   font-weight: 400;
-  font-family: var(--font-normal-tm);
   color: var(--color-whitesmoke);
-  text-align: center;
 }
 
 .shadowing-frame {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.shadowing7 {
-  margin: 0;
-  font-size: var(--fs-24);
-  font-weight: 400;
-  font-family: inherit;
+.shadowing7,
+.shadowing7:visited,
+.shadowing7:hover {
+  font-size: 24px;
   color: white;
-  text-align: center;
   text-decoration: none;
 }
 
-.shadowing7:visited,
-.shadowing7:hover {
-  color: white;
-}
-
-/* KEEP YOUR FOOTER STYLE */
+/* FOOTER YOU LIKED */
 .footer {
   width: 100%;
   position: relative;
   overflow: hidden;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   padding: 24px;
   gap: 6px;
   min-height: 200px;
-
   background-image: url("../Frame 1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
   color: var(--text);
   font-family: var(--font-main);
   box-sizing: border-box;
@@ -231,17 +190,11 @@
   z-index: 1;
 }
 
-.footer-block,
 .footer-block-parent {
   display: flex;
-  align-items: flex-start;
-}
-
-.footer-block-parent {
   flex-direction: column;
+  align-items: flex-start;
   gap: 6px;
-  width: auto;
-  max-width: 100%;
 }
 
 .footer-curita {
