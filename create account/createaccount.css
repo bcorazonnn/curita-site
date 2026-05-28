@@ -361,6 +361,22 @@
 .footer * {
   font-family: var(--font-normal-tm) !important;
 }
+.input-field {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  border-radius: var(--br-20);
+  background-color: var(--color-cornflowerblue);
+  box-shadow: var(--shadow-drop);
+
+  font-family: var(--font-normal-tm);
+  font-size: var(--fs-48);
+  color: var(--color-whitesmoke);
+
+  padding: 0 30px;
+  box-sizing: border-box;
+}
 @media screen and (max-width: 750px) {
   .curita,
   .shadowing {
