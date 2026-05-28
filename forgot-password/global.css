@@ -1,3 +1,15 @@
+ @font-face {
+    font-family: "Normal TM";
+    src: url("../normal-tm.otf") format("opentype");
+  }
+
+  .login-page,
+  .login-phone,
+  .login-page *,
+  .login-phone * {
+    font-family: "Normal TM" !important;
+  }
+
 body {
   margin: 0;
   line-height: normal;
