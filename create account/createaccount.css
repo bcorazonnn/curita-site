@@ -896,4 +896,7 @@
     position: relative !important;
     top: 38px !important;
   }
+    .frame-group {
+    padding-top: 45px !important;
+  }
 }
