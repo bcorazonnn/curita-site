@@ -760,4 +760,98 @@
     padding: 0 !important;
     line-height: 1.1 !important;
   }
+  @media screen and (max-width: 640px) {
+  .create-account {
+    min-height: 100svh !important;
+    padding: 20px 0 0 !important;
+    gap: 38px !important;
+    background: url("../gradient1.png") no-repeat 85% 0% !important;
+    background-size: cover !important;
+    overflow: hidden !important;
+  }
+
+  .create-account-child {
+    width: 100% !important;
+    padding: 0 24px !important;
+    justify-content: center !important;
+  }
+
+  .frame-parent {
+    width: 230px !important;
+    align-items: center !important;
+    gap: 22px !important;
+  }
+
+  .shadowing-wrapper {
+    width: 100% !important;
+    padding: 0 0 12px !important;
+    justify-content: center !important;
+  }
+
+  .shadowing2 {
+    width: 100% !important;
+    font-size: 32px !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .frame-wrapper {
+    width: 230px !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .shadowing-parent {
+    width: 230px !important;
+    gap: 8px !important;
+    transform: none !important;
+  }
+
+  .shadowing3,
+  .shadowing4,
+  .shadowing5 {
+    font-size: 20px !important;
+    line-height: 1.1 !important;
+    margin: 0 0 6px !important;
+    padding: 0 !important;
+    position: static !important;
+  }
+
+  .input-field,
+  .frame-child,
+  .frame-item {
+    width: 230px !important;
+    height: 52px !important;
+    min-height: 52px !important;
+    margin: 0 !important;
+    padding: 0 18px !important;
+    border-radius: 22px !important;
+  }
+
+  .frame-group {
+    width: 230px !important;
+    gap: 14px !important;
+    margin: 8px 0 34px !important;
+  }
+
+  .rectangle-parent {
+    width: 230px !important;
+    height: 52px !important;
+    margin: 0 !important;
+    transform: none !important;
+    border-radius: 22px !important;
+  }
+
+  .shadowing6 {
+    font-size: 20px !important;
+    line-height: 1 !important;
+  }
+
+  .shadowing7 {
+    font-size: 15px !important;
+    line-height: 17px !important;
+    margin-top: 4px !important;
+  }
+}
 }
