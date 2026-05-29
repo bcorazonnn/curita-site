@@ -760,143 +760,147 @@
     padding: 0 !important;
     line-height: 1.1 !important;
   }
-  @media screen and (max-width: 640px) {
+  /* =========================
+   CREATE ACCOUNT - MOBILE
+========================= */
+@media screen and (max-width: 640px) {
+
   .create-account {
-    min-height: 100svh !important;
-    padding: 20px 0 0 !important;
-    gap: 38px !important;
-    background: url("../gradient1.png") no-repeat 85% 0% !important;
-    background-size: cover !important;
-    overflow: hidden !important;
+    min-height: 100svh;
+    padding-top: 20px;
+    background: url("../gradient1.png") no-repeat center;
+    background-size: cover;
+    overflow-x: hidden;
   }
 
+  /* logo */
+  .create-account-inner {
+    padding-left: 20px;
+  }
+
+  .curita {
+    font-size: 34px !important;
+    line-height: 1;
+  }
+
+  /* form container */
   .create-account-child {
-    width: 100% !important;
-    padding: 0 24px !important;
-    justify-content: center !important;
+    width: 100%;
+    padding: 10px 24px 0;
+    display: flex;
+    justify-content: center;
   }
 
   .frame-parent {
-    width: 230px !important;
-    align-items: center !important;
-    gap: 22px !important;
+    width: 100%;
+    max-width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
   }
 
+  /* title */
   .shadowing-wrapper {
-    width: 100% !important;
-    padding: 0 0 12px !important;
-    justify-content: center !important;
+    padding-bottom: 10px;
   }
 
   .shadowing2 {
-    width: 100% !important;
     font-size: 32px !important;
-    text-align: center !important;
-    white-space: normal !important;
+    text-align: center;
+    line-height: 1;
   }
 
-  .frame-wrapper {
-    width: 230px !important;
+  /* field wrappers */
+  .frame-wrapper,
+  .frame-container,
+  .frame-div {
+    width: 100%;
     height: auto !important;
     padding: 0 !important;
     margin: 0 !important;
   }
 
   .shadowing-parent {
-    width: 230px !important;
-    gap: 8px !important;
-    transform: none !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 
+  /* labels */
   .shadowing3,
   .shadowing4,
   .shadowing5 {
     font-size: 20px !important;
-    line-height: 1.1 !important;
-    margin: 0 0 6px !important;
-    padding: 0 !important;
-    position: static !important;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
   }
 
+  /* inputs */
   .input-field,
   .frame-child,
   .frame-item {
-    width: 230px !important;
-    height: 52px !important;
-    min-height: 52px !important;
+    width: 100%;
+    height: 52px;
+    border-radius: 22px;
+    padding: 0 18px;
     margin: 0 !important;
-    padding: 0 18px !important;
-    border-radius: 22px !important;
+    border: none;
+    outline: none;
+    background: #4d91df;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    font-size: 18px;
   }
 
+  /* BUTTON SECTION */
   .frame-group {
-    width: 230px !important;
-    gap: 14px !important;
-    margin: 8px 0 34px !important;
+    width: 100%;
+    margin-top: 8px !important;
+    padding-top: 0 !important;
+    gap: 12px;
+    align-items: center;
   }
 
   .rectangle-parent {
-    width: 230px !important;
-    height: 52px !important;
+    width: 100%;
+    height: 52px;
+    border-radius: 22px;
+    background: #35458b;
     margin: 0 !important;
+    position: static !important;
     transform: none !important;
-    border-radius: 22px !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .shadowing6 {
     font-size: 20px !important;
-    line-height: 1 !important;
+    line-height: 1;
   }
 
   .shadowing7 {
     font-size: 15px !important;
-    line-height: 17px !important;
-    margin-top: 4px !important;
-  }
-     /* STOP password/confirm fields from overlapping */
-  .frame-parent > div:nth-of-type(3) .shadowing-parent,
-  .frame-parent > div:nth-of-type(4) .shadowing-parent {
-    gap: 8px !important;
-    transform: none !important;
-    padding-bottom: 0 !important;
+    line-height: 1.2;
+    margin-top: 2px;
+    text-align: center;
   }
 
-  .frame-parent > div:nth-of-type(3) .shadowing-parent > input,
-  .frame-parent > div:nth-of-type(4) .shadowing-parent > input {
-    margin-top: 0 !important;
-    position: static !important;
-    top: auto !important;
+  /* footer */
+  .footer {
+    min-height: 110px;
+    padding: 12px 14px;
   }
 
-  /* push create account button down */
-  .frame-group {
-    margin-top: 28px !important;
-    gap: 18px !important;
+  .footer-curita {
+    font-size: 24px;
   }
 
-  .rectangle-parent {
-    margin-top: 0 !important;
-    transform: none !important;
-  }
-   /* undo the section height push */
-  .frame-wrapper {
-    min-height: unset !important;
-  }
-
-  /* ONLY push the button down */
- .rectangle-parent {
-  margin-top: 45px !important;
-}
-
-  .rectangle-parent {
-    margin-top: 0 !important;
-    transform: none !important;
-  }
-    .rectangle-parent {
-    position: relative !important;
-    top: 38px !important;
-  }
-    .frame-group {
-    padding-top: 45px !important;
+  .footer-found-for-you,
+  .footer-curita2 {
+    font-size: 12px;
   }
 }
