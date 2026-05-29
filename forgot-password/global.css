@@ -1,12 +1,9 @@
 @font-face {
   font-family: "Normal TM";
-  src: url("../normal-tm.otf") format("opentype");
+  src: url("./normal-tm.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }
-
-* {
-  font-family: "Normal TM" !important;
-}
-
 body {
   margin: 0;
   line-height: normal;
