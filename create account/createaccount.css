@@ -152,7 +152,7 @@
   margin: 18px auto 0 auto;
   padding: 0;
 
-  transform: translateX(-10px);
+  transform: translateX(0px);
 
   cursor: pointer;
 }
