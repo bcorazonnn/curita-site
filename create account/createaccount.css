@@ -884,9 +884,9 @@
   }
 
   /* ONLY push the button down */
-  .frame-group {
-    margin-top: 55px !important;
-  }
+ .rectangle-parent {
+  margin-top: 45px !important;
+}
 
   .rectangle-parent {
     margin-top: 0 !important;
