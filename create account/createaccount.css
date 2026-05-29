@@ -853,5 +853,29 @@
     line-height: 17px !important;
     margin-top: 4px !important;
   }
-}
+     /* STOP password/confirm fields from overlapping */
+  .frame-parent > div:nth-of-type(3) .shadowing-parent,
+  .frame-parent > div:nth-of-type(4) .shadowing-parent {
+    gap: 8px !important;
+    transform: none !important;
+    padding-bottom: 0 !important;
+  }
+
+  .frame-parent > div:nth-of-type(3) .shadowing-parent > input,
+  .frame-parent > div:nth-of-type(4) .shadowing-parent > input {
+    margin-top: 0 !important;
+    position: static !important;
+    top: auto !important;
+  }
+
+  /* push create account button down */
+  .frame-group {
+    margin-top: 28px !important;
+    gap: 18px !important;
+  }
+
+  .rectangle-parent {
+    margin-top: 0 !important;
+    transform: none !important;
+  }
 }
