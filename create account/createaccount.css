@@ -544,4 +544,34 @@
     min-height: 115px !important;
     margin-top: auto !important;
   }
+  /* keep login text on one line */
+.shadowing7 {
+  width: 230px !important;
+  white-space: nowrap !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  text-align: center !important;
+}
+
+/* make footer smaller on phone */
+.footer {
+  height: 88px !important;
+  min-height: 88px !important;
+  padding: 10px 20px !important;
+  margin-top: auto !important;
+}
+
+.footer-curita {
+  font-size: 32px !important;
+  line-height: 1 !important;
+}
+
+.footer-found-for-you {
+  font-size: 13px !important;
+  line-height: 1.1 !important;
+}
+
+.footer-curita2 {
+  display: none !important;
+}
 }
