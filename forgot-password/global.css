@@ -2,13 +2,15 @@
   font-family: "NormalTM";
   src: url("./Normal TM.ttf") format("truetype");
 }
+
 body {
   margin: 0;
   line-height: normal;
 }
 
 :root {
-  /* Common Style Variables */
+  --font-normal-tm: "NormalTM";
+}
 
   /* Color */
   --color-darkslateblue: #2f3e6b;
