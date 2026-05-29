@@ -421,551 +421,58 @@
     box-sizing: border-box;
   }
 }
-/* =========================
-   CREATE ACCOUNT - PHONE
-   Paste at bottom of CSS
-========================= */
 @media screen and (max-width: 640px) {
   .create-account {
     min-height: 100svh !important;
-    width: 100%;
-    display: flex !important;
-    flex-direction: column !important;
     padding: 20px 0 0 !important;
-    gap: 40px !important;
-    align-items: flex-start !important;
-    overflow: hidden;
-    background: url("../gradient1.png") no-repeat 85% 0% !important;
-    background-size: cover !important;
+    gap: 0 !important;
+    overflow: hidden !important;
   }
 
-  /* TOP CURITA LOGO */
   .create-account-inner {
-    padding: 0 0 0 22px !important;
-  }
-
-  .create-account .shadowing {
-    display: none !important;
+    padding-left: 22px !important;
   }
 
   .create-account .curita {
     font-size: 34px !important;
     line-height: 1 !important;
-    color: #fff !important;
-    -webkit-text-fill-color: #fff !important;
-    text-shadow: none !important;
   }
 
-  /* FORM CONTAINER */
   .create-account-child {
-    width: 100%;
-    padding: 0 24px !important;
-    justify-content: center !important;
-  }
-
-  .frame-parent {
-    width: 100%;
-    align-items: center !important;
-    gap: 24px !important;
-  }
-
-  /* TITLE */
-  .shadowing-wrapper {
-    width: 100%;
-    padding: 0 0 18px !important;
-    justify-content: center !important;
-  }
-
-  .shadowing2 {
     width: 100% !important;
-    font-size: 32px !important;
-    line-height: 1 !important;
-    text-align: center !important;
-    white-space: normal !important;
-  }
-
-  /* EACH INPUT SECTION */
-  .frame-wrapper,
-  .frame-container,
-  .frame-div {
-    width: 230px !important;
-    height: auto !important;
-    padding: 0 !important;
+    padding: 35px 24px 0 !important;
     display: flex !important;
     justify-content: center !important;
   }
 
-  .shadowing-parent {
+  .frame-parent {
     width: 230px !important;
-    flex: none !important;
-    gap: 8px !important;
-  }
-
-  .frame-container .shadowing-parent {
-    gap: 8px !important;
-  }
-
-  .frame-container {
-    margin-bottom: 0 !important;
-  }
-
-  /* LABELS */
-  .shadowing2,
-  .shadowing3,
-  .shadowing4,
-  .shadowing5,
-  .shadowing6,
-  .shadowing7 {
-    color: #fff !important;
-    -webkit-text-fill-color: #fff !important;
-    text-shadow: 0 3px 6px rgba(0,0,0,0.18) !important;
-  }
-
-  .shadowing3,
-  .shadowing4,
-  .shadowing5 {
-    width: auto !important;
-    font-size: 20px !important;
-    line-height: 1.1 !important;
-    margin: 0 0 6px !important;
-  }
-
-  /* INPUT BOXES */
-  .input-field,
-  .frame-child,
-  .frame-item {
-    display: block !important;
-    width: 230px !important;
-    height: 52px !important;
-    min-height: 52px !important;
-    flex: none !important;
-    opacity: 1 !important;
-    margin-top: 0 !important;
-    padding: 0 18px !important;
-    background-color: #4d91df !important;
-    border-radius: 22px !important;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.22) !important;
-    border: none !important;
-    outline: none !important;
-  }
-
-  /* BUTTON AREA */
-  .frame-group {
-    width: 230px !important;
-    height: auto !important;
-    gap: 16px !important;
-    align-items: center !important;
-  }
-
-  .rectangle-parent {
-    width: 230px !important;
-    height: 52px !important;
-    padding: 0 !important;
-    justify-content: center !important;
-    align-items: center !important;
-    border-radius: 22px !important;
-    background-color: #2f3f78 !important;
-  }
-
-  .shadowing6 {
-    width: auto !important;
-    font-size: 20px !important;
-    line-height: 1 !important;
-    text-align: center !important;
-  }
-
-  .shadowing-frame {
-    width: 100% !important;
-    padding: 0 !important;
-    justify-content: center !important;
-  }
-
-  .shadowing7 {
-    width: auto !important;
-    font-size: 15px !important;
-    line-height: 17px !important;
-    text-align: center !important;
-    white-space: normal !important;
-  }
-
-  /* FOOTER */
-  .footer {
-    width: 100%;
-    min-height: 115px !important;
-    height: 115px !important;
-    padding: 10px 14px 12px !important;
-    margin-top: auto !important;
-    gap: 0 !important;
-
-    background-image: url("../Frame 1.png") !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: top !important;
-
-    box-shadow: var(--shadow-drop);
-    overflow: hidden !important;
-  }
-
-  .footer-block-parent {
-    padding: 0 !important;
-    gap: 2px !important;
-  }
-
-  .footer-curita {
-    font-size: 24px !important;
-    line-height: 1 !important;
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-  }
-
-  .footer-found-for-you {
-    font-size: 12px !important;
-    line-height: 1.1 !important;
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-    margin: 0 !important;
-    text-align: left !important;
-  }
-
-  .footer-curita2 {
-    font-size: 12px !important;
-    line-height: 1.1 !important;
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-    margin: 34px 0 0 !important;
-    text-align: left !important;
-  }
-
-  /* FIX EACH FIELD SPACING DIRECTLY */
-
-  /* email section */
-  .frame-wrapper .shadowing-parent {
-    gap: 8px !important;
-  }
-
-  /* password section */
-  .frame-container .shadowing-parent {
-    gap: 8px !important;
-  }
-
-  /* confirm password section */
-  .frame-div .shadowing-parent {
-    gap: 8px !important;
-  }
-
-  /* remove extra spacing caused by old desktop heights */
-  .frame-wrapper,
-  .frame-container,
-  .frame-div {
-    height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  /* make labels sit same distance from boxes */
-  .frame-wrapper h1,
-  .frame-wrapper h2,
-  .frame-wrapper h3,
-  .frame-wrapper p,
-  .frame-container h1,
-  .frame-container h2,
-  .frame-container h3,
-  .frame-container p,
-  .frame-div h1,
-  .frame-div h2,
-  .frame-div h3,
-  .frame-div p {
-    margin-bottom: 8px !important;
-  }
-
-  /* FIX PASSWORD FIELD ONLY */
-  .frame-container {
-    margin-top: 0 !important;
-    transform: none !important;
-  }
-
-  .frame-container .shadowing4 {
-    margin: 0 0 8px 0 !important;
-    padding: 0 !important;
-    line-height: 1.1 !important;
-  }
-
-  .frame-container .frame-item {
-    margin: 0 !important;
-    transform: none !important;
-  }
-
-  /* MOVE PASSWORD LABEL DOWN */
-  .frame-container .shadowing-parent > :first-child {
-    position: relative !important;
-    top: 8px !important;
-    margin-bottom: 8px !important;
-  }
-
-  /* FINAL FIELD ALIGNMENT FIX */
-  .frame-wrapper,
-  .frame-container,
-  .frame-div {
-    width: 230px !important;
-    margin: 0 auto !important;
-    transform: none !important;
-  }
-
-  .frame-wrapper .shadowing-parent,
-  .frame-container .shadowing-parent,
-  .frame-div .shadowing-parent {
     display: flex !important;
     flex-direction: column !important;
-    width: 230px !important;
-    gap: 8px !important;
-  }
-
-  .frame-wrapper .input-field,
-  .frame-container .input-field,
-  .frame-div .input-field,
-  .frame-wrapper .frame-child,
-  .frame-container .frame-item,
-  .frame-div .frame-child {
-    width: 230px !important;
-    height: 52px !important;
-    margin: 0 !important;
-  }
-
-  /* MOVE PASSWORD BOX ONLY */
-  .frame-container .frame-item {
-    position: relative !important;
-    top: -8px !important;
-  }
-
-  /* ONLY PASSWORD, NOT CONFIRM PASSWORD */
-  .frame-parent > div:nth-of-type(3) .shadowing-parent {
-    gap: 0px !important;
-    padding-bottom: 0 !important;
-  }
-
-  .frame-parent > div:nth-of-type(3) .shadowing-parent > input,
-  .frame-parent > div:nth-of-type(3) .shadowing-parent > .input-field,
-  .frame-parent > div:nth-of-type(3) .shadowing-parent > .frame-item {
-    margin-top: -26px !important;
-  }
-
-  /* FIX ONLY THE FIRST PASSWORD FIELD */
-  .frame-container .shadowing-parent {
-    gap: 0px !important;
-    transform: translateY(-10px) !important;
-  }
-
-  .frame-container .shadowing-parent > :first-child {
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 1.1 !important;
-  }
-  /* =========================
-   CREATE ACCOUNT - MOBILE
-========================= */
-@media screen and (max-width: 640px) {
-
-  .create-account {
-    min-height: 100svh;
-    padding-top: 20px;
-    background: url("../gradient1.png") no-repeat center;
-    background-size: cover;
-    overflow-x: hidden;
-  }
-
-  /* logo */
-  .create-account-inner {
-    padding-left: 20px;
-  }
-
-  .curita {
-    font-size: 34px !important;
-    line-height: 1;
-  }
-
-  /* form container */
-  .create-account-child {
-    width: 100%;
-    padding: 10px 24px 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .frame-parent {
-    width: 100%;
-    max-width: 230px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-  }
-
-  /* title */
-  .shadowing-wrapper {
-    padding-bottom: 10px;
-  }
-
-  .shadowing2 {
-    font-size: 32px !important;
-    text-align: center;
-    line-height: 1;
-  }
-
-  /* field wrappers */
-  .frame-wrapper,
-  .frame-container,
-  .frame-div {
-    width: 100%;
-    height: auto !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  .shadowing-parent {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  /* labels */
-  .shadowing3,
-  .shadowing4,
-  .shadowing5 {
-    font-size: 20px !important;
-    line-height: 1.1;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* inputs */
-  .input-field,
-  .frame-child,
-  .frame-item {
-    width: 100%;
-    height: 52px;
-    border-radius: 22px;
-    padding: 0 18px;
-    margin: 0 !important;
-    border: none;
-    outline: none;
-    background: #4d91df;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-    font-size: 18px;
-  }
-
-  /* BUTTON SECTION */
-  .frame-group {
-    width: 100%;
-    margin-top: 8px !important;
-    padding-top: 0 !important;
-    gap: 12px;
-    align-items: center;
-  }
-
-  .rectangle-parent {
-    width: 100%;
-    height: 52px;
-    border-radius: 22px;
-    background: #35458b;
-    margin: 0 !important;
-    position: static !important;
-    transform: none !important;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .shadowing6 {
-    font-size: 20px !important;
-    line-height: 1;
-  }
-
-  .shadowing7 {
-    font-size: 15px !important;
-    line-height: 1.2;
-    margin-top: 2px;
-    text-align: center;
-  }
-
-  /* footer */
-  .footer {
-    min-height: 110px;
-    padding: 12px 14px;
-  }
-
-  .footer-curita {
-    font-size: 24px;
-  }
-
-  .footer-found-for-you,
-  .footer-curita2 {
-    font-size: 12px;
-  }
-   .frame-parent {
+    align-items: center !important;
     gap: 22px !important;
   }
 
-  /* fix middle password section */
-  .frame-container {
-    height: auto !important;
-    margin: 0 !important;
+  .shadowing-wrapper {
+    width: 100% !important;
     padding: 0 !important;
-    position: static !important;
-    transform: none !important;
   }
 
-  .frame-container .shadowing-parent {
-    gap: 8px !important;
-    transform: none !important;
-    position: static !important;
+  .shadowing2 {
+    font-size: 32px !important;
+    line-height: 1 !important;
+    text-align: center !important;
   }
 
-  .frame-container .shadowing4 {
-    position: static !important;
-    top: auto !important;
-    margin: 0 0 8px 0 !important;
-  }
-
-  .frame-container .frame-item,
-  .frame-container .input-field {
-    position: static !important;
-    top: auto !important;
-    margin-top: 0 !important;
-    transform: none !important;
-  }
-
-  /* keep button below all inputs */
-  .frame-group {
-    margin-top: 20px !important;
-    padding-top: 0 !important;
-    position: static !important;
-    transform: none !important;
-  }
-
-  .rectangle-parent {
-    position: static !important;
-    top: auto !important;
-    margin-top: 0 !important;
-    transform: none !important;
-  }
-  .frame-parent {
-    width: 230px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 18px !important;
-  }
-
-  .frame-parent > * {
+  .frame-wrapper,
+  .frame-container,
+  .frame-div {
     width: 230px !important;
     height: auto !important;
     margin: 0 !important;
     padding: 0 !important;
     position: static !important;
     transform: none !important;
-    top: auto !important;
   }
 
   .shadowing-parent {
@@ -983,12 +490,11 @@
   .shadowing4,
   .shadowing5 {
     font-size: 20px !important;
+    line-height: 1.1 !important;
     margin: 0 !important;
     padding: 0 !important;
     position: static !important;
     transform: none !important;
-    top: auto !important;
-    line-height: 1.1 !important;
   }
 
   .input-field,
@@ -1001,14 +507,15 @@
     padding: 0 18px !important;
     position: static !important;
     transform: none !important;
-    top: auto !important;
-    display: block !important;
+    border-radius: 22px !important;
+    background: #4d91df !important;
   }
 
   .frame-group {
     width: 230px !important;
-    margin-top: 10px !important;
+    margin: 6px 0 0 !important;
     padding: 0 !important;
+    gap: 10px !important;
     position: static !important;
     transform: none !important;
   }
@@ -1020,6 +527,21 @@
     padding: 0 !important;
     position: static !important;
     transform: none !important;
-    top: auto !important;
+    border-radius: 22px !important;
+  }
+
+  .shadowing6 {
+    font-size: 20px !important;
+  }
+
+  .shadowing7 {
+    font-size: 15px !important;
+    margin-top: 0 !important;
+  }
+
+  .footer {
+    height: 115px !important;
+    min-height: 115px !important;
+    margin-top: auto !important;
   }
 }
