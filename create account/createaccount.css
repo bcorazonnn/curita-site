@@ -878,20 +878,18 @@
     margin-top: 0 !important;
     transform: none !important;
   }
-    /* give confirm password section enough space */
+   /* undo the section height push */
   .frame-wrapper {
-    min-height: 88px !important;
+    min-height: unset !important;
   }
 
-  /* specifically push the button section lower */
+  /* ONLY push the button down */
   .frame-group {
-    margin-top: 48px !important;
+    margin-top: 55px !important;
   }
 
-  /* keep button normal */
   .rectangle-parent {
-    position: relative !important;
-    top: 0 !important;
+    margin-top: 0 !important;
     transform: none !important;
   }
 }
