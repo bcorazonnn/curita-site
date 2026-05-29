@@ -892,4 +892,8 @@
     margin-top: 0 !important;
     transform: none !important;
   }
+    .rectangle-parent {
+    position: relative !important;
+    top: 38px !important;
+  }
 }
