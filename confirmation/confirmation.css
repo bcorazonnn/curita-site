@@ -516,4 +516,49 @@
   .curita2 {
     margin-top: -2px !important;
   }
+  /* TITLE */
+.check-your-email2 {
+  font-size: 24px !important;
+  line-height: 1.05 !important;
+}
+
+/* MAIN DESCRIPTION */
+.if-an-account-exists-weve-se {
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+}
+
+/* DIDNT RECEIVE TEXT */
+.didnt-receive-it-check-spam {
+  font-size: 13px !important;
+  line-height: 1.15 !important;
+}
+
+/* RESEND BUTTON TEXT */
+.resend {
+  font-size: 17px !important;
+}
+
+/* BACK TO LOGIN */
+.back-to-login {
+  font-size: 13px !important;
+  line-height: 1.1 !important;
+}
+
+/* FOOTER CURITA */
+.curita {
+  font-size: 22px !important;
+}
+
+/* FOOTER SMALL TEXT */
+.found-for-you,
+.curita2 {
+  font-size: 11px !important;
+  line-height: 1.1 !important;
+}
+
+/* TOP LOGO */
+.shadowing {
+  font-size: 22px !important;
+}
 }
