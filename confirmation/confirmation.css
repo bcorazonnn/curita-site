@@ -367,47 +367,6 @@
   }
 }
 @media screen and (max-width: 640px) {
-  .confirmation {
-    gap: 48px;
-  }
-  .curita,
-  .shadowing {
-    font-size: 38px;
-    line-height: var(--lh-32);
-  }
-  .shadowing2 {
-    font-size: 45px;
-  }
-  .shadowing3 {
-    font-size: 29px;
-  }
-  .didnt-receive-it {
-    font-size: var(--fs-19);
-  }
-  .rectangle-parent {
-    padding-left: var(--padding-20);
-    padding-right: var(--padding-20);
-    box-sizing: border-box;
-  }
-  .shadowing4 {
-    font-size: 29px;
-  }
-  .back-to-login {
-    font-size: var(--fs-19);
-  }
-  .frame-footer {
-    gap: 65px;
-    padding-top: var(--padding-20);
-    padding-bottom: 25px;
-    box-sizing: border-box;
-  }
-  .curita2 {
-    font-size: 24px;
-  }
-  .curita3,
-  .found-for-you {
-    font-size: var(--fs-19);
-  }
   .confirmation-phone {
     max-height: none;
     min-height: 100vh;
@@ -415,26 +374,26 @@
   }
 
   .frame {
-    padding: 14px 0 330px;
-    gap: 72px;
+    padding: 14px 0 260px;
+    gap: 40px;
     background-size: cover;
     background-position: top center;
   }
 
   .main-content {
-    height: 360px;
+    height: 330px;
     max-width: 100%;
     font-size: 32px;
   }
 
   .email-check-section {
-    position: relative;
-    top: auto;
-    left: auto;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     max-width: 300px;
-    margin: 80px auto 0;
-    gap: 24px;
+    gap: 20px;
   }
 
   .check-your-email {
@@ -454,7 +413,7 @@
 
   .didnt-receive-it-check-spam {
     font-size: 16px;
-    padding-bottom: 24px;
+    padding-bottom: 18px;
   }
 
   .frame2 {
@@ -471,22 +430,22 @@
 
   .back-to-login {
     font-size: 16px;
-    margin-top: 16px;
+    margin-top: 10px;
   }
 
   .shadowing {
-    top: 12px;
+    top: 8px;
     left: 14px;
+    font-size: 25px;
+  }
+
+  .curita-parent .curita {
     font-size: 25px;
   }
 
   .curita-parent {
     padding: 14px 14px 52px;
     min-height: 170px;
-  }
-
-  .curita {
-    font-size: 25px;
   }
 
   .found-for-you {
@@ -497,5 +456,3 @@
     font-size: 13px;
   }
 }
-}
-
