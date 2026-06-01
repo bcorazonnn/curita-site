@@ -368,91 +368,101 @@
 }
 @media screen and (max-width: 640px) {
   .confirmation-phone {
-    max-height: none;
-    min-height: 100vh;
-    overflow-y: auto;
+    max-height: none !important;
+    min-height: 100vh !important;
+    height: auto !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
   }
 
   .frame {
-    padding: 14px 0 260px;
-    gap: 40px;
-    background-size: cover;
-    background-position: top center;
-  }
-
-  .main-content {
-    height: 330px;
-    max-width: 100%;
-    font-size: 32px;
-  }
-
-  .email-check-section {
-    position: absolute;
-    top: 95px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 300px;
-    gap: 20px;
-  }
-
-  .check-your-email {
-    height: auto;
-  }
-
-  .check-your-email2 {
-    font-size: 32px;
-    line-height: 1.05;
-  }
-
-  .if-an-account-exists-weve-se {
-    height: auto;
-    font-size: 18px;
-    line-height: 1.15;
-  }
-
-  .didnt-receive-it-check-spam {
-    font-size: 16px;
-    padding-bottom: 18px;
-  }
-
-  .frame2 {
-    max-width: 168px;
-    height: 42px;
-    padding: 0;
-    border-radius: 20px;
-  }
-
-  .resend {
-    font-size: 22px;
-    width: auto;
-  }
-
-  .back-to-login {
-    font-size: 16px;
-    margin-top: 10px;
+    min-height: calc(100vh - 150px) !important;
+    padding: 20px 0 0 !important;
+    gap: 0 !important;
+    background-size: cover !important;
+    background-position: center top !important;
   }
 
   .shadowing {
-    top: 8px;
-    left: 14px;
-    font-size: 25px;
+    display: none !important;
   }
 
-  .curita-parent .curita {
-    font-size: 25px;
+  .main-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 520px !important;
+    font-size: 32px !important;
+    position: relative !important;
+  }
+
+  .email-check-section {
+    position: static !important;
+    transform: none !important;
+    width: 320px !important;
+    max-width: 320px !important;
+    margin: 115px auto 0 !important;
+    gap: 28px !important;
+    align-items: center !important;
+  }
+
+  .check-your-email {
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  .check-your-email2 {
+    font-size: 42px !important;
+    line-height: 1 !important;
+  }
+
+  .if-an-account-exists-weve-se {
+    height: auto !important;
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    padding: 0 !important;
+  }
+
+  .didnt-receive-it-check-spam {
+    font-size: 18px !important;
+    padding: 0 !important;
+  }
+
+  .frame2 {
+    width: 220px !important;
+    max-width: 220px !important;
+    height: 42px !important;
+    padding: 0 !important;
+    border-radius: 22px !important;
+  }
+
+  .resend {
+    font-size: 28px !important;
+    width: auto !important;
+  }
+
+  .back-to-login {
+    font-size: 18px !important;
+    margin-top: 8px !important;
   }
 
   .curita-parent {
-    padding: 14px 14px 52px;
-    min-height: 170px;
+    height: 150px !important;
+    min-height: 150px !important;
+    padding: 16px 18px 20px !important;
+    margin-top: 0 !important;
   }
 
-  .found-for-you {
-    font-size: 13px;
+  .curita-parent .curita {
+    font-size: 28px !important;
+  }
+
+  .found-for-you,
+  .curita2 {
+    font-size: 13px !important;
   }
 
   .curita2 {
-    font-size: 13px;
+    margin-top: 34px !important;
   }
 }
