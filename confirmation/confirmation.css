@@ -367,97 +367,153 @@
   }
 }
 @media screen and (max-width: 640px) {
+  .confirmation-phone,
+  .frame {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
   .confirmation-phone {
-    max-height: none !important;
+    width: 100% !important;
     min-height: 100vh !important;
+    max-height: none !important;
     overflow-x: hidden !important;
-    overflow-y: visible !important;
+    overflow-y: auto !important;
+    background-color: var(--color-white) !important;
   }
 
   .frame {
-    padding: 20px 0 0 !important;
-    gap: 0 !important;
-    min-height: calc(100vh - 150px) !important;
+    align-self: stretch !important;
+    padding: 8px 0 0 !important;
+    box-sizing: border-box !important;
+    gap: 202px !important;
+    background-image: url(./public/Frame@3x.png) !important;
     background-size: cover !important;
-    background-position: center top !important;
-  }
-
-  .shadowing {
-    display: none !important;
+    background-repeat: no-repeat !important;
+    background-position: top !important;
+    max-width: 100% !important;
   }
 
   .main-content {
     width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
+    height: 333px !important;
     position: relative !important;
+    max-width: 340.8px !important;
+    text-align: center !important;
+    font-size: 32px !important;
+    color: var(--color-whitesmoke) !important;
+    font-family: var(--font-normal-tm) !important;
   }
 
   .email-check-section {
-    position: static !important;
-    width: 320px !important;
-    max-width: 320px !important;
-    margin: 120px auto 0 !important;
-    gap: 28px !important;
+    position: absolute !important;
+    top: 97px !important;
+    left: 97px !important;
+    width: 209px !important;
+    display: flex !important;
+    flex-direction: column !important;
     align-items: center !important;
+    gap: 17px !important;
+    transform: none !important;
+    margin: 0 !important;
+  }
+
+  .check-your-email {
+    align-self: stretch !important;
+    height: 46px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    padding: 0 0 8px !important;
+    box-sizing: border-box !important;
   }
 
   .check-your-email2 {
-    font-size: 42px !important;
-    line-height: 1 !important;
+    margin: 0 !important;
+    flex: 1 !important;
+    position: relative !important;
+    font-size: inherit !important;
+    font-weight: 400 !important;
+    font-family: inherit !important;
+    text-shadow: var(--text-shadow-1) !important;
   }
 
   .if-an-account-exists-weve-se {
-    height: auto !important;
-    font-size: 18px !important;
-    line-height: 1.2 !important;
-    padding: 0 !important;
+    align-self: stretch !important;
+    height: 41px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    padding: 0 0 2px !important;
+    box-sizing: border-box !important;
+    font-size: 16px !important;
   }
 
   .didnt-receive-it-check-spam {
-    width: 320px !important;
-    font-size: 18px !important;
-    line-height: 1.2 !important;
+    align-self: stretch !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    padding: 0 0 15px !important;
+    font-size: var(--fs-15) !important;
     white-space: normal !important;
     text-align: center !important;
-    padding: 0 !important;
   }
 
   .frame2 {
-    width: 220px !important;
-    max-width: 220px !important;
-    height: 42px !important;
-    padding: 0 !important;
-    border-radius: 22px !important;
+    cursor: pointer !important;
+    border: 0 !important;
+    padding: 3px 0 !important;
+    background-color: var(--color-darkslateblue) !important;
+    width: 100% !important;
+    box-shadow: var(--shadow-drop) !important;
+    border-radius: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    max-width: 168px !important;
   }
 
   .resend {
-    font-size: 28px !important;
-    width: auto !important;
+    width: 42px !important;
+    font-size: 20px !important;
+    flex-shrink: 0 !important;
   }
 
   .back-to-login {
-    font-size: 18px !important;
-    margin-top: 0 !important;
+    font-size: var(--fs-15) !important;
+  }
+
+  .shadowing {
+    margin: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 15px !important;
+    font-size: 25px !important;
+    display: inline-block !important;
+    width: 44px !important;
+    min-width: 44px !important;
   }
 
   .curita-parent {
-    height: 150px !important;
-    min-height: 150px !important;
-    padding: 16px 18px 20px !important;
-    margin-top: 70px !important;
+    align-self: stretch !important;
+    padding: 7px 7px 37px !important;
+    background-image: url(./public/Frame-3@3x.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: top !important;
+    font-size: var(--fs-12) !important;
   }
 
-  .curita-parent .curita {
-    font-size: 28px !important;
+  .curita {
+    font-size: 24px !important;
   }
 
-  .found-for-you,
+  .found-for-you-every-week {
+    padding: 0 0 25px !important;
+    margin-top: -2px !important;
+  }
+
   .curita2 {
-    font-size: 13px !important;
-  }
-
-  .curita2 {
-    margin-top: 34px !important;
+    margin-top: -2px !important;
   }
 }
