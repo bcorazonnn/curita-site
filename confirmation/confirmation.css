@@ -373,6 +373,20 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.confirmation,
+.confirmation h1,
+.confirmation h2,
+.confirmation h3,
+.confirmation p,
+.confirmation span,
+.confirmation div,
+.confirmation a,
+.confirmation button {
+  font-family: "Normal TM", serif !important;
+  color: #f4f4f4 !important;
+  -webkit-text-fill-color: #f4f4f4 !important;
+}
   .confirmation {
     min-height: 100vh;
     padding: 18px 0 0;
@@ -493,4 +507,17 @@
   .footer-curita2 {
     font-size: 18px;
   }
+  .rectangle-parent {
+  background-color: #2f3e6b !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.shadowing4 {
+  color: #f4f4f4 !important;
+  -webkit-text-fill-color: #f4f4f4 !important;
+  font-family: "Normal TM", serif !important;
+  display: block !important;
+}
 }
