@@ -367,6 +367,12 @@
   }
 }
 @media screen and (max-width: 640px) {
+  @font-face {
+  font-family: "Normal TM";
+  src: url("../Normal%20TM.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
   .confirmation {
     min-height: 100vh;
     padding: 18px 0 0;
