@@ -367,198 +367,124 @@
   }
 }
 @media screen and (max-width: 640px) {
-  .confirmation-phone,
-  .frame {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
+  .confirmation {
+    min-height: 100vh;
+    padding: 18px 0 0;
+    gap: 0;
+    background-size: cover;
+    background-position: center top;
+    overflow-x: hidden;
   }
 
-  .confirmation-phone {
-    width: 100% !important;
-    min-height: 100vh !important;
-    max-height: none !important;
-    overflow-x: hidden !important;
-    overflow-y: auto !important;
-    background-color: var(--color-white) !important;
+  .confirmation-inner {
+    padding: 0 24px;
   }
 
-  .frame {
-    align-self: stretch !important;
-    padding: 8px 0 0 !important;
-    box-sizing: border-box !important;
-    gap: 202px !important;
-    background-image: url(./public/Frame@3x.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: top !important;
-    max-width: 100% !important;
+  .curita,
+  .shadowing {
+    font-size: 34px;
+    line-height: 1;
+    width: auto;
   }
 
-  .main-content {
-    width: 100% !important;
-    height: 333px !important;
-    position: relative !important;
-    max-width: 340.8px !important;
-    text-align: center !important;
-    font-size: 32px !important;
-    color: var(--color-whitesmoke) !important;
-    font-family: var(--font-normal-tm) !important;
+  .confirmation-child {
+    width: 100%;
+    padding: 150px 24px 260px;
+    justify-content: center;
+    box-sizing: border-box;
   }
 
-  .email-check-section {
-    position: absolute !important;
-    top: 97px !important;
-    left: 97px !important;
-    width: 209px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 17px !important;
-    transform: none !important;
-    margin: 0 !important;
+  .frame-parent {
+    width: 100%;
+    align-items: center;
+    gap: 28px;
   }
 
-  .check-your-email {
-    align-self: stretch !important;
-    height: 46px !important;
-    display: flex !important;
-    align-items: flex-start !important;
-    padding: 0 0 8px !important;
-    box-sizing: border-box !important;
+  .shadowing-wrapper {
+    padding: 0;
+    justify-content: center;
   }
 
-  .check-your-email2 {
-    margin: 0 !important;
-    flex: 1 !important;
-    position: relative !important;
-    font-size: inherit !important;
-    font-weight: 400 !important;
-    font-family: inherit !important;
-    text-shadow: var(--text-shadow-1) !important;
+  .shadowing2 {
+    font-size: 45px;
+    line-height: 1.05;
+    text-align: center;
   }
 
-  .if-an-account-exists-weve-se {
-    align-self: stretch !important;
-    height: 41px !important;
-    display: flex !important;
-    align-items: flex-start !important;
-    padding: 0 0 2px !important;
-    box-sizing: border-box !important;
-    font-size: 16px !important;
+  .shadowing-container {
+    height: auto;
+    padding: 0;
   }
 
-  .didnt-receive-it-check-spam {
-    align-self: stretch !important;
-    display: flex !important;
-    align-items: flex-start !important;
-    padding: 0 0 15px !important;
-    font-size: var(--fs-15) !important;
-    white-space: normal !important;
-    text-align: center !important;
+  .shadowing3 {
+    font-size: 27px;
+    line-height: 1.2;
+    text-align: center;
   }
 
-  .frame2 {
-    cursor: pointer !important;
-    border: 0 !important;
-    padding: 3px 0 !important;
-    background-color: var(--color-darkslateblue) !important;
-    width: 100% !important;
-    box-shadow: var(--shadow-drop) !important;
-    border-radius: 20px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    box-sizing: border-box !important;
-    max-width: 168px !important;
+  .frame-wrapper {
+    width: 100%;
+    padding: 0;
+    font-size: 27px;
   }
 
-  .resend {
-    width: 42px !important;
-    font-size: 20px !important;
-    flex-shrink: 0 !important;
+  .frame-group {
+    width: 100%;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .didnt-receive-it-check-spam-parent {
+    width: 100%;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .didnt-receive-it {
+    font-size: 25px;
+    line-height: 1.1;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .frame-div {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .rectangle-parent {
+    width: 355px;
+    max-width: 85vw;
+    padding: 10px 0;
+    border-radius: 20px;
+  }
+
+  .shadowing4 {
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
   }
 
   .back-to-login {
-    font-size: var(--fs-15) !important;
+    width: auto;
+    font-size: 23px;
+    margin-top: 6px;
   }
 
-  .shadowing {
-    margin: 0 !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 15px !important;
-    font-size: 25px !important;
-    display: inline-block !important;
-    width: 44px !important;
-    min-width: 44px !important;
+  .footer {
+    min-height: 180px;
+    padding: 24px;
+    background-position: center;
   }
 
-  .curita-parent {
-    align-self: stretch !important;
-    padding: 7px 7px 37px !important;
-    background-image: url(./public/Frame-3@3x.png) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: top !important;
-    font-size: var(--fs-12) !important;
+  .footer-curita {
+    font-size: 34px;
   }
 
-  .curita {
-    font-size: 24px !important;
+  .footer-found-for-you,
+  .footer-curita2 {
+    font-size: 18px;
   }
-
-  .found-for-you-every-week {
-    padding: 0 0 25px !important;
-    margin-top: -2px !important;
-  }
-
-  .curita2 {
-    margin-top: -2px !important;
-  }
-  /* TITLE */
-.check-your-email2 {
-  font-size: 24px !important;
-  line-height: 1.05 !important;
-}
-
-/* MAIN DESCRIPTION */
-.if-an-account-exists-weve-se {
-  font-size: 14px !important;
-  line-height: 1.2 !important;
-}
-
-/* DIDNT RECEIVE TEXT */
-.didnt-receive-it-check-spam {
-  font-size: 13px !important;
-  line-height: 1.15 !important;
-}
-
-/* RESEND BUTTON TEXT */
-.resend {
-  font-size: 17px !important;
-}
-
-/* BACK TO LOGIN */
-.back-to-login {
-  font-size: 13px !important;
-  line-height: 1.1 !important;
-}
-
-/* FOOTER CURITA */
-.curita {
-  font-size: 22px !important;
-}
-
-/* FOOTER SMALL TEXT */
-.found-for-you,
-.curita2 {
-  font-size: 11px !important;
-  line-height: 1.1 !important;
-}
-
-/* TOP LOGO */
-.shadowing {
-  font-size: 22px !important;
-}
 }
