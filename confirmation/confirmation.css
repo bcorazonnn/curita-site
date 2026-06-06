@@ -479,3 +479,107 @@
     padding-left: 24px !important;
   }
 }
+/* MOBILE ONLY — PUT THIS AT THE VERY BOTTOM OF YOUR CSS FILE */
+@media screen and (max-width: 640px) {
+  .confirmation {
+    min-height: 100vh !important;
+    max-height: none !important;
+    overflow-x: hidden !important;
+    padding: 18px 0 0 !important;
+    font-size: 16px !important;
+  }
+
+  .frame {
+    height: 100vh !important;
+    min-height: 665px !important;
+    background-size: cover !important;
+    background-position: center top !important;
+  }
+
+  .curita {
+    position: absolute !important;
+    top: 18px !important;
+    left: 24px !important;
+    font-size: 34px !important;
+    line-height: 1 !important;
+    width: auto !important;
+    min-width: 0 !important;
+  }
+
+  .shadowing2 {
+    top: 170px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: auto !important;
+    font-size: 45px !important;
+    line-height: 1.05 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  .shadowing3 {
+    top: 250px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 330px !important;
+    max-width: 90vw !important;
+    height: auto !important;
+    font-size: 27px !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+  }
+
+  .didnt-receive-it {
+    top: 400px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 340px !important;
+    max-width: 90vw !important;
+    font-size: 25px !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .frame2 {
+    top: 470px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 355px !important;
+    max-width: 85vw !important;
+    min-height: 64px !important;
+    padding: 10px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .shadowing4 {
+    font-size: 32px !important;
+    line-height: 1 !important;
+    text-align: center !important;
+  }
+
+  .back-to-login {
+    top: 565px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: auto !important;
+    min-width: 0 !important;
+    font-size: 23px !important;
+  }
+
+  .footer {
+    min-height: 180px !important;
+    padding: 24px !important;
+  }
+
+  .footer-curita {
+    font-size: 34px !important;
+  }
+
+  .footer-found-for-you,
+  .footer-curita2 {
+    font-size: 18px !important;
+  }
+}
