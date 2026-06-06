@@ -218,23 +218,3 @@
   opacity: 0.9;
   padding-left: 0;
 }
-.curita,
-.shadowing2,
-.shadowing3,
-.didnt-receive-it,
-.shadowing4,
-.back-to-login {
-  color: var(--color-whitesmoke);
-  -webkit-text-fill-color: var(--color-whitesmoke);
-  font-family: var(--font-normal-tm);
-}
-
-.shadowing4 {
-  font-size: var(--fs-48);
-  font-weight: 400;
-  text-align: center;
-}
-
-.rectangle-parent {
-  background-color: var(--color-darkslateblue);
-}
