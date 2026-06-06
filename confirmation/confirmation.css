@@ -1,208 +1,179 @@
-.confirmation {
-  width: 100%;
-  min-height: 100vh;
+.confirmation,
+.frame {
   position: relative;
-  overflow: hidden;
-
-  background: url("../gradient1.png") no-repeat center;
-  background-size: cover;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  padding: 20px 0 0;
-  box-sizing: border-box;
-
+  z-index: 0;
   color: var(--color-whitesmoke);
   font-family: var(--font-normal-tm);
 }
 
-.confirmation-inner {
-  padding: 0 28px;
+.confirmation {
+  width: 100%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  background-color: var(--color-darkslategray);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  isolation: isolate;
+  max-height: 1757px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: 75px;
 }
 
-.curita-parent {
-  display: flex;
-  align-items: flex-start;
+.frame {
+  align-self: stretch;
+  height: 4305px;
+  flex-shrink: 0;
+  background-image: url(./public/Frame@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: var(--fs-64);
+}
+
+.curita,
+.shadowing2 {
+  position: absolute;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
 }
 
 .curita {
   margin: 0;
-  font-size: 64px;
+  top: 20px;
+  left: 28px;
   line-height: 54px;
-  font-weight: 400;
-  color: var(--color-whitesmoke);
-}
-
-.shadowing {
-  display: none;
-}
-
-.confirmation-child {
-  width: 100%;
-  flex: 1;
-
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-
-  padding: 120px 20px 160px;
-  box-sizing: border-box;
-
-  text-align: center;
-}
-
-.frame-parent {
-  width: 760px;
-  max-width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  gap: 38px;
-}
-
-.shadowing-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: 113px;
+  min-width: 113px;
 }
 
 .shadowing2 {
-  margin: 0;
-  font-size: 75px;
-  line-height: 1;
-  font-weight: 400;
-}
-
-.shadowing-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
+  margin: 0 !important;
+  width: 382px;
+  top: 267px;
+  left: calc(50% - 191px);
+  white-space: nowrap;
+  z-index: 6;
+  flex-shrink: 0;
 }
 
 .shadowing3 {
-  width: 100%;
-  font-size: 48px;
-  line-height: 1.15;
+  width: 627px;
+  height: 115px;
+  top: 396px;
+  left: calc(50% - 309.5px);
+  font-size: var(--fs-48);
+  display: inline-block;
+  z-index: 5;
 }
 
-.frame-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.frame-group {
-  width: 620px;
-  max-width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  gap: 42px;
-}
-
-.frame-container,
-.didnt-receive-it-check-spam-parent {
-  width: 100%;
-}
-
-.didnt-receive-it-check-spam-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 42px;
+.didnt-receive-it,
+.frame2,
+.shadowing3 {
+  margin: 0 !important;
+  position: absolute;
+  flex-shrink: 0;
 }
 
 .didnt-receive-it {
-  margin: 0;
-  font-size: 32px;
-  line-height: 1.1;
+  width: 399px;
+  top: calc(50% - 323.5px);
+  left: calc(50% - 180.5px);
+  font-size: var(--fs-32);
   font-weight: 400;
-  white-space: nowrap;
+  font-family: inherit;
+  display: inline-block;
   text-shadow: var(--text-shadow-1);
+  white-space: nowrap;
+  z-index: 3;
 }
 
-.frame-div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.rectangle-parent {
-  width: 497px;
-  height: 72px;
-
+.frame2 {
+  cursor: pointer;
   border: 0;
-  border-radius: 20px;
+  padding: var(--padding-5) 12px var(--padding-5) 0;
   background-color: var(--color-darkslateblue);
+  width: 497px;
+  top: calc(50% - 243.5px);
+  left: calc(50% - 230px);
   box-shadow: var(--shadow-drop);
-
+  border-radius: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
+  box-sizing: border-box;
+  min-height: 72px;
+  max-width: 100%;
+  z-index: 2;
 }
 
-.rectangle-parent:hover {
+.frame2:hover {
   background-color: var(--color-steelblue);
 }
 
-.frame-child {
-  display: none;
+.back-to-login,
+.curita-parent,
+.shadowing4 {
+  color: var(--color-whitesmoke);
+  font-family: var(--font-normal-tm);
 }
 
 .shadowing4 {
   margin: 0;
-  font-size: 48px;
-  line-height: 1;
+  flex: 1;
+  position: relative;
+  font-size: var(--fs-48);
   font-weight: 400;
-  color: var(--color-whitesmoke);
+  text-align: center;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.back-to-login,
+.curita-parent {
+  margin: 0 !important;
+  position: absolute;
+  flex-shrink: 0;
+  font-size: var(--fs-32);
 }
 
 .back-to-login {
+  cursor: pointer;
   border: 0;
   padding: 0;
-  background: transparent;
-
-  font-size: 32px;
-  font-family: var(--font-normal-tm);
-  color: var(--color-whitesmoke);
-
+  background-color: transparent;
+  width: 123px;
+  top: calc(50% - 120.5px);
+  left: calc(50% - 52.5px);
   text-align: center;
-  text-decoration: none;
+  display: inline-block;
   text-shadow: var(--text-shadow-1);
-
-  cursor: pointer;
+  min-width: 123px;
+  white-space: nowrap;
+  z-index: 3;
 }
 
 .footer {
   width: 100%;
-  min-height: 200px;
   position: relative;
   overflow: hidden;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   padding: 24px;
   gap: 6px;
-  box-sizing: border-box;
-
+  min-height: 200px;
   background-image: url("../Frame 1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-  font-family: var(--font-normal-tm);
-  color: var(--color-whitesmoke);
+  color: var(--text);
+  font-family: var(--font-main);
+  box-sizing: border-box;
 }
 
 .footer::before {
@@ -217,11 +188,23 @@
   z-index: 1;
 }
 
+.footer-block,
+.footer-block-parent {
+  display: flex;
+  align-items: flex-start;
+}
+
 .footer-block-parent {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 6px;
+  width: auto;
+  max-width: 100%;
+}
+
+.footer-block {
+  padding: 0;
 }
 
 .footer-curita {
@@ -239,11 +222,12 @@
 }
 
 .footer-curita2 {
-  margin: 70px 0 0;
+  margin: 2px 0 0;
   font-size: clamp(1.1rem, 1.2vw, 1.4rem);
   line-height: 1.1;
   font-weight: 400;
   opacity: 0.9;
+  padding-left: 0;
 }
 @media screen and (max-width: 1000px) {
   .shadowing-wrapper {
