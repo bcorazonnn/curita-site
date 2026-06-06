@@ -520,4 +520,22 @@
   font-family: "Normal TM", serif !important;
   display: block !important;
 }
+   .confirmation-inner {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .curita-parent {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .curita,
+  .shadowing {
+    font-size: 34px !important;
+    line-height: 1 !important;
+    width: auto !important;
+    margin: 0 !important;
+    position: static !important;
+  }
 }
