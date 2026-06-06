@@ -142,63 +142,79 @@
   white-space: nowrap;
   z-index: 3;
 }
-.curita-parent {
-  width: 1298px;
-  height: 354px;
-  bottom: 0;
-  left: 0;
-  box-shadow: var(--shadow-drop);
+.footer {
+  width: 100%;
+  position: relative;
   overflow: hidden;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 13px 39px;
-  box-sizing: border-box;
-  background-image: url(./public/Frame-1@3x.png);
+
+  padding: 24px;
+  gap: 6px;
+  min-height: 200px;
+
+  background-image: url("../Frame 1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
-  min-height: 354px;
-  z-index: 6;
-  text-align: left;
+  background-position: center;
+
+  color: var(--text);
+  font-family: var(--font-main);
+  box-sizing: border-box;
 }
-.curita2 {
-  margin: 0;
-  width: 141px;
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.footer > * {
   position: relative;
-  font-size: 80px;
-  font-weight: 400;
-  font-family: inherit;
-  display: inline-block;
   z-index: 1;
 }
-.found-for-you-every-week {
-  align-self: stretch;
+
+.footer-block,
+.footer-block-parent {
   display: flex;
   align-items: flex-start;
-  padding: 0 0 133px;
-  box-sizing: border-box;
+}
+
+.footer-block-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  width: auto;
   max-width: 100%;
-  z-index: 2;
-  margin-top: -2px;
-  position: relative;
 }
-.curita3,
-.found-for-you {
-  position: relative;
-  font-size: inherit;
-  font-weight: 400;
-  font-family: inherit;
-  text-shadow: var(--text-shadow-1);
+
+.footer-block {
+  padding: 0;
 }
-.found-for-you {
+
+.footer-curita {
   margin: 0;
-  flex: 1;
-  display: inline-block;
-  max-width: 100%;
+  font-size: clamp(3rem, 4vw, 4.8rem);
+  line-height: 1;
+  font-weight: 400;
 }
-.curita3 {
-  align-self: stretch;
-  z-index: 3;
-  margin: -2px 0 0;
+
+.footer-found-for-you {
+  margin: 0;
+  font-size: clamp(1.1rem, 1.2vw, 1.5rem);
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.footer-curita2 {
+  margin: 2px 0 0;
+  font-size: clamp(1.1rem, 1.2vw, 1.4rem);
+  line-height: 1.1;
+  font-weight: 400;
+  opacity: 0.9;
+  padding-left: 0;
 }
