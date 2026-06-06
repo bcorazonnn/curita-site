@@ -538,4 +538,18 @@
     margin: 0 !important;
     position: static !important;
   }
+   .shadowing {
+    display: none !important;
+  }
+
+  .curita {
+    display: block !important;
+    margin: 0 !important;
+    font-size: 34px !important;
+    line-height: 1 !important;
+  }
+
+  .confirmation-inner {
+    padding-left: 24px !important;
+  }
 }
