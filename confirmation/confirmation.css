@@ -17,7 +17,7 @@
 .frame {
   position: relative;
   min-height: calc(100vh - 200px);
-  background-image: url("./public/Frame@3x.png");
+  background-image: url("../gradient1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
