@@ -8,151 +8,132 @@
 
 .confirmation {
   width: 100%;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  min-height: 100vh;
   background-color: var(--color-darkslategray);
+  overflow-x: hidden;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  isolation: isolate;
-  max-height: 1757px;
+  align-items: stretch;
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  font-size: 75px;
 }
 
 .frame {
-  align-self: stretch;
-  height: 4305px;
-  flex-shrink: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
   background-image: url(./public/Frame@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
-  text-align: left;
-  font-size: var(--fs-64);
-}
-
-.curita,
-.shadowing2 {
-  position: absolute;
-  font-size: inherit;
-  font-weight: 400;
-  font-family: inherit;
-  display: inline-block;
+  background-position: center;
+  font-size: 16px;
 }
 
 .curita {
-  margin: 0;
+  position: absolute;
   top: 20px;
   left: 28px;
-  line-height: 54px;
-  width: 113px;
-  min-width: 113px;
+  margin: 0;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 400;
+  font-family: inherit;
 }
 
 .shadowing2 {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 0 !important;
-  width: 382px;
-  top: 267px;
-  left: calc(50% - 191px);
+  width: auto;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+  font-family: inherit;
+  text-align: center;
   white-space: nowrap;
   z-index: 6;
-  flex-shrink: 0;
 }
 
 .shadowing3 {
-  width: 627px;
-  height: 115px;
-  top: 396px;
-  left: calc(50% - 309.5px);
-  font-size: var(--fs-48);
-  display: inline-block;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 !important;
+  width: 650px;
+  max-width: 80%;
+  height: auto;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
   z-index: 5;
 }
 
-.didnt-receive-it,
-.frame2,
-.shadowing3 {
-  margin: 0 !important;
-  position: absolute;
-  flex-shrink: 0;
-}
-
 .didnt-receive-it {
-  width: 399px;
-  top: calc(50% - 323.5px);
-  left: calc(50% - 180.5px);
-  font-size: var(--fs-32);
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 !important;
+  width: auto;
+  font-size: 32px;
   font-weight: 400;
   font-family: inherit;
-  display: inline-block;
-  text-shadow: var(--text-shadow-1);
+  text-align: center;
   white-space: nowrap;
   z-index: 3;
 }
 
 .frame2 {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
   border: 0;
-  padding: var(--padding-5) 12px var(--padding-5) 0;
+  padding: 10px 0;
   background-color: var(--color-darkslateblue);
-  width: 497px;
-  top: calc(50% - 243.5px);
-  left: calc(50% - 230px);
+  width: 520px;
+  max-width: 80%;
+  min-height: 72px;
   box-shadow: var(--shadow-drop);
   border-radius: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
-  min-height: 72px;
-  max-width: 100%;
   z-index: 2;
-}
-
-.frame2:hover {
-  background-color: var(--color-steelblue);
-}
-
-.back-to-login,
-.curita-parent,
-.shadowing4 {
-  color: var(--color-whitesmoke);
-  font-family: var(--font-normal-tm);
 }
 
 .shadowing4 {
   margin: 0;
-  flex: 1;
-  position: relative;
-  font-size: var(--fs-48);
+  font-size: 42px;
   font-weight: 400;
   text-align: center;
-  display: inline-block;
-  max-width: 100%;
-}
-
-.back-to-login,
-.curita-parent {
-  margin: 0 !important;
-  position: absolute;
-  flex-shrink: 0;
-  font-size: var(--fs-32);
+  color: var(--color-whitesmoke);
+  font-family: var(--font-normal-tm);
 }
 
 .back-to-login {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 !important;
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  width: 123px;
-  top: calc(50% - 120.5px);
-  left: calc(50% - 52.5px);
+  width: auto;
+  font-size: 28px;
+  color: var(--color-whitesmoke);
+  font-family: var(--font-normal-tm);
   text-align: center;
-  display: inline-block;
-  text-shadow: var(--text-shadow-1);
-  min-width: 123px;
   white-space: nowrap;
   z-index: 3;
 }
