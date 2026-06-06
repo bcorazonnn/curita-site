@@ -1,1 +1,187 @@
+@media screen and (max-width: 640px) {
+  @font-face {
+  font-family: "Normal TM";
+  src: url("../Normal%20TM.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
+.confirmation,
+.confirmation h1,
+.confirmation h2,
+.confirmation h3,
+.confirmation p,
+.confirmation span,
+.confirmation div,
+.confirmation a,
+.confirmation button {
+  font-family: "Normal TM", serif !important;
+  color: #f4f4f4 !important;
+  -webkit-text-fill-color: #f4f4f4 !important;
+}
+  .confirmation {
+    min-height: 100vh;
+    padding: 18px 0 0;
+    gap: 0;
+    background-size: cover;
+    background-position: center top;
+    overflow-x: hidden;
+  }
+
+  .confirmation-inner {
+    padding: 0 24px;
+  }
+
+  .curita,
+  .shadowing {
+    font-size: 34px;
+    line-height: 1;
+    width: auto;
+  }
+
+  .confirmation-child {
+    width: 100%;
+    padding: 150px 24px 260px;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .frame-parent {
+    width: 100%;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .shadowing-wrapper {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .shadowing2 {
+    font-size: 45px;
+    line-height: 1.05;
+    text-align: center;
+  }
+
+  .shadowing-container {
+    height: auto;
+    padding: 0;
+  }
+
+  .shadowing3 {
+    font-size: 27px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .frame-wrapper {
+    width: 100%;
+    padding: 0;
+    font-size: 27px;
+  }
+
+  .frame-group {
+    width: 100%;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .didnt-receive-it-check-spam-parent {
+    width: 100%;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .didnt-receive-it {
+    font-size: 25px;
+    line-height: 1.1;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .frame-div {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .rectangle-parent {
+    width: 355px;
+    max-width: 85vw;
+    padding: 10px 0;
+    border-radius: 20px;
+  }
+
+  .shadowing4 {
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .back-to-login {
+    width: auto;
+    font-size: 23px;
+    margin-top: 6px;
+  }
+
+  .footer {
+    min-height: 180px;
+    padding: 24px;
+    background-position: center;
+  }
+
+  .footer-curita {
+    font-size: 34px;
+  }
+
+  .footer-found-for-you,
+  .footer-curita2 {
+    font-size: 18px;
+  }
+  .rectangle-parent {
+  background-color: #2f3e6b !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.shadowing4 {
+  color: #f4f4f4 !important;
+  -webkit-text-fill-color: #f4f4f4 !important;
+  font-family: "Normal TM", serif !important;
+  display: block !important;
+}
+   .confirmation-inner {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .curita-parent {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .curita,
+  .shadowing {
+    font-size: 34px !important;
+    line-height: 1 !important;
+    width: auto !important;
+    margin: 0 !important;
+    position: static !important;
+  }
+   .shadowing {
+    display: none !important;
+  }
+
+  .curita {
+    display: block !important;
+    margin: 0 !important;
+    font-size: 34px !important;
+    line-height: 1 !important;
+  }
+
+  .confirmation-inner {
+    padding-left: 24px !important;
+  }
+}
