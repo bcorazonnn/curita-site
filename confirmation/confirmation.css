@@ -211,3 +211,9 @@ html,
   .confirmation {
     min-height: auto;
   }
+  .footer {
+    min-height: 260px;
+    padding-bottom: 90px;
+    background-size: cover;
+    background-position: center bottom;
+  }
