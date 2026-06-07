@@ -181,4 +181,16 @@ html,
   body {
     margin: 0;
     padding: 0;
+    background-color: #2f3646;
+    overflow-x: hidden;
+  }
+
+  .confirmation {
+    margin: 0;
+    padding-bottom: 0;
+    background-color: #2f3646;
+  }
+
+  .footer {
+    margin-bottom: 0;
 }
