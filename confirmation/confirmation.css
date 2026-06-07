@@ -182,9 +182,13 @@
   }
 
   html,
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-darkslategray);
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2f3646 !important;
+}
+
+.confirmation {
+  background-color: #2f3646 !important;
+}
 }
