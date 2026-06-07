@@ -195,4 +195,11 @@ body {
   .frame {
   min-height: auto !important;
 }
+  .frame {
+    min-height: calc(100vh - 150px);
+  }
+
+  .content {
+    min-height: calc(100vh - 150px);
+  }
 }
