@@ -194,3 +194,20 @@ html,
   .footer {
     margin-bottom: 0;
 }
+   .frame {
+    min-height: auto;
+  }
+
+  .content {
+    min-height: auto;
+    padding-bottom: 90px;
+  }
+
+  .footer {
+    min-height: 170px;
+    margin-bottom: 0;
+  }
+
+  .confirmation {
+    min-height: auto;
+  }
