@@ -1988,4 +1988,88 @@
 .start-my-curated-experience-wrapper {
   padding-bottom: 20px !important;
 }
+  /* final mobile spacing cleanup */
+@media screen and (max-width: 640px) {
+  .sign-up {
+    gap: 10px !important;
+  }
+
+  .frame-container {
+    gap: 10px !important;
+  }
+
+  .additional-description,
+  .company-description,
+  .choice-container {
+    height: auto !important;
+    padding-bottom: 0 !important;
+  }
+
+  .shadowing-parent,
+  .rectangle-group,
+  .expectations-column {
+    gap: 8px 14px !important;
+  }
+
+  .company-description {
+    margin-bottom: 8px !important;
+  }
+
+  .choice-container {
+    height: auto !important;
+    margin-top: 8px !important;
+  }
+
+  .interests-section {
+    gap: 14px !important;
+    padding-top: 4px !important;
+  }
+
+  .interests-grid {
+    gap: 14px 32px !important;
+  }
+
+  .apply-button {
+    gap: 14px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .culture-content,
+  .shadowing-information {
+    gap: 24px !important;
+  }
+
+  .experience-option,
+  .interest-option {
+    height: 38px !important;
+  }
+
+  .other-interest-input {
+    height: 38px !important;
+  }
+
+  .point-information,
+  .info-panel {
+    gap: 12px !important;
+  }
+
+  .bonus-area {
+    height: auto !important;
+  }
+
+  .dropdown-toggle {
+    height: 48px !important;
+  }
+
+  .start-my-curated-experience-wrapper {
+    padding-bottom: 12px !important;
+  }
+
+  .start-my-curated {
+    margin-top: 8px !important;
+  }
+
+  .footer {
+    margin-top: 8px !important;
+  }
 }
