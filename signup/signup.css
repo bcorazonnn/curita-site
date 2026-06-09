@@ -1657,7 +1657,7 @@
   .found-for-you {
     font-size: var(--fs-19);
   }
- @media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
   html,
   body {
     margin: 0;
@@ -1695,7 +1695,7 @@
 
   .curita,
   .shadowing {
-    font-size: 20px !important;
+    font-size: 24px;
     line-height: 1;
     width: auto;
   }
@@ -1707,11 +1707,15 @@
 
   .login,
   .get-started {
-    font-size: 13px !important;
+    font-size: 16px;
   }
 
   .rectangle-parent,
-  .get-started-parent,
+  .get-started-parent {
+    width: 70px;
+    height: 42px;
+  }
+
   .frame-child,
   .frame-item {
     width: 70px;
@@ -1724,7 +1728,7 @@
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    font-size: 26px !important;
+    font-size: 32px !important;
     line-height: 1.1;
     text-align: center;
   }
@@ -1749,7 +1753,7 @@
   .shadowing17,
   .shadowing22,
   .shadowing25 {
-    font-size: 20px !important;
+    font-size: 24px !important;
     line-height: 1.1 !important;
   }
 
@@ -1758,10 +1762,8 @@
   .shadowing11,
   .shadowing18,
   .shadowing23,
-  .shadowing24,
-  .what-are-you,
-  .well-tailor-your {
-    font-size: 13px !important;
+  .shadowing24 {
+    font-size: 16px !important;
     line-height: 1.1 !important;
   }
 
@@ -1790,7 +1792,7 @@
     width: 100% !important;
     max-width: none;
     height: 42px !important;
-    font-size: 13px !important;
+    font-size: 16px !important;
     border-radius: 14px;
     padding-left: 14px;
   }
@@ -1798,7 +1800,7 @@
   .career-input {
     width: 100%;
     height: 53px;
-    font-size: 13px !important;
+    font-size: 16px !important;
     border-radius: 14px;
     padding: 12px;
   }
@@ -1817,11 +1819,10 @@
     justify-content: center;
   }
 
-  .interest-option,
-  .experience-option {
+  .interest-option {
     width: 152px !important;
     height: 42px !important;
-    font-size: 13px !important;
+    font-size: 16px !important;
     border-radius: 14px;
     padding: 0 8px;
   }
@@ -1830,14 +1831,21 @@
     width: 180px !important;
     height: 42px !important;
     align-self: center;
-    font-size: 13px !important;
+    font-size: 14px !important;
+    border-radius: 14px;
+  }
+
+  .experience-option {
+    width: 152px !important;
+    height: 42px !important;
+    font-size: 16px !important;
     border-radius: 14px;
   }
 
   .dropdown-toggle {
     width: 100%;
     height: 53px;
-    font-size: 13px !important;
+    font-size: 20px !important;
     border-radius: 14px;
     padding: 0 12px;
   }
@@ -1850,7 +1858,7 @@
   .start-my-curated {
     width: 100%;
     height: auto;
-    font-size: 26px !important;
+    font-size: 32px !important;
     line-height: 1.1;
     text-align: center;
   }
@@ -1863,11 +1871,59 @@
   }
 
   .footer-curita {
-    font-size: 20px !important;
+    font-size: 24px;
   }
 
   .footer-found-for-you,
   .footer-curita2 {
-    font-size: 12px !important;
+    font-size: 12px;
+  }
+
+  /* FIX: force text white */
+  .curita,
+  .shadowing,
+  .lets-find-opportunities,
+  .shadowing2,
+  .shadowing3,
+  .shadowing7,
+  .shadowing8,
+  .shadowing9,
+  .shadowing11,
+  .shadowing17,
+  .shadowing18,
+  .shadowing22,
+  .shadowing23,
+  .shadowing24,
+  .shadowing25,
+  .login,
+  .get-started,
+  .start-my-curated,
+  .interest-option,
+  .experience-option,
+  .footer-curita,
+  .footer-found-for-you,
+  .footer-curita2 {
+    color: #f4f4f4 !important;
+  }
+
+  /* FIX: reveal inputs and buttons */
+  .frame-inner,
+  .expectations-column-child,
+  .career-input,
+  .other-interest-input,
+  .interest-option,
+  .experience-option,
+  .dropdown-toggle {
+    background-color: #4a90e2 !important;
+    color: #f4f4f4 !important;
+    opacity: 1 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  }
+
+  .expectations-column-child::placeholder,
+  .career-input::placeholder,
+  .other-interest-input::placeholder {
+    color: rgba(244, 244, 244, 0.65) !important;
+    opacity: 1 !important;
   }
 }
