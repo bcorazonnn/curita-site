@@ -1867,4 +1867,37 @@
     padding-left: 14px;
     border-radius: 14px;
   }
+    .shadowing-parent,
+  .rectangle-group {
+    width: 100%;
+    max-width: 351px;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 33px;
+    margin: 0 auto;
+  }
+
+  .frame-div,
+  .info-column {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .shadowing3 {
+    width: 100%;
+    max-width: none;
+    font-size: 16px !important;
+    line-height: 1.1 !important;
+  }
+
+  .frame-inner,
+  .expectations-column-child {
+    width: 100% !important;
+    height: 42px !important;
+    max-width: none;
+    border-radius: 14px;
+  }
 }
