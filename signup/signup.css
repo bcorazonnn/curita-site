@@ -1658,19 +1658,36 @@
     font-size: var(--fs-19);
   }
  @media screen and (max-width: 640px) {
-  .sign-up {
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    max-width: 402px;
-    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  .sign-up {
+    width: 100vw;
+    max-width: none;
+    margin: 0;
     padding: 8px 0 0;
     gap: 19px;
     overflow-x: hidden;
   }
 
+  .gradient-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* CONTENT WRAPPER */
+
   .frame-parent,
   .frame-container {
-    max-width: 402px;
     width: 100%;
+    max-width: 402px;
     margin: 0 auto;
   }
 
@@ -1678,6 +1695,8 @@
     padding: 0 20px;
     gap: 19px;
   }
+
+  /* HEADER */
 
   .curita,
   .shadowing {
@@ -1709,15 +1728,19 @@
     border-radius: 16px;
   }
 
+  /* TITLE */
+
   .lets-find-opportunities {
-    width: 100%;
-    max-width: 340px;
+    width: 340px;
+    max-width: 100%;
     height: auto;
     margin: 0 auto;
     font-size: 32px !important;
     line-height: 1.1;
     text-align: center;
   }
+
+  /* SECTION WIDTHS */
 
   .additional-description,
   .company-description,
@@ -1733,31 +1756,31 @@
     padding-right: 0;
   }
 
+  /* HEADINGS */
+
   .shadowing2,
   .shadowing7,
   .shadowing9,
   .shadowing17,
   .shadowing22,
-  .shadowing25,
-  .interests {
-    width: 100%;
-    max-width: 351px;
+  .shadowing25 {
     font-size: 24px !important;
     line-height: 1.1 !important;
-    text-align: left;
   }
+
+  /* SUBTEXT */
 
   .shadowing3,
   .shadowing8,
   .shadowing11,
   .shadowing18,
   .shadowing23,
-  .shadowing24,
-  .what-are-you,
-  .well-tailor-your {
+  .shadowing24 {
     font-size: 16px !important;
     line-height: 1.1 !important;
   }
+
+  /* BASIC INFO */
 
   .shadowing-parent,
   .rectangle-group,
@@ -1779,21 +1802,17 @@
     gap: 4px;
   }
 
-  .shadowing3 {
-    width: 100%;
-    max-width: none;
-    text-align: left;
-  }
-
   .frame-inner,
   .expectations-column-child {
     width: 100% !important;
     max-width: none;
     height: 42px !important;
     font-size: 16px !important;
-    padding-left: 14px;
     border-radius: 14px;
+    padding-left: 14px;
   }
+
+  /* CAREER INPUT */
 
   .career-input {
     width: 100%;
@@ -1803,10 +1822,11 @@
     padding: 12px;
   }
 
+  /* INTERESTS */
+
   .interests-section {
     gap: 24px;
     padding-top: 14px;
-    overflow: hidden;
   }
 
   .interests-grid {
@@ -1818,13 +1838,11 @@
     justify-content: center;
   }
 
-  .interest-option,
-  .experience-option {
+  .interest-option {
     width: 152px !important;
     height: 42px !important;
     font-size: 16px !important;
     border-radius: 14px;
-    text-align: center;
     padding: 0 8px;
   }
 
@@ -1836,6 +1854,17 @@
     border-radius: 14px;
   }
 
+  /* EXPERIENCE */
+
+  .experience-option {
+    width: 152px !important;
+    height: 42px !important;
+    font-size: 16px !important;
+    border-radius: 14px;
+  }
+
+  /* DROPDOWNS */
+
   .dropdown-toggle {
     width: 100%;
     height: 53px;
@@ -1845,19 +1874,24 @@
   }
 
   .dropdown-arrow-icon {
-    width: 23px;
-    height: 16px;
+    width: 22px;
+    height: 14px;
   }
+
+  /* BUTTON */
 
   .start-my-curated {
     width: 100%;
     height: auto;
     font-size: 32px !important;
     line-height: 1.1;
+    text-align: center;
   }
 
+  /* FOOTER */
+
   .footer {
-    width: 100%;
+    width: 100vw;
     min-height: 120px;
     margin: 0;
     padding: 16px 20px;
