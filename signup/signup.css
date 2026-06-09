@@ -1937,4 +1937,55 @@
     color: rgba(244, 244, 244, 0.65) !important;
     opacity: 1 !important;
   }
+  /* tighten mobile vertical spacing */
+.frame-container {
+  gap: 14px !important;
+}
+
+.benefit-container-parent {
+  gap: 14px !important;
+}
+
+.additional-description,
+.company-description,
+.choice-container {
+  height: auto !important;
+  padding-bottom: 6px !important;
+}
+
+.apply-button,
+.point-information,
+.info-panel {
+  gap: 18px !important;
+}
+
+.interests-section {
+  gap: 18px !important;
+  padding-top: 6px !important;
+}
+
+.responsibilities-panel,
+.recommendation-area,
+.sub-shadowing-t {
+  gap: 6px !important;
+}
+
+.shadowing-parent,
+.rectangle-group,
+.expectations-column {
+  gap: 6px 33px !important;
+}
+
+.interests-grid {
+  gap: 16px 46px !important;
+}
+
+.career-input,
+.dropdown-toggle {
+  height: 48px !important;
+}
+
+.start-my-curated-experience-wrapper {
+  padding-bottom: 20px !important;
+}
 }
