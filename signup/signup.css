@@ -1988,4 +1988,10 @@
 .start-my-curated-experience-wrapper {
   padding-bottom: 20px !important;
 }
+ .experience-option:last-child {
+    width: 152px;
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: 4px;
+  } 
 }
