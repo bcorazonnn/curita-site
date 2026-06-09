@@ -1926,4 +1926,8 @@
     color: rgba(244, 244, 244, 0.65) !important;
     opacity: 1 !important;
   }
+  .sign-up,
+  .sign-up * {
+    font-family: var(--font-normal-tm) !important;
+  }
 }
