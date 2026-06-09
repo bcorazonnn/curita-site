@@ -1658,7 +1658,6 @@
     font-size: var(--fs-19);
   }
  @media screen and (max-width: 640px) {
-
   html,
   body {
     margin: 0;
@@ -1682,8 +1681,6 @@
     object-fit: cover;
   }
 
-  /* CONTENT WRAPPER */
-
   .frame-parent,
   .frame-container {
     width: 100%;
@@ -1696,11 +1693,9 @@
     gap: 19px;
   }
 
-  /* HEADER */
-
   .curita,
   .shadowing {
-    font-size: 24px;
+    font-size: 20px !important;
     line-height: 1;
     width: auto;
   }
@@ -1712,15 +1707,11 @@
 
   .login,
   .get-started {
-    font-size: 16px;
+    font-size: 13px !important;
   }
 
   .rectangle-parent,
-  .get-started-parent {
-    width: 70px;
-    height: 42px;
-  }
-
+  .get-started-parent,
   .frame-child,
   .frame-item {
     width: 70px;
@@ -1728,19 +1719,15 @@
     border-radius: 16px;
   }
 
-  /* TITLE */
-
   .lets-find-opportunities {
     width: 340px;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    font-size: 32px !important;
+    font-size: 26px !important;
     line-height: 1.1;
     text-align: center;
   }
-
-  /* SECTION WIDTHS */
 
   .additional-description,
   .company-description,
@@ -1756,31 +1743,27 @@
     padding-right: 0;
   }
 
-  /* HEADINGS */
-
   .shadowing2,
   .shadowing7,
   .shadowing9,
   .shadowing17,
   .shadowing22,
   .shadowing25 {
-    font-size: 24px !important;
+    font-size: 20px !important;
     line-height: 1.1 !important;
   }
-
-  /* SUBTEXT */
 
   .shadowing3,
   .shadowing8,
   .shadowing11,
   .shadowing18,
   .shadowing23,
-  .shadowing24 {
-    font-size: 16px !important;
+  .shadowing24,
+  .what-are-you,
+  .well-tailor-your {
+    font-size: 13px !important;
     line-height: 1.1 !important;
   }
-
-  /* BASIC INFO */
 
   .shadowing-parent,
   .rectangle-group,
@@ -1807,22 +1790,18 @@
     width: 100% !important;
     max-width: none;
     height: 42px !important;
-    font-size: 16px !important;
+    font-size: 13px !important;
     border-radius: 14px;
     padding-left: 14px;
   }
 
-  /* CAREER INPUT */
-
   .career-input {
     width: 100%;
     height: 53px;
-    font-size: 16px !important;
+    font-size: 13px !important;
     border-radius: 14px;
     padding: 12px;
   }
-
-  /* INTERESTS */
 
   .interests-section {
     gap: 24px;
@@ -1838,10 +1817,11 @@
     justify-content: center;
   }
 
-  .interest-option {
+  .interest-option,
+  .experience-option {
     width: 152px !important;
     height: 42px !important;
-    font-size: 16px !important;
+    font-size: 13px !important;
     border-radius: 14px;
     padding: 0 8px;
   }
@@ -1850,25 +1830,14 @@
     width: 180px !important;
     height: 42px !important;
     align-self: center;
-    font-size: 14px !important;
+    font-size: 13px !important;
     border-radius: 14px;
   }
-
-  /* EXPERIENCE */
-
-  .experience-option {
-    width: 152px !important;
-    height: 42px !important;
-    font-size: 16px !important;
-    border-radius: 14px;
-  }
-
-  /* DROPDOWNS */
 
   .dropdown-toggle {
     width: 100%;
     height: 53px;
-    font-size: 20px !important;
+    font-size: 13px !important;
     border-radius: 14px;
     padding: 0 12px;
   }
@@ -1878,17 +1847,13 @@
     height: 14px;
   }
 
-  /* BUTTON */
-
   .start-my-curated {
     width: 100%;
     height: auto;
-    font-size: 32px !important;
+    font-size: 26px !important;
     line-height: 1.1;
     text-align: center;
   }
-
-  /* FOOTER */
 
   .footer {
     width: 100vw;
@@ -1898,11 +1863,11 @@
   }
 
   .footer-curita {
-    font-size: 24px;
+    font-size: 20px !important;
   }
 
   .footer-found-for-you,
   .footer-curita2 {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
