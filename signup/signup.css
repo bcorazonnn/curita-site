@@ -1994,4 +1994,20 @@
     justify-self: center;
     margin-top: 4px;
   } 
+  .user-message-wrapper {
+    width: 100% !important;
+    max-width: 351px !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+
+  .user-message {
+    width: 152px !important;
+    max-width: 152px !important;
+    flex: 0 0 152px !important;
+    height: 42px !important;
+    justify-content: center !important;
+  }
 }
