@@ -2029,9 +2029,10 @@
   height: 42px !important;
 }
 
-.shadowing-information .experience-option:nth-child(3) {
-    margin-left: calc(50% - 76px) !important;
-    margin-right: 0 !important;
-    margin-top: -4px !important;
+/* Center Strong Experience button */
+.shadowing-information .experience-option:last-of-type {
+  flex-basis: 100% !important;
+  max-width: 152px !important;
+  margin: -4px auto 0 auto !important;
 }
 }
