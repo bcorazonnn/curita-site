@@ -2010,30 +2010,32 @@
     height: 42px !important;
     justify-content: center !important;
   }
- /* Experience Level Mobile Fix */
+/* EXPERIENCE LEVEL - exact mobile layout */
 .shadowing-information {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-
-  gap: 8px 46px !important;
-
-  height: auto !important;
+  width: 351px !important;
   max-width: 351px !important;
-  margin: 0 auto !important;
+  height: auto !important;
+
+  display: grid !important;
+  grid-template-columns: 152px 152px !important;
+  column-gap: 47px !important;
+  row-gap: 8px !important;
+
+  justify-content: center !important;
+  align-items: center !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .shadowing-information .experience-option {
-  flex: 0 0 152px !important;
   width: 152px !important;
   height: 42px !important;
 }
 
-/* force Strong Experience to center on mobile */
-.shadowing-information label:has(input[value="strong"]),
-.shadowing-information label:has(input[value="Strong Experience"]) {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  transform: translateX(99px) translateY(-4px) !important;
+.shadowing-information .experience-option:nth-of-type(3) {
+  grid-column: 1 / 3 !important;
+  justify-self: center !important;
+  margin: 0 !important;
 }
-}
+)
