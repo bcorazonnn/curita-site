@@ -2029,10 +2029,11 @@
   height: 42px !important;
 }
 
-/* Center Strong Experience button */
-.shadowing-information .experience-option:last-of-type {
-  flex-basis: 100% !important;
-  max-width: 152px !important;
-  margin: -4px auto 0 auto !important;
+/* force Strong Experience to center on mobile */
+.shadowing-information label:has(input[value="strong"]),
+.shadowing-information label:has(input[value="Strong Experience"]) {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  transform: translateX(99px) translateY(-4px) !important;
 }
 }
