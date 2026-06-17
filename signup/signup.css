@@ -2010,28 +2010,8 @@
     height: 42px !important;
     justify-content: center !important;
   }
-  /* FIX experience level buttons on mobile */
-.shadowing-information {
-  width: 100% !important;
-  max-width: 351px !important;
-  display: grid !important;
-  grid-template-columns: repeat(2, 152px) !important;
-  gap: 23px 46px !important;
-  justify-content: center !important;
-  margin: 0 auto !important;
-  height: auto !important;
-}
-
-.experience-option {
-  width: 152px !important;
-  height: 42px !important;
-  font-size: 16px !important;
-  border-radius: 14px !important;
-}
-
-.experience-option:last-child {
-  grid-column: 1 / -1 !important;
-  justify-self: center !important;
-  margin-top: 4px !important;
+ /* center the 3rd experience button only */
+.experience-option:nth-of-type(3) {
+  transform: translateX(99.5px);
 }
 }
