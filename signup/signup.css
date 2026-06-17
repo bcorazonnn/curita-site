@@ -2010,8 +2010,26 @@
     height: 42px !important;
     justify-content: center !important;
   }
- /* center the 3rd experience button only */
-.experience-option:nth-of-type(3) {
-  transform: translateX(99.5px);
+ /* Experience Level Mobile Fix */
+.shadowing-information {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+
+  gap: 8px 46px !important;
+
+  height: auto !important;
+  max-width: 351px !important;
+  margin: 0 auto !important;
+}
+
+.shadowing-information .experience-option {
+  flex: 0 0 152px !important;
+  width: 152px !important;
+  height: 42px !important;
+}
+
+.shadowing-information .experience-option:nth-child(3) {
+  margin-top: -4px !important;
 }
 }
