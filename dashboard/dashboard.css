@@ -1283,11 +1283,9 @@
 }
 @media screen and (max-width: 640px) {
  .dashboard {
-    zoom: 1 !important;
-    transform: none !important;
     overflow-x: hidden !important;
     padding: 18px 12px 0 !important;
-    gap: 32px !important;
+    gap: 24px !important;
   }
 
   .dashboard-inner,
@@ -1298,19 +1296,92 @@
     padding: 0 !important;
   }
 
-  .frame-group,
   .frame-parent,
+  .frame-group,
   .frame-parent3,
   .frame-parent4 {
     width: 100% !important;
     max-width: 100% !important;
   }
 
+  .frame-parent {
+    gap: 24px !important;
+  }
+
+  /* logo */
+  .curita-parent {
+    position: static !important;
+    margin: 0 0 30px 0 !important;
+    padding-left: 18px !important;
+  }
+
+  .curita,
+  .shadowing2 {
+    font-size: 42px !important;
+    line-height: 42px !important;
+  }
+
+  /* welcome */
+  .frame-wrapper {
+    padding: 20px 0 20px !important;
+    justify-content: center !important;
+  }
+
+  .shadowing-wrapper {
+    padding: 0 !important;
+  }
+
+  .shadowing3 {
+    font-size: 40px !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .shadowing4 {
+    font-size: 16px !important;
+    line-height: 1.25 !important;
+    width: 260px !important;
+    height: auto !important;
+    margin: auto !important;
+    text-align: center !important;
+  }
+
+  /* subscription card */
+  .rectangle-parent {
+    max-width: 100% !important;
+    min-height: 150px !important;
+    padding: 22px 20px !important;
+    justify-content: center !important;
+  }
+
+  .shadowing5 {
+    font-size: 34px !important;
+    line-height: 1 !important;
+  }
+
+  .shadowing6 {
+    font-size: 27px !important;
+    line-height: 1.1 !important;
+  }
+
+  .rectangle-group {
+    width: 210px !important;
+    height: 48px !important;
+    padding: 8px 0 !important;
+    justify-content: center !important;
+  }
+
+  .shadowing7 {
+    font-size: 26px !important;
+  }
+
+  /* card grid */
   .frame-parent3,
   .frame-parent4 {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    gap: 22px 16px !important;
+    gap: 18px 14px !important;
     justify-items: center !important;
   }
 
@@ -1322,38 +1393,11 @@
     max-width: 165px !important;
     min-width: 0 !important;
     height: auto !important;
-    min-height: 155px !important;
+    min-height: 140px !important;
     margin: 0 !important;
-    padding: 16px 12px !important;
+    padding: 14px 12px !important;
     box-sizing: border-box !important;
     overflow: hidden !important;
-  }
-
-  .shadowing-wrapper {
-    padding: 0 !important;
-  }
-
-  .shadowing3 {
-    font-size: 42px !important;
-    text-align: center !important;
-    white-space: normal !important;
-  }
-
-  .shadowing4 {
-    font-size: 17px !important;
-    width: 260px !important;
-    height: auto !important;
-    margin: auto !important;
-    text-align: center !important;
-  }
-
-  .shadowing5 {
-    font-size: 36px !important;
-  }
-
-  .shadowing6,
-  .shadowing7 {
-    font-size: 28px !important;
   }
 
   .shadowing8,
@@ -1393,6 +1437,19 @@
     gap: 8px !important;
   }
 
+  .line-wrapper,
+  .line-wrapper2,
+  .line-frame,
+  .frame-wrapper4,
+  .frame-wrapper5,
+  .frame-wrapper3,
+  .differentiated-structure-wrapper {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* buttons */
   .shadowing-detail,
   .shadowing-detail2 {
     width: 100% !important;
@@ -1409,97 +1466,57 @@
     width: auto !important;
   }
 
-  .line-wrapper,
-  .line-wrapper2,
-  .line-frame,
-  .frame-wrapper4,
-  .frame-wrapper5,
-  .frame-wrapper3,
-  .differentiated-structure-wrapper {
-    width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
+  /* HOME PAGE MOBILE FOOTER STYLE */
   .footer {
-    margin-top: 28px !important;
-  }
-  /* separate logo from welcome text */
-  .curita-parent {
-    position: static !important;
-    margin-bottom: 70px !important;
-    padding-left: 18px !important;
-  }
+    width: 100% !important;
+    position: relative !important;
+    overflow: hidden !important;
 
-  .curita,
-  .shadowing2 {
-    font-size: 42px !important;
-    line-height: 42px !important;
-  }
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
 
-  /* push welcome lower and center it */
-  .frame-wrapper {
-    padding-top: 20px !important;
-  }
+    padding: 16px 18px 20px !important;
+    gap: 6px !important;
 
-  .shadowing3 {
-    font-size: 40px !important;
-    line-height: 1 !important;
-  }
-
-  .shadowing4 {
-    font-size: 16px !important;
-    line-height: 1.25 !important;
-  }
-
-  /* subscription card smaller */
-  .rectangle-parent {
-    max-width: 100% !important;
+    height: 150px !important;
     min-height: 150px !important;
-    padding: 22px 20px !important;
+
+    margin-top: 70px !important;
+
+    background-image: url("../Frame 1.png") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+
+    box-sizing: border-box !important;
+    flex-shrink: 0 !important;
   }
 
-  .shadowing5 {
-    font-size: 34px !important;
+  .footer::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+  }
+
+  .footer > * {
+    position: relative !important;
+    z-index: 1 !important;
+  }
+
+  .footer-curita {
+    font-size: 28px !important;
     line-height: 1 !important;
   }
 
-  .shadowing6 {
-    font-size: 27px !important;
+  .footer-found-for-you,
+  .footer-curita2 {
+    font-size: 13px !important;
     line-height: 1.1 !important;
   }
 
-  .rectangle-group {
-    width: 210px !important;
-    height: 48px !important;
-    padding: 8px 0 !important;
-    justify-content: center !important;
-  }
-
-  .shadowing7 {
-    font-size: 26px !important;
-  }
-
-  /* slightly reduce card height */
-  .rectangle-container,
-  .rectangle-parent2,
-  .rectangle-parent3,
-  .rectangle-parent4 {
-    min-height: 140px !important;
-    padding: 14px 12px !important;
-  }
-
-  /* reduce vertical gaps between sections */
-  .dashboard {
-    gap: 24px !important;
-  }
-
-  .frame-parent {
-    gap: 24px !important;
-  }
-
-  .frame-parent3,
-  .frame-parent4 {
-    gap: 18px 14px !important;
+  .footer-curita2 {
+    margin-top: 34px !important;
   }
 }
