@@ -1282,137 +1282,146 @@
   }
 }
 @media screen and (max-width: 640px) {
- /* SCALE WHOLE PAGE DOWN */
-.dashboard{
-    zoom:.78;
-    transform-origin:top center;
-    overflow-x:hidden;
-}
+ .dashboard {
+    zoom: 1 !important;
+    transform: none !important;
+    overflow-x: hidden !important;
+    padding: 18px 12px 0 !important;
+    gap: 32px !important;
+  }
 
+  .dashboard-inner,
+  .dashboard-child {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
-/* less space */
-.frame-parent{
-    gap:25px!important;
-}
+  .frame-group,
+  .frame-parent,
+  .frame-parent3,
+  .frame-parent4 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 
-/* welcome text */
-.shadowing3{
-    font-size:42px!important;
-}
+  .frame-parent3,
+  .frame-parent4 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 22px 16px !important;
+    justify-items: center !important;
+  }
 
-.shadowing4{
-    font-size:17px!important;
-    width:260px!important;
-    margin:auto;
-}
+  .rectangle-container,
+  .rectangle-parent2,
+  .rectangle-parent3,
+  .rectangle-parent4 {
+    width: 100% !important;
+    max-width: 165px !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 155px !important;
+    margin: 0 !important;
+    padding: 16px 12px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
 
+  .shadowing-wrapper {
+    padding: 0 !important;
+  }
 
-/* card groups */
-.frame-parent3,
-.frame-parent4{
+  .shadowing3 {
+    font-size: 42px !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
 
-    gap:18px!important;
+  .shadowing4 {
+    font-size: 17px !important;
+    width: 260px !important;
+    height: auto !important;
+    margin: auto !important;
+    text-align: center !important;
+  }
 
-    justify-content:center!important;
+  .shadowing5 {
+    font-size: 36px !important;
+  }
 
-}
+  .shadowing6,
+  .shadowing7 {
+    font-size: 28px !important;
+  }
 
+  .shadowing8,
+  .preferences-title,
+  .shadowing21,
+  .shadowing24 {
+    font-size: 18px !important;
+    text-align: left !important;
+    width: 100% !important;
+  }
 
-/* cards */
+  .shadowing9,
+  .shadowing10,
+  .shadowing11,
+  .shadowing12,
+  .shadowing13,
+  .shadowing14,
+  .shadowing15,
+  .shadowing16,
+  .shadowing17,
+  .shadowing18,
+  .shadowing19,
+  .shadowing20,
+  .shadowing26,
+  .shadowing27,
+  .shadowing29 {
+    font-size: 12px !important;
+    width: auto !important;
+    white-space: normal !important;
+  }
 
-.rectangle-container,
-.rectangle-parent2,
-.rectangle-parent3,
-.rectangle-parent4{
+  .shadowing-group,
+  .shadowing-internal,
+  .shadowing-nested-three {
+    width: 100% !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+  }
 
-max-width:160px!important;
+  .shadowing-detail,
+  .shadowing-detail2 {
+    width: 100% !important;
+    max-width: 135px !important;
+    height: 36px !important;
+    margin: 0 auto !important;
+    padding: 6px 8px !important;
+    justify-content: center !important;
+  }
 
-min-width:160px!important;
+  .shadowing22,
+  .shadowing23 {
+    font-size: 12px !important;
+    width: auto !important;
+  }
 
-padding:15px!important;
+  .line-wrapper,
+  .line-wrapper2,
+  .line-frame,
+  .frame-wrapper4,
+  .frame-wrapper5,
+  .frame-wrapper3,
+  .differentiated-structure-wrapper {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 
-min-height:150px!important;
-
-}
-
-
-/* quick action buttons */
-
-.shadowing-detail,
-.shadowing-detail2{
-
-max-width:130px!important;
-
-height:35px!important;
-
-margin:auto!important;
-
-}
-
-
-.shadowing22,
-.shadowing23{
-
-font-size:13px!important;
-
-}
-
-
-/* card titles */
-
-.shadowing8,
-.preferences-title,
-.shadowing21,
-.shadowing24{
-
-font-size:18px!important;
-
-}
-
-
-/* rows */
-
-.shadowing9,
-.shadowing10,
-.shadowing11,
-.shadowing12,
-.shadowing13,
-.shadowing14,
-.shadowing15,
-.shadowing16,
-.shadowing17,
-.shadowing18,
-.shadowing19,
-.shadowing20,
-.shadowing26,
-.shadowing27,
-.shadowing29{
-
-font-size:12px!important;
-
-}
-
-
-/* footer */
-
-.footer{
-
-margin-top:30px!important;
-
-}
-
-.footer-curita{
-
-font-size:28px!important;
-
-}
-
-.footer-found-for-you,
-.footer-curita2{
-
-font-size:12px!important;
-
-}
-
-
+  .footer {
+    margin-top: 28px !important;
+  }
 }
