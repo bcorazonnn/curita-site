@@ -1578,4 +1578,34 @@
     min-height: 170px !important;
   }
 }
+@media screen and (max-width: 640px) {
+  .dashboard,
+  .dashboard * {
+    font-family: "Normal TM", serif !important;
+    font-weight: 400 !important;
+  }
+
+  .curita,
+  .shadowing2,
+  .shadowing3,
+  .shadowing4,
+  .shadowing5,
+  .shadowing6,
+  .shadowing7,
+  .shadowing8,
+  .preferences-title,
+  .shadowing21,
+  .shadowing24,
+  .footer-curita,
+  .footer-found-for-you,
+  .footer-curita2 {
+    font-family: "Normal TM", serif !important;
+    font-weight: 400 !important;
+  }
+
+  button,
+  button * {
+    font-family: "Normal TM", serif !important;
+    font-weight: 400 !important;
+  }
 }
