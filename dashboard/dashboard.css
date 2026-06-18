@@ -1281,7 +1281,7 @@
     min-width: 100%;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 640px) {
   .shadowing {
     font-size: var(--fs-24);
   }
