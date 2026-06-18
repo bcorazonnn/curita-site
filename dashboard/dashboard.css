@@ -1281,7 +1281,7 @@
     min-width: 100%;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
   .shadowing {
     font-size: var(--fs-24);
   }
@@ -1402,6 +1402,61 @@
   .rectangle-parent3,
   .rectangle-parent4 {
     min-width: 100%;
+  }
+  .dashboard {
+    padding-top: 20px !important;
+    gap: 35px !important;
+  }
+
+  .dashboard-inner,
+  .dashboard-child {
+    width: 100% !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    margin-top: 40px !important;
+    margin-bottom: 60px !important;
+  }
+
+  .frame-parent3,
+  .frame-parent4 {
+    width: 100% !important;
+    gap: 24px !important;
+    justify-content: center !important;
+  }
+
+  .rectangle-container,
+  .rectangle-parent2,
+  .rectangle-parent3,
+  .rectangle-parent4 {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 360px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .shadowing-detail,
+  .shadowing-detail2 {
+    width: 100% !important;
+    max-width: 300px !important;
+    align-self: center !important;
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .rectangle-parent4 {
+    align-items: center !important;
+    gap: 18px !important;
+  }
+
+  .shadowing21,
+  .shadowing22,
+  .shadowing23,
+  .shadowing24 {
+    text-align: center !important;
   }
 }
 
