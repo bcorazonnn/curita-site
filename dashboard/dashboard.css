@@ -1288,10 +1288,18 @@
   }
 }
 @media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .dashboard {
-    overflow-x: hidden !important;
     padding: 0 !important;
-    gap: 24px !important;
+    gap: 0 !important;
+    background-image: url("../gradient1.png") !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    font-family: "Normal TM", serif !important;
+  }
+
+  .gradient1png-parent {
+    display: none !important;
   }
 
   .dashboard-inner,
@@ -1299,18 +1307,19 @@
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 0 26px !important;
+    box-sizing: border-box !important;
   }
 
   .curita-parent {
     position: static !important;
+    padding: 20px 0 52px !important;
     margin: 0 !important;
-    padding-left: 12px !important;
   }
 
   .curita {
     font-size: 28px !important;
-    line-height: 28px !important;
+    line-height: 1 !important;
   }
 
   .shadowing2 {
@@ -1318,64 +1327,50 @@
   }
 
   .frame-wrapper {
-    padding: 36px 0 24px !important;
-    justify-content: center !important;
-  }
-
-  .shadowing-wrapper {
     padding: 0 !important;
-  }
-
-  .shadowing3 {
-    font-size: 27px !important;
-    line-height: 1 !important;
-    text-align: center !important;
-    white-space: normal !important;
-  }
-
-  .shadowing4 {
-    font-size: 15px !important;
-    width: 260px !important;
-    height: auto !important;
-    line-height: 1.2 !important;
-    margin: auto !important;
-    text-align: center !important;
+    justify-content: center !important;
   }
 
   .frame-parent,
   .frame-group {
     width: 100% !important;
     max-width: 100% !important;
-    gap: 28px !important;
+    gap: 34px !important;
+    align-items: center !important;
+  }
+
+  .frame-container,
+  .frame-div,
+  .shadowing-wrapper {
+    width: 100% !important;
+    padding: 0 !important;
+    align-items: center !important;
+  }
+
+  .shadowing3 {
+    font-size: 28px !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    margin: 0 0 18px !important;
+    width: 100% !important;
+  }
+
+  .shadowing4 {
+    font-size: 14px !important;
+    line-height: 1.25 !important;
+    width: 280px !important;
+    height: auto !important;
+    margin: 0 auto 18px !important;
+    text-align: center !important;
   }
 
   .rectangle-parent {
-    max-width: 100% !important;
-    min-height: 150px !important;
-    padding: 22px 20px !important;
-    justify-content: center !important;
-    flex-wrap: wrap !important;
+    display: none !important;
   }
 
-  .shadowing5 {
-    font-size: 34px !important;
-    line-height: 1 !important;
-  }
-
-  .shadowing6 {
-    font-size: 27px !important;
-    line-height: 1.1 !important;
-  }
-
-  .rectangle-group {
-    width: 210px !important;
-    height: 48px !important;
-    padding: 8px 0 !important;
-    justify-content: center !important;
-  }
-
-  .shadowing7 {
-    font-size: 26px !important;
+  .frame-section,
+  .dashboard-child {
+    width: 100% !important;
   }
 
   .frame-parent3,
@@ -1384,10 +1379,14 @@
     max-width: 100% !important;
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    gap: 44px 36px !important;
+    gap: 34px 28px !important;
     justify-items: center !important;
-    padding: 0 12px !important;
+    padding: 0 !important;
     box-sizing: border-box !important;
+  }
+
+  .dashboard-child {
+    margin-top: 34px !important;
   }
 
   .rectangle-container,
@@ -1395,15 +1394,21 @@
   .rectangle-parent3,
   .rectangle-parent4 {
     width: 100% !important;
-    max-width: 165px !important;
+    max-width: 230px !important;
     min-width: 0 !important;
-    min-height: 135px !important;
-    height: auto !important;
+    height: 205px !important;
+    min-height: 205px !important;
     margin: 0 !important;
-    padding: 14px 12px !important;
+    padding: 15px 14px !important;
     border-radius: 20px !important;
     box-sizing: border-box !important;
     overflow: hidden !important;
+  }
+
+  .frame-inner,
+  .rectangle-div,
+  .frame-child5 {
+    border-radius: 20px !important;
   }
 
   .shadowing8,
@@ -1411,8 +1416,10 @@
   .shadowing21,
   .shadowing24 {
     font-size: 18px !important;
+    line-height: 1 !important;
     text-align: left !important;
     width: 100% !important;
+    margin: 0 !important;
   }
 
   .shadowing9,
@@ -1431,8 +1438,13 @@
   .shadowing27,
   .shadowing29 {
     font-size: 12px !important;
+    line-height: 1.1 !important;
     width: auto !important;
-    white-space: normal !important;
+    white-space: nowrap !important;
+  }
+
+  .shadowing-parent {
+    gap: 18px !important;
   }
 
   .shadowing-group,
@@ -1449,79 +1461,78 @@
   .frame-wrapper3,
   .frame-wrapper4,
   .frame-wrapper5,
-  .differentiated-structure-wrapper {
+  .differentiated-structure-wrapper,
+  .shadowing-nested-two,
+  .shadowing-nested-three-wrapper,
+  .shadowing-nested-four-wrapper {
     width: 100% !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 
+  .line-div,
+  .frame-child3,
+  .frame-child7 {
+    width: 100% !important;
+  }
+
   .shadowing-detail,
   .shadowing-detail2 {
     width: 100% !important;
-    max-width: 135px !important;
-    height: 36px !important;
+    max-width: 190px !important;
+    height: 38px !important;
     margin: 0 auto !important;
     padding: 6px 8px !important;
     justify-content: center !important;
+    align-items: center !important;
   }
 
   .shadowing22,
   .shadowing23 {
-    font-size: 12px !important;
+    font-size: 13px !important;
     width: auto !important;
   }
 
   .footer {
     width: 100vw !important;
     max-width: none !important;
-    height: 105px !important;
-    min-height: 105px !important;
-    margin-top: 50px !important;
-    padding: 10px 18px 12px !important;
-
+    height: 120px !important;
+    min-height: 120px !important;
+    margin-top: 48px !important;
+    padding: 18px 28px !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
     align-items: flex-start !important;
-
     background-image: url("../Frame 1.png") !important;
     background-size: cover !important;
-    background-repeat: no-repeat !important;
     background-position: center !important;
-
-    overflow: hidden !important;
     box-sizing: border-box !important;
   }
 
   .footer,
   .footer * {
     font-family: "Normal TM", serif !important;
-    font-weight: 400 !important;
     color: white !important;
     -webkit-text-fill-color: white !important;
-  }
-
-  .footer-block-parent {
-    gap: 2px !important;
+    font-weight: 400 !important;
   }
 
   .footer-curita {
-    font-size: 26px !important;
+    font-size: 28px !important;
     line-height: 1 !important;
     margin: 0 !important;
   }
 
   .footer-found-for-you {
-    font-size: 12px !important;
+    font-size: 13px !important;
     line-height: 1.1 !important;
     margin: 0 !important;
   }
 
   .footer-curita2 {
-    display: block !important;
-    font-size: 11px !important;
+    font-size: 12px !important;
     line-height: 1 !important;
-    margin: 4px 0 0 !important;
-    opacity: 0.9 !important;
+    margin: 6px 0 0 !important;
   }
 }
