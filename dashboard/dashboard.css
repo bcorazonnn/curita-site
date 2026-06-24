@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Normal TM";
+  src: url("../Normal%20TM.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 .dashboard,
 .gradient1png-parent {
   display: flex;
@@ -1489,7 +1495,7 @@
 
   .footer,
   .footer * {
-    font-family: var(--font-normal-tm) !important;
+    font-family: "Normal TM", serif !important;
     font-weight: 400 !important;
     color: white !important;
     -webkit-text-fill-color: white !important;
