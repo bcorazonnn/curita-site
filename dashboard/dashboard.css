@@ -1738,4 +1738,17 @@
     line-height: 1 !important;
     margin: 4px 0 0 !important;
   }
+  .dashboard,
+  .dashboard * {
+    font-family: var(--font-normal-tm) !important;
+    font-weight: 400 !important;
+  }
+
+  .footer,
+  .footer * {
+    font-family: var(--font-normal-tm) !important;
+    font-weight: 400 !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+  }
 }
